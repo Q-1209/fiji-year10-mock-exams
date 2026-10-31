@@ -1,0 +1,615 @@
+{
+ "id": "m26_ot",
+ "subject": "Office Technology",
+ "kind": "mock26",
+ "title": "Fiji Year 10 Mock Examination 2 (2026 school format) — Office Technology",
+ "minutes": 120,
+ "readingMinutes": 10,
+ "totalMarks": 100,
+ "instructions": "Answer ALL questions. Time allowed: 2 hours (an extra 10 minutes is allowed for reading).\nMultiple-choice: click the letter of the best answer (click again to clear).\nShort answers and paragraphs: type your answer in English in the box. Show working for calculations.\nYour answers are saved automatically. The paper is submitted automatically when time runs out.\n",
+ "sections": [
+  {
+   "title": "SECTION A  MULTIPLE-CHOICE QUESTIONS [30 marks]",
+   "short": "A MCQ",
+   "note": "There are thirty multiple-choice questions. All are compulsory. Each question is worth 1 mark.",
+   "questions": [
+    {
+     "id": "a1",
+     "type": "mcq",
+     "text": "The modern term that has replaced \"Office Management\" is",
+     "options": [
+      "Data processing",
+      "Information management",
+      "Records keeping",
+      "Office routine"
+     ],
+     "answer": "B",
+     "marks": 1
+    },
+    {
+     "id": "a2",
+     "type": "mcq",
+     "text": "The people, equipment, records and procedures needed to run an office are called the office",
+     "options": [
+      "resources",
+      "rules",
+      "layout",
+      "environment"
+     ],
+     "answer": "A",
+     "marks": 1
+    },
+    {
+     "id": "a3",
+     "type": "mcq",
+     "text": "Which office machine makes paper copies of documents?",
+     "options": [
+      "Scanner",
+      "Photocopier",
+      "Projector",
+      "Shredder"
+     ],
+     "answer": "B",
+     "marks": 1
+    },
+    {
+     "id": "a4",
+     "type": "mcq",
+     "text": "Which office machine cuts unwanted confidential documents into small strips?",
+     "options": [
+      "Shredder",
+      "Binder",
+      "Laminator",
+      "Guillotine"
+     ],
+     "answer": "A",
+     "marks": 1
+    },
+    {
+     "id": "a5",
+     "type": "mcq",
+     "text": "In a spreadsheet, the box where a row and a column meet is called a",
+     "options": [
+      "range",
+      "label",
+      "worksheet",
+      "cell"
+     ],
+     "answer": "D",
+     "marks": 1
+    },
+    {
+     "id": "a6",
+     "type": "mcq",
+     "text": "Every spreadsheet formula must begin with the symbol",
+     "options": [
+      "+",
+      "=",
+      "#",
+      "@"
+     ],
+     "answer": "B",
+     "marks": 1
+    },
+    {
+     "id": "a7",
+     "type": "mcq",
+     "text": "In the formula =AVERAGE(B2:B9), the part B2:B9 is the",
+     "options": [
+      "function name",
+      "label",
+      "range (argument)",
+      "operator"
+     ],
+     "answer": "C",
+     "marks": 1
+    },
+    {
+     "id": "a8",
+     "type": "mcq",
+     "text": "In Microsoft Excel, which Home tab group contains Merge & Center and Wrap Text?",
+     "options": [
+      "Font",
+      "Number",
+      "Styles",
+      "Alignment"
+     ],
+     "answer": "D",
+     "marks": 1
+    },
+    {
+     "id": "a9",
+     "type": "mcq",
+     "text": "Which chart shows the parts of a whole as slices of a circle?",
+     "options": [
+      "Line graph",
+      "Column chart",
+      "Scatter chart",
+      "Pie chart"
+     ],
+     "answer": "D",
+     "marks": 1
+    },
+    {
+     "id": "a10",
+     "type": "mcq",
+     "text": "Which spreadsheet function finds the highest value in a range?",
+     "options": [
+      "=MAX()",
+      "=MIN()",
+      "=SUM()",
+      "=COUNT()"
+     ],
+     "answer": "A",
+     "marks": 1
+    },
+    {
+     "id": "a11",
+     "type": "mcq",
+     "text": "Which software application is used to open and view web pages?",
+     "options": [
+      "Web browser",
+      "Search engine",
+      "Spreadsheet",
+      "Operating system"
+     ],
+     "answer": "A",
+     "marks": 1
+    },
+    {
+     "id": "a12",
+     "type": "mcq",
+     "text": "Which email option sends a copy to another person without the other recipients seeing their address?",
+     "options": [
+      "CC",
+      "Forward",
+      "BCC",
+      "Reply All"
+     ],
+     "answer": "C",
+     "marks": 1
+    },
+    {
+     "id": "a13",
+     "type": "mcq",
+     "text": "A website that finds information when you type in keywords is called a",
+     "options": [
+      "browser",
+      "home page",
+      "search engine",
+      "hyperlink"
+     ],
+     "answer": "C",
+     "marks": 1
+    },
+    {
+     "id": "a14",
+     "type": "mcq",
+     "text": "Where is an email saved if you have written it but not yet sent it?",
+     "options": [
+      "Inbox",
+      "Spam",
+      "Sent",
+      "Drafts"
+     ],
+     "answer": "D",
+     "marks": 1
+    },
+    {
+     "id": "a15",
+     "type": "mcq",
+     "text": "Which alignment makes the text line up evenly on both the left and right margins?",
+     "options": [
+      "Left",
+      "Centre",
+      "Right",
+      "Justify"
+     ],
+     "answer": "D",
+     "marks": 1
+    },
+    {
+     "id": "a16",
+     "type": "mcq",
+     "text": "Which word-processing feature checks a document for spelling mistakes?",
+     "options": [
+      "Spell check",
+      "Thesaurus",
+      "Word count",
+      "Find"
+     ],
+     "answer": "A",
+     "marks": 1
+    },
+    {
+     "id": "a17",
+     "type": "mcq",
+     "text": "Which keyboard shortcut copies selected text?",
+     "options": [
+      "Ctrl + V",
+      "Ctrl + C",
+      "Ctrl + X",
+      "Ctrl + Z"
+     ],
+     "answer": "B",
+     "marks": 1
+    },
+    {
+     "id": "a18",
+     "type": "mcq",
+     "text": "Customers, suppliers and competitors that directly affect a business are part of the",
+     "options": [
+      "general environment",
+      "remote environment",
+      "operating environment",
+      "internal environment"
+     ],
+     "answer": "C",
+     "marks": 1
+    },
+    {
+     "id": "a19",
+     "type": "mcq",
+     "text": "Inflation, interest rates and unemployment are part of which environment of a business?",
+     "options": [
+      "Political",
+      "Social",
+      "Technological",
+      "Economic"
+     ],
+     "answer": "D",
+     "marks": 1
+    },
+    {
+     "id": "a20",
+     "type": "mcq",
+     "text": "Which is a disadvantage of an open-plan office?",
+     "options": [
+      "Easy supervision of staff",
+      "Saves floor space",
+      "Lack of privacy and more noise",
+      "Easy communication between staff"
+     ],
+     "answer": "C",
+     "marks": 1
+    },
+    {
+     "id": "a21",
+     "type": "mcq",
+     "text": "The authority of a manager to give direct orders to the employees below them is called",
+     "options": [
+      "line authority",
+      "staff authority",
+      "functional authority",
+      "informal authority"
+     ],
+     "answer": "A",
+     "marks": 1
+    },
+    {
+     "id": "a22",
+     "type": "mcq",
+     "text": "Which chart shows the positions and lines of authority in an organisation?",
+     "options": [
+      "Organisation chart",
+      "Flow chart",
+      "Pie chart",
+      "Gantt chart"
+     ],
+     "answer": "A",
+     "marks": 1
+    },
+    {
+     "id": "a23",
+     "type": "mcq",
+     "text": "Who is usually the first person a visitor meets when entering an office?",
+     "options": [
+      "Manager",
+      "Accountant",
+      "Receptionist",
+      "Cleaner"
+     ],
+     "answer": "C",
+     "marks": 1
+    },
+    {
+     "id": "a24",
+     "type": "mcq",
+     "text": "A receptionist keeps a record of the names and times of all visitors in a",
+     "options": [
+      "visitors' register",
+      "petty cash book",
+      "ledger",
+      "stock card"
+     ],
+     "answer": "A",
+     "marks": 1
+    },
+    {
+     "id": "a25",
+     "type": "mcq",
+     "text": "Listening carefully and repeating back what the customer said to show understanding is called",
+     "options": [
+      "robotism",
+      "active listening",
+      "interrupting",
+      "selective hearing"
+     ],
+     "answer": "B",
+     "marks": 1
+    },
+    {
+     "id": "a26",
+     "type": "mcq",
+     "text": "Wet floors, poor lighting and loose carpets in an office are examples of",
+     "options": [
+      "chemical hazards",
+      "physical hazards",
+      "biological hazards",
+      "electrical hazards"
+     ],
+     "answer": "B",
+     "marks": 1
+    },
+    {
+     "id": "a27",
+     "type": "mcq",
+     "text": "When a receiver does not understand the technical words (jargon) in a message, this is",
+     "options": [
+      "physical noise",
+      "physiological noise",
+      "semantic noise",
+      "sound noise"
+     ],
+     "answer": "C",
+     "marks": 1
+    },
+    {
+     "id": "a28",
+     "type": "mcq",
+     "text": "Changing an idea into words, symbols or pictures before sending it is called",
+     "options": [
+      "decoding",
+      "feedback",
+      "encoding",
+      "the channel"
+     ],
+     "answer": "C",
+     "marks": 1
+    },
+    {
+     "id": "a29",
+     "type": "mcq",
+     "text": "Communication that flows from a manager to the employees below is",
+     "options": [
+      "upward communication",
+      "downward communication",
+      "horizontal communication",
+      "the grapevine"
+     ],
+     "answer": "B",
+     "marks": 1
+    },
+    {
+     "id": "a30",
+     "type": "mcq",
+     "text": "Facial expressions, gestures and posture are examples of",
+     "options": [
+      "verbal communication",
+      "written communication",
+      "non-verbal communication",
+      "electronic communication"
+     ],
+     "answer": "C",
+     "marks": 1
+    }
+   ]
+  },
+  {
+   "title": "SECTION B  SHORT ANSWER QUESTIONS [50 marks]",
+   "short": "B Short answer",
+   "note": "There are five questions in this section. All the questions are worth 10 marks.",
+   "questions": [
+    {
+     "id": "b1",
+     "type": "match",
+     "text": "QUESTION 1 MATCHING (10 marks)\nMatch the terms in List A with the descriptions in List B. Two descriptions are not used.",
+     "items": [
+      "Encoding",
+      "Feedback",
+      "Semantic noise",
+      "Agenda",
+      "Shredder",
+      "Electronic filing system",
+      "Economic environment",
+      "Justify",
+      "Spam",
+      "Human resource management"
+     ],
+     "options": [
+      "A machine that cuts confidential documents into small strips.",
+      "Storing documents as files in folders on a computer or server.",
+      "Misunderstanding caused by words or jargon that the receiver does not know.",
+      "Unwanted or junk email messages sent to many people.",
+      "Text alignment that makes both the left and right edges straight.",
+      "Recruiting, training and looking after the employees of an organisation.",
+      "The receiver's response, which shows whether the message was understood.",
+      "Changing an idea into words, symbols or pictures in order to send a message.",
+      "Interest rates, inflation and unemployment that affect a business.",
+      "A machine that shows images from a computer on a large screen.",
+      "A list of the items to be discussed at a meeting.",
+      "A short written message used to pass information inside an organisation."
+     ],
+     "answer": [
+      "H",
+      "G",
+      "C",
+      "K",
+      "A",
+      "B",
+      "I",
+      "E",
+      "D",
+      "F"
+     ],
+     "marks": 10
+    },
+    {
+     "id": "b2",
+     "type": "short",
+     "text": "QUESTION 2 (10 marks)\na. Explain the term office. (2 marks)\nb. Discuss two functions of a modern office. (4 marks)\nc. Use the scenario below to answer the questions that follow.\nScenario: In Mere's office the photocopier is placed in a narrow corridor where people walk past all day. Its power cable runs across the floor, staff often leave the lid open, and paper jams happen almost every day.\ni. State two problems (hazards) in this scenario. (2 marks)\nii. State two ways Mere's office can care for the photocopier properly. (2 marks)",
+     "marks": 10,
+     "model": "a. An office is a place where information (clerical/administrative) work is done — information is received, recorded, processed, stored and given out to help run the business (2).\nb. Any two, 2 marks each (state 1 + explain 1): receiving information (letters, calls, emails); recording information (files, records); arranging/processing information (calculations, reports); storing/keeping information safely (filing); giving out information to management, staff and customers; protecting the organisation's assets.\nc i. Cable across the floor can make people trip (1); machine in a busy corridor can be bumped/blocks the way (1) (also: lid left open – light/damage; frequent paper jams).\nc ii. Any two (1 each): move it to a safe, well-ventilated place away from walkways; tidy cables/use a cable cover; close the lid after use; use the correct paper and load it properly; regular servicing and cleaning; train staff to clear jams safely."
+    },
+    {
+     "id": "b3",
+     "type": "short",
+     "text": "QUESTION 3 (10 marks)\n(a) Study the spreadsheet below and answer the questions (i) to (vi). The cell pointer is in cell C16. The sheet tabs at the bottom are May, June and July, and June is selected.\n(i) Name the active cell. (1 mark)\n(ii) Name the active sheet. (1 mark)\n(iii) Write the function for C4 to calculate the total income for June. (1 mark)\n(iv) Write the function for C12 to calculate the total expenses. (1 mark)\n(v) Write a formula for C14 to calculate the savings for June. (1 mark)\n(vi) What will happen to the value in C14 if the bus fares increase by $10? (1 mark)\n(b) Differentiate between labels and values. (2 marks)\n(c) Sione wants to open the Fiji Bureau of Statistics website. His teacher gives him the web address.\ni. In which part of the web browser should he type the address? (1 mark)\nii. What is the special name given to a web address? (1 mark)",
+     "marks": 10,
+     "model": "(a)(i) C16 (1) (ii) June (1) (iii) =SUM(B3:B4) (1) (iv) =SUM(B7:B12) (1) (v) =C4-C12 (1) (vi) The savings in C14 will automatically decrease by $10 (it recalculates) (1)\n(b) Labels are text entries (headings/names such as RENT) that are not used in calculations (1); values are numbers (such as 250.00) that can be used in calculations (1).\n(c) i. The address bar (1) ii. URL – Uniform Resource Locator (1)",
+     "table": [
+      [
+       "",
+       "A",
+       "B",
+       "C"
+      ],
+      [
+       "1",
+       "BUDGET FOR THE KUMAR FAMILY – JUNE",
+       "",
+       ""
+      ],
+      [
+       "2",
+       "INCOME",
+       "",
+       ""
+      ],
+      [
+       "3",
+       "FATHER'S WAGES",
+       "620.50",
+       ""
+      ],
+      [
+       "4",
+       "MOTHER'S WAGES",
+       "415.25",
+       "(total income)"
+      ],
+      [
+       "5",
+       "",
+       "",
+       ""
+      ],
+      [
+       "6",
+       "EXPENSES",
+       "",
+       ""
+      ],
+      [
+       "7",
+       "RENT",
+       "250.00",
+       ""
+      ],
+      [
+       "8",
+       "ELECTRICITY",
+       "48.60",
+       ""
+      ],
+      [
+       "9",
+       "WATER BILL",
+       "22.40",
+       ""
+      ],
+      [
+       "10",
+       "GROCERIES",
+       "180.00",
+       ""
+      ],
+      [
+       "11",
+       "BUS FARES",
+       "65.00",
+       ""
+      ],
+      [
+       "12",
+       "SCHOOL LUNCH",
+       "40.00",
+       "(total expenses)"
+      ],
+      [
+       "13",
+       "",
+       "",
+       ""
+      ],
+      [
+       "14",
+       "SAVINGS",
+       "",
+       "(savings)"
+      ]
+     ]
+    },
+    {
+     "id": "b4",
+     "type": "short",
+     "text": "QUESTION 4 (10 marks)\na. State two features of a word processor. (2 marks)\nb. Explain the purpose of the Format Painter. (2 marks)\nc. Differentiate between Cut and Copy. (2 marks)\nd. Use the scenario below to answer the questions that follow.\nScenario: At Coral Coast Hotel, the General Manager and the Board decide the hotel's long-term goals. The Front Office Manager and the Kitchen Manager plan the work of their departments, while Supervisors check that room attendants and cooks finish their daily tasks correctly.\ni. Identify the three levels of management shown in the scenario. (3 marks)\nii. Which level of management makes the day-to-day decisions? (1 mark)",
+     "marks": 10,
+     "model": "a. Any two (1 each): spell check/grammar check; fonts and formatting; alignment; insert pictures/clip art/tables; headers and footers; mail merge; find and replace; page layout/margins.\nb. Format Painter copies the formatting (font, size, colour, style) of selected text (1) and applies the same formatting to other text quickly (1).\nc. Cut removes the selected text from its original place to the clipboard so it can be pasted elsewhere (1); Copy leaves the original text in place and puts a duplicate on the clipboard (1).\nd i. Top (senior) management – General Manager/Board (1); middle management – Front Office and Kitchen Managers (1); lower (supervisory/first-line) management – Supervisors (1)\nd ii. Lower (supervisory) management (1)"
+    },
+    {
+     "id": "b5",
+     "type": "short",
+     "text": "QUESTION 5 (10 marks)\na. Use the scenario below to answer the questions that follow.\nScenario: At Bula Travel Agency, the reception desk faces away from the main door and there is no sign. The few waiting chairs are broken, and old newspapers are piled on the floor.\ni. Identify two problems with the reception area. (2 marks)\nii. Suggest two improvements for the reception area. (2 marks)\niii. Why is a well-organised reception area important to a business? (1 mark)\nb. Differentiate between formal and informal communication. (2 marks)\nc. State three channels (methods) of communication used in an office. (3 marks)",
+     "marks": 10,
+     "model": "a i. Any two (1 each): desk faces away from the door so visitors cannot find the receptionist; no sign; broken chairs; untidy – old newspapers on the floor.\na ii. Any two (1 each): turn the desk to face the entrance; put up a clear sign; replace/repair the chairs; keep it clean and tidy with current magazines/brochures; add plants, good lighting.\na iii. It gives visitors a good first impression of the business / makes visitors feel welcome and comfortable (1).\nb. Formal communication follows the official lines of authority and procedures (e.g. memos, reports, meetings) (1); informal communication is casual and does not follow official channels (e.g. chats, the grapevine) (1).\nc. Any three (1 each): face-to-face/meetings; telephone; email; letters; memos; notice board; messenger/instant messaging apps; video conferencing."
+    }
+   ]
+  },
+  {
+   "title": "SECTION C  PARAGRAPH WRITING [20 marks]",
+   "short": "C Paragraphs",
+   "note": "The four questions in this section are all compulsory. Each question is worth five marks. Write a paragraph of about 80 words to answer each question.",
+   "questions": [
+    {
+     "id": "c1",
+     "type": "paragraph",
+     "text": "QUESTION 1 OFFICE AND EQUIPMENT (5 marks)\nIn a paragraph of about 80 words, define open-plan office layout and discuss two advantages and two disadvantages of this layout.",
+     "marks": 5,
+     "model": "Definition (1): an open-plan office is one large open area where many workers share the space, separated only by low partitions, furniture or plants, instead of separate closed rooms.\nAdvantages (1 each, any two): easy supervision of workers; easy communication and teamwork; saves space and money on walls/lighting/heating; flexible – easy to rearrange; equipment can be shared.\nDisadvantages (1 each, any two): noise and distractions; lack of privacy for confidential work; illness spreads easily; hard to concentrate; one temperature/lighting does not suit everyone."
+    },
+    {
+     "id": "c2",
+     "type": "paragraph",
+     "text": "QUESTION 2 DOCUMENT PROCESSING (5 marks)\nIn a paragraph of about 80 words, define a spreadsheet and discuss four of its uses or features.",
+     "marks": 5,
+     "model": "Definition (1): a spreadsheet is a computer program (e.g. Microsoft Excel) that organises data in rows and columns of cells to calculate and analyse numbers.\nAny four uses/features (1 each): formulas and functions (SUM, AVERAGE) for automatic calculations; automatic recalculation when values change; creating charts/graphs; sorting and filtering data; preparing budgets, payrolls and mark sheets; formatting cells (currency, decimal places)."
+    },
+    {
+     "id": "c3",
+     "type": "paragraph",
+     "text": "QUESTION 3 CUSTOMER SERVICE (5 marks)\nIn a paragraph of about 80 words, discuss five qualities of a good receptionist when dealing with customers or visitors.",
+     "marks": 5,
+     "model": "Any five, 1 mark each (named and briefly explained): friendly and polite/welcoming; neat and well-groomed appearance; good communication skills (clear speech, active listening); patient and calm with difficult customers; honest and able to keep information confidential; organised and efficient; knowledgeable about the organisation and its staff; shows empathy, not robotic."
+    },
+    {
+     "id": "c4",
+     "type": "paragraph",
+     "text": "QUESTION 4 BUSINESS COMMUNICATION (5 marks)\nIn a paragraph of about 80 words, describe the five main elements (stages) of the communication process.",
+     "marks": 5,
+     "model": "1 mark each, named and explained: sender – the person who has the idea and starts the message; encoding – putting the idea into words, symbols or pictures; channel/medium – the method used to send it (email, phone, letter, Messenger); receiver – decodes/interprets the message to understand its meaning; feedback – the receiver's response showing whether the message was understood. (Noise that interferes may be mentioned.)"
+    }
+   ]
+  }
+ ]
+}

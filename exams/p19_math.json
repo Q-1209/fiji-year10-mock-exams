@@ -1,0 +1,1031 @@
+{
+ "id": "p19_math",
+ "kind": "past",
+ "subject": "Mathematics",
+ "title": "Fiji Year 10 Examination 2019 — Mathematics（過去問）",
+ "minutes": 120,
+ "readingMinutes": 10,
+ "totalMarks": 100,
+ "instructions": "これは2019年の本番の問題です。上に問題用紙のページ画像を表示しています（画像をクリックすると拡大）。\n選択問題は A〜D をクリック、記述は英語で入力、作図は作図ツールを使ってください。「解答用紙」と書かれた問題は、解答用紙の形式（表や枠）を見て答えてください。\n提出すると選択・マッチングは自動採点され、公式の Detailed Solutions（詳しい解答）が表示されます。",
+ "sections": [
+  {
+   "title": "STRAND 1 FUNCTIONS [19 marks]",
+   "short": "1 Functions",
+   "note": "",
+   "questions": [
+    {
+     "id": "s1q1",
+     "type": "mcq",
+     "label": "Question 1",
+     "navLabel": "1",
+     "text": "",
+     "marks": 1,
+     "pages": [
+      "past/math/qp-02.jpg"
+     ],
+     "options": [
+      "",
+      "",
+      "",
+      ""
+     ],
+     "answer": "C"
+    },
+    {
+     "id": "s1q2",
+     "type": "mcq",
+     "label": "Question 2",
+     "navLabel": "2",
+     "text": "",
+     "marks": 1,
+     "pages": [
+      "past/math/qp-02.jpg"
+     ],
+     "options": [
+      "",
+      "",
+      "",
+      ""
+     ],
+     "answer": "D"
+    },
+    {
+     "id": "s1q3",
+     "type": "mcq",
+     "label": "Question 3",
+     "navLabel": "3",
+     "text": "",
+     "marks": 1,
+     "pages": [
+      "past/math/qp-03.jpg"
+     ],
+     "options": [
+      "",
+      "",
+      "",
+      ""
+     ],
+     "answer": "D"
+    },
+    {
+     "id": "s1q4",
+     "type": "mcq",
+     "label": "Question 4",
+     "navLabel": "4",
+     "text": "",
+     "marks": 1,
+     "pages": [
+      "past/math/qp-03.jpg"
+     ],
+     "options": [
+      "",
+      "",
+      "",
+      ""
+     ],
+     "answer": "A"
+    },
+    {
+     "id": "s1q5",
+     "type": "mcq",
+     "label": "Question 5",
+     "navLabel": "5",
+     "text": "",
+     "marks": 1,
+     "pages": [
+      "past/math/qp-03.jpg"
+     ],
+     "options": [
+      "",
+      "",
+      "",
+      ""
+     ],
+     "answer": "C"
+    },
+    {
+     "id": "s1q6",
+     "type": "mcq",
+     "label": "Question 6",
+     "navLabel": "6",
+     "text": "",
+     "marks": 1,
+     "pages": [
+      "past/math/qp-04.jpg"
+     ],
+     "options": [
+      "",
+      "",
+      "",
+      ""
+     ],
+     "answer": "B"
+    },
+    {
+     "id": "s1q7",
+     "type": "short",
+     "label": "Question 7",
+     "navLabel": "7",
+     "text": "",
+     "marks": 1,
+     "pages": [
+      "past/math/qp-04.jpg"
+     ],
+     "model": "公式の Detailed Solutions を参照して採点。"
+    },
+    {
+     "id": "s1q8",
+     "type": "short",
+     "label": "Question 8 (i)(ii)",
+     "navLabel": "8",
+     "text": "",
+     "marks": 3,
+     "pages": [
+      "past/math/qp-04.jpg"
+     ],
+     "model": "公式の Detailed Solutions を参照して採点。"
+    },
+    {
+     "id": "s1q9",
+     "type": "draw",
+     "label": "Question 9 (i)(ii)",
+     "navLabel": "9",
+     "text": "(i) は下の欄に、(ii) は座標平面に描いてください（境界線が実線か破線か、塗る側に注意）。",
+     "marks": 4,
+     "pages": [
+      "past/math/qp-05.jpg"
+     ],
+     "draw": {
+      "mode": "graph",
+      "graph": {
+       "xmin": -5,
+       "xmax": 5,
+       "ymin": -5,
+       "ymax": 5,
+       "step": 1
+      }
+     },
+     "model": "公式の Detailed Solutions を参照して採点。",
+     "withText": true
+    },
+    {
+     "id": "s1q10",
+     "type": "short",
+     "label": "Question 10 (i)(ii)",
+     "navLabel": "10",
+     "text": "",
+     "marks": 2,
+     "pages": [
+      "past/math/qp-05.jpg"
+     ],
+     "model": "公式の Detailed Solutions を参照して採点。"
+    },
+    {
+     "id": "s1q11",
+     "type": "draw",
+     "label": "Question 11 (i)(ii)(iii)",
+     "navLabel": "11",
+     "text": "(i) は座標平面に描き、(ii)(iii) は下の欄に書いてください。",
+     "marks": 3,
+     "pages": [
+      "past/math/qp-05.jpg"
+     ],
+     "draw": {
+      "mode": "graph",
+      "graph": {
+       "xmin": -5,
+       "xmax": 5,
+       "ymin": -5,
+       "ymax": 5,
+       "step": 1
+      }
+     },
+     "model": "公式の Detailed Solutions を参照して採点。",
+     "withText": true
+    }
+   ]
+  },
+  {
+   "title": "STRAND 2 ALGEBRA [22 marks]",
+   "short": "2 Algebra",
+   "note": "",
+   "questions": [
+    {
+     "id": "s2q1",
+     "type": "mcq",
+     "label": "Question 1",
+     "navLabel": "1",
+     "text": "",
+     "marks": 1,
+     "pages": [
+      "past/math/qp-06.jpg"
+     ],
+     "options": [
+      "",
+      "",
+      "",
+      ""
+     ],
+     "answer": "A"
+    },
+    {
+     "id": "s2q2",
+     "type": "mcq",
+     "label": "Question 2",
+     "navLabel": "2",
+     "text": "",
+     "marks": 1,
+     "pages": [
+      "past/math/qp-06.jpg"
+     ],
+     "options": [
+      "",
+      "",
+      "",
+      ""
+     ],
+     "answer": "B"
+    },
+    {
+     "id": "s2q3",
+     "type": "mcq",
+     "label": "Question 3",
+     "navLabel": "3",
+     "text": "",
+     "marks": 1,
+     "pages": [
+      "past/math/qp-06.jpg"
+     ],
+     "options": [
+      "",
+      "",
+      "",
+      ""
+     ],
+     "answer": "C"
+    },
+    {
+     "id": "s2q4",
+     "type": "mcq",
+     "label": "Question 4",
+     "navLabel": "4",
+     "text": "",
+     "marks": 1,
+     "pages": [
+      "past/math/qp-06.jpg"
+     ],
+     "options": [
+      "",
+      "",
+      "",
+      ""
+     ],
+     "answer": "C"
+    },
+    {
+     "id": "s2q5",
+     "type": "mcq",
+     "label": "Question 5",
+     "navLabel": "5",
+     "text": "",
+     "marks": 1,
+     "pages": [
+      "past/math/qp-07.jpg"
+     ],
+     "options": [
+      "",
+      "",
+      "",
+      ""
+     ],
+     "answer": "A"
+    },
+    {
+     "id": "s2q6",
+     "type": "mcq",
+     "label": "Question 6",
+     "navLabel": "6",
+     "text": "",
+     "marks": 1,
+     "pages": [
+      "past/math/qp-07.jpg"
+     ],
+     "options": [
+      "",
+      "",
+      "",
+      ""
+     ],
+     "answer": "B"
+    },
+    {
+     "id": "s2q7",
+     "type": "short",
+     "label": "Question 7",
+     "navLabel": "7",
+     "text": "",
+     "marks": 2,
+     "pages": [
+      "past/math/qp-07.jpg"
+     ],
+     "model": "公式の Detailed Solutions を参照して採点。"
+    },
+    {
+     "id": "s2q8",
+     "type": "short",
+     "label": "Question 8",
+     "navLabel": "8",
+     "text": "",
+     "marks": 2,
+     "pages": [
+      "past/math/qp-07.jpg"
+     ],
+     "model": "公式の Detailed Solutions を参照して採点。"
+    },
+    {
+     "id": "s2q9",
+     "type": "short",
+     "label": "Question 9",
+     "navLabel": "9",
+     "text": "",
+     "marks": 3,
+     "pages": [
+      "past/math/qp-07.jpg"
+     ],
+     "model": "公式の Detailed Solutions を参照して採点。"
+    },
+    {
+     "id": "s2q10",
+     "type": "short",
+     "label": "Question 10",
+     "navLabel": "10",
+     "text": "",
+     "marks": 2,
+     "pages": [
+      "past/math/qp-07.jpg"
+     ],
+     "model": "公式の Detailed Solutions を参照して採点。"
+    },
+    {
+     "id": "s2q11",
+     "type": "short",
+     "label": "Question 11",
+     "navLabel": "11",
+     "text": "",
+     "marks": 2,
+     "pages": [
+      "past/math/qp-07.jpg"
+     ],
+     "model": "公式の Detailed Solutions を参照して採点。"
+    },
+    {
+     "id": "s2q12",
+     "type": "short",
+     "label": "Question 12",
+     "navLabel": "12",
+     "text": "",
+     "marks": 2,
+     "pages": [
+      "past/math/qp-08.jpg"
+     ],
+     "model": "公式の Detailed Solutions を参照して採点。"
+    },
+    {
+     "id": "s2q13",
+     "type": "short",
+     "label": "Question 13",
+     "navLabel": "13",
+     "text": "",
+     "marks": 3,
+     "pages": [
+      "past/math/qp-08.jpg"
+     ],
+     "model": "公式の Detailed Solutions を参照して採点。"
+    }
+   ]
+  },
+  {
+   "title": "STRAND 3 NUMBERS [6 marks]",
+   "short": "3 Numbers",
+   "note": "",
+   "questions": [
+    {
+     "id": "s3q1",
+     "type": "mcq",
+     "label": "Question 1",
+     "navLabel": "1",
+     "text": "",
+     "marks": 1,
+     "pages": [
+      "past/math/qp-09.jpg"
+     ],
+     "options": [
+      "",
+      "",
+      "",
+      ""
+     ],
+     "answer": "B"
+    },
+    {
+     "id": "s3q2",
+     "type": "mcq",
+     "label": "Question 2",
+     "navLabel": "2",
+     "text": "",
+     "marks": 1,
+     "pages": [
+      "past/math/qp-09.jpg"
+     ],
+     "options": [
+      "",
+      "",
+      "",
+      ""
+     ],
+     "answer": "B"
+    },
+    {
+     "id": "s3q3",
+     "type": "mcq",
+     "label": "Question 3",
+     "navLabel": "3",
+     "text": "",
+     "marks": 1,
+     "pages": [
+      "past/math/qp-09.jpg"
+     ],
+     "options": [
+      "",
+      "",
+      "",
+      ""
+     ],
+     "answer": "A"
+    },
+    {
+     "id": "s3q4",
+     "type": "short",
+     "label": "Question 4",
+     "navLabel": "4",
+     "text": "",
+     "marks": 2,
+     "pages": [
+      "past/math/qp-09.jpg"
+     ],
+     "model": "公式の Detailed Solutions を参照して採点。"
+    },
+    {
+     "id": "s3q5",
+     "type": "short",
+     "label": "Question 5",
+     "navLabel": "5",
+     "text": "",
+     "marks": 1,
+     "pages": [
+      "past/math/qp-09.jpg"
+     ],
+     "model": "公式の Detailed Solutions を参照して採点。"
+    }
+   ]
+  },
+  {
+   "title": "STRAND 4 GEOMETRY [16 marks]",
+   "short": "4 Geometry",
+   "note": "",
+   "questions": [
+    {
+     "id": "s4q1",
+     "type": "mcq",
+     "label": "Question 1",
+     "navLabel": "1",
+     "text": "",
+     "marks": 1,
+     "pages": [
+      "past/math/qp-10.jpg"
+     ],
+     "options": [
+      "",
+      "",
+      "",
+      ""
+     ],
+     "answer": "A"
+    },
+    {
+     "id": "s4q2",
+     "type": "mcq",
+     "label": "Question 2",
+     "navLabel": "2",
+     "text": "",
+     "marks": 1,
+     "pages": [
+      "past/math/qp-10.jpg"
+     ],
+     "options": [
+      "",
+      "",
+      "",
+      ""
+     ],
+     "answer": "D"
+    },
+    {
+     "id": "s4q3",
+     "type": "mcq",
+     "label": "Question 3",
+     "navLabel": "3",
+     "text": "",
+     "marks": 1,
+     "pages": [
+      "past/math/qp-10.jpg"
+     ],
+     "options": [
+      "",
+      "",
+      "",
+      ""
+     ],
+     "answer": "C"
+    },
+    {
+     "id": "s4q4",
+     "type": "mcq",
+     "label": "Question 4",
+     "navLabel": "4",
+     "text": "",
+     "marks": 1,
+     "pages": [
+      "past/math/qp-11.jpg"
+     ],
+     "options": [
+      "",
+      "",
+      "",
+      ""
+     ],
+     "answer": "D"
+    },
+    {
+     "id": "s4q5",
+     "type": "mcq",
+     "label": "Question 5",
+     "navLabel": "5",
+     "text": "",
+     "marks": 1,
+     "pages": [
+      "past/math/qp-11.jpg"
+     ],
+     "options": [
+      "",
+      "",
+      "",
+      ""
+     ],
+     "answer": "B"
+    },
+    {
+     "id": "s4q6",
+     "type": "mcq",
+     "label": "Question 6",
+     "navLabel": "6",
+     "text": "",
+     "marks": 1,
+     "pages": [
+      "past/math/qp-11.jpg"
+     ],
+     "options": [
+      "",
+      "",
+      "",
+      ""
+     ],
+     "answer": "C"
+    },
+    {
+     "id": "s4q7",
+     "type": "mcq",
+     "label": "Question 7",
+     "navLabel": "7",
+     "text": "",
+     "marks": 1,
+     "pages": [
+      "past/math/qp-12.jpg"
+     ],
+     "options": [
+      "",
+      "",
+      "",
+      ""
+     ],
+     "answer": "C"
+    },
+    {
+     "id": "s4q8",
+     "type": "match",
+     "label": "Question 8",
+     "navLabel": "8",
+     "text": "A〜E はリスト B の (a)〜(e) に対応します。",
+     "marks": 1.5,
+     "pages": [
+      "past/math/qp-12.jpg"
+     ],
+     "items": [
+      "i  Centroid",
+      "ii  Incentre",
+      "iii  Orthocentre"
+     ],
+     "options": [
+      "(a) The point where the three altitudes of a triangle meet.",
+      "(b) The point where the perpendicular bisectors of all three sides meet.",
+      "(c) The point where the angle bisectors of all three angles meet.",
+      "(d) The point where the three medians of a triangle intersect.",
+      "(e) A perpendicular line from the vertex of a triangle to the opposite side."
+     ],
+     "answer": [
+      "D",
+      "C",
+      "A"
+     ]
+    },
+    {
+     "id": "s4q9",
+     "type": "short",
+     "label": "Question 9",
+     "navLabel": "9",
+     "text": "",
+     "marks": 1.5,
+     "pages": [
+      "past/math/qp-13.jpg"
+     ],
+     "model": "公式の Detailed Solutions を参照して採点。"
+    },
+    {
+     "id": "s4q10",
+     "type": "short",
+     "label": "Question 10 (i)(ii)",
+     "navLabel": "10",
+     "text": "",
+     "marks": 3,
+     "pages": [
+      "past/math/qp-13.jpg"
+     ],
+     "model": "公式の Detailed Solutions を参照して採点。"
+    },
+    {
+     "id": "s4q11",
+     "type": "short",
+     "label": "Question 11 (i)(ii)",
+     "navLabel": "11",
+     "text": "",
+     "marks": 3,
+     "pages": [
+      "past/math/qp-14.jpg"
+     ],
+     "model": "公式の Detailed Solutions を参照して採点。"
+    }
+   ]
+  },
+  {
+   "title": "STRAND 5 MEASUREMENT [16 marks]",
+   "short": "5 Measurement",
+   "note": "",
+   "questions": [
+    {
+     "id": "s5q1",
+     "type": "mcq",
+     "label": "Question 1",
+     "navLabel": "1",
+     "text": "",
+     "marks": 1,
+     "pages": [
+      "past/math/qp-15.jpg"
+     ],
+     "options": [
+      "",
+      "",
+      "",
+      ""
+     ],
+     "answer": "A"
+    },
+    {
+     "id": "s5q2",
+     "type": "mcq",
+     "label": "Question 2",
+     "navLabel": "2",
+     "text": "",
+     "marks": 1,
+     "pages": [
+      "past/math/qp-15.jpg"
+     ],
+     "options": [
+      "",
+      "",
+      "",
+      ""
+     ],
+     "answer": "C"
+    },
+    {
+     "id": "s5q3",
+     "type": "mcq",
+     "label": "Question 3",
+     "navLabel": "3",
+     "text": "",
+     "marks": 1,
+     "pages": [
+      "past/math/qp-15.jpg"
+     ],
+     "options": [
+      "",
+      "",
+      "",
+      ""
+     ],
+     "answer": "A"
+    },
+    {
+     "id": "s5q4",
+     "type": "mcq",
+     "label": "Question 4",
+     "navLabel": "4",
+     "text": "",
+     "marks": 1,
+     "pages": [
+      "past/math/qp-15.jpg"
+     ],
+     "options": [
+      "",
+      "",
+      "",
+      ""
+     ],
+     "answer": "D"
+    },
+    {
+     "id": "s5q5",
+     "type": "short",
+     "label": "Question 5",
+     "navLabel": "5",
+     "text": "",
+     "marks": 2,
+     "pages": [
+      "past/math/qp-15.jpg"
+     ],
+     "model": "公式の Detailed Solutions を参照して採点。"
+    },
+    {
+     "id": "s5q6",
+     "type": "short",
+     "label": "Question 6",
+     "navLabel": "6",
+     "text": "",
+     "marks": 2,
+     "pages": [
+      "past/math/qp-16.jpg"
+     ],
+     "model": "公式の Detailed Solutions を参照して採点。"
+    },
+    {
+     "id": "s5q7",
+     "type": "short",
+     "label": "Question 7",
+     "navLabel": "7",
+     "text": "",
+     "marks": 2,
+     "pages": [
+      "past/math/qp-16.jpg"
+     ],
+     "model": "公式の Detailed Solutions を参照して採点。"
+    },
+    {
+     "id": "s5q8",
+     "type": "short",
+     "label": "Question 8",
+     "navLabel": "8",
+     "text": "",
+     "marks": 3,
+     "pages": [
+      "past/math/qp-16.jpg"
+     ],
+     "model": "公式の Detailed Solutions を参照して採点。"
+    },
+    {
+     "id": "s5q9",
+     "type": "short",
+     "label": "Question 9",
+     "navLabel": "9",
+     "text": "",
+     "marks": 3,
+     "pages": [
+      "past/math/qp-16.jpg"
+     ],
+     "model": "公式の Detailed Solutions を参照して採点。"
+    }
+   ]
+  },
+  {
+   "title": "STRAND 6 CHANCE AND DATA [21 marks]",
+   "short": "6 Chance & Data",
+   "note": "",
+   "questions": [
+    {
+     "id": "s6q1",
+     "type": "mcq",
+     "label": "Question 1",
+     "navLabel": "1",
+     "text": "",
+     "marks": 1,
+     "pages": [
+      "past/math/qp-17.jpg"
+     ],
+     "options": [
+      "",
+      "",
+      "",
+      ""
+     ],
+     "answer": "D"
+    },
+    {
+     "id": "s6q2",
+     "type": "mcq",
+     "label": "Question 2",
+     "navLabel": "2",
+     "text": "",
+     "marks": 1,
+     "pages": [
+      "past/math/qp-17.jpg"
+     ],
+     "options": [
+      "",
+      "",
+      "",
+      ""
+     ],
+     "answer": "C"
+    },
+    {
+     "id": "s6q3",
+     "type": "mcq",
+     "label": "Question 3",
+     "navLabel": "3",
+     "text": "",
+     "marks": 1,
+     "pages": [
+      "past/math/qp-18.jpg"
+     ],
+     "options": [
+      "",
+      "",
+      "",
+      ""
+     ],
+     "answer": "C"
+    },
+    {
+     "id": "s6q4",
+     "type": "mcq",
+     "label": "Question 4",
+     "navLabel": "4",
+     "text": "",
+     "marks": 1,
+     "pages": [
+      "past/math/qp-18.jpg"
+     ],
+     "options": [
+      "",
+      "",
+      "",
+      ""
+     ],
+     "answer": "B"
+    },
+    {
+     "id": "s6q5",
+     "type": "short",
+     "label": "Question 5 (i)(ii)",
+     "navLabel": "5",
+     "text": "",
+     "marks": 3,
+     "pages": [
+      "past/math/qp-18.jpg"
+     ],
+     "model": "公式の Detailed Solutions を参照して採点。"
+    },
+    {
+     "id": "s6q6",
+     "type": "short",
+     "label": "Question 6 (i)(ii)",
+     "navLabel": "6",
+     "text": "",
+     "marks": 3,
+     "pages": [
+      "past/math/qp-18.jpg"
+     ],
+     "model": "公式の Detailed Solutions を参照して採点。"
+    },
+    {
+     "id": "s6q7",
+     "type": "short",
+     "label": "Question 7 (i)(ii)",
+     "navLabel": "7",
+     "text": "",
+     "marks": 2,
+     "pages": [
+      "past/math/qp-19.jpg"
+     ],
+     "model": "公式の Detailed Solutions を参照して採点。"
+    },
+    {
+     "id": "s6q8",
+     "type": "short",
+     "label": "Question 8 (i)(ii)",
+     "navLabel": "8",
+     "text": "",
+     "marks": 4,
+     "pages": [
+      "past/math/qp-19.jpg"
+     ],
+     "model": "公式の Detailed Solutions を参照して採点。"
+    },
+    {
+     "id": "s6q9",
+     "type": "short",
+     "label": "Question 9 (i)(ii)",
+     "navLabel": "9",
+     "text": "",
+     "marks": 2,
+     "pages": [
+      "past/math/qp-20.jpg"
+     ],
+     "model": "公式の Detailed Solutions を参照して採点。"
+    },
+    {
+     "id": "s6q10",
+     "type": "draw",
+     "label": "Question 10 (i)(ii)",
+     "navLabel": "10",
+     "text": "(i) は折れ線グラフを描き、(ii) は下の欄に書いてください。",
+     "marks": 3,
+     "pages": [
+      "past/math/qp-20.jpg"
+     ],
+     "draw": {
+      "mode": "graph",
+      "graph": {
+       "xmin": 0,
+       "xmax": 5,
+       "ymin": 0,
+       "ymax": 100,
+       "step": 1,
+       "stepY": 20,
+       "snap": 1,
+       "snapY": 5,
+       "equal": false,
+       "xLabels": {
+        "1": "A",
+        "2": "B",
+        "3": "C",
+        "4": "D"
+       },
+       "xTitle": "Town",
+       "yTitle": "Amount of rainfall (mm)"
+      }
+     },
+     "model": "公式の Detailed Solutions を参照して採点。",
+     "withText": true
+    }
+   ]
+  }
+ ],
+ "solutions": [
+  "past/math/ds-01.jpg",
+  "past/math/ds-02.jpg",
+  "past/math/ds-03.jpg",
+  "past/math/ds-04.jpg",
+  "past/math/ds-05.jpg",
+  "past/math/ds-06.jpg",
+  "past/math/ds-07.jpg",
+  "past/math/ds-08.jpg",
+  "past/math/ds-09.jpg",
+  "past/math/ds-10.jpg",
+  "past/math/ds-11.jpg",
+  "past/math/ds-12.jpg",
+  "past/math/ds-13.jpg",
+  "past/math/ds-14.jpg",
+  "past/math/ds-15.jpg",
+  "past/math/ds-16.jpg",
+  "past/math/ds-17.jpg",
+  "past/math/ds-18.jpg",
+  "past/math/ds-19.jpg",
+  "past/math/ds-20.jpg",
+  "past/math/ds-21.jpg",
+  "past/math/ds-22.jpg",
+  "past/math/ds-23.jpg",
+  "past/math/ds-24.jpg",
+  "past/math/ds-25.jpg",
+  "past/math/ds-26.jpg"
+ ]
+}

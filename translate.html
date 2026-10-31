@@ -1,0 +1,247 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<script src="api.js"></script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>英文和訳 — Year 10 練習</title>
+<style>
+  :root {
+    --bg: #f6f5f1; --card: #ffffff; --ink: #1f2328; --muted: #6a707a; --line: #dcdad3;
+    --accent: #1d5fa8; --accent-soft: #e5eef9; --ok: #1f7a3f; --ok-soft: #e3f3e8;
+    --bad: #b3261e; --bad-soft: #fbe6e4; --warn: #b26a00; --warn-soft: #fff1d6;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #16181b; --card: #1f2226; --ink: #e8e6e1; --muted: #9aa0a8; --line: #33373d;
+      --accent: #6aa8ef; --accent-soft: #1d2b3c; --ok: #5cc184; --ok-soft: #1b2e22;
+      --bad: #f08a80; --bad-soft: #3a1f1d; --warn: #f0b04a; --warn-soft: #3a2c14;
+    }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--ink);
+    font: 16px/1.6 "Segoe UI", "Yu Gothic UI", "Meiryo", system-ui, sans-serif; }
+  button, select { font: inherit; }
+  button { cursor: pointer; }
+  a { color: var(--accent); }
+  .wrap { max-width: 900px; margin: 0 auto; padding: 16px 16px 80px; }
+  h1 { font-size: 22px; margin: 6px 0 2px; }
+  .muted { color: var(--muted); }
+  .card { background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: 16px 18px; margin: 12px 0; }
+  .btn { border: 1px solid var(--line); background: var(--card); color: var(--ink); border-radius: 8px; padding: 7px 14px; }
+  .btn.primary { background: var(--accent); border-color: var(--accent); color: #fff; }
+  .btn.on { border-color: var(--accent); background: var(--accent-soft); color: var(--accent); }
+  .btn:disabled { opacity: .5; cursor: default; }
+  .row { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; }
+  .lbl { font-size: 13px; color: var(--muted); min-width: 56px; }
+  select { padding: 6px 8px; border-radius: 8px; border: 1px solid var(--line); background: var(--bg); color: var(--ink); max-width: 100%; }
+  .stat { font: 600 15px/1.2 ui-monospace, "Cascadia Mono", Consolas, monospace; font-variant-numeric: tabular-nums; }
+  .bar { height: 6px; background: var(--line); border-radius: 99px; overflow: hidden; margin-top: 8px; }
+  .bar i { display: block; height: 100%; background: var(--accent); width: 0; transition: width .2s; }
+  .unit { font-size: 13px; color: var(--muted); }
+  .en { font: 21px/1.5 Georgia, "Times New Roman", serif; margin: 6px 0 12px; }
+  textarea { width: 100%; min-height: 90px; font: inherit; padding: 8px 10px; border-radius: 8px;
+    border: 1px solid var(--line); background: var(--bg); color: var(--ink); resize: vertical; }
+  textarea:focus-visible, .btn:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  .model { margin-top: 12px; padding: 10px 12px; border-left: 4px solid var(--ok); background: var(--ok-soft); }
+  .model b { display: block; font-size: 13px; color: var(--ok); }
+  .keys { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 10px; align-items: center; }
+  .chip { font-size: 14px; padding: 2px 10px; border-radius: 99px; border: 1px solid var(--line); }
+  .chip.hit { background: var(--ok-soft); border-color: var(--ok); color: var(--ok); }
+  .chip.miss { background: var(--bad-soft); border-color: var(--bad); color: var(--bad); }
+  .self { margin-top: 12px; }
+  .self .btn.g2 { border-color: var(--ok); color: var(--ok); }
+  .self .btn.g1 { border-color: var(--warn); color: var(--warn); }
+  .self .btn.g0 { border-color: var(--bad); color: var(--bad); }
+  .tw { overflow-x: auto; }
+  table { border-collapse: collapse; font-size: 14px; width: 100%; }
+  td, th { border: 1px solid var(--line); padding: 5px 9px; text-align: left; vertical-align: top; }
+  th { background: var(--accent-soft); }
+  .g { white-space: nowrap; font-weight: 700; }
+  .g.s2 { color: var(--ok); } .g.s1 { color: var(--warn); } .g.s0 { color: var(--bad); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <a href="/">← トップへ戻る</a>　<a href="translate_list.html">答え一覧（600問を先に読む）</a>
+  <h1>英文和訳（English → 日本語）</h1>
+  <div class="muted">教科書の内容の英文を日本語に訳します。答え合わせで模範訳と、大事な用語が入っているかを確かめ、最後に自分で判定します。</div>
+
+  <div class="card">
+    <div class="row"><span class="lbl">教科</span><span class="row" id="subs"></span></div>
+    <div class="row" style="margin-top:8px"><span class="lbl">単元</span><select id="unit"></select></div>
+    <div class="row" style="margin-top:8px"><span class="lbl">出す問題</span><span class="row" id="filt"></span></div>
+    <div class="muted" style="font-size:12px;margin:2px 0 0 64px">前回の自分の判定で選ぶ（いくつでも選べる）。</div>
+    <div class="row" style="margin-top:8px"><span class="lbl">問題数</span><span class="row" id="counts"></span>
+      <button class="btn primary" id="go">始める</button></div>
+    <div class="row" style="margin-top:10px;justify-content:space-between"><span class="stat" id="prog"></span><span class="stat" id="score"></span></div>
+    <div class="bar"><i id="barI"></i></div>
+  </div>
+
+  <div id="stage"></div>
+  <p class="muted" style="font-size:12px">Ctrl + Enter で答え合わせ。判定は 1（できた）・2（だいたい）・3（できなかった）キーでも選べます。</p>
+</div>
+
+<script>
+const SUBJ = [["all", "全教科まぜる（600問）"], ["math", "Mathematics"], ["commercial", "Commercial Studies"], ["ot", "Office Technology"],
+              ["science", "Basic Science"], ["social", "Social Science"], ["bt", "Basic Technology"]];
+const GRADE = [["できなかった", "s0"], ["だいたい", "s1"], ["できた", "s2"]];
+const $ = s => document.querySelector(s);
+const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+const shuffle = a => { a = a.slice(); for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; } return a; };
+const norm = s => String(s).replace(/[\s　、。・,.「」（）()]/g, "").toLowerCase();
+
+const C = { subj: "all", count: 10, data: {}, st: {}, filt: new Set(["new", "2", "1", "0"]) };
+let P = null;
+// 前回の判定（サーバーの translate_status.json）: "new" = まだやっていない, "2" できた, "1" だいたい, "0" できなかった
+const CATS = [["new", "まだやっていない"], ["0", "できなかった"], ["1", "だいたい"], ["2", "できた"]];
+const cat = en => C.st[en] ? String(C.st[en].g) : "new";
+
+function unitPool(d, u) {
+  const [lo, hi] = u.startsWith("g") ? u.slice(1).split("-").map(Number) : [0, 0];
+  return d.items.map((x, i) => ({ i, x })).filter(o => u === "" || (u.startsWith("g") ? o.x[0] >= lo && o.x[0] < hi : o.x[0] === +u));
+}
+
+function drawFilt() {
+  const d = C.data[C.subj]; if (!d) return;
+  const pool = unitPool(d, $("#unit").value), n = {};
+  pool.forEach(o => { const c = cat(o.x[1]); n[c] = (n[c] || 0) + 1; });
+  $("#filt").innerHTML = CATS.map(([k, t]) => `<button class="btn${C.filt.has(k) ? " on" : ""}" data-f="${k}">${t}（${n[k] || 0}）</button>`).join("")
+    + `<span class="muted" style="font-size:13px">→ ${pool.filter(o => C.filt.has(cat(o.x[1]))).length}問</span>`;
+  document.querySelectorAll("[data-f]").forEach(b => b.onclick = () => {
+    C.filt.has(b.dataset.f) ? C.filt.delete(b.dataset.f) : C.filt.add(b.dataset.f); drawFilt();
+  });
+}
+
+async function getData(k) {
+  if (C.data[k]) return C.data[k];
+  if (k === "all") {
+    // every subject in one pool: units become "教科 ・ 単元" and the unit filter picks a whole subject
+    const parts = await Promise.all(SUBJ.filter(s => s[0] !== "all").map(([s]) => getData(s)));
+    const d = { subject: "全教科", all: true, units: [], groups: [], items: [] };
+    parts.forEach(p => {
+      const off = d.units.length;
+      d.groups.push({ name: p.subject, from: off, to: off + p.units.length, n: p.items.length });
+      p.units.forEach(u => d.units.push(`${p.subject} ・ ${u}`));
+      p.items.forEach(x => d.items.push([x[0] + off, x[1], x[2], x[3]]));
+    });
+    return C.data[k] = d;
+  }
+  return C.data[k] = await (await fetch(`translate/${k}.json`, { cache: "no-store" })).json();
+}
+
+async function setup() {
+  $("#subs").innerHTML = SUBJ.map(([k, n]) => `<button class="btn${C.subj === k ? " on" : ""}" data-s="${k}">${n}</button>`).join("");
+  document.querySelectorAll("[data-s]").forEach(b => b.onclick = () => { C.subj = b.dataset.s; setup(); });
+  $("#counts").innerHTML = [10, 20, 50, 0].map(n => `<button class="btn${C.count === n ? " on" : ""}" data-n="${n}">${n || "全部"}</button>`).join("");
+  document.querySelectorAll("[data-n]").forEach(b => b.onclick = () => { C.count = +b.dataset.n; setup(); });
+  const d = await getData(C.subj);
+  const prev = $("#unit").value;
+  $("#unit").innerHTML = d.all
+    ? `<option value="">すべての教科（${d.items.length}問）</option>` + d.groups.map(g => `<option value="g${g.from}-${g.to}">${esc(g.name)}（${g.n}問）</option>`).join("")
+    : `<option value="">すべての単元（${d.items.length}問）</option>` +
+      d.units.map((u, i) => `<option value="${i}">${esc(u)}（${d.items.filter(x => x[0] === i).length}問）</option>`).join("");
+  if (prev && $("#unit").querySelector(`option[value="${prev}"]`) && C.lastSubj === C.subj) $("#unit").value = prev;
+  C.lastSubj = C.subj;
+  try { C.st = await (await fetch("/api/tstatus", { cache: "no-store" })).json(); } catch { C.st = {}; }
+  $("#unit").onchange = drawFilt;
+  drawFilt();
+}
+
+async function begin() {
+  const d = await getData(C.subj);
+  let pool = shuffle(unitPool(d, $("#unit").value).filter(o => C.filt.has(cat(o.x[1]))));
+  if (!pool.length) {
+    P = null; stats();
+    $("#stage").innerHTML = `<div class="card">選んだ条件に合う問題がありません。「出す問題」か単元を変えてください。</div>`;
+    return;
+  }
+  if (C.count) pool = pool.slice(0, C.count);
+  P = { subj: C.subj, d, qs: pool, k: 0, phase: "ans", res: [] };
+  show();
+}
+
+function stats() {
+  if (!P) { $("#prog").textContent = ""; $("#score").textContent = ""; return; }
+  const n = P.qs.length, done = P.res.length;
+  $("#prog").textContent = P.k < n ? `問題 ${P.k + 1} / ${n}` : `終了 ${n} / ${n}`;
+  const c = [0, 0, 0]; P.res.forEach(r => c[r.grade]++);
+  $("#score").textContent = `できた ${c[2]}・だいたい ${c[1]}・できなかった ${c[0]}`;
+  $("#barI").style.width = (100 * done / n) + "%";
+}
+
+function show() {
+  stats();
+  if (P.k >= P.qs.length) return finish();
+  const { x } = P.qs[P.k];
+  P.phase = "ans";
+  $("#stage").innerHTML = `<div class="card">
+    <div class="unit">${P.d.all ? "" : esc(P.d.subject) + " ・ "}${esc(P.d.units[x[0]])}${C.st[x[1]] ? `　<span class="g ${GRADE[C.st[x[1]].g][1]}">前回: ${GRADE[C.st[x[1]].g][0]}</span>（${C.st[x[1]].n + 1}回目）` : "　はじめての問題"}</div>
+    <div class="en" lang="en">${esc(x[1])}</div>
+    <textarea id="ans" placeholder="日本語訳を書く"></textarea>
+    <div class="row" style="margin-top:8px"><button class="btn primary" id="chk">答え合わせ</button>
+      <button class="btn" id="skip">わからない</button></div>
+    <div id="fb"></div></div>`;
+  $("#ans").focus();
+  $("#chk").onclick = check; $("#skip").onclick = () => { $("#ans").value = ""; check(); };
+}
+
+function check() {
+  if (P.phase !== "ans") return;
+  P.phase = "grade";
+  const { x } = P.qs[P.k], a = $("#ans").value.trim(), na = norm(a);
+  const keys = x[3].map(k => { const alts = k.split("|"); return { show: alts[0], hit: !!na && alts.some(t => na.includes(norm(t))) }; });
+  P.cur = { a, keys };
+  $("#ans").readOnly = true; $("#chk").disabled = true; $("#skip").disabled = true;
+  const hits = keys.filter(k => k.hit).length;
+  $("#fb").innerHTML = `<div class="model"><b>模範訳</b>${esc(x[2])}</div>
+    <div class="keys"><span class="muted" style="font-size:13px">大事な用語 ${hits}/${keys.length}:</span>
+      ${keys.map(k => `<span class="chip ${k.hit ? "hit" : "miss"}">${k.hit ? "✓" : "✗"} ${esc(k.show)}</span>`).join("")}</div>
+    <div class="self"><div class="muted" style="font-size:13px">自分の訳は？（意味が合っていれば言い方は違ってよい）</div>
+      <div class="row" style="margin-top:6px">${[2, 1, 0].map(g => `<button class="btn g${g}" data-g="${g}">${3 - g}. ${GRADE[g][0]}</button>`).join("")}</div></div>`;
+  document.querySelectorAll("[data-g]").forEach(b => b.onclick = () => grade(+b.dataset.g));
+  $("#fb").querySelector("[data-g='2']").focus();
+}
+
+function grade(g) {
+  if (P.phase !== "grade") return;
+  const { i, x } = P.qs[P.k];
+  C.st[x[1]] = { g, n: (C.st[x[1]]?.n || 0) + 1 };
+  fetch("/api/tstatus", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ en: x[1], grade: g }) }).catch(() => {});
+  P.res.push({ n: i + 1, unit: P.d.units[x[0]], en: x[1], model: x[2], answer: P.cur.a, grade: g,
+               keys: P.cur.keys.filter(k => k.hit).length + "/" + P.cur.keys.length,
+               missed: P.cur.keys.filter(k => !k.hit).map(k => k.show) });
+  P.k++; show();
+}
+
+function finish() {
+  const n = P.res.length, c = [0, 0, 0]; P.res.forEach(r => c[r.grade]++);
+  fetch("/api/practice", { method: "POST", headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ kind: "translate_" + P.subj, subject: P.d.subject, unit: $("#unit").selectedOptions[0]?.text || "",
+      counts: { good: c[2], ok: c[1], bad: c[0] }, results: P.res, claudeChecked: false }) }).catch(() => {});
+  const weak = P.res.filter(r => r.grade < 2);
+  $("#stage").innerHTML = `<div class="card">
+    <div style="font-size:20px;font-weight:700">結果: できた ${c[2]}・だいたい ${c[1]}・できなかった ${c[0]}（${n}問）</div>
+    ${weak.length ? `<p class="muted">「だいたい」「できなかった」の問題</p><div class="tw"><table>
+      <tr><th>英文</th><th>あなたの訳</th><th>模範訳</th><th>判定</th></tr>
+      ${weak.map(r => `<tr><td lang="en">${esc(r.en)}</td><td>${esc(r.answer) || '<span class="muted">（空欄）</span>'}</td><td>${esc(r.model)}</td><td class="g ${GRADE[r.grade][1]}">${GRADE[r.grade][0]}</td></tr>`).join("")}
+    </table></div>` : `<p>全部「できた」です。</p>`}
+    <div class="row" style="margin-top:12px">
+      ${weak.length ? `<button class="btn primary" id="retry">この問題だけもう一度</button>` : ""}
+      <button class="btn" id="again">新しく始める</button></div>
+    <p class="muted" style="font-size:13px;margin:10px 0 0">判定はこのブラウザに保存しました。次回「できなかった・だいたい」だけを選んで出せます。</p></div>`;
+  stats(); drawFilt();
+  if ($("#retry")) $("#retry").onclick = () => { P = { ...P, qs: shuffle(P.qs.filter(o => weak.some(r => r.n === o.i + 1))), k: 0, res: [] }; show(); };
+  $("#again").onclick = begin;
+}
+
+document.addEventListener("keydown", e => {
+  if (!P) return;
+  if (P.phase === "ans" && e.key === "Enter" && (e.ctrlKey || e.metaKey)) { e.preventDefault(); check(); }
+  else if (P.phase === "grade" && /^[123]$/.test(e.key)) { e.preventDefault(); grade(3 - +e.key); }
+});
+$("#go").onclick = begin;
+setup().then(begin);
+</script>
+</body>
+</html>

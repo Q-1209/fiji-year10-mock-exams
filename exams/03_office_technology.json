@@ -1,0 +1,530 @@
+{
+ "id": "03_office_technology",
+ "subject": "Office Technology",
+ "title": "Fiji Year 10 Mock Examination — Office Technology",
+ "minutes": 120,
+ "readingMinutes": 10,
+ "totalMarks": 100,
+ "instructions": "Answer ALL questions. Time allowed: 2 hours (an extra 10 minutes is allowed for reading).\nMultiple-choice: click the letter of the best answer (click again to clear).\nShort answers and paragraphs: type your answer in English in the box. Show working for calculations.\nYou may use a calculator. Round answers to 2 decimal places unless stated otherwise.\nYour answers are saved automatically. The paper is submitted automatically when time runs out.\nThere are three sections. All are compulsory. Section C paragraphs should be about 75–120 words each.",
+ "sections": [
+  {
+   "title": "SECTION A  MULTIPLE-CHOICE QUESTIONS [30 marks]",
+   "short": "A MCQ",
+   "note": "All thirty questions are compulsory. Each is worth 1 mark.",
+   "questions": [
+    {
+     "id": "s1q1",
+     "type": "mcq",
+     "text": "An office layout where staff work in separate rooms with doors is called",
+     "options": [
+      "open-plan.",
+      "landscaped.",
+      "conventional (closed).",
+      "hot-desking."
+     ],
+     "answer": "C",
+     "marks": 1
+    },
+    {
+     "id": "s1q2",
+     "type": "mcq",
+     "text": "An advantage of an open-plan office is that",
+     "options": [
+      "supervision and communication are easier.",
+      "it is quieter.",
+      "it gives more privacy.",
+      "confidential work is safer."
+     ],
+     "answer": "A",
+     "marks": 1
+    },
+    {
+     "id": "s1q3",
+     "type": "mcq",
+     "text": "The office equipment used to make many copies of a document quickly is the",
+     "options": [
+      "shredder.",
+      "scanner.",
+      "laminator.",
+      "photocopier."
+     ],
+     "answer": "D",
+     "marks": 1
+    },
+    {
+     "id": "s1q4",
+     "type": "mcq",
+     "text": "A device that converts a paper document into a digital image is a",
+     "options": [
+      "printer.",
+      "scanner.",
+      "projector.",
+      "speaker."
+     ],
+     "answer": "B",
+     "marks": 1
+    },
+    {
+     "id": "s1q5",
+     "type": "mcq",
+     "text": "Which of the following is an output device?",
+     "options": [
+      "Keyboard",
+      "Mouse",
+      "Microphone",
+      "Printer"
+     ],
+     "answer": "D",
+     "marks": 1
+    },
+    {
+     "id": "s1q6",
+     "type": "mcq",
+     "text": "In a spreadsheet, the intersection of a row and a column is called a",
+     "options": [
+      "range.",
+      "cell.",
+      "label.",
+      "sheet."
+     ],
+     "answer": "B",
+     "marks": 1
+    },
+    {
+     "id": "s1q7",
+     "type": "mcq",
+     "text": "Every spreadsheet formula must begin with the symbol",
+     "options": [
+      "#",
+      "@",
+      "=",
+      "&"
+     ],
+     "answer": "C",
+     "marks": 1
+    },
+    {
+     "id": "s1q8",
+     "type": "mcq",
+     "text": "The spreadsheet function that finds the largest value in a range is",
+     "options": [
+      "MAX.",
+      "COUNT.",
+      "SUM.",
+      "MIN."
+     ],
+     "answer": "A",
+     "marks": 1
+    },
+    {
+     "id": "s1q9",
+     "type": "mcq",
+     "text": "Which formula correctly adds the values in cells B2 to B6?",
+     "options": [
+      "=ADD(B2:B6)",
+      "=SUM(B2+B6)",
+      "=TOTAL(B2-B6)",
+      "=SUM(B2:B6)"
+     ],
+     "answer": "D",
+     "marks": 1
+    },
+    {
+     "id": "s1q10",
+     "type": "mcq",
+     "text": "The horizontal axis of a column graph is also known as the",
+     "options": [
+      "y-axis.",
+      "x-axis.",
+      "z-axis.",
+      "legend."
+     ],
+     "answer": "B",
+     "marks": 1
+    },
+    {
+     "id": "s1q11",
+     "type": "mcq",
+     "text": "A web browser is used to",
+     "options": [
+      "create spreadsheets.",
+      "print documents.",
+      "view web pages on the internet.",
+      "scan pictures."
+     ],
+     "answer": "C",
+     "marks": 1
+    },
+    {
+     "id": "s1q12",
+     "type": "mcq",
+     "text": "Sending the same unwanted email to a very large number of people is called",
+     "options": [
+      "spamming.",
+      "phishing.",
+      "hacking.",
+      "browsing."
+     ],
+     "answer": "A",
+     "marks": 1
+    },
+    {
+     "id": "s1q13",
+     "type": "mcq",
+     "text": "The email field used to send a copy to someone without other recipients knowing is",
+     "options": [
+      "To.",
+      "Bcc.",
+      "Cc.",
+      "Subject."
+     ],
+     "answer": "B",
+     "marks": 1
+    },
+    {
+     "id": "s1q14",
+     "type": "mcq",
+     "text": "In word processing, the keyboard shortcut Ctrl + C is used to",
+     "options": [
+      "cut.",
+      "paste.",
+      "copy.",
+      "close."
+     ],
+     "answer": "C",
+     "marks": 1
+    },
+    {
+     "id": "s1q15",
+     "type": "mcq",
+     "text": "Text that is lined up evenly along both the left and right margins is",
+     "options": [
+      "justified.",
+      "centred.",
+      "right aligned.",
+      "left aligned."
+     ],
+     "answer": "A",
+     "marks": 1
+    },
+    {
+     "id": "s1q16",
+     "type": "mcq",
+     "text": "The space between the edge of the page and the text is the",
+     "options": [
+      "gutter line.",
+      "indent.",
+      "header.",
+      "margin."
+     ],
+     "answer": "D",
+     "marks": 1
+    },
+    {
+     "id": "s1q17",
+     "type": "mcq",
+     "text": "A graphic made from pixels that becomes blurred when enlarged is a",
+     "options": [
+      "vector graphic.",
+      "text box.",
+      "clip art border.",
+      "bitmap graphic."
+     ],
+     "answer": "D",
+     "marks": 1
+    },
+    {
+     "id": "s1q18",
+     "type": "mcq",
+     "text": "The text wrapping style where the picture sits on top of the words and hides them is",
+     "options": [
+      "in front of text.",
+      "tight.",
+      "square.",
+      "in line with text."
+     ],
+     "answer": "A",
+     "marks": 1
+    },
+    {
+     "id": "s1q19",
+     "type": "mcq",
+     "text": "A statement of what an organisation wants to achieve in the future is its",
+     "options": [
+      "procedure.",
+      "vision.",
+      "agenda.",
+      "minutes."
+     ],
+     "answer": "B",
+     "marks": 1
+    },
+    {
+     "id": "s1q20",
+     "type": "mcq",
+     "text": "Which of the following is part of the internal environment of a business?",
+     "options": [
+      "Competitors",
+      "Government laws",
+      "Employees",
+      "The economy"
+     ],
+     "answer": "C",
+     "marks": 1
+    },
+    {
+     "id": "s1q21",
+     "type": "mcq",
+     "text": "Changes in interest rates and inflation belong to the ___ environment.",
+     "options": [
+      "social",
+      "economic",
+      "technological",
+      "legal"
+     ],
+     "answer": "B",
+     "marks": 1
+    },
+    {
+     "id": "s1q22",
+     "type": "mcq",
+     "text": "A diagram showing the positions and lines of authority in an organisation is",
+     "options": [
+      "a flow chart.",
+      "a pie chart.",
+      "an organisation chart.",
+      "a Gantt chart."
+     ],
+     "answer": "C",
+     "marks": 1
+    },
+    {
+     "id": "s1q23",
+     "type": "mcq",
+     "text": "Communication that flows from a manager to the workers is",
+     "options": [
+      "upward communication.",
+      "grapevine.",
+      "horizontal communication.",
+      "downward communication."
+     ],
+     "answer": "D",
+     "marks": 1
+    },
+    {
+     "id": "s1q24",
+     "type": "mcq",
+     "text": "The first person a visitor usually meets in an office is the",
+     "options": [
+      "receptionist.",
+      "accountant.",
+      "manager.",
+      "cleaner."
+     ],
+     "answer": "A",
+     "marks": 1
+    },
+    {
+     "id": "s1q25",
+     "type": "mcq",
+     "text": "A visitor's book at reception is mainly used to",
+     "options": [
+      "advertise products.",
+      "record visitors for security.",
+      "store letters.",
+      "plan meetings."
+     ],
+     "answer": "B",
+     "marks": 1
+    },
+    {
+     "id": "s1q26",
+     "type": "mcq",
+     "text": "Furniture designed to fit the body and reduce strain is called",
+     "options": [
+      "portable.",
+      "modular.",
+      "decorative.",
+      "ergonomic."
+     ],
+     "answer": "D",
+     "marks": 1
+    },
+    {
+     "id": "s1q27",
+     "type": "mcq",
+     "text": "Which is a correct safety practice in the office?",
+     "options": [
+      "Closing one drawer before opening another",
+      "Running cables across walkways",
+      "Leaving filing cabinet drawers open",
+      "Overloading power boards"
+     ],
+     "answer": "A",
+     "marks": 1
+    },
+    {
+     "id": "s1q28",
+     "type": "mcq",
+     "text": "In communication, the person who receives and interprets the message is the",
+     "options": [
+      "sender.",
+      "channel.",
+      "receiver.",
+      "encoder."
+     ],
+     "answer": "C",
+     "marks": 1
+    },
+    {
+     "id": "s1q29",
+     "type": "mcq",
+     "text": "Which is an example of non-verbal communication?",
+     "options": [
+      "Facial expressions",
+      "A memo",
+      "A telephone call",
+      "An email"
+     ],
+     "answer": "A",
+     "marks": 1
+    },
+    {
+     "id": "s1q30",
+     "type": "mcq",
+     "text": "Asking a customer 'How may I help you today?' is an example of",
+     "options": [
+      "a closed question.",
+      "feedback.",
+      "a leading question.",
+      "an open question."
+     ],
+     "answer": "D",
+     "marks": 1
+    }
+   ]
+  },
+  {
+   "title": "SECTION B  SHORT ANSWER QUESTIONS [50 marks]",
+   "short": "B Short answer",
+   "note": "The five questions are compulsory. Each question is worth 10 marks.",
+   "questions": [
+    {
+     "id": "s2q1",
+     "type": "match",
+     "text": "QUESTION 1 MATCHING (10 marks)\nMatch each term in List A with the correct description in List B. Two descriptions are not used.",
+     "items": [
+      "Shredder",
+      "Laminator",
+      "Spreadsheet",
+      "Label (in a spreadsheet)",
+      "Phishing",
+      "Square wrapping",
+      "Prioritising",
+      "External environment",
+      "Empathy",
+      "Top-down communication"
+     ],
+     "options": [
+      "Fake emails that try to trick people into giving passwords or bank details.",
+      "Text flows around the four sides of a box around the picture.",
+      "Seals a document between plastic sheets to protect it.",
+      "A program arranged in rows and columns used for calculations.",
+      "Putting yourself in the customer's position and understanding their feelings.",
+      "Destroys confidential documents by cutting them into strips.",
+      "Information flows from management down to workers.",
+      "Information flows from workers up to management.",
+      "Doing the most urgent and important tasks first.",
+      "Text entered in a cell to describe the data.",
+      "Factors outside the business such as competitors and government.",
+      "A device that joins pages with a metal staple."
+     ],
+     "answer": [
+      "F",
+      "C",
+      "D",
+      "J",
+      "A",
+      "B",
+      "I",
+      "K",
+      "E",
+      "G"
+     ],
+     "marks": 10
+    },
+    {
+     "id": "s2q2",
+     "type": "short",
+     "text": "QUESTION 2 (10 marks)\n(a) Explain the difference between a formula and a function in a spreadsheet. (2 marks)\n(b) A spreadsheet has marks for 5 students in cells C2 to C6. Write the formula to find the average mark and state the cell you would type it in. (2 marks)\n(c) Cell B4 contains a price of $25 and C4 contains a quantity of 8. Write the formula to calculate the total in D4, and give the answer. (2 marks)\n(d) State two types of graphs that can be created in a spreadsheet. (2 marks)\n(e) Explain why it is important to save work regularly. (2 marks)",
+     "marks": 10,
+     "model": "(a) A formula is a calculation written by the user, e.g. =B2+B3 (1); a function is a built-in formula, e.g. =SUM(B2:B6) (1).\n(b) =AVERAGE(C2:C6) (1), typed in an empty cell such as C7 (1).\n(c) =B4*C4 (1) → 200 / $200 (1).\n(d) Any two: column/bar, line, pie, scatter (2).\n(e) Prevents loss of work if there is a power cut or the computer freezes (1), so time and data are not lost (1)."
+    },
+    {
+     "id": "s2q3",
+     "type": "short",
+     "text": "QUESTION 3 (10 marks)\n(a) Describe one feature of the internal environment of a business. (2 marks)\n(b) Explain how a new competitor can affect a business. (2 marks)\n(c) Explain two ways an office can reduce the amount of paper it uses. (2 marks)\n(d) Explain one reason why good lighting is important in an office. (2 marks)\n(e) Explain one way to keep a computer safe from viruses. (2 marks)",
+     "marks": 10,
+     "model": "(a) e.g. Staff/human resources — the skills and attitude of workers affect quality of work (2). Accept structure, equipment, finance, culture with description.\n(b) Customers may move to the competitor (1), so sales and profits fall unless the business improves price/service (1).\n(c) Any two: print on both sides; use email/electronic files instead of paper; reuse scrap paper; proofread on screen before printing (2).\n(d) Reduces eye strain and headaches (1), so workers are more productive and make fewer mistakes (1).\n(e) Install and update antivirus software (1), which scans and removes harmful programs before they damage files (1). Accept: do not open unknown attachments."
+    },
+    {
+     "id": "s2q4",
+     "type": "short",
+     "text": "QUESTION 4 (10 marks)\n(a) Differentiate between 'Save' and 'Save As'. (2 marks)\n(b) A secretary must send an email with a report attached to the manager. List the steps in order (at least four steps). (3 marks)\n(c) Explain one advantage of using a word processor instead of a typewriter. (2 marks)\n(d) Discuss three ways office workers can reduce stress at work. (3 marks)",
+     "marks": 10,
+     "model": "(a) Save stores changes to the same file (1); Save As saves a new copy with a new name or location (1).\n(b) Open email and click New/Compose; type manager's address in To; type subject and message; click Attach and choose the report; click Send. (3 for correct order, −1 per missing/wrong step)\n(c) Mistakes can be corrected easily before printing / documents can be saved, edited and reused (1), saving time and paper (1).\n(d) Any three, 1 each: plan and prioritise work; take short breaks; exercise and eat well; talk to supervisor/colleagues; keep the work area organised."
+    },
+    {
+     "id": "s2q5",
+     "type": "short",
+     "text": "QUESTION 5 (10 marks)\n(a) Describe one barrier to effective communication. (2 marks)\n(b) Describe the fully blocked letter style. (2 marks)\n(c) Explain one quality of a good receptionist. (2 marks)\n(d) Explain how a receptionist should deal with an angry customer. (2 marks)\n(e) Explain the difference between internal and external customers. (2 marks)",
+     "marks": 10,
+     "model": "(a) e.g. Noise — loud machines or talking stop the receiver hearing the message clearly (2). Accept language, attitude, distance, poor listening.\n(b) All lines (date, address, salutation, paragraphs, closing) start at the left margin (1) with no indentation; often used with open punctuation (1).\n(c) e.g. Good listening / polite / well-groomed (1), which creates a good first impression of the organisation (1).\n(d) Stay calm, listen without interrupting and show empathy (1); apologise and offer a solution or refer to the right person (1).\n(e) Internal customers are people inside the organisation, e.g. other staff/departments (1); external customers are outside people who buy or use the service (1)."
+    }
+   ]
+  },
+  {
+   "title": "SECTION C  PARAGRAPH WRITING [20 marks]",
+   "short": "C Paragraphs",
+   "note": "The four questions are compulsory. Each is worth 5 marks.",
+   "questions": [
+    {
+     "id": "s3q1",
+     "type": "paragraph",
+     "text": "QUESTION 1 OFFICE AND EQUIPMENT\nIn a paragraph, discuss three factors to consider when choosing the layout of an office and two advantages of a well-planned layout.",
+     "marks": 5,
+     "model": "Marking: topic sentence 1; content points as required (1 each, up to 3–4); expression/conclusion 1. Max 5.\nFactors: type of work/flow of work; number of staff; need for privacy/confidentiality; space and cost; safety (fire exits). Advantages: smooth workflow, less time wasted, easier supervision, better safety and comfort.",
+     "minWords": 75,
+     "maxWords": 130
+    },
+    {
+     "id": "s3q2",
+     "type": "paragraph",
+     "text": "QUESTION 2 DOCUMENT PROCESSING\nIn a paragraph, discuss three advantages of using templates in word processing and two features used to improve the appearance of a document.",
+     "marks": 5,
+     "model": "Marking: topic sentence 1; content points as required (1 each, up to 3–4); expression/conclusion 1. Max 5.\nTemplates: save time, consistent/professional look, fewer errors, easy for new staff. Features: fonts/bold/italics, headings, bullets and numbering, borders and shading, alignment, line spacing, inserting graphics.",
+     "minWords": 75,
+     "maxWords": 130
+    },
+    {
+     "id": "s3q3",
+     "type": "paragraph",
+     "text": "QUESTION 3 OFFICE ROLES AND FUNCTIONS\nIn a paragraph, discuss three functions of the reception area and two ways a receptionist can create a good impression.",
+     "marks": 5,
+     "model": "Marking: topic sentence 1; content points as required (1 each, up to 3–4); expression/conclusion 1. Max 5.\nFunctions: welcome and direct visitors; answer telephone and take messages; keep visitors' register/security; receive mail and deliveries; give information. Good impression: neat appearance, polite greeting and smile, clean tidy reception, using the visitor's name, prompt service.",
+     "minWords": 75,
+     "maxWords": 130
+    },
+    {
+     "id": "s3q4",
+     "type": "paragraph",
+     "text": "QUESTION 4 BUSINESS COMMUNICATION\nIn a paragraph, discuss three elements of the communication process and two ways to improve listening skills.",
+     "marks": 5,
+     "model": "Marking: topic sentence 1; content points as required (1 each, up to 3–4); expression/conclusion 1. Max 5.\nElements: sender, message, channel/medium, receiver, feedback (encoding/decoding). Listening: maintain eye contact, avoid interrupting, take notes, ask questions to clarify, remove distractions.",
+     "minWords": 75,
+     "maxWords": 130
+    }
+   ]
+  }
+ ]
+}

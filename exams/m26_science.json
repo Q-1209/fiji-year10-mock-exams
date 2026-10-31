@@ -1,0 +1,546 @@
+{
+ "id": "m26_science",
+ "subject": "Basic Science",
+ "kind": "mock26",
+ "title": "Fiji Year 10 Mock Examination 2 (2026 school format) — Basic Science",
+ "minutes": 120,
+ "readingMinutes": 10,
+ "totalMarks": 100,
+ "instructions": "Answer ALL questions. Time allowed: 2 hours (an extra 10 minutes is allowed for reading).\nMultiple-choice: click the letter of the best answer (click again to clear).\nShort answers and paragraphs: type your answer in English in the box. Show working for calculations.\nYour answers are saved automatically. The paper is submitted automatically when time runs out.\nYou may use a calculator. Show all working for calculations.",
+ "sections": [
+  {
+   "title": "STRAND 1 LIVING THINGS AND THE ENVIRONMENT [40 marks]",
+   "short": "1 Living Things",
+   "note": "Multiple-choice: choose the best answer. Short answer: write your answers in the space provided. Essay: write only ONE essay on the option of your choice.",
+   "questions": [
+    {
+     "id": "s1q1",
+     "type": "mcq",
+     "text": "Which solution is used to test for starch?",
+     "options": [
+      "Benedict's solution",
+      "Iodine solution",
+      "Biuret solution",
+      "Limewater"
+     ],
+     "answer": "B",
+     "marks": 1,
+     "explain": "Starch + iodine → blue-black"
+    },
+    {
+     "id": "s1q2",
+     "type": "mcq",
+     "text": "The organ that pumps blood around the body is the",
+     "options": [
+      "lungs",
+      "kidney",
+      "heart",
+      "liver"
+     ],
+     "answer": "C",
+     "marks": 1
+    },
+    {
+     "id": "s1q3",
+     "type": "mcq",
+     "text": "The \"master gland\" that controls many other glands in the body is the",
+     "options": [
+      "thyroid gland",
+      "adrenal gland",
+      "pancreas",
+      "pituitary gland"
+     ],
+     "answer": "D",
+     "marks": 1
+    },
+    {
+     "id": "s1q4",
+     "type": "mcq",
+     "text": "The growth response of plants towards light is known as",
+     "options": [
+      "geotropism",
+      "hydrotropism",
+      "thigmotropism",
+      "phototropism"
+     ],
+     "answer": "D",
+     "marks": 1
+    },
+    {
+     "id": "s1q5",
+     "type": "mcq",
+     "text": "The blood vessel that carries blood AWAY from the heart is the",
+     "options": [
+      "artery",
+      "vein",
+      "capillary",
+      "valve"
+     ],
+     "answer": "A",
+     "marks": 1
+    },
+    {
+     "id": "s1q6",
+     "type": "mcq",
+     "text": "An organism that makes its own food by photosynthesis is a",
+     "options": [
+      "consumer",
+      "decomposer",
+      "producer",
+      "scavenger"
+     ],
+     "answer": "C",
+     "marks": 1
+    },
+    {
+     "id": "s1q7",
+     "type": "mcq",
+     "text": "The male reproductive cell is the",
+     "options": [
+      "ovum",
+      "sperm",
+      "zygote",
+      "embryo"
+     ],
+     "answer": "B",
+     "marks": 1
+    },
+    {
+     "id": "s1q8",
+     "type": "mcq",
+     "text": "Mangrove forests are mainly found",
+     "options": [
+      "on high mountains",
+      "on muddy coasts and river mouths",
+      "in deserts",
+      "in the middle of the ocean"
+     ],
+     "answer": "B",
+     "marks": 1
+    },
+    {
+     "id": "s1q9",
+     "type": "short",
+     "text": "State two functions of blood.",
+     "marks": 2,
+     "model": "Any two (1 each): transports oxygen (red blood cells); transports nutrients/food and carbon dioxide/wastes (plasma); fights infection (white blood cells); clots to stop bleeding (platelets); carries hormones; controls body temperature."
+    },
+    {
+     "id": "s1q10",
+     "type": "short",
+     "text": "Complete the table for food tests. For each nutrient, write the chemical used and the positive result.\nStarch – ? – ?\nGlucose (reducing sugar) – ? (heated) – ?\nProtein – ? – ?",
+     "marks": 3,
+     "model": "Starch – iodine solution – blue-black (1)\nGlucose – Benedict's solution, heated – brick-red/orange precipitate (1)\nProtein – Biuret solution – purple/violet (1)"
+    },
+    {
+     "id": "s1q11",
+     "type": "short",
+     "text": "The female reproductive system has ovaries and oviducts (Fallopian tubes).\ni. State the function of the ovary. (1 mark)\nii. State the function of the oviduct. (1 mark)",
+     "marks": 2,
+     "model": "i. Produces the ova (egg cells) and female hormones (oestrogen) (1)\nii. Carries the ovum from the ovary to the uterus; it is where fertilisation takes place (1)"
+    },
+    {
+     "id": "s1q12",
+     "type": "short",
+     "text": "Define:\ni. tropism (1 mark)\nii. kinesis (1 mark)",
+     "marks": 2,
+     "model": "i. A growth response of a plant towards or away from a stimulus (e.g. light, gravity, water) (1)\nii. A non-directional movement of an animal in which its speed or rate of turning changes with the strength of a stimulus (e.g. woodlice moving faster in dry places) (1)"
+    },
+    {
+     "id": "s1q13",
+     "type": "short",
+     "text": "A relationship in an ecosystem can be described using a food chain and a food web.\ni. Differentiate between a food chain and a food web. (2 marks)\nii. Construct a food chain in a mangrove ecosystem that includes four organisms. (2 marks)",
+     "marks": 4,
+     "model": "i. A food chain is a single line showing who eats whom/how energy passes from one organism to the next (1); a food web is many interconnected food chains in an ecosystem (1).\nii. e.g. mangrove leaves → crab → fish → heron/kingfisher (starts with a producer (1); four organisms with arrows pointing to the eater (1))"
+    },
+    {
+     "id": "s1q14",
+     "type": "short",
+     "text": "Coral reefs are important marine ecosystems found in warm, shallow, clear tropical waters.\ni. Name the tiny animal that builds coral. (1 mark)\nii. State two importances of coral reefs. (2 marks)\niii. Determine two human activities that destroy coral reefs. (2 marks)",
+     "marks": 5,
+     "model": "i. Coral polyp (1)\nii. Any two (1 each): home/breeding place for fish; protect the coast from waves/erosion; food source; tourism income; source of medicines.\niii. Any two (1 each): overfishing/fish poisoning (duva) or dynamite fishing; pollution/sewage/rubbish; walking or anchoring on reefs; coral harvesting; sand mining; sediment from land clearing."
+    },
+    {
+     "id": "s1q15",
+     "type": "short",
+     "text": "Explain how dumping rubbish into mangrove areas can destroy the mangrove ecosystem.",
+     "marks": 2,
+     "model": "Rubbish/chemicals pollute the water and mud and can block the roots (pneumatophores) so the mangroves cannot get oxygen (1); plants die and the crabs, fish and birds lose their food and habitat (1)."
+    },
+    {
+     "id": "s1q16",
+     "type": "short",
+     "text": "State two physical changes that happen to boys during puberty.",
+     "marks": 2,
+     "model": "Any two (1 each): voice deepens; growth of facial/body hair; shoulders broaden; muscles develop; growth spurt; sperm production begins; Adam's apple grows."
+    },
+    {
+     "id": "s1q17",
+     "type": "paragraph",
+     "text": "ESSAY QUESTION (10 marks)\nChoose only ONE option and write your essay on it.",
+     "marks": 10,
+     "model": "Option 1: i. Circulatory system transports substances around the body (1); components heart, blood vessels and blood (1). ii. Heart pumps blood (1) – right side to lungs, left side to body (1); valves stop blood flowing backwards (1); four chambers/atria and ventricles (1). iii. Arteries carry blood away from the heart, thick muscular walls, high pressure, no valves (2); veins carry blood to the heart, thin walls, low pressure, have valves (2).\nOption 2: i. Photosynthesis is how green plants make food using light (1); carbon dioxide + water → glucose + oxygen in the presence of light and chlorophyll (1). ii. Two factors (2 each – identify + discuss): light intensity, carbon dioxide concentration, temperature, water. iii. Two leaf adaptations (2 each): broad/flat for more light; thin for short diffusion distance; many chloroplasts; stomata for gas exchange; veins to transport water and food.",
+     "choices": [
+      {
+       "text": "Option 1: Blood circulation keeps every cell of our body alive.\ni. Describe the circulatory system and name its three components. (2 marks)\nii. Explain how the heart works to move blood around the body. (4 marks)\niii. Differentiate between arteries and veins. (4 marks)"
+      },
+      {
+       "text": "Option 2: Green plants make their own food.\ni. Define photosynthesis and write its word equation. (2 marks)\nii. Identify and discuss two factors that affect the rate of photosynthesis. (4 marks)\niii. Explain two ways in which a leaf is adapted for photosynthesis. (4 marks)"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "STRAND 2 MATTER [20 marks]",
+   "short": "2 Matter",
+   "note": "Multiple-choice: choose the best answer. Short answer: write your answers in the space provided.",
+   "questions": [
+    {
+     "id": "s2q1",
+     "type": "mcq",
+     "text": "The negatively charged particle of an atom is the",
+     "options": [
+      "proton",
+      "neutron",
+      "nucleus",
+      "electron"
+     ],
+     "answer": "D",
+     "marks": 1
+    },
+    {
+     "id": "s2q2",
+     "type": "mcq",
+     "text": "Elements in the same group of the periodic table have the same number of",
+     "options": [
+      "valence electrons",
+      "electron shells",
+      "neutrons",
+      "protons"
+     ],
+     "answer": "A",
+     "marks": 1
+    },
+    {
+     "id": "s2q3",
+     "type": "mcq",
+     "text": "In the equation Mg + 2HCl → MgCl₂ + H₂, the products are",
+     "options": [
+      "Mg and HCl",
+      "MgCl₂ and H₂",
+      "Mg and H₂",
+      "HCl and MgCl₂"
+     ],
+     "answer": "B",
+     "marks": 1,
+     "explain": "Products are on the right side of the arrow."
+    },
+    {
+     "id": "s2q4",
+     "type": "mcq",
+     "text": "Which of the following will SLOW DOWN a chemical reaction?",
+     "options": [
+      "Increasing the temperature",
+      "Adding a catalyst",
+      "Lowering the concentration",
+      "Grinding the solid into powder"
+     ],
+     "answer": "C",
+     "marks": 1
+    },
+    {
+     "id": "s2q5",
+     "type": "mcq",
+     "text": "An alloy made from copper and zinc is",
+     "options": [
+      "bronze",
+      "steel",
+      "brass",
+      "solder"
+     ],
+     "answer": "C",
+     "marks": 1
+    },
+    {
+     "id": "s2q6",
+     "type": "short",
+     "text": "Study the atom: ²⁷₁₃Al (mass number 27, atomic number 13).\ni. Name the atom. (1 mark)\nii. Calculate the number of neutrons. (1 mark)\niii. Write its electron configuration. (1 mark)",
+     "marks": 3,
+     "model": "i. Aluminium (1)\nii. 27 − 13 = 14 neutrons (1)\niii. 2, 8, 3 (1)"
+    },
+    {
+     "id": "s2q7",
+     "type": "short",
+     "text": "An element has atomic number 17.\ni. In which group of the periodic table is it found? (1 mark)\nii. In which period is it found? (1 mark)",
+     "marks": 2,
+     "model": "Electron configuration 2, 8, 7 (chlorine).\ni. Group 17 (VII, halogens) – 7 valence electrons (1)\nii. Period 3 – 3 electron shells (1)"
+    },
+    {
+     "id": "s2q8",
+     "type": "short",
+     "text": "Balance the chemical equation: H₂ + O₂ → H₂O",
+     "marks": 2,
+     "model": "2H₂ + O₂ → 2H₂O (2; 1 mark if partly balanced). Check: 4 H and 2 O on each side."
+    },
+    {
+     "id": "s2q9",
+     "type": "short",
+     "text": "Magnesium ribbon burns in air: 2Mg + O₂ → 2MgO\ni. Identify the type of chemical reaction. (1 mark)\nii. Explain how increasing the temperature changes the rate of a reaction. (2 marks)",
+     "marks": 3,
+     "model": "i. Combination/synthesis (also combustion/oxidation accepted) (1)\nii. Rate increases (1) because particles gain energy, move faster and collide more often and with more energy (more successful collisions) (1)."
+    },
+    {
+     "id": "s2q10",
+     "type": "short",
+     "text": "i. State two physical properties of metals. (2 marks)\nii. Explain what quenching is in the heat treatment of steel. (1 mark)",
+     "marks": 3,
+     "model": "i. Any two (1 each): good conductors of heat and electricity; shiny (lustrous); malleable; ductile; high melting point; sonorous; strong/dense.\nii. Heating steel until red hot and then cooling it quickly in water or oil to make it hard (1)."
+    },
+    {
+     "id": "s2q11",
+     "type": "short",
+     "text": "Differentiate between an element and a compound. Give one example of each.",
+     "marks": 2,
+     "model": "An element is made of only one type of atom, e.g. oxygen, iron (1); a compound is two or more elements chemically joined, e.g. water H₂O, sodium chloride (1)."
+    }
+   ]
+  },
+  {
+   "title": "STRAND 3 ENERGY [25 marks]",
+   "short": "3 Energy",
+   "note": "Multiple-choice: choose the best answer. Short answer: write your answers in the space provided.",
+   "questions": [
+    {
+     "id": "s3q1",
+     "type": "mcq",
+     "text": "The SI unit of energy is the",
+     "options": [
+      "newton",
+      "watt",
+      "joule",
+      "metre"
+     ],
+     "answer": "C",
+     "marks": 1
+    },
+    {
+     "id": "s3q2",
+     "type": "mcq",
+     "text": "The energy stored in food and batteries is",
+     "options": [
+      "kinetic energy",
+      "sound energy",
+      "heat energy",
+      "chemical energy"
+     ],
+     "answer": "D",
+     "marks": 1
+    },
+    {
+     "id": "s3q3",
+     "type": "mcq",
+     "text": "The bending of light as it passes from air into water is called",
+     "options": [
+      "reflection",
+      "refraction",
+      "dispersion",
+      "absorption"
+     ],
+     "answer": "B",
+     "marks": 1
+    },
+    {
+     "id": "s3q4",
+     "type": "mcq",
+     "text": "Three bulbs are connected in series. If one bulb blows, the other bulbs will",
+     "options": [
+      "go off",
+      "stay on",
+      "become brighter",
+      "flicker"
+     ],
+     "answer": "A",
+     "marks": 1
+    },
+    {
+     "id": "s3q5",
+     "type": "mcq",
+     "text": "Sound travels fastest through",
+     "options": [
+      "a vacuum",
+      "air",
+      "water",
+      "steel"
+     ],
+     "answer": "D",
+     "marks": 1
+    },
+    {
+     "id": "s3q6",
+     "type": "short",
+     "text": "A pencil standing in a glass of water looks bent at the water surface.\ni. Name this behaviour of light. (1 mark)\nii. Explain why it happens. (1 mark)",
+     "marks": 2,
+     "model": "i. Refraction (1)\nii. Light changes speed (slows down/speeds up) when it passes between water and air, so it changes direction (1)."
+    },
+    {
+     "id": "s3q7",
+     "type": "short",
+     "text": "A circuit has two cells, a switch and three bulbs connected in series.\ni. State the function of the cells and of the switch. (2 marks)\nii. State one disadvantage of a series circuit. (1 mark)\niii. How should the bulbs be connected so that the others stay lit when one bulb blows? (1 mark)",
+     "marks": 4,
+     "model": "i. Cells supply the electrical energy/push the current (1); the switch opens or closes the circuit to turn it on/off (1).\nii. If one bulb blows all go off; bulbs are dimmer when more are added (1).\niii. In parallel (1)."
+    },
+    {
+     "id": "s3q8",
+     "type": "short",
+     "text": "A boy pushes a box with a force of 40 N for a distance of 5 m. Calculate the work done. (W = F × d)",
+     "marks": 2,
+     "model": "W = 40 × 5 (1) = 200 J (1)"
+    },
+    {
+     "id": "s3q9",
+     "type": "short",
+     "text": "A crowbar (lever) lifts a load of 600 N when an effort of 150 N is applied.\ni. Calculate the mechanical advantage. (2 marks)\nii. A see-saw has the fulcrum between the effort and the load. Which class of lever is it? (1 mark)",
+     "marks": 3,
+     "model": "i. MA = load ÷ effort = 600 ÷ 150 (1) = 4 (1)\nii. First-class lever (1)"
+    },
+    {
+     "id": "s3q10",
+     "type": "short",
+     "text": "A car increases its speed from 5 m/s to 25 m/s in 4 seconds. Calculate its acceleration.",
+     "marks": 2,
+     "model": "a = (v − u) ÷ t = (25 − 5) ÷ 4 (1) = 5 m/s² (1)"
+    },
+    {
+     "id": "s3q11",
+     "type": "short",
+     "text": "i. State the law of conservation of energy. (1 mark)\nii. State the energy change in a solar panel. (1 mark)",
+     "marks": 2,
+     "model": "i. Energy cannot be created or destroyed; it can only change from one form to another (1).\nii. Light (solar) energy → electrical energy (1)."
+    },
+    {
+     "id": "s3q12",
+     "type": "short",
+     "text": "Differentiate between renewable and non-renewable energy sources. Give one example of each.",
+     "marks": 2,
+     "model": "Renewable sources can be replaced naturally/will not run out, e.g. solar, wind, hydro (1); non-renewable sources will run out/take millions of years to form, e.g. coal, oil, diesel, gas (1)."
+    },
+    {
+     "id": "s3q13",
+     "type": "short",
+     "text": "State two ways to save electricity at home.",
+     "marks": 2,
+     "model": "Any two (1 each): switch off lights and appliances when not in use; use energy-saving (LED) bulbs; use natural light/ventilation; unplug chargers; use solar water heaters; dry clothes in the sun."
+    },
+    {
+     "id": "s3q14",
+     "type": "short",
+     "text": "Name one material that is a good conductor of heat.",
+     "marks": 1,
+     "model": "Any metal, e.g. copper, aluminium, iron (1)"
+    }
+   ]
+  },
+  {
+   "title": "STRAND 4 EARTH AND BEYOND [15 marks]",
+   "short": "4 Earth & Beyond",
+   "note": "Multiple-choice: choose the best answer. Short answer: write your answers in the space provided.",
+   "questions": [
+    {
+     "id": "s4q1",
+     "type": "mcq",
+     "text": "The ozone layer is found in the",
+     "options": [
+      "troposphere",
+      "stratosphere",
+      "mesosphere",
+      "thermosphere"
+     ],
+     "answer": "B",
+     "marks": 1
+    },
+    {
+     "id": "s4q2",
+     "type": "mcq",
+     "text": "Which gas released by burning fossil fuels is the main cause of the enhanced greenhouse effect?",
+     "options": [
+      "Oxygen",
+      "Nitrogen",
+      "Carbon dioxide",
+      "Helium"
+     ],
+     "answer": "C",
+     "marks": 1
+    },
+    {
+     "id": "s4q3",
+     "type": "mcq",
+     "text": "The planet closest to the Sun is",
+     "options": [
+      "Mercury",
+      "Venus",
+      "Earth",
+      "Mars"
+     ],
+     "answer": "A",
+     "marks": 1
+    },
+    {
+     "id": "s4q4",
+     "type": "mcq",
+     "text": "Day and night are caused by",
+     "options": [
+      "the Earth's revolution around the Sun",
+      "the Earth's rotation on its axis",
+      "the Moon going around the Earth",
+      "the tilt of the Moon"
+     ],
+     "answer": "B",
+     "marks": 1
+    },
+    {
+     "id": "s4q5",
+     "type": "short",
+     "text": "Explain how the greenhouse effect keeps the Earth warm.",
+     "marks": 2,
+     "model": "Heat (radiation) from the Sun reaches the Earth and is given off again from the surface (1); greenhouse gases such as carbon dioxide and methane trap some of this heat in the atmosphere, keeping the Earth warm (1)."
+    },
+    {
+     "id": "s4q6",
+     "type": "short",
+     "text": "State two effects of climate change on Fiji.",
+     "marks": 2,
+     "model": "Any two (1 each): sea-level rise and coastal erosion/villages relocated; stronger cyclones; flooding; droughts; coral bleaching; salt water entering farms and wells; loss of crops."
+    },
+    {
+     "id": "s4q7",
+     "type": "short",
+     "text": "A coastal village in Fiji is often flooded at high tide. State two ways the community can reduce the damage.",
+     "marks": 2,
+     "model": "Any two (1 each): build sea walls; plant mangroves; relocate houses to higher ground; raise houses on posts; improve drainage; avoid sand mining/removing mangroves."
+    },
+    {
+     "id": "s4q8",
+     "type": "short",
+     "text": "i. State one function of the ozone layer. (1 mark)\nii. Name one substance that damages the ozone layer. (1 mark)",
+     "marks": 2,
+     "model": "i. Absorbs/blocks harmful ultraviolet (UV) rays from the Sun (1)\nii. CFCs (chlorofluorocarbons) from old fridges, air conditioners or aerosol sprays (1)"
+    },
+    {
+     "id": "s4q9",
+     "type": "short",
+     "text": "Differentiate between weather and climate.",
+     "marks": 2,
+     "model": "Weather is the condition of the atmosphere at a place for a short time (day to day) (1); climate is the average weather pattern of a place over a long period (about 30 years) (1)."
+    },
+    {
+     "id": "s4q10",
+     "type": "short",
+     "text": "Name one renewable energy source used in Fiji that helps reduce greenhouse gas emissions.",
+     "marks": 1,
+     "model": "Hydroelectricity (Monasavu), solar, wind (Butoni), biomass (1)"
+    }
+   ]
+  }
+ ]
+}

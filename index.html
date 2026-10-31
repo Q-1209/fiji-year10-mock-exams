@@ -1,0 +1,382 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<script src="api.js"></script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Year 10 Mock Exams</title>
+<style>
+  :root {
+    --bg: #f6f5f1; --card: #ffffff; --ink: #1f2328; --muted: #6a707a; --line: #dcdad3;
+    --accent: #1d5fa8; --accent-soft: #e5eef9; --ok: #1f7a3f; --ok-soft: #e3f3e8;
+    --bad: #b3261e; --bad-soft: #fbe6e4; --warn: #b26a00; --warn-soft: #fff1d6;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #16181b; --card: #1f2226; --ink: #e8e6e1; --muted: #9aa0a8; --line: #33373d;
+      --accent: #6aa8ef; --accent-soft: #1d2b3c; --ok: #5cc184; --ok-soft: #1b2e22;
+      --bad: #f08a80; --bad-soft: #3a1f1d; --warn: #f0b04a; --warn-soft: #3a2c14;
+    }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--ink);
+    font: 16px/1.6 "Segoe UI", "Yu Gothic UI", "Meiryo", system-ui, sans-serif; }
+  button { font: inherit; cursor: pointer; }
+  .wrap { max-width: 920px; margin: 0 auto; padding: 24px 16px 80px; }
+  h1 { font-size: 24px; margin: 8px 0 4px; }
+  h2 { font-size: 19px; margin: 28px 0 10px; }
+  .muted { color: var(--muted); }
+  .card { background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: 16px 18px; margin: 12px 0; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 12px; }
+  .exam-card h3 { margin: 0 0 4px; font-size: 17px; }
+  .btn { border: 1px solid var(--line); background: var(--card); color: var(--ink); border-radius: 8px; padding: 8px 14px; }
+  .btn.primary { background: var(--accent); border-color: var(--accent); color: #fff; }
+  .btn.danger { color: var(--bad); }
+  .btn:disabled { opacity: .5; cursor: default; }
+  .row { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; }
+  .badge { display: inline-block; font-size: 12px; padding: 1px 8px; border-radius: 99px; background: var(--warn-soft); color: var(--warn); }
+
+  /* exam */
+  .topbar { position: sticky; top: 0; z-index: 5; background: var(--card); border-bottom: 1px solid var(--line); }
+  .topbar .in { max-width: 1180px; margin: 0 auto; padding: 10px 16px; display: flex; gap: 12px; align-items: center; flex-wrap: wrap; }
+  .topbar .title { font-weight: 600; flex: 1; min-width: 180px; }
+  .timer { font: 600 22px/1 ui-monospace, "Cascadia Mono", Consolas, monospace; padding: 6px 12px; border-radius: 8px; background: var(--accent-soft); color: var(--accent); }
+  .timer.warn { background: var(--warn-soft); color: var(--warn); }
+  .timer.over { background: var(--bad-soft); color: var(--bad); }
+  .phase { font-size: 13px; color: var(--muted); }
+  .layout { max-width: 1180px; margin: 0 auto; padding: 16px; display: grid; grid-template-columns: 220px 1fr; gap: 20px; }
+  @media (max-width: 800px) { .layout { grid-template-columns: 1fr; } .nav { position: static !important; } }
+  .nav { position: sticky; top: 70px; align-self: start; max-height: calc(100vh - 90px); overflow: auto; font-size: 14px; }
+  .nav .sec { font-weight: 600; margin: 10px 0 4px; }
+  .nav .dots { display: flex; flex-wrap: wrap; gap: 4px; }
+  .nav .dot { width: 30px; height: 26px; border-radius: 6px; border: 1px solid var(--line); background: var(--card);
+    font-size: 12px; display: grid; place-items: center; color: var(--muted); text-decoration: none; }
+  .nav .dot.done { background: var(--accent-soft); color: var(--accent); border-color: var(--accent); }
+  .section-head { background: var(--accent-soft); border-radius: 10px; padding: 12px 16px; margin: 24px 0 8px; }
+  .section-head h2 { margin: 0; }
+  .q { scroll-margin-top: 80px; }
+  .q .qhead { display: flex; justify-content: space-between; gap: 10px; font-weight: 600; }
+  .q .qtext { white-space: pre-wrap; margin: 6px 0 10px; }
+  .q table { border-collapse: collapse; margin: 6px 0 12px; font-size: 14px; }
+  .q td, .q th { border: 1px solid var(--line); padding: 4px 10px; text-align: left; }
+  .opts { display: grid; gap: 6px; }
+  .opt { display: flex; gap: 10px; align-items: flex-start; text-align: left; width: 100%;
+    border: 1px solid var(--line); background: var(--card); color: var(--ink); border-radius: 8px; padding: 8px 12px; }
+  .opt .L { font-weight: 700; min-width: 18px; }
+  .opt:hover { border-color: var(--accent); }
+  .opt.sel { border-color: var(--accent); background: var(--accent-soft); }
+  .opt.right { border-color: var(--ok); background: var(--ok-soft); }
+  .opt.wrong { border-color: var(--bad); background: var(--bad-soft); }
+  textarea { width: 100%; min-height: 90px; font: inherit; padding: 8px 10px; border-radius: 8px;
+    border: 1px solid var(--line); background: var(--bg); color: var(--ink); resize: vertical; }
+  textarea.long { min-height: 200px; }
+  select { font: inherit; padding: 4px 8px; border-radius: 6px; border: 1px solid var(--line); background: var(--bg); color: var(--ink); }
+  .match td:first-child { min-width: 200px; }
+  .wc { font-size: 13px; color: var(--muted); text-align: right; }
+  .wc.bad { color: var(--warn); }
+  .choice { display: flex; gap: 8px; align-items: flex-start; margin: 6px 0; padding: 8px 10px; border: 1px solid var(--line); border-radius: 8px; white-space: pre-wrap; }
+  .choice.sel { border-color: var(--accent); background: var(--accent-soft); }
+  .model { margin-top: 10px; padding: 10px 12px; border-left: 4px solid var(--ok); background: var(--ok-soft); white-space: pre-wrap; font-size: 14px; }
+  .explain { margin-top: 8px; font-size: 14px; color: var(--muted); white-space: pre-wrap; }
+  .locked .opts, .locked textarea, .locked select { pointer-events: none; opacity: .55; }
+  .overlay { position: fixed; inset: 0; background: rgba(0,0,0,.45); display: grid; place-items: center; z-index: 20; padding: 16px; }
+  .overlay .card { max-width: 460px; }
+  .save-state { font-size: 12px; color: var(--muted); min-width: 90px; }
+
+  /* drawing pad */
+  .dp { margin: 6px 0 10px; }
+  .dp-wrap { border: 1px solid var(--line); border-radius: 10px; padding: 8px; background: var(--bg); }
+  .dp-bar { display: grid; gap: 6px; margin-bottom: 8px; }
+  .dp-tools { display: flex; flex-wrap: wrap; gap: 4px; }
+  .dp-tools button { display: flex; flex-direction: column; align-items: center; min-width: 58px; padding: 4px 6px; border: 1px solid var(--line);
+    border-radius: 8px; background: var(--card); color: var(--ink); font-size: 16px; line-height: 1.1; }
+  .dp-tools button small { font-size: 10px; color: var(--muted); margin-top: 2px; white-space: nowrap; }
+  .dp-tools button.on { border-color: var(--accent); background: var(--accent-soft); }
+  .dp-tools button.on small { color: var(--accent); }
+  .dp-opts { display: flex; flex-wrap: wrap; gap: 6px 12px; align-items: center; font-size: 13px; }
+  .dp-opts label { display: inline-flex; gap: 4px; align-items: center; }
+  .dp-opts input[type=number] { width: 64px; font: inherit; padding: 2px 4px; border: 1px solid var(--line); border-radius: 6px; background: var(--card); color: var(--ink); }
+  .dp-opts button { border: 1px solid var(--line); background: var(--card); color: var(--ink); border-radius: 6px; padding: 3px 9px; }
+  .dp-sp { flex: 1; }
+  .dp-cv { display: block; touch-action: none; border-radius: 4px; box-shadow: 0 0 0 1px var(--line); max-width: 100%; }
+  .dp-info { font-size: 12px; color: var(--muted); margin-top: 4px; min-height: 18px; }
+  .dp-full { position: fixed; inset: 0; z-index: 30; background: var(--card); margin: 0; padding: 10px; overflow: auto; }
+  .dp-full .dp-wrap { min-height: 100%; }
+  .dp-label { font-size: 13px; font-weight: 600; margin-top: 10px; }
+  .paper { display: block; margin: 14px 0; }
+  .paper img { display: block; width: 100%; height: auto; border: 1px solid var(--line); border-radius: 6px; background: #fff; }
+  details.ab { margin: 4px 0 10px; font-size: 14px; }
+  details.ab summary, details.card summary { cursor: pointer; color: var(--accent); }
+  .opt span:empty { display: none; }
+  .opts.row4 { grid-template-columns: repeat(4, minmax(56px, 90px)); }
+  .opts.row4 .opt { justify-content: center; }
+</style>
+<script src="draw.js"></script>
+</head>
+<body>
+<div id="app"></div>
+<script>
+const $ = (s, el = document) => el.querySelector(s);
+const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+const api = async (path, body) => {
+  const r = await fetch(path, body ? { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(body) } : {});
+  return r.json();
+};
+const words = t => (t || "").trim().split(/\s+/).filter(Boolean).length;
+const fmt = sec => { sec = Math.max(0, Math.round(sec)); const h = Math.floor(sec / 3600), m = Math.floor(sec % 3600 / 60), s = sec % 60;
+  return (h ? h + ":" + String(m).padStart(2, "0") : m) + ":" + String(s).padStart(2, "0"); };
+
+let S = null; // exam state
+const ORDER = ["Mathematics", "Commercial Studies", "Office Technology", "Basic Science", "Social Science", "Basic Technology"];
+
+/* ---------- home ---------- */
+async function home() {
+  S = null;
+  document.title = "Year 10 Mock Exams";
+  const [exams, hist] = await Promise.all([api("/api/exams"), api("/api/history")]);
+  $("#app").innerHTML = `
+  <div class="wrap">
+    <h1>Fiji Year 10 過去問・模試</h1>
+    <p class="muted">どれも100点・2時間です。選択問題とマッチングは自動採点、記述・パラグラフ・作図は提出後に出る模範解答と見比べて自分で採点します。答案や途中経過はこのブラウザの中にだけ保存されます。</p>
+    ${[["past", "過去問（2019年 本番）", "本物の問題用紙をページ画像で表示します。提出後に公式の詳しい解答が見られます。"],
+       ["mock26", "模試 第2回（2026年 学校の課題の形式）", "学校の Holiday Assignment 2026・テストと同じ形式・単元の新作問題です。"],
+       ["mock", "模試（オリジナル）", "2019年と同じ形式・配点の新作問題です。"]].map(([kind, head, sub]) => `
+    <h2>${head}</h2><p class="muted" style="margin-top:-6px">${sub}</p>
+    <div class="grid">${exams.filter(e => e.kind === kind).sort((a, b) => ORDER.indexOf(a.subject) - ORDER.indexOf(b.subject)).map(e => `
+      <div class="card exam-card">
+        <h3>${esc(e.subject)}</h3>
+        <div class="muted">${e.totalMarks} marks ・ ${e.minutes} 分（＋読む時間 10 分）</div>
+        <div class="row" style="margin-top:10px">
+          ${e.hasDraft ? `<button class="btn primary" data-resume="${e.id}">続きから</button><button class="btn danger" data-restart="${e.id}">最初から</button><span class="badge">途中保存あり</span>`
+                       : `<button class="btn primary" data-start="${e.id}">受験する</button>`}
+        </div>
+      </div>`).join("")}
+    </div>`).join("")}
+    <h2>練習（すぐ答え合わせ）</h2><p class="muted" style="margin-top:-6px">1問ずつ選ぶと、その場で正解と解説が出ます。時間制限はありません。</p>
+    <div class="grid">
+      <div class="card exam-card">
+        <h3>Commercial Studies</h3>
+        <div><b>どの仕訳帳？</b>（Which journal?）</div>
+        <div class="muted">取引を読んで CRJ・CPJ・SJ・SRJ・PJ・PRJ・GJ から選ぶ。取引44問＋書類10問</div>
+        <div class="row" style="margin-top:10px"><a class="btn primary" href="journal.html" style="text-decoration:none">練習する</a></div>
+      </div>
+      <div class="card exam-card">
+        <h3>全6教科</h3>
+        <div><b>英文和訳</b>（English → 日本語）</div>
+        <div class="muted">教科書の内容の英文を日本語に訳す。全教科まぜて600問から出題（教科・単元ごとも可）。模範訳とくらべて自分で判定</div>
+        <div class="row" style="margin-top:10px"><a class="btn primary" href="translate.html" style="text-decoration:none">練習する</a>
+          <a class="btn" href="translate_list.html" style="text-decoration:none">答え一覧を見る</a></div>
+      </div>
+    </div>
+    <h2>これまでの答案</h2>
+    ${hist.length ? `<div class="card"><table style="width:100%;border-collapse:collapse;font-size:14px">
+      <tr class="muted"><td>日時</td><td>模試</td><td>自動採点</td><td>自分で採点</td></tr>
+      ${hist.map(h => `<tr><td>${esc(h.submittedAt)}</td><td>${esc(h.title)}</td><td>${h.auto.score} / ${h.auto.max}</td><td>${h.manualMax} 点分</td></tr>`).join("")}
+    </table></div>`
+      : `<p class="muted">まだありません。</p>`}
+  </div>`;
+  $("#app").querySelectorAll("[data-start]").forEach(b => b.onclick = () => start(b.dataset.start, false));
+  $("#app").querySelectorAll("[data-resume]").forEach(b => b.onclick = () => start(b.dataset.resume, true));
+  $("#app").querySelectorAll("[data-restart]").forEach(b => b.onclick = async () => {
+    if (!confirm("途中の答案を消して最初から始めますか？")) return;
+    await api("/api/discard", { examId: b.dataset.restart }); start(b.dataset.restart, false);
+  });
+}
+
+/* ---------- exam ---------- */
+async function start(id, resume) {
+  const exam = await api("/api/exam?id=" + id);
+  const draft = resume ? await api("/api/draft?id=" + id) : {};
+  S = {
+    exam, responses: draft.responses || {}, elapsed: draft.elapsedSec || 0, reading: draft.readingLeft ?? (exam.readingMinutes || 0) * 60,
+    tick: null, last: Date.now(), dirty: false, submitted: false, result: null,
+  };
+  document.title = exam.subject + (exam.kind === "past" ? " — 2019 過去問" : " — 模試");
+  renderExam();
+  S.tick = setInterval(onTick, 500);
+  S.saver = setInterval(saveDraft, 15000);
+  window.onbeforeunload = () => S && !S.submitted ? "" : undefined;
+}
+
+function onTick() {
+  const now = Date.now(), dt = (now - S.last) / 1000; S.last = now;
+  if (S.submitted) return;
+  if (S.reading > 0) { S.reading = Math.max(0, S.reading - dt); if (S.reading === 0) unlock(); }
+  else S.elapsed += dt;
+  drawTimer();
+  if (S.elapsed >= S.exam.minutes * 60) submit(true);
+}
+
+function drawTimer() {
+  const t = $("#timer"); if (!t) return;
+  if (S.reading > 0) { t.textContent = fmt(S.reading); t.className = "timer"; $("#phase").textContent = "読む時間（まだ書けません）"; return; }
+  const left = S.exam.minutes * 60 - S.elapsed;
+  t.textContent = fmt(left);
+  t.className = "timer" + (left <= 60 ? " over" : left <= 600 ? " warn" : "");
+  $("#phase").textContent = "残り時間";
+}
+
+function unlock() { document.querySelectorAll(".locked").forEach(e => e.classList.remove("locked")); $("#skipRead")?.remove(); drawTimer(); }
+
+function answered(q) {
+  const a = S.responses[q.id];
+  if (q.type === "mcq") return !!a;
+  if (q.type === "match") return a && Object.values(a).filter(Boolean).length === q.items.length;
+  if (q.type === "paragraph" && q.choices) return a && a.choice && words(a.text) > 0;
+  if (q.type === "draw") return !!(a && ((a.shapes && a.shapes.length) || (a.text && a.text.trim())));
+  return typeof a === "string" ? a.trim().length > 0 : !!(a && a.text && a.text.trim());
+}
+
+function qHTML(q, n) {
+  const a = S.responses[q.id], done = S.submitted;
+  let body = "";
+  if (q.table) body += `<table>${q.table.map((r, i) => `<tr>${r.map(c => i === 0 && q.tableHeader !== false ? `<th>${esc(c)}</th>` : `<td>${esc(c)}</td>`).join("")}</tr>`).join("")}</table>`;
+  if (q.after) body += `<div class="qtext">${esc(q.after)}</div>`;
+  if (q.type === "mcq") {
+    body += `<div class="opts${q.options.every(o => !o) ? " row4" : ""}">${q.options.map((o, i) => { const L = "ABCD"[i];
+      let cls = a === L ? " sel" : "";
+      if (done) cls = L === q.answer ? " right" : a === L ? " wrong" : "";
+      return `<button class="opt${cls}" data-q="${q.id}" data-v="${L}"><span class="L">${L}.</span><span>${esc(o)}</span></button>`; }).join("")}</div>`;
+    if (done && q.explain) body += `<div class="explain">${esc(q.explain)}</div>`;
+  } else if (q.type === "match") {
+    const opts = q.options.map((o, i) => `<option value="${String.fromCharCode(65 + i)}">${String.fromCharCode(65 + i)}</option>`).join("");
+    body += `<table class="match">${q.items.map((it, i) => { const v = (a || {})[i] || ""; const ok = done ? (v === q.answer[i] ? " ✓" : ` ✗（正解 ${q.answer[i]}）`) : "";
+      return `<tr><td>${i + 1}. ${esc(it)}</td><td><select data-match="${q.id}" data-i="${i}"><option value="">—</option>${opts.replace(`value="${v}"`, `value="${v}" selected`)}</select>${ok}</td></tr>`; }).join("")}</table>
+      <table>${q.options.map((o, i) => `<tr><td><b>${String.fromCharCode(65 + i)}</b></td><td>${esc(o)}</td></tr>`).join("")}</table>`;
+  } else if (q.type === "draw") {
+    body += `<div class="dp-label">${q.draw.mode === "tech" ? "製図板（A4 横・1マス 5 mm）" : "座標平面"}</div><div data-pad="${q.id}"></div>`;
+    if (q.withText) body += `<div class="dp-label">${esc(q.textLabel || "計算・答え")}</div><textarea data-text="${q.id}" placeholder="Answer / working here.">${esc((a || {}).text || "")}</textarea>`;
+    if (done && q.modelShapes) body += `<div class="dp-label" style="color:var(--ok)">模範解答の図（緑）</div><div data-model="${q.id}"></div>`;
+    if (done && q.model) body += `<div class="model"><b>模範解答・採点基準</b>\n${esc(q.model)}</div>`;
+  } else {
+    const isP = q.type === "paragraph";
+    if (q.choices) {
+      const pick = (a || {}).choice;
+      body += q.choices.map((c, i) => `<label class="choice${pick == i + 1 ? " sel" : ""}"><input type="radio" name="ch_${q.id}" data-choice="${q.id}" value="${i + 1}" ${pick == i + 1 ? "checked" : ""}><span><b>${i + 1}.</b> ${esc(c.text)}</span></label>`).join("");
+    }
+    const text = typeof a === "string" ? a : (a || {}).text || "";
+    body += `<textarea class="${isP ? "long" : ""}" data-text="${q.id}" placeholder="${isP ? "Write your paragraph in English." : "Answer here."}">${esc(text)}</textarea>`;
+    if (isP && q.minWords) body += `<div class="wc" id="wc_${q.id}"></div>`;
+    if (done && q.model) body += `<div class="model"><b>模範解答・採点基準</b>\n${esc(q.model)}</div>`;
+  }
+  const ab = q.ab ? `<details class="ab"><summary>解答用紙のページを見る</summary>${q.ab.map(p => `<a class="paper" href="${p}" target="_blank"><img src="${p}" loading="lazy" alt="answer booklet"></a>`).join("")}</details>` : "";
+  return `<div class="card q" id="q_${q.id}"><div class="qhead"><span>${esc(q.label || n)}</span><span class="muted">(${q.marks} mark${q.marks === 1 ? "" : "s"})</span></div>
+    ${q.text ? `<div class="qtext">${esc(q.text)}</div>` : ""}${ab}${body}</div>`;
+}
+
+function renderExam() {
+  const e = S.exam, lockCls = S.reading > 0 && !S.submitted ? "locked" : "";
+  $("#app").innerHTML = `
+  <div class="topbar"><div class="in">
+    <div class="title">${esc(e.title)}</div>
+    <span class="save-state" id="saveState"></span>
+    ${S.submitted ? "" : `<div><div class="phase" id="phase"></div><div class="timer" id="timer"></div></div>
+    ${S.reading > 0 ? `<button class="btn" id="skipRead">読む時間をとばす</button>` : ""}
+    <button class="btn primary" id="submitBtn">提出する</button>`}
+    <button class="btn" id="homeBtn">${S.submitted ? "トップへ戻る" : "中断して戻る"}</button>
+  </div></div>
+  <div class="layout">
+    <nav class="nav card" id="nav"></nav>
+    <main class="${lockCls}" id="main">
+      ${S.result ? resultHTML() : `<div class="card"><b>Instructions</b><div class="qtext">${esc(e.instructions)}</div></div>`}
+      ${(() => { const shown = new Set(); return e.sections.map((sec, si) => `<div class="section-head" id="sec_${si}"><h2>${esc(sec.title)}</h2>${sec.note ? `<div class="qtext" style="margin:6px 0 0">${esc(sec.note)}</div>` : ""}</div>
+        ${sec.questions.map((q, qi) => (q.pages || []).filter(p => !shown.has(p) && shown.add(p)).map(p =>
+          `<a class="paper" href="${p}" target="_blank" title="クリックで拡大"><img src="${p}" loading="lazy" alt="question page"></a>`).join("") + qHTML(q, qi + 1)).join("")}`).join(""); })()}
+      ${S.submitted && e.solutions ? `<div class="section-head"><h2>公式の Detailed Solutions（詳しい解答）</h2></div>
+        <details class="card" open><summary>${e.solutions.length} ページ（クリックで拡大）</summary>${e.solutions.map(p => `<a class="paper" href="${p}" target="_blank"><img src="${p}" loading="lazy" alt="solution page"></a>`).join("")}</details>` : ""}
+    </main>
+  </div>`;
+  drawNav(); drawTimer(); bind(); mountPads();
+  e.sections.forEach(sec => sec.questions.forEach(q => q.minWords && updWC(q)));
+}
+
+function resultHTML() {
+  const r = S.result;
+  return `<div class="card" style="border-color:var(--ok)"><b>提出しました</b>
+    <p style="margin:6px 0">自動採点（選択・マッチング）: <b>${r.auto.score} / ${r.auto.max}</b> 点<br>
+    記述・パラグラフ: <b>${r.manualMax}</b> 点分は、下の模範解答・採点基準と見比べて自分で採点してください。</p>
+    <p class="muted" style="margin:0">下に正解と模範解答を表示しています。</p></div>`;
+}
+
+function drawNav() {
+  const nav = $("#nav"); if (!nav) return;
+  nav.innerHTML = S.exam.sections.map((sec, si) => `<div class="sec">${esc(sec.short || sec.title)}</div><div class="dots">
+    ${sec.questions.map((q, qi) => `<a class="dot${answered(q) ? " done" : ""}" href="#q_${q.id}">${esc(q.navLabel || qi + 1)}</a>`).join("")}</div>`).join("");
+}
+
+function mountPads() {
+  S.pads = {};
+  document.querySelectorAll("[data-pad]").forEach(el => {
+    const q = find(el.dataset.pad);
+    S.pads[q.id] = new DrawPad(el, q.draw, {
+      value: S.responses[q.id], readOnly: S.submitted,
+      onChange: v => { const a = S.responses[q.id] = S.responses[q.id] || {}; a.shapes = v.shapes; changed(); },
+    });
+  });
+  document.querySelectorAll("[data-model]").forEach(el => {
+    const q = find(el.dataset.model);
+    new DrawPad(el, q.draw, { value: S.responses[q.id], model: q.modelShapes, readOnly: true });
+  });
+}
+
+function find(id) { for (const s of S.exam.sections) for (const q of s.questions) if (q.id === id) return q; }
+function updWC(q) {
+  const el = $("#wc_" + q.id); if (!el) return;
+  const a = S.responses[q.id], n = words(typeof a === "string" ? a : (a || {}).text);
+  el.textContent = `${n} words（目安 ${q.minWords}–${q.maxWords}）`;
+  el.className = "wc" + (n && (n < q.minWords || n > q.maxWords) ? " bad" : "");
+}
+function changed() { S.dirty = true; $("#saveState").textContent = "未保存"; drawNav(); clearTimeout(S.deb); S.deb = setTimeout(saveDraft, 2500); }
+
+function bind() {
+  $("#homeBtn").onclick = async () => { if (!S.submitted) await saveDraft(); stop(); home(); };
+  const sb = $("#submitBtn"); if (sb) sb.onclick = () => {
+    const all = S.exam.sections.flatMap(s => s.questions), un = all.filter(q => !answered(q)).length;
+    if (confirm(un ? `未回答が ${un} 問あります。提出しますか？` : "提出しますか？")) submit(false);
+  };
+  const sk = $("#skipRead"); if (sk) sk.onclick = () => { S.reading = 0; unlock(); saveDraft(); };
+  if (S.submitted) return;
+  document.querySelectorAll("[data-v]").forEach(b => b.onclick = () => {
+    S.responses[b.dataset.q] = S.responses[b.dataset.q] === b.dataset.v ? "" : b.dataset.v;
+    b.parentElement.querySelectorAll(".opt").forEach(o => o.classList.toggle("sel", S.responses[b.dataset.q] === o.dataset.v));
+    changed();
+  });
+  document.querySelectorAll("[data-match]").forEach(s => s.onchange = () => {
+    const r = S.responses[s.dataset.match] = S.responses[s.dataset.match] || {}; r[s.dataset.i] = s.value; changed();
+  });
+  document.querySelectorAll("[data-choice]").forEach(r => r.onchange = () => {
+    const q = find(r.dataset.choice), a = S.responses[q.id] = S.responses[q.id] || {}; a.choice = +r.value;
+    r.closest(".q").querySelectorAll(".choice").forEach(c => c.classList.toggle("sel", c.contains(r)));
+    changed();
+  });
+  document.querySelectorAll("[data-text]").forEach(t => t.oninput = () => {
+    const q = find(t.dataset.text);
+    if (q.choices || q.type === "draw") { const a = S.responses[q.id] = S.responses[q.id] || {}; a.text = t.value; } else S.responses[q.id] = t.value;
+    if (q.minWords) updWC(q); changed();
+  });
+}
+
+async function saveDraft() {
+  if (!S || S.submitted) return;
+  try {
+    await api("/api/draft", { examId: S.exam.id, responses: S.responses, elapsedSec: S.elapsed, readingLeft: S.reading });
+    S.dirty = false; const el = $("#saveState"); if (el) el.textContent = "自動保存 " + new Date().toLocaleTimeString().slice(0, 5);
+  } catch { const el = $("#saveState"); if (el) el.textContent = "保存失敗（ブラウザの保存領域がいっぱい？）"; }
+}
+
+function stop() { clearInterval(S?.tick); clearInterval(S?.saver); window.onbeforeunload = null; }
+
+async function submit(auto) {
+  if (S.submitted) return;
+  S.submitted = true; stop();
+  if (auto) alert("時間切れです。自動で提出します。");
+  const images = {};
+  for (const [id, pad] of Object.entries(S.pads || {})) if (pad.shapes.length) images[id] = pad.toPNG();
+  S.result = await api("/api/submit", { examId: S.exam.id, responses: S.responses, elapsedSec: S.elapsed, autoSubmitted: auto, images });
+  renderExam(); window.scrollTo(0, 0);
+}
+
+home();
+</script>
+</body>
+</html>

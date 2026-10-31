@@ -1,0 +1,711 @@
+{
+ "id": "02_commercial_studies",
+ "subject": "Commercial Studies",
+ "title": "Fiji Year 10 Mock Examination — Commercial Studies",
+ "minutes": 120,
+ "readingMinutes": 10,
+ "totalMarks": 100,
+ "instructions": "Answer ALL questions. Time allowed: 2 hours (an extra 10 minutes is allowed for reading).\nMultiple-choice: click the letter of the best answer (click again to clear).\nShort answers and paragraphs: type your answer in English in the box. Show working for calculations.\nYou may use a calculator. Round answers to 2 decimal places unless stated otherwise.\nYour answers are saved automatically. The paper is submitted automatically when time runs out.\nThere are three sections. All are compulsory. Note the choices in the Paragraph Writing questions (answer ONE of the three).\nParagraphs should be 75–100 words. For journals and ledger accounts, type them as neat lines, e.g. 'Mar 3 | Purchases | 300'.",
+ "sections": [
+  {
+   "title": "SECTION A  PERSONAL FINANCE II [30 marks]",
+   "short": "A Personal Finance",
+   "note": "Question 1: multiple choice (10 marks). Question 2: problem solving (15 marks). Question 3: paragraph writing — choose ONE (5 marks).",
+   "questions": [
+    {
+     "id": "s1q1",
+     "type": "mcq",
+     "text": "Which of the following is a NEED rather than a want?",
+     "options": [
+      "A new smartphone",
+      "Clean drinking water",
+      "A movie ticket",
+      "Designer shoes"
+     ],
+     "answer": "B",
+     "marks": 1
+    },
+    {
+     "id": "s1q2",
+     "type": "mcq",
+     "text": "A budget is best described as",
+     "options": [
+      "a plan for future income and spending.",
+      "a record of past spending only.",
+      "a loan from a bank.",
+      "a list of assets owned by a business."
+     ],
+     "answer": "A",
+     "marks": 1
+    },
+    {
+     "id": "s1q3",
+     "type": "mcq",
+     "text": "Which of the following is an internal source of borrowing?",
+     "options": [
+      "Commercial bank",
+      "Credit union",
+      "Hire purchase company",
+      "Borrowing from family members"
+     ],
+     "answer": "D",
+     "marks": 1
+    },
+    {
+     "id": "s1q4",
+     "type": "mcq",
+     "text": "A disadvantage of borrowing is that",
+     "options": [
+      "needs can be met quickly.",
+      "emergencies can be handled.",
+      "interest must be paid.",
+      "assets can be bought earlier."
+     ],
+     "answer": "C",
+     "marks": 1
+    },
+    {
+     "id": "s1q5",
+     "type": "mcq",
+     "text": "Collateral is",
+     "options": [
+      "the interest paid on a loan.",
+      "an asset pledged as security for a loan.",
+      "the monthly repayment on a loan.",
+      "a type of savings account."
+     ],
+     "answer": "B",
+     "marks": 1
+    },
+    {
+     "id": "s1q6",
+     "type": "mcq",
+     "text": "Paying an insurance company a regular amount to protect against a possible loss is called paying a",
+     "options": [
+      "claim.",
+      "dividend.",
+      "premium.",
+      "deposit."
+     ],
+     "answer": "C",
+     "marks": 1
+    },
+    {
+     "id": "s1q7",
+     "type": "mcq",
+     "text": "Which of the following is an example of a short-term saving goal?",
+     "options": [
+      "Buying a school bag next month",
+      "Saving for retirement",
+      "Buying a house",
+      "Paying for university in five years"
+     ],
+     "answer": "A",
+     "marks": 1
+    },
+    {
+     "id": "s1q8",
+     "type": "mcq",
+     "text": "Interest calculated only on the original amount deposited is called",
+     "options": [
+      "compound interest.",
+      "variable interest.",
+      "nominal interest.",
+      "simple interest."
+     ],
+     "answer": "D",
+     "marks": 1
+    },
+    {
+     "id": "s1q9",
+     "type": "mcq",
+     "text": "The Fiji National Provident Fund (FNPF) is mainly a",
+     "options": [
+      "commercial bank.",
+      "stock exchange.",
+      "insurance broker.",
+      "superannuation fund."
+     ],
+     "answer": "D",
+     "marks": 1
+    },
+    {
+     "id": "s1q10",
+     "type": "mcq",
+     "text": "Spreading your money across several different investments to reduce risk is called",
+     "options": [
+      "inflation.",
+      "speculation.",
+      "diversification.",
+      "depreciation."
+     ],
+     "answer": "C",
+     "marks": 1
+    },
+    {
+     "id": "s1q11",
+     "type": "short",
+     "text": "A. Personal Financial Management\nState one economic factor that affects how a person manages his or her personal savings.",
+     "marks": 1,
+     "model": "Any one: inflation / rising cost of living; interest rates; unemployment or loss of income; level of income; taxes. (1)"
+    },
+    {
+     "id": "s1q12",
+     "type": "short",
+     "text": "B. Managing Credit\n1. Identify one external source of borrowing. (1 mark)\n2. Explain one way a person can improve his or her credit worthiness. (2 marks)",
+     "marks": 3,
+     "model": "1. Commercial bank / credit union / finance company / hire purchase company / moneylender (1)\n2. Pay back loans and bills on time (1) — lenders see a good repayment history, so the person is trusted with future loans (1). Accept: keep debt low compared with income; keep a steady job/income."
+    },
+    {
+     "id": "s1q13",
+     "type": "short",
+     "text": "C. Managing Risk and Financial Planning\nThe Ravu family's house is close to a river. Explain one way the family can protect itself against the financial risk of flood damage.",
+     "marks": 2,
+     "model": "Take out house and contents insurance that covers flood damage (1) so that the insurer pays for repairs/replacement and the family does not lose its savings (1). Accept: build on raised foundation / relocate / emergency savings fund, with explanation."
+    },
+    {
+     "id": "s1q14",
+     "type": "short",
+     "text": "D. Investment in Financial Institutions\n1. Differentiate between a savings account and a term deposit. (2 marks)\n2. Mr Lal, aged 62, has just retired with $60 000 from his FNPF. He wants a regular income but does not want to risk losing his money. Explain the financial advice you would give him. (2 marks)",
+     "marks": 4,
+     "model": "1. Savings account: money can be withdrawn at any time, low interest (1). Term deposit: money is locked in for a fixed period, higher interest (1).\n2. Put most of the money in a low-risk investment such as a term deposit or FNPF annuity/pension that pays regular interest (1), because it protects the capital while giving steady income; keep some in a savings account for emergencies (1)."
+    },
+    {
+     "id": "s1q15",
+     "type": "short",
+     "text": "E. Financial Planning for the Future\nRead the case study and answer the questions.\n\nJosefa started working two years ago. He spends all of his pay every fortnight on eating out and new clothes and often borrows from friends before payday. He wants to buy a car in three years' time.\n\n1. Describe one long-term consequence of Josefa's spending habits. (2 marks)\n2. Outline a plan (at least three ideas) to help Josefa reach his goal of buying a car. (3 marks)",
+     "marks": 5,
+     "model": "1. He will have no savings, so he cannot buy the car / handle emergencies (1); repeated borrowing can lead to a cycle of debt and a poor credit record (1).\n2. Any three, 1 mark each: make a budget and track spending; set a savings target per fortnight (e.g. $50); open a separate savings account / term deposit; cut wants such as eating out; stop borrowing and repay friends; look for extra income."
+    },
+    {
+     "id": "s1q16",
+     "type": "paragraph",
+     "text": "QUESTION 3 Paragraph Writing (5 marks)\nChoose ONE question and write a paragraph of 75–100 words.",
+     "marks": 5,
+     "model": "Marking (each choice): Intro / topic sentence 1, content points 3 (as listed), conclusion/expression 1.\n1. Budget = a plan for future income and spending (1). Benefit e.g. prevents overspending / helps reach savings goals, explained (1). Step e.g. list income, list expenses, compare, adjust (1).\n2. Insurance = paying a premium to an insurer to be protected against a possible financial loss (1). Benefit e.g. covers cost of rebuilding after a cyclone (1). Insurer = insurance company, insured = person/policyholder (1).\n3. Investment = using money to earn more money in the future (1). Example + explanation e.g. shares earn dividends / term deposit earns interest (1). Risk e.g. may lose money if company fails; reduce by diversification (1).",
+     "minWords": 75,
+     "maxWords": 100,
+     "choices": [
+      {
+       "text": "\"A budget tells your money where to go instead of wondering where it went.\"\nWith reference to the statement:\n• define a budget.\n• explain one benefit of having a budget.\n• explain one step in preparing a budget."
+      },
+      {
+       "text": "\"Insurance is the price you pay for peace of mind.\"\nWith reference to the statement:\n• define insurance.\n• explain one benefit of insurance to a family living in Fiji.\n• state who the insurer and the insured are."
+      },
+      {
+       "text": "\"Do not put all your eggs in one basket.\"\nWith reference to the statement:\n• define investment.\n• explain one type of investment available in Fiji.\n• explain one risk of investing and how it can be reduced."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "SECTION B  BUSINESS INFORMATION II [40 marks]",
+   "short": "B Business Info",
+   "note": "Question 1: multiple choice (10 marks). Question 2: problem solving (30 marks).",
+   "questions": [
+    {
+     "id": "s2q1",
+     "type": "mcq",
+     "text": "The accounting concept which states that the business is separate from its owner is the",
+     "options": [
+      "entity concept.",
+      "going concern concept.",
+      "historical cost concept.",
+      "matching concept."
+     ],
+     "answer": "A",
+     "marks": 1
+    },
+    {
+     "id": "s2q2",
+     "type": "mcq",
+     "text": "Accounting information that is free from bias is said to be",
+     "options": [
+      "relevant.",
+      "neutral.",
+      "timely.",
+      "comparable."
+     ],
+     "answer": "B",
+     "marks": 1
+    },
+    {
+     "id": "s2q3",
+     "type": "mcq",
+     "text": "A business owned and controlled by its members, who share the profits, is a",
+     "options": [
+      "sole trader.",
+      "partnership.",
+      "co-operative.",
+      "public company."
+     ],
+     "answer": "C",
+     "marks": 1
+    },
+    {
+     "id": "s2q4",
+     "type": "mcq",
+     "text": "Which business has limited liability?",
+     "options": [
+      "Sole trader",
+      "Private company",
+      "Partnership",
+      "Hawker"
+     ],
+     "answer": "B",
+     "marks": 1
+    },
+    {
+     "id": "s2q5",
+     "type": "mcq",
+     "text": "'Sold goods on credit to Mere $250' affects the",
+     "options": [
+      "sales account and Mere's account.",
+      "sales account and cash account.",
+      "purchases account and Mere's account.",
+      "capital account and cash account."
+     ],
+     "answer": "A",
+     "marks": 1
+    },
+    {
+     "id": "s2q6",
+     "type": "mcq",
+     "text": "The source document sent by a seller to a buyer for goods sold on credit is the",
+     "options": [
+      "receipt.",
+      "credit note.",
+      "cheque butt.",
+      "invoice."
+     ],
+     "answer": "D",
+     "marks": 1
+    },
+    {
+     "id": "s2q7",
+     "type": "mcq",
+     "text": "A credit note is issued when",
+     "options": [
+      "goods are sold for cash.",
+      "the owner takes goods.",
+      "rent is paid.",
+      "goods are returned by a customer."
+     ],
+     "answer": "D",
+     "marks": 1
+    },
+    {
+     "id": "s2q8",
+     "type": "mcq",
+     "text": "The Balance Sheet shows the",
+     "options": [
+      "financial position at a date.",
+      "gross profit of the business.",
+      "financial performance for a period.",
+      "cash received during the month."
+     ],
+     "answer": "A",
+     "marks": 1
+    },
+    {
+     "id": "s2q9",
+     "type": "mcq",
+     "text": "Cost of goods sold is calculated as",
+     "options": [
+      "closing stock + purchases − opening stock",
+      "sales − purchases",
+      "opening stock + net purchases − closing stock",
+      "net sales − gross profit + expenses"
+     ],
+     "answer": "C",
+     "marks": 1
+    },
+    {
+     "id": "s2q10",
+     "type": "mcq",
+     "text": "When the owner takes cash out of the business for personal use, it is recorded as",
+     "options": [
+      "an expense.",
+      "drawings.",
+      "a liability.",
+      "revenue."
+     ],
+     "answer": "B",
+     "marks": 1
+    },
+    {
+     "id": "s2q11",
+     "type": "short",
+     "text": "A. Business and the Accounting System\n1. Define the two characteristics of accounting information below:\n   a. Relevance\n   b. Comparability (2 marks)\n2. Explain why a business should follow the going concern concept. (2 marks)",
+     "marks": 4,
+     "model": "1a. Relevance: information that helps users make decisions / is useful for the decision (1).\n1b. Comparability: information prepared the same way so it can be compared over periods or with other businesses (1).\n2. The business assumes it will keep operating in the future (1), so assets are recorded at cost rather than at sale/break-up value and long-term plans can be made (1)."
+    },
+    {
+     "id": "s2q12",
+     "type": "short",
+     "text": "B. Financial Accounting\n1. State two features of a sole trader business. (2 marks)\n2. Explain one difference between a partnership and a co-operative. (2 marks)",
+     "marks": 4,
+     "model": "1. Any two: one owner; owner makes all decisions; unlimited liability; owner keeps all profit; easy to set up. (2)\n2. A partnership has 2–20 partners who share profits by agreement and has unlimited liability (1); a co-operative is owned by many members, each has one vote and profits are shared by members according to use, with limited liability (1)."
+    },
+    {
+     "id": "s2q13",
+     "type": "short",
+     "text": "C. The Accounting Process\n1. a. Define a source document. (1 mark)\n   b. Give one example of a transaction recorded on a receipt. (1 mark)\n   c. Explain one difference between an invoice and a credit note. (2 marks)\n2. a. Differentiate between the Cash Receipts Journal and the Cash Payments Journal. (2 marks)",
+     "marks": 6,
+     "model": "1a. Written evidence that a transaction has taken place (1).\n1b. Cash received from a debtor / cash sales / owner's capital paid in (1).\n1c. Invoice: issued by the seller for goods sold on credit — increases the amount owed (1). Credit note: issued for goods returned — reduces the amount owed (1).\n2a. Cash Receipts Journal records all money received (1); Cash Payments Journal records all money paid out (1)."
+    },
+    {
+     "id": "s2q14",
+     "type": "short",
+     "text": "2. b. During March 2025, Losa's Store had the following transactions. Use the RELEVANT transactions to prepare the Cash Payments Journal (columns: Date | Particulars | Discount Received | Details | Bank).",
+     "marks": 4,
+     "model": "Cash Payments Journal (only payments):\nMar 3  | Purchases        |      |     | 300\nMar 8  | Wages            |      |     | 120\nMar 17 | Drawings         |      |     |  60\nMar 24 | Vinod Ltd        | 18   | 360 | 342\nMar 28 | Rent             |      |     | 150\nMar 31 | Discount Received CR 18 ; Bank Account CR 972\nMarks: correct entries (2), discount shown correctly (1), totals 18 and 972 (1). Credit purchases, sales, returns and capital are NOT in this journal.",
+     "table": [
+      [
+       "Date",
+       "Particulars",
+       "$"
+      ],
+      [
+       "Mar 1",
+       "Losa started business with cash",
+       "2 000"
+      ],
+      [
+       "3",
+       "Bought goods for cash",
+       "300"
+      ],
+      [
+       "5",
+       "Cash sales",
+       "180"
+      ],
+      [
+       "8",
+       "Paid wages",
+       "120"
+      ],
+      [
+       "10",
+       "Bought goods on credit from Vinod Ltd",
+       "400"
+      ],
+      [
+       "14",
+       "Sold goods on credit to Mere",
+       "250"
+      ],
+      [
+       "17",
+       "Losa took cash for personal use",
+       "60"
+      ],
+      [
+       "20",
+       "Returned goods to Vinod Ltd",
+       "40"
+      ],
+      [
+       "24",
+       "Paid Vinod Ltd $360 less $18 discount",
+       ""
+      ],
+      [
+       "28",
+       "Paid rent",
+       "150"
+      ]
+     ]
+    },
+    {
+     "id": "s2q15",
+     "type": "short",
+     "text": "3. Kalesi owns a canteen. Use the information below to prepare these ledger accounts for September 2025:\n   a. Tomasi (debtor) (3 marks)\n   b. Sales (2 marks)\n   c. Discount Allowed (1 mark)\n   d. Capital (1 mark)\n\nOpening balances 1 September: Cash at Bank 1 500 Dr; Debtors — Tomasi 300 Dr, Asha 150 Dr; Equipment 6 000 Dr; Creditor — Ravi 700 Cr; Loan 1 250 Cr; Capital 6 000 Cr.\nSales Journal: Sep 4 Tomasi 200; Sep 12 Asha 120; Sep 22 Tomasi 80 — total 400.\nSales Returns Journal: Sep 15 Tomasi 30; Sep 26 Asha 10 — total 40.\nCash Receipts Journal: Sep 6 Cash sales 350; Sep 18 Tomasi 285 (discount allowed 15); Sep 20 Asha 95 (discount allowed 5); Sep 25 Capital 800; Sep 28 Cash sales 120. Totals: Discount allowed 20, Bank 1 650.",
+     "marks": 7,
+     "model": "a. Tomasi\nDr: Sep 1 Balance 300 | Sep 4 Sales 200 | Sep 22 Sales 80 = 580\nCr: Sep 15 Sales Returns 30 | Sep 18 Bank 285 | Sep 18 Discount Allowed 15 | Sep 30 Balance c/d 250 = 580\nOct 1 Balance b/d 250 Dr  (3)\nb. Sales\nCr: Sep 30 Debtors (Sales Journal) 400 | Sep 30 Bank (cash sales 350 + 120) 470 → balance 870 Cr  (2)\nc. Discount Allowed\nDr: Sep 30 Debtors 20  (1)\nd. Capital\nCr: Sep 1 Balance 6 000 | Sep 25 Bank 800 → balance 6 800 Cr  (1)"
+    },
+    {
+     "id": "s2q16",
+     "type": "short",
+     "text": "D. Measuring Periodic Income\nUse the extract below to prepare the Trading Account of Niko's Hardware for the year ended 30 June 2025. Closing stock on 30 June 2025 was $4 200. (Not every item is needed.)",
+     "marks": 5,
+     "model": "Sales 32 000 − Sales returns 500 = Net sales 31 500 (1)\nOpening stock 3 800\nPurchases 18 000 − Purchases returns 400 = 17 600\n+ Freight inwards 300 + Customs duty 600 = 18 500 (1)\nGoods available for sale 22 300\n− Closing stock 4 200\nCost of goods sold 18 100 (1)\nGross profit = 31 500 − 18 100 = $13 400 (1)\nCorrect format / headings (1). Wages, rent, discount received and freight outwards belong in the Profit & Loss account, not here.",
+     "table": [
+      [
+       "Item",
+       "$"
+      ],
+      [
+       "Sales",
+       "32 000"
+      ],
+      [
+       "Sales returns",
+       "500"
+      ],
+      [
+       "Opening stock",
+       "3 800"
+      ],
+      [
+       "Purchases",
+       "18 000"
+      ],
+      [
+       "Purchases returns",
+       "400"
+      ],
+      [
+       "Freight inwards",
+       "300"
+      ],
+      [
+       "Customs duty",
+       "600"
+      ],
+      [
+       "Wages",
+       "2 000"
+      ],
+      [
+       "Rent",
+       "1 200"
+      ],
+      [
+       "Discount received",
+       "150"
+      ],
+      [
+       "Freight outwards",
+       "250"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "title": "SECTION C  ECONOMICS II [30 marks]",
+   "short": "C Economics",
+   "note": "Question 1: multiple choice (10 marks). Question 2: problem solving (15 marks). Question 3: paragraph writing — choose ONE (5 marks).",
+   "questions": [
+    {
+     "id": "s3q1",
+     "type": "mcq",
+     "text": "The basic economic problem is caused by",
+     "options": [
+      "unlimited resources and limited wants.",
+      "high taxes.",
+      "too much money in the economy.",
+      "limited resources and unlimited wants."
+     ],
+     "answer": "D",
+     "marks": 1
+    },
+    {
+     "id": "s3q2",
+     "type": "mcq",
+     "text": "An economy where the government makes all the main economic decisions is a",
+     "options": [
+      "command economy.",
+      "traditional economy.",
+      "market economy.",
+      "mixed economy."
+     ],
+     "answer": "A",
+     "marks": 1
+    },
+    {
+     "id": "s3q3",
+     "type": "mcq",
+     "text": "The reward for the factor of production 'land' is",
+     "options": [
+      "wages.",
+      "rent.",
+      "profit.",
+      "interest."
+     ],
+     "answer": "B",
+     "marks": 1
+    },
+    {
+     "id": "s3q4",
+     "type": "mcq",
+     "text": "When the price of a good rises, the quantity demanded usually",
+     "options": [
+      "rises.",
+      "stays the same.",
+      "falls.",
+      "doubles."
+     ],
+     "answer": "C",
+     "marks": 1
+    },
+    {
+     "id": "s3q5",
+     "type": "mcq",
+     "text": "A shortage occurs in a market when",
+     "options": [
+      "supply is greater than demand.",
+      "demand is greater than supply.",
+      "price is above equilibrium.",
+      "the government gives a subsidy."
+     ],
+     "answer": "B",
+     "marks": 1
+    },
+    {
+     "id": "s3q6",
+     "type": "mcq",
+     "text": "Which service is usually provided by a town council?",
+     "options": [
+      "Garbage collection",
+      "National defence",
+      "Foreign affairs",
+      "Printing currency"
+     ],
+     "answer": "A",
+     "marks": 1
+    },
+    {
+     "id": "s3q7",
+     "type": "mcq",
+     "text": "Money that a town council collects from property owners is called",
+     "options": [
+      "income tax.",
+      "VAT.",
+      "customs duty.",
+      "rates."
+     ],
+     "answer": "D",
+     "marks": 1
+    },
+    {
+     "id": "s3q8",
+     "type": "mcq",
+     "text": "Goods sold to other countries are called",
+     "options": [
+      "imports.",
+      "tariffs.",
+      "exports.",
+      "quotas."
+     ],
+     "answer": "C",
+     "marks": 1
+    },
+    {
+     "id": "s3q9",
+     "type": "mcq",
+     "text": "The balance of trade is the difference between",
+     "options": [
+      "invisible exports and invisible imports.",
+      "capital inflow and capital outflow.",
+      "visible exports and visible imports.",
+      "government income and spending."
+     ],
+     "answer": "C",
+     "marks": 1
+    },
+    {
+     "id": "s3q10",
+     "type": "mcq",
+     "text": "Which of the following is an indicator of development?",
+     "options": [
+      "Life expectancy",
+      "Number of cars imported",
+      "Number of shops",
+      "Size of the army"
+     ],
+     "answer": "A",
+     "marks": 1
+    },
+    {
+     "id": "s3q11",
+     "type": "short",
+     "text": "A. Introduction to Economics\nDescribe one feature of a market economy.",
+     "marks": 2,
+     "model": "Prices are set by demand and supply / resources are privately owned (1), and producers decide what to produce in order to make profit with little government control (1)."
+    },
+    {
+     "id": "s3q12",
+     "type": "short",
+     "text": "B. Microeconomics\n1. State one factor, other than price, that affects demand. (1 mark)\n2. Explain what happens to the price of a good when there is a surplus in the market. (2 marks)",
+     "marks": 3,
+     "model": "1. Income / tastes and preferences / price of related goods / population / advertising / season (1).\n2. Supply is greater than demand, so sellers have unsold stock (1); they lower the price until quantity demanded equals quantity supplied (equilibrium) (1)."
+    },
+    {
+     "id": "s3q13",
+     "type": "short",
+     "text": "C. Macroeconomics\n1. Identify one source of income for the central government. (1 mark)\n2. Explain how government spending on roads can help the economy. (2 marks)",
+     "marks": 3,
+     "model": "1. Taxes (income tax, VAT, customs duty) / borrowing / grants / fees (1).\n2. Better roads lower transport costs and time for farmers and businesses (1), which increases production, trade and employment / economic growth (1)."
+    },
+    {
+     "id": "s3q14",
+     "type": "short",
+     "text": "D. International Trade\nUse the information for the Zeta economy ($ million) to calculate:\n1. Balance of Trade (1 mark)\n2. Balance of Current Account (1 mark)\n3. Balance of Capital Account (1 mark)\nState whether each is a surplus or a deficit.",
+     "marks": 3,
+     "model": "1. 950 − 1 300 = −$350m (deficit) (1)\n2. (950 + 700) − (1 300 + 280) = 1 650 − 1 580 = +$70m (surplus) (1)\n3. 500 − 620 = −$120m (deficit) (1)",
+     "table": [
+      [
+       "Item",
+       "$m"
+      ],
+      [
+       "Visible exports",
+       "950"
+      ],
+      [
+       "Invisible exports",
+       "700"
+      ],
+      [
+       "Visible imports",
+       "1 300"
+      ],
+      [
+       "Invisible imports",
+       "280"
+      ],
+      [
+       "Capital inflow",
+       "500"
+      ],
+      [
+       "Capital outflow",
+       "620"
+      ]
+     ]
+    },
+    {
+     "id": "s3q15",
+     "type": "short",
+     "text": "E. Development Economics\nRead the extract and answer the questions.\n\n\"In many rural villages, young people leave for the towns because there are few jobs. Some families depend on remittances, while others grow only enough food for themselves. Access to clean water and health centres is still limited in remote islands.\"\n\n1. Identify two signs of poverty or under-development in the extract. (2 marks)\n2. Explain one way the government can reduce poverty in rural areas. (2 marks)",
+     "marks": 4,
+     "model": "1. Any two: few jobs / unemployment; subsistence farming only; dependence on remittances; limited clean water; limited health services; rural–urban drift (2).\n2. e.g. Build roads, water supply and health centres in rural areas (1) so people can sell produce, stay healthy and earn income locally (1). Accept: small business loans, farming assistance, scholarships, with explanation."
+    },
+    {
+     "id": "s3q16",
+     "type": "paragraph",
+     "text": "QUESTION 3 Paragraph Writing (5 marks)\nChoose ONE question and write a paragraph of 75–100 words.",
+     "marks": 5,
+     "model": "Marking (each choice): topic sentence 1, three content points 3, conclusion/expression 1.\n1. Demand = quantity buyers are willing and able to buy at each price (1); law of demand: price up → quantity demanded down (1); factor e.g. income rises → demand rises (1).\n2. Inflation = a general and continuous rise in prices (1); cause e.g. higher import/fuel costs (cost-push) or too much spending (demand-pull) (1); effect e.g. money buys less, savers and fixed-income earners lose (1).\n3. Tourism earns foreign exchange (1); creates jobs in hotels, transport, handicrafts (1); challenge e.g. cyclones / COVID-type shocks / environmental damage and how to reduce it (1).",
+     "minWords": 75,
+     "maxWords": 100,
+     "choices": [
+      {
+       "text": "\"Price is what you pay. Value is what you get.\"\nWith reference to the statement:\n• define demand.\n• explain the law of demand.\n• explain one factor (other than price) that changes demand."
+      },
+      {
+       "text": "\"Inflation is taxation without legislation.\"\nWith reference to the statement:\n• define inflation.\n• explain one cause of inflation.\n• explain one effect of inflation on households."
+      },
+      {
+       "text": "\"Tourism is Fiji's largest foreign exchange earner.\"\nWith reference to the statement:\n• explain one way tourism helps Fiji's economy.\n• explain one other benefit of tourism to local communities.\n• explain one challenge facing tourism and how it can be reduced."
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

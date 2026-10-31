@@ -2,6 +2,7 @@
 <html lang="ja">
 <head>
 <script src="api.js"></script>
+<script src="user.js"></script>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Year 10 Mock Exams</title>
@@ -137,7 +138,7 @@ async function home() {
   $("#app").innerHTML = `
   <div class="wrap">
     <h1>Fiji Year 10 過去問・模試</h1>
-    <p class="muted">どれも100点・2時間です。選択問題とマッチングは自動採点、記述・パラグラフ・作図は提出後に出る模範解答と見比べて自分で採点します。答案や途中経過はこのブラウザの中にだけ保存されます。</p>
+    <p class="muted">どれも100点・2時間です。選択問題とマッチングは自動採点、記述・パラグラフ・作図は、提出すると答案が漣さんに送られ、Claude が採点します。途中経過はこのブラウザに保存されます。</p>
     ${[["mock26", "模試 第2回（2026年 学校の課題の形式）", "学校の Holiday Assignment 2026・テストと同じ形式・単元の新作問題です。"],
        ["mock", "模試（オリジナル）", "2019年と同じ形式・配点の新作問題です。"]].map(([kind, head, sub]) => `
     <h2>${head}</h2><p class="muted" style="margin-top:-6px">${sub}</p>
@@ -162,16 +163,16 @@ async function home() {
       <div class="card exam-card">
         <h3>全6教科</h3>
         <div><b>英文和訳</b>（English → 日本語）</div>
-        <div class="muted">教科書の内容の英文を日本語に訳す。全教科まぜて600問から出題（教科・単元ごとも可）。模範訳とくらべて自分で判定</div>
+        <div class="muted">教科書の内容の英文を日本語に訳す。全教科まぜて600問から出題（教科・単元ごとも可）。訳は保存して Claude が添削</div>
         <div class="row" style="margin-top:10px"><a class="btn primary" href="translate.html" style="text-decoration:none">練習する</a>
           <a class="btn" href="translate_list.html" style="text-decoration:none">答え一覧を見る</a></div>
       </div>
     </div>
     <h2>これまでの答案</h2>
     ${hist.length ? `<div class="card"><table style="width:100%;border-collapse:collapse;font-size:14px">
-      <tr class="muted"><td>日時</td><td>模試</td><td>自動採点</td><td>自分で採点</td></tr>
+      <tr class="muted"><td>日時</td><td>模試</td><td>自動採点</td><td>Claude 採点待ち</td></tr>
       ${hist.map(h => `<tr><td>${esc(h.submittedAt)}</td><td>${esc(h.title)}</td><td>${h.auto.score} / ${h.auto.max}</td><td>${h.manualMax} 点分</td></tr>`).join("")}
-    </table></div>`
+    </table><p class="muted" style="margin:10px 0 0">提出した答案は漣さんに送られています。採点結果は漣さんから受け取ってください。</p></div>`
       : `<p class="muted">まだありません。</p>`}
   </div>`;
   $("#app").querySelectorAll("[data-start]").forEach(b => b.onclick = () => start(b.dataset.start, false));
@@ -293,7 +294,7 @@ function resultHTML() {
   const r = S.result;
   return `<div class="card" style="border-color:var(--ok)"><b>提出しました</b>
     <p style="margin:6px 0">自動採点（選択・マッチング）: <b>${r.auto.score} / ${r.auto.max}</b> 点<br>
-    記述・パラグラフ: <b>${r.manualMax}</b> 点分は、下の模範解答・採点基準と見比べて自分で採点してください。</p>
+    記述・パラグラフ: <b>${r.manualMax}</b> 点分は${r.sent ? "漣さんに送りました。Claude が採点します" : "まだ送れていません（次にページを開いたとき自動で送ります）"}。</p>
     <p class="muted" style="margin:0">下に正解と模範解答を表示しています。</p></div>`;
 }
 

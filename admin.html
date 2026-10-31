@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>管理画面 — Year 10 模試</title>
+<style>
+  :root { --bg: #f6f5f1; --card: #fff; --ink: #1f2328; --muted: #6a707a; --line: #dcdad3; --accent: #1d5fa8; --bad: #b3261e; --ok: #1f7a3f; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #16181c; --card: #1f2227; --ink: #e6e6e6; --muted: #9aa0a8; --line: #33373e; --accent: #6aa5ec; --bad: #ef7d74; --ok: #6cc28a; }
+  }
+  body { margin: 0; background: var(--bg); color: var(--ink); font: 15px/1.6 system-ui, "Segoe UI", "Yu Gothic UI", sans-serif; }
+  .wrap { max-width: 900px; margin: 0 auto; padding: 20px 16px 60px; }
+  h1 { font-size: 22px; margin: 0 0 4px; } .muted { color: var(--muted); font-size: 13px; }
+  .card { background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: 14px; margin: 12px 0; }
+  input, button { font: inherit; border-radius: 8px; border: 1px solid var(--line); padding: 8px 12px; background: var(--card); color: var(--ink); }
+  button { cursor: pointer; } button.primary { background: var(--accent); border-color: var(--accent); color: #fff; }
+  button.danger { color: var(--bad); border-color: var(--bad); }
+  table { width: 100%; border-collapse: collapse; font-size: 14px; } td, th { padding: 6px 4px; border-bottom: 1px solid var(--line); text-align: left; vertical-align: top; }
+  .files { margin: 4px 0 0; padding-left: 18px; font-size: 13px; } .files a { color: var(--accent); cursor: pointer; }
+  .ok { color: var(--ok); } .wait { color: var(--bad); }
+  pre { white-space: pre-wrap; word-break: break-word; font-size: 13px; background: var(--bg); padding: 10px; border-radius: 8px; max-height: 70vh; overflow: auto; }
+  .row { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>管理画面</h1>
+  <p class="muted">漣さん専用。友達の名前と、送られてきた答案（GitHub の非公開リポジトリ <code>fiji-year10-answers</code>）を管理します。</p>
+  <div class="card row" id="login">
+    <input id="pass" type="password" placeholder="合言葉" autocomplete="current-password">
+    <button class="primary" id="go">開く</button><span class="muted" id="msg"></span>
+  </div>
+  <div id="app"></div>
+</div>
+<script src="api.js"></script>
+<script>
+const $ = s => document.querySelector(s);
+const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+let PASS = "";
+try { PASS = sessionStorage.getItem("y10admin") || ""; } catch {}
+const admin = body => Y10.post({ action: "admin", pass: PASS, ...body });
+
+async function load() {
+  $("#msg").textContent = "読み込み中…";
+  let d;
+  try { d = await admin({ op: "list" }); } catch (e) { $("#msg").textContent = e.message; $("#app").innerHTML = ""; return; }
+  try { sessionStorage.setItem("y10admin", PASS); } catch {}
+  $("#msg").textContent = "";
+  const by = {};
+  for (const n of Object.keys(d.users)) by[n] = [];
+  for (const p of d.paths) { const i = p.indexOf("/"); if (i > 0) (by[p.slice(0, i)] ||= []).push(p.slice(i + 1)); }
+  const names = Object.keys(by).sort((a, b) => a.localeCompare(b));
+  $("#app").innerHTML = `<div class="card">
+    <div class="row" style="justify-content:space-between"><b>${names.length} 人</b><button id="reload">更新</button></div>
+    <table><tr class="muted"><th>名前</th><th>登録</th><th>答案</th><th></th></tr>
+    ${names.map(n => {
+      const f = by[n], answers = f.filter(x => /^[^/]+\.md$/.test(x) && !x.endsWith("_採点.md"));
+      const graded = answers.filter(a => f.includes(a.replace(/\.md$/, "_採点.md"))).length;
+      const practice = f.filter(x => x.startsWith("practice/")).length;
+      return `<tr><td><b>${esc(n)}</b></td><td class="muted">${esc(d.users[n]?.since || "（未登録）")}</td>
+        <td>模試 ${answers.length}（<span class="${graded < answers.length ? "wait" : "ok"}">採点済み ${graded}</span>）・練習 ${practice}
+          <ul class="files">${f.filter(x => x.endsWith(".md")).sort().reverse().map(x => `<li><a data-read="${esc(n + "/" + x)}">${esc(x)}</a></li>`).join("")}</ul></td>
+        <td><button class="danger" data-del="${esc(n)}">削除</button></td></tr>`;
+    }).join("")}</table></div>
+    <div class="card" id="viewer" hidden><div class="row" style="justify-content:space-between"><b id="vname"></b><button id="vclose">閉じる</button></div><pre id="vtext"></pre></div>`;
+  $("#reload").onclick = load;
+  $("#vclose").onclick = () => $("#viewer").hidden = true;
+  document.querySelectorAll("[data-read]").forEach(a => a.onclick = async () => {
+    $("#viewer").hidden = false; $("#vname").textContent = a.dataset.read; $("#vtext").textContent = "読み込み中…";
+    try { $("#vtext").textContent = (await admin({ op: "read", path: a.dataset.read })).text; } catch (e) { $("#vtext").textContent = e.message; }
+    $("#viewer").scrollIntoView({ behavior: "smooth" });
+  });
+  document.querySelectorAll("[data-del]").forEach(b => b.onclick = async () => {
+    if (!confirm(`「${b.dataset.del}」と、その人の答案・採点結果をすべて削除しますか？（元に戻せません）`)) return;
+    b.disabled = true; b.textContent = "削除中…";
+    try { await admin({ op: "delete", name: b.dataset.del }); } catch (e) { alert(e.message); }
+    load();
+  });
+}
+$("#go").onclick = () => { PASS = $("#pass").value; load(); };
+$("#pass").onkeydown = e => { if (e.key === "Enter") $("#go").click(); };
+if (PASS) load();
+</script>
+</body>
+</html>

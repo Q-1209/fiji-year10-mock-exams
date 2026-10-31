@@ -116,7 +116,49 @@
     if (!setOutbox(box)) { box.pop(); box.push({ ...body, files: files.filter(f => !f.path.endsWith(".png")) }); setOutbox(box); }
     return false;
   }
-  window.Y10 = { user, post, flush, pending: () => outbox().length };
+  /* ---------- 名前ごとの記録（途中保存・答案の一覧・英文和訳の判定）を <名前>/state.json と同期する ----------
+     別の端末で同じ名前を入れても続けられるように。項目ごとに _t（保存した時刻）を持ち、新しいほうを残す。 */
+  const draft = id => { const d = get("drafts", {})[id]; return d && !d.gone ? d : null; };
+  const setDraft = (id, v) => { const m = get("drafts", {}); m[id] = { ...v, _t: Date.now() }; const ok = put("drafts", m); schedule(60000); return ok; };
+  const dropDraft = id => { const m = get("drafts", {}); m[id] = { gone: true, _t: Date.now() }; put("drafts", m); schedule(3000); };
+  const state = () => ({ drafts: get("drafts", {}), tstatus: get("tstatus", {}), history: get("history", []) });
+  function merge(r) {
+    const newer = (a, b) => !a ? b : !b ? a : (b._t || 0) > (a._t || 0) ? b : a;
+    const md = get("drafts", {}), mt = get("tstatus", {}), seen = new Set();
+    for (const [k, v] of Object.entries(r.drafts || {})) md[k] = newer(md[k], v);
+    for (const [k, v] of Object.entries(r.tstatus || {})) mt[k] = newer(mt[k], v);
+    const mh = [...get("history", []), ...(r.history || [])]
+      .filter(h => { const k = h.submittedAt + "|" + h.title; return !seen.has(k) && seen.add(k); })
+      .sort((a, b) => b.submittedAt.localeCompare(a.submittedAt)).slice(0, 100);
+    put("drafts", md); put("tstatus", mt); put("history", mh);
+  }
+  async function pull() {
+    if (!user() || !token()) return;
+    const f = await gh("GET", "contents/" + enc(user() + "/state.json"));
+    if (f.code === 200) merge(JSON.parse(unb64(f.data.content)));
+  }
+  async function pushState() {
+    const name = user();
+    if (!name || !token()) return;
+    await retry(async () => {
+      const f = await gh("GET", "contents/" + enc(name + "/state.json"));
+      if (f.code === 200) merge(JSON.parse(unb64(f.data.content)));
+      return gh("PUT", "contents/" + enc(name + "/state.json"),
+        { message: name + ": 記録", content: b64(JSON.stringify(state())), ...(f.code === 200 ? { sha: f.data.sha } : {}) });
+    });
+  }
+  // 書き戻しはまとめて行う（途中保存は1分ごと、提出や判定はすぐ）
+  let timer = null, due = 0, pushing = Promise.resolve();
+  const save = () => { clearTimeout(timer); timer = null; return pushing = pushing.then(pushState).catch(() => {}); };
+  function schedule(ms) {
+    const at = Date.now() + ms;
+    if (timer && due <= at) return;
+    clearTimeout(timer); due = at; timer = setTimeout(save, ms);
+  }
+  addEventListener("visibilitychange", () => { if (document.visibilityState === "hidden" && timer) save(); });
+  const ready = Promise.race([pull().catch(() => {}), sleep(6000)]);
+
+  window.Y10 = { user, post, flush, save, pending: () => outbox().length };
   if (outbox().length) setTimeout(flush, 1500);
 
   // server.py の grade() と同じ
@@ -185,12 +227,13 @@
 
   async function handle(path, q, body) {
     if (!body) {
+      await ready; // 別の端末の記録を読み込んでから答える
       if (path === "/api/exams") {
         const list = await (await orig("exams/index.json")).json();
-        return json(list.map(e => ({ ...e, hasDraft: !!get("draft:" + e.id) })));
+        return json(list.map(e => ({ ...e, hasDraft: !!draft(e.id) })));
       }
       if (path === "/api/exam") { const e = await exam(q.get("id")); return e ? json(e) : json({ error: "not found" }, 404); }
-      if (path === "/api/draft") return json(get("draft:" + q.get("id"), {}));
+      if (path === "/api/draft") return json(draft(q.get("id")) || {});
       if (path === "/api/history") return json(get("history", []));
       if (path === "/api/tstatus") return json(get("tstatus", {}));
       return json({ error: "not found" }, 404);
@@ -198,8 +241,8 @@
     const data = JSON.parse(body || "{}");
     if (path === "/api/tstatus") {
       const st = get("tstatus", {}), old = st[data.en] || {};
-      st[data.en] = { g: data.grade, n: (old.n || 0) + 1, t: now() };
-      put("tstatus", st); return json({ ok: true });
+      st[data.en] = { g: data.grade, n: (old.n || 0) + 1, t: now(), _t: Date.now() };
+      put("tstatus", st); schedule(10000); return json({ ok: true });
     }
     if (path === "/api/practice") {
       const kind = /^[A-Za-z0-9_-]+$/.test(data.kind || "") ? data.kind : "practice";
@@ -210,8 +253,8 @@
     }
     const e = await exam(data.examId);
     if (!e) return json({ error: "unknown exam" }, 400);
-    if (path === "/api/draft") return json({ ok: put("draft:" + e.id, data) });
-    if (path === "/api/discard") { del("draft:" + e.id); return json({ ok: true }); }
+    if (path === "/api/draft") return json({ ok: setDraft(e.id, data) });
+    if (path === "/api/discard") { dropDraft(e.id); return json({ ok: true }); }
     if (path === "/api/submit") {
       const d = new Date(), [auto, manual] = grade(e, data.responses || {}), stem = `${e.id}_${stamp(d)}`;
       const files = [], images = {};
@@ -227,7 +270,7 @@
       const sent = await send(files);
       const hist = get("history", []);
       hist.unshift({ title: e.title, submittedAt: rec.submittedAt, auto, manualMax: manual });
-      put("history", hist.slice(0, 100)); del("draft:" + e.id);
+      put("history", hist.slice(0, 100)); dropDraft(e.id);
       return json({ ok: true, file: stem + ".md", auto, manualMax: manual, sent });
     }
     return json({ error: "not found" }, 404);

@@ -40,6 +40,7 @@
       name = clean(name);
       if (!name) { err.textContent = "名前を入れてください（/ : * ? \" < > | # % . は使えません）"; return; }
       go.disabled = true; err.textContent = "";
+      try { await window.Y10?.save(); } catch {} // 前の名前の記録を書き戻してから切り替える
       ls.set("user", name);
       ls.set("names", JSON.stringify([name, ...names().filter(n => n !== name)].slice(0, 10)));
       try { await window.Y10?.post({ action: "register", name }); } catch {} // 送れなくても、答案を送るときに登録される

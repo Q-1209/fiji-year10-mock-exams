@@ -116,21 +116,22 @@
     if (!setOutbox(box)) { box.pop(); box.push({ ...body, files: files.filter(f => !f.path.endsWith(".png")) }); setOutbox(box); }
     return false;
   }
-  /* ---------- 名前ごとの記録（途中保存・答案の一覧・英文和訳の判定）を <名前>/state.json と同期する ----------
+  /* ---------- 名前ごとの記録（途中保存・答案の一覧・英文和訳の判定・用語クイズの結果）を <名前>/state.json と同期する ----------
      別の端末で同じ名前を入れても続けられるように。項目ごとに _t（保存した時刻）を持ち、新しいほうを残す。 */
   const draft = id => { const d = get("drafts", {})[id]; return d && !d.gone ? d : null; };
   const setDraft = (id, v) => { const m = get("drafts", {}); m[id] = { ...v, _t: Date.now() }; const ok = put("drafts", m); schedule(60000); return ok; };
   const dropDraft = id => { const m = get("drafts", {}); m[id] = { gone: true, _t: Date.now() }; put("drafts", m); schedule(3000); };
-  const state = () => ({ drafts: get("drafts", {}), tstatus: get("tstatus", {}), history: get("history", []) });
+  const state = () => ({ drafts: get("drafts", {}), tstatus: get("tstatus", {}), qstatus: get("qstatus", {}), history: get("history", []) });
   function merge(r) {
     const newer = (a, b) => !a ? b : !b ? a : (b._t || 0) > (a._t || 0) ? b : a;
-    const md = get("drafts", {}), mt = get("tstatus", {}), seen = new Set();
+    const md = get("drafts", {}), mt = get("tstatus", {}), mq = get("qstatus", {}), seen = new Set();
     for (const [k, v] of Object.entries(r.drafts || {})) md[k] = newer(md[k], v);
     for (const [k, v] of Object.entries(r.tstatus || {})) mt[k] = newer(mt[k], v);
+    for (const [k, v] of Object.entries(r.qstatus || {})) mq[k] = newer(mq[k], v);
     const mh = [...get("history", []), ...(r.history || [])]
       .filter(h => { const k = h.submittedAt + "|" + h.title; return !seen.has(k) && seen.add(k); })
       .sort((a, b) => b.submittedAt.localeCompare(a.submittedAt)).slice(0, 100);
-    put("drafts", md); put("tstatus", mt); put("history", mh);
+    put("drafts", md); put("tstatus", mt); put("qstatus", mq); put("history", mh);
   }
   async function pull() {
     if (!user() || !token()) return;
@@ -236,6 +237,7 @@
       if (path === "/api/draft") return json(draft(q.get("id")) || {});
       if (path === "/api/history") return json(get("history", []));
       if (path === "/api/tstatus") return json(get("tstatus", {}));
+      if (path === "/api/qstatus") return json(get("qstatus", {}));
       return json({ error: "not found" }, 404);
     }
     const data = JSON.parse(body || "{}");
@@ -243,6 +245,11 @@
       const st = get("tstatus", {}), old = st[data.en] || {};
       st[data.en] = { g: data.grade, n: (old.n || 0) + 1, t: now(), _t: Date.now() };
       put("tstatus", st); schedule(10000); return json({ ok: true });
+    }
+    if (path === "/api/qstatus") {
+      const st = get("qstatus", {}), old = st[data.id] || {};
+      st[data.id] = { g: data.ok ? 1 : 0, n: (old.n || 0) + 1, t: now(), _t: Date.now() };
+      put("qstatus", st); schedule(10000); return json({ ok: true });
     }
     if (path === "/api/practice") {
       const kind = /^[A-Za-z0-9_-]+$/.test(data.kind || "") ? data.kind : "practice";

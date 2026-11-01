@@ -130,7 +130,8 @@ const cat = q => C.st[sid(q)] ? String(C.st[sid(q)].g) : "new";
 
 async function load(k) {
   if (!C.data[k]) {
-    const d = await (await fetch(`quiz/${k}.json`, { cache: "no-cache" })  // 変わっていなければ前に読んだものを使う).json();
+    // no-cache: 変わっていなければ前に読んだものを使う
+    const d = await (await fetch(`quiz/${k}.json`, { cache: "no-cache" })).json();
     d.key = k;
     // 1つの用語から3つの形の問題、確認問題はそのまま。id は前回の結果の記録に使う
     // （数学の Range・Median のように2つの単元に出る用語は、単元の番号をつけて分ける）

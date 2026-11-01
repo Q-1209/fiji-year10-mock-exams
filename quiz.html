@@ -91,7 +91,7 @@
   <div class="card">
     <div class="row" id="modeRow"><span class="lbl">答え方</span><span class="row" id="modes"></span></div>
     <div class="row" style="margin-top:8px"><span class="lbl">教科</span><span class="row" id="subs"></span></div>
-    <div class="row" style="margin-top:8px"><span class="lbl">単元</span><select id="unit"></select></div>
+    <div class="row" style="margin-top:8px"><span class="lbl">単元</span><select id="unit"><option>読み込み中…</option></select></div>
     <div class="row" style="margin-top:8px"><span class="lbl">問題の形</span><span class="row" id="types"></span></div>
     <div class="row" style="margin-top:8px"><span class="lbl">出す問題</span><span class="row" id="filt"></span></div>
     <div class="muted" style="font-size:12px;margin:2px 0 0 72px">前回の結果は「書く」と「選ぶ」で別々に記録します。</div>
@@ -130,7 +130,7 @@ const cat = q => C.st[sid(q)] ? String(C.st[sid(q)].g) : "new";
 
 async function load(k) {
   if (!C.data[k]) {
-    const d = await (await fetch(`quiz/${k}.json`, { cache: "no-store" })).json();
+    const d = await (await fetch(`quiz/${k}.json`, { cache: "no-cache" })  // 変わっていなければ前に読んだものを使う).json();
     d.key = k;
     // 1つの用語から3つの形の問題、確認問題はそのまま。id は前回の結果の記録に使う
     // （数学の Range・Median のように2つの単元に出る用語は、単元の番号をつけて分ける）

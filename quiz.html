@@ -32,11 +32,15 @@
   .btn { border: 1px solid var(--line); background: var(--card); color: var(--ink); border-radius: 8px; padding: 7px 14px; }
   .btn.primary { background: var(--accent); border-color: var(--accent); color: #fff; }
   .btn.on { border-color: var(--accent); background: var(--accent-soft); color: var(--accent); }
+  .btn.okb { border-color: var(--ok); color: var(--ok); }
   .btn:disabled { opacity: .5; cursor: default; }
-  .btn:focus-visible, .opt:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  .btn:focus-visible, .opt:focus-visible, #ans:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
   .row { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; }
   .lbl { font-size: 13px; color: var(--muted); min-width: 64px; }
-  select, input[type=search] { padding: 6px 8px; border-radius: 8px; border: 1px solid var(--line); background: var(--bg); color: var(--ink); max-width: 100%; }
+  select, input[type=search], #ans { padding: 6px 8px; border-radius: 8px; border: 1px solid var(--line); background: var(--bg); color: var(--ink); max-width: 100%; }
+  #ans { width: 100%; padding: 10px 12px; font-size: 18px; }
+  #ans.right { border-color: var(--ok); background: var(--ok-soft); }
+  #ans.wrong { border-color: var(--bad); background: var(--bad-soft); }
   .stat { font-size: 14px; color: var(--muted); }
   .bar { height: 6px; background: var(--line); border-radius: 99px; overflow: hidden; margin-top: 6px; }
   .bar i { display: block; height: 100%; width: 0; background: var(--accent); transition: width .2s; }
@@ -55,6 +59,8 @@
   .opt .m { font-size: 13px; color: var(--muted); display: block; }
   .opt.right { border-color: var(--ok); background: var(--ok-soft); }
   .opt.wrong { border-color: var(--bad); background: var(--bad-soft); }
+  .pick { margin: -6px 0 12px; padding: 0 0 0 1.4em; }
+  .hint { font: 18px/1.5 Consolas, "Courier New", monospace; letter-spacing: 1px; margin-top: 6px; color: var(--warn); }
   .fb { margin-top: 12px; padding: 10px 12px; border-left: 4px solid var(--ok); background: var(--ok-soft); }
   .fb.no { border-left-color: var(--bad); background: var(--bad-soft); }
   .fb b.h { display: block; font-size: 15px; }
@@ -66,20 +72,21 @@
   td.en { font-family: Georgia, "Times New Roman", serif; font-weight: 700; }
   h3.u { font-size: 16px; margin: 18px 0 6px; }
   .g1 { color: var(--ok); font-weight: 700; } .g0 { color: var(--bad); font-weight: 700; }
-  mark { background: var(--warn-soft); color: inherit; }
 </style>
 </head>
 <body>
 <div class="wrap">
   <a href="index.html">← トップへ戻る</a>
   <h1>用語クイズ（何が何か覚える）</h1>
-  <div class="muted">キーワード集の用語を4択で覚えます。選ぶとすぐ正解と、英語・日本語の説明が出ます。</div>
+  <div class="muted">キーワード集の用語を覚えます。答えを書く（または4択で選ぶ）と、すぐ正解と英語・日本語の説明が出ます。</div>
 
   <div class="card">
-    <div class="row"><span class="lbl">教科</span><span class="row" id="subs"></span></div>
+    <div class="row"><span class="lbl">答え方</span><span class="row" id="modes"></span></div>
+    <div class="row" style="margin-top:8px"><span class="lbl">教科</span><span class="row" id="subs"></span></div>
     <div class="row" style="margin-top:8px"><span class="lbl">単元</span><select id="unit"></select></div>
     <div class="row" style="margin-top:8px"><span class="lbl">問題の形</span><span class="row" id="types"></span></div>
     <div class="row" style="margin-top:8px"><span class="lbl">出す問題</span><span class="row" id="filt"></span></div>
+    <div class="muted" style="font-size:12px;margin:2px 0 0 72px">前回の結果は「書く」と「選ぶ」で別々に記録します。</div>
     <div class="row" style="margin-top:8px"><span class="lbl">問題数</span><span class="row" id="counts"></span>
       <button class="btn primary" id="go">始める</button>
       <button class="btn" id="list">先に答えを見る（一覧）</button></div>
@@ -88,14 +95,15 @@
   </div>
 
   <div id="stage"></div>
-  <p class="muted" style="font-size:12px">キーボード: 1〜4 で選ぶ、Enter で次へ。</p>
+  <p class="muted" style="font-size:12px" id="keys"></p>
 </div>
 
 <script>
 const SUBJ = [["all", "全教科まぜる"], ["math", "Mathematics"], ["commercial", "Commercial Studies"], ["ot", "Office Technology"],
               ["science", "Basic Science"], ["social", "Social Science"], ["bt", "Basic Technology"]];
-const TYPES = [["ej", "英語 → 日本語", "この用語の意味は？"], ["je", "日本語 → 英語", "英語で何という？"],
-               ["de", "説明 → 用語", "この説明にあてはまる用語は？"], ["x", "確認問題", ""]];
+const MODES = [["w", "書く"], ["c", "選ぶ（4択）"]];
+const TYPES = [["ej", "英語 → 日本語", "この用語の意味は？（日本語で）"], ["je", "日本語 → 英語", "英語で何という？"],
+               ["de", "説明 → 用語", "この説明にあてはまる用語は？（英語で）"], ["x", "確認問題", ""]];
 // 前回の結果（/api/qstatus）: "new" = まだ, "0" = まちがえた, "1" = 正解した
 const CATS = [["new", "まだやっていない"], ["0", "前回まちがえた"], ["1", "前回正解した"]];
 const $ = s => document.querySelector(s);
@@ -103,9 +111,11 @@ const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "
 const shuffle = a => { a = a.slice(); for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; } return a; };
 const norm = s => String(s).toLowerCase().replace(/[\s　()（）]/g, "");
 
-const C = { subj: "all", count: 20, data: {}, st: {}, types: new Set(["ej", "je", "de", "x"]), filt: new Set(["new", "0", "1"]) };
+const C = { mode: "w", subj: "all", count: 20, data: {}, st: {}, types: new Set(["ej", "je", "de", "x"]), filt: new Set(["new", "0", "1"]) };
 let P = null;
-const cat = id => C.st[id] ? String(C.st[id].g) : "new";
+// 「書く」の記録は id の前に "w|" をつけて「選ぶ」と分ける
+const sid = q => (C.mode === "w" ? "w|" : "") + q.id;
+const cat = q => C.st[sid(q)] ? String(C.st[sid(q)].g) : "new";
 
 async function load(k) {
   if (!C.data[k]) {
@@ -141,13 +151,16 @@ function toggles(el, list, set, cnt, after) {
 async function drawFilt() {
   const v = $("#unit").value, all = (await allQs()).filter(q => inUnit(q, v)), nt = {}, nc = {};
   all.forEach(q => nt[q.t] = (nt[q.t] || 0) + 1);
-  all.filter(q => C.types.has(q.t)).forEach(q => { const c = cat(q.id); nc[c] = (nc[c] || 0) + 1; });
+  all.filter(q => C.types.has(q.t)).forEach(q => { const c = cat(q); nc[c] = (nc[c] || 0) + 1; });
   toggles($("#types"), TYPES, C.types, nt, drawFilt);
   toggles($("#filt"), CATS, C.filt, nc, drawFilt);
-  $("#filt").insertAdjacentHTML("beforeend", `<span class="muted" style="font-size:13px">→ ${all.filter(q => C.types.has(q.t) && C.filt.has(cat(q.id))).length}問</span>`);
+  $("#filt").insertAdjacentHTML("beforeend", `<span class="muted" style="font-size:13px">→ ${all.filter(q => C.types.has(q.t) && C.filt.has(cat(q))).length}問</span>`);
 }
 
 async function setup() {
+  $("#modes").innerHTML = MODES.map(([k, n]) => `<button class="btn${C.mode === k ? " on" : ""}" data-m="${k}">${n}</button>`).join("");
+  document.querySelectorAll("[data-m]").forEach(b => b.onclick = () => { C.mode = b.dataset.m; setup(); });
+  $("#keys").textContent = C.mode === "w" ? "キーボード: Enter で答え合わせ、もう一度 Enter で次へ。" : "キーボード: 1〜4 で選ぶ、Enter で次へ。";
   $("#subs").innerHTML = SUBJ.map(([k, n]) => `<button class="btn${C.subj === k ? " on" : ""}" data-s="${k}">${n}</button>`).join("");
   document.querySelectorAll("[data-s]").forEach(b => b.onclick = () => { C.subj = b.dataset.s; setup(); });
   $("#counts").innerHTML = [10, 20, 50, 0].map(n => `<button class="btn${C.count === n ? " on" : ""}" data-n="${n}">${n || "全部"}</button>`).join("");
@@ -166,6 +179,65 @@ async function setup() {
   await drawFilt();
 }
 
+/* ---------- 書いた答えの判定 ---------- */
+// 大文字小文字・空白・ハイフン・記号のちがいや、イギリス／アメリカのつづり（-ise/-ize、centre/center）は気にしない
+const canon = s => String(s).normalize("NFKC").toLowerCase()
+  .replace(/[−–—‐]/g, "-").replace(/÷/g, "/").replace(/[×*]/g, "x")
+  .replace(/is(e|ed|es|ing|ation)\b/g, "iz$1").replace(/(\w)tre\b/g, "$1ter").replace(/our\b/g, "or")
+  .replace(/[\s　'’`".,、。・「」^$!?？！]/g, "")
+  .replace(/(\D)-(?=\D)/g, "$1"); // 「cross-cut」と「crosscut」は同じ。「-4」の - は残す
+function lev(a, b) {
+  if (Math.abs(a.length - b.length) > 2) return 9;
+  let p = Array.from({ length: b.length + 1 }, (_, j) => j);
+  for (let i = 1; i <= a.length; i++) {
+    const c = [i];
+    for (let j = 1; j <= b.length; j++) c[j] = Math.min(p[j] + 1, c[j - 1] + 1, p[j - 1] + (a[i - 1] === b[j - 1] ? 0 : 1));
+    p = c;
+  }
+  return p[b.length];
+}
+// 1つの用語の書き方: 「X (Y)」は X でも Y でもよい、「X, m」は X だけでもよい
+function forms(t) {
+  const out = [t], inner = [...t.matchAll(/[(（]([^()（）]*)[)）]/g)].map(m => m[1]);
+  const base = t.replace(/\s*[(（][^()（）]*[)）]/g, "").trim();
+  out.push(base, base.split(/[,，]/)[0], ...inner);
+  return [...new Set(out.map(canon).filter(Boolean))];
+}
+// "A / B" は両方書く（順番は自由）。英語はつづりの1〜2文字のまちがいまで「つづり注意」で正解にする
+function judge(ans, target, en) {
+  const a = canon(ans);
+  if (!a) return { ok: false };
+  const parts = target.split(/\s*[／]\s*|\s+\/\s+/);
+  if (parts.length > 1) {
+    const ok = parts.every(p => forms(p).some(f => a.includes(f)));
+    return { ok };
+  }
+  const fs = forms(target);
+  if (fs.includes(a)) return { ok: true };
+  if (!en) return { ok: fs.some(f => a.includes(f) || (f.includes(a) && a.length >= Math.ceil(f.length * 0.6))) };
+  for (const f of fs) { const d = lev(a, f); if ((d === 1 && f.length >= 5) || (d === 2 && f.length >= 10)) return { ok: true, near: true }; }
+  return { ok: false };
+}
+// 確認問題: 正解の書き方の一覧。"~語" はその語が入っていればよい、"~A&~B" は両方入っていればよい
+function judgeX(ans, acc) {
+  const a = canon(ans);
+  if (!a) return { ok: false };
+  for (const e of acc) {
+    if (e.startsWith("~")) { if (e.split("&").every(p => a.includes(canon(p.replace(/^~/, ""))))) return { ok: true }; }
+    else if (canon(e) === a) return { ok: true };
+    else if (/[a-z]{5}/.test(canon(e)) && lev(a, canon(e)) === 1) return { ok: true, near: true };
+  }
+  return { ok: false };
+}
+// 答え（書く）と、どちらの言語で書くか
+const target = q => q.t === "ej" ? q.w[2] : q.t === "x" ? q.x[2][0] : q.w[1];
+const isEn = q => q.t === "je" || q.t === "de" || (q.t === "x" && !/[ぁ-んァ-ン一-龥]/.test(q.x[2][0]));
+// ヒント: 頭文字と文字数（例: Primary consumer → P＿＿＿＿＿＿ c＿＿＿＿＿＿＿）
+function hintOf(q) {
+  const t = target(q).replace(/\s*[(（][^()（）]*[)）]/g, "").trim();
+  return isEn(q) ? t.replace(/[A-Za-z0-9]+/g, w => w[0] + "＿".repeat(w.length - 1)) : t[0] + "＿".repeat(t.length - 1);
+}
+
 // 4つの選択肢。まちがいは同じ単元の用語から、足りなければ近い単元から選ぶ
 function options(q) {
   if (q.t === "x") return shuffle(q.x[2].map((c, i) => ({ text: c, ok: i === 0 })));
@@ -180,14 +252,14 @@ function options(q) {
 }
 
 async function begin(qs) {
-  if (!qs) qs = shuffle((await pool()).filter(q => C.filt.has(cat(q.id))));
+  if (!qs) qs = shuffle((await pool()).filter(q => C.filt.has(cat(q))));
   if (!qs.length) {
     P = null; stats();
     $("#stage").innerHTML = `<div class="card">選んだ条件に合う問題がありません。「問題の形」「出す問題」か単元を変えてください。</div>`;
     return;
   }
   if (C.count && qs.length > C.count) qs = qs.slice(0, C.count);
-  P = { subj: C.subj, qs, k: 0, res: [], phase: "ans" };
+  P = { subj: C.subj, mode: C.mode, qs, k: 0, res: [], phase: "ans" };
   show();
   $("#stage").scrollIntoView({ block: "start" }); // スマホでは設定の下にあるので問題まで移る
 }
@@ -203,16 +275,31 @@ function stats() {
 function show() {
   stats();
   if (P.k >= P.qs.length) return finish();
-  const q = P.qs[P.k], s = C.st[q.id];
-  P.phase = "ans"; P.opts = options(q);
+  const q = P.qs[P.k], s = C.st[sid(q)];
+  P.phase = "ans";
   const prompt = q.t === "ej" ? `<div class="big" lang="en">${esc(q.w[1])}</div>`
     : q.t === "je" ? `<div class="big ja">${esc(q.w[2])}</div>`
     : q.t === "de" ? `<div class="big ex" lang="en">${esc(q.w[5])}</div>`
     : `<div class="big q">${esc(q.x[1])}</div>`;
-  $("#stage").innerHTML = `<div class="card">
-    <div class="unit">${esc(q.d.subject)} ・ ${esc(q.d.units[q.u])}　${s ? `<span class="g${s.g}">前回: ${s.g ? "正解" : "まちがえた"}</span>（${s.n + 1}回目）` : "はじめての問題"}</div>
-    ${q.t !== "x" ? `<div class="ask">${TYPES.find(t => t[0] === q.t)[2]}</div>` : ""}
-    ${prompt}
+  const head = `<div class="unit">${esc(q.d.subject)} ・ ${esc(q.d.units[q.u])}　${s ? `<span class="g${s.g}">前回: ${s.g ? "正解" : "まちがえた"}</span>（${s.n + 1}回目）` : "はじめての問題"}</div>
+    ${q.t !== "x" ? `<div class="ask">${TYPES.find(t => t[0] === q.t)[2]}</div>` : ""}${prompt}`;
+  if (P.mode === "w") {
+    // 「次のうち〜はどれ？」は選択肢がないと答えが決まらないので、書くときも候補を見せる
+    const pick = q.t === "x" && q.x[5] ? `<ul class="pick">${shuffle(q.x[2]).map(c => `<li>${esc(c)}</li>`).join("")}</ul>` : "";
+    $("#stage").innerHTML = `<div class="card">${head}${pick}
+      <input id="ans" autocomplete="off" autocapitalize="off" spellcheck="false"${isEn(q) ? ' lang="en" placeholder="英語で書く"' : ' placeholder="日本語で書く"'}>
+      <div class="row" style="margin-top:8px"><button class="btn primary" id="chk">答え合わせ</button>
+        <button class="btn" id="hint">ヒント（頭文字）</button><button class="btn" id="skip">わからない</button></div>
+      <div id="hintBox"></div><div id="fb"></div></div>`;
+    $("#ans").focus();
+    $("#chk").onclick = () => check(false);
+    $("#skip").onclick = () => check(true);
+    $("#hint").onclick = () => { P.hinted = true; $("#hintBox").innerHTML = `<div class="hint">${esc(hintOf(q))}</div>`; $("#ans").focus(); };
+    P.hinted = false;
+    return;
+  }
+  P.opts = options(q);
+  $("#stage").innerHTML = `<div class="card">${head}
     <div class="opts">${P.opts.map((o, i) => `<button class="opt" data-i="${i}"${q.t === "ej" || q.t === "x" ? "" : ' lang="en"'}><span class="k">${i + 1}</span><span>${esc(o.text)}</span></button>`).join("")}</div>
     <div id="fb"></div></div>`;
   document.querySelectorAll(".opt").forEach(b => b.onclick = () => choose(+b.dataset.i));
@@ -222,7 +309,39 @@ function wordInfo(w) {
   return `<div><span class="en" lang="en"><b>${esc(w[1])}</b></span> ＝ <b>${esc(w[2])}</b></div>
     <div class="en" lang="en">${esc(w[3])}</div><div>${esc(w[4])}</div>`;
 }
+function record(q, ok, answer, chose) {
+  C.st[sid(q)] = { g: ok ? 1 : 0, n: (C.st[sid(q)]?.n || 0) + 1 };
+  fetch("/api/qstatus", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ id: sid(q), ok }) }).catch(() => {});
+  P.res.push({ id: q.id, ok, subject: q.d.subject, unit: q.d.units[q.u], type: q.t,
+    q: q.t === "x" ? q.x[1] : q.t === "ej" ? q.w[1] : q.t === "je" ? q.w[2] : q.w[5], answer, chose });
+}
 
+// 書く: 答え合わせ。自動の判定が × でも、意味が合っていれば「正解にする」で直せる
+function check(skip) {
+  if (P.phase !== "ans") return;
+  P.phase = "next";
+  const q = P.qs[P.k], a = skip ? "" : $("#ans").value.trim(), t = target(q);
+  const r = q.t === "x" ? judgeX(a, q.x[4]) : judge(a, t, isEn(q));
+  $("#ans").readOnly = true; ["#chk", "#hint", "#skip"].forEach(s => $(s).disabled = true);
+  $("#ans").classList.add(r.ok ? "right" : "wrong");
+  record(q, r.ok, t, a);
+  const info = q.t === "x" ? `<div>${esc(q.x[3])}</div>` : wordInfo(q.w);
+  $("#fb").innerHTML = `<div class="fb${r.ok ? "" : " no"}" id="fbBox"><b class="h">${r.ok ? (r.near ? "○ 正解（つづりに注意: 正しくは「" + esc(t) + "」）" : "○ 正解") : "× " + (a ? "まちがい" : "わからない") + "　正解は「" + esc(t) + "」"}</b>${info}</div>
+    <div class="row" style="margin-top:10px"><button class="btn primary" id="next">次へ（Enter）</button>
+      ${!r.ok && a ? `<button class="btn okb" id="fix">合っていた（正解にする）</button>` : ""}</div>`;
+  stats();
+  $("#next").onclick = next; $("#next").focus();
+  if ($("#fix")) $("#fix").onclick = () => {
+    // 言い方がちがうだけで意味が合っていたとき（とくに日本語）
+    P.res.pop(); record(q, true, t, a); stats();
+    $("#ans").classList.replace("wrong", "right");
+    $("#fbBox").classList.remove("no");
+    $("#fbBox").querySelector("b.h").textContent = "○ 正解にしました（正解は「" + t + "」）";
+    $("#fix").remove(); $("#next").focus();
+  };
+}
+
+// 選ぶ
 function choose(i) {
   if (P.phase !== "ans") return;
   P.phase = "next";
@@ -235,10 +354,7 @@ function choose(i) {
     if (q.t !== "x" && P.opts[j].w) b.lastElementChild.insertAdjacentHTML("beforeend",
       `<span class="m">${esc(q.t === "ej" ? P.opts[j].w[1] : P.opts[j].w[2])}</span>`);
   });
-  C.st[q.id] = { g: ok ? 1 : 0, n: (C.st[q.id]?.n || 0) + 1 };
-  fetch("/api/qstatus", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ id: q.id, ok }) }).catch(() => {});
-  P.res.push({ id: q.id, ok, subject: q.d.subject, unit: q.d.units[q.u], type: q.t,
-    q: q.t === "x" ? q.x[1] : q.t === "ej" ? q.w[1] : q.t === "je" ? q.w[2] : q.w[5], answer: right.text, chose: o.text });
+  record(q, ok, right.text, o.text);
   $("#fb").innerHTML = `<div class="fb${ok ? "" : " no"}"><b class="h">${ok ? "○ 正解" : "× まちがい　正解は「" + esc(right.text) + "」"}</b>
     ${q.t === "x" ? `<div>${esc(q.x[3])}</div>` : wordInfo(q.w)}
     ${!ok && q.t !== "x" ? `<div class="muted" style="margin-top:6px;font-size:14px">あなたが選んだ <span lang="en">${esc(o.w[1])}</span> ＝ ${esc(o.w[2])}：${esc(o.w[4])}</div>` : ""}
@@ -251,13 +367,14 @@ function next() { if (P.phase !== "next") return; P.k++; show(); }
 function finish() {
   const n = P.res.length, ok = P.res.filter(r => r.ok).length, bad = P.res.filter(r => !r.ok);
   fetch("/api/practice", { method: "POST", headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({ kind: "quiz_" + P.subj, subject: SUBJ.find(s => s[0] === P.subj)[1], unit: $("#unit").selectedOptions[0]?.text || "",
+    body: JSON.stringify({ kind: (P.mode === "w" ? "quizw_" : "quiz_") + P.subj, mode: P.mode === "w" ? "書く" : "選ぶ",
+      subject: SUBJ.find(s => s[0] === P.subj)[1], unit: $("#unit").selectedOptions[0]?.text || "",
       types: [...C.types], score: ok, total: n, wrong: bad }) }).catch(() => {});
   $("#stage").innerHTML = `<div class="card">
     <div style="font-size:20px;font-weight:700">結果: ${ok} / ${n} 問正解（${Math.round(100 * ok / n)}%）</div>
     ${bad.length ? `<p class="muted">まちがえた問題</p><div class="tw"><table>
-      <tr><th>問題</th><th>正解</th><th>選んだもの</th></tr>
-      ${bad.map(r => `<tr><td>${esc(r.q)}</td><td><b>${esc(r.answer)}</b></td><td>${esc(r.chose)}</td></tr>`).join("")}
+      <tr><th>問題</th><th>正解</th><th>${P.mode === "w" ? "書いた答え" : "選んだもの"}</th></tr>
+      ${bad.map(r => `<tr><td>${esc(r.q)}</td><td><b>${esc(r.answer)}</b></td><td>${esc(r.chose) || '<span class="muted">（わからない）</span>'}</td></tr>`).join("")}
     </table></div>` : `<p>全問正解です。</p>`}
     <div class="row" style="margin-top:12px">
       ${bad.length ? `<button class="btn primary" id="retry">まちがえた問題だけもう一度</button>` : ""}
@@ -298,8 +415,10 @@ async function showList() {
 }
 
 document.addEventListener("keydown", e => {
-  if (!P || e.target.tagName === "INPUT" || e.target.tagName === "SELECT") return;
-  if (P.phase === "ans" && /^[1-4]$/.test(e.key) && +e.key <= P.opts.length) { e.preventDefault(); choose(+e.key - 1); }
+  if (!P || e.isComposing || e.keyCode === 229) return; // 日本語入力の変換中の Enter は答え合わせにしない
+  if (P.mode === "w" && P.phase === "ans" && e.key === "Enter" && e.target.id === "ans") { e.preventDefault(); check(false); return; }
+  if (e.target.tagName === "INPUT" && !e.target.readOnly || e.target.tagName === "SELECT") return;
+  if (P.mode === "c" && P.phase === "ans" && /^[1-4]$/.test(e.key) && +e.key <= P.opts.length) { e.preventDefault(); choose(+e.key - 1); }
   else if (P.phase === "next" && e.key === "Enter") { e.preventDefault(); next(); }
 });
 $("#go").onclick = () => begin();

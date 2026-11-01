@@ -1,0 +1,849 @@
+{
+ "id": "p19_bt",
+ "kind": "past",
+ "subject": "Basic Technology",
+ "title": "Fiji Year 10 Examination 2019 — Basic Technology（過去問）",
+ "minutes": 120,
+ "readingMinutes": 10,
+ "totalMarks": 100,
+ "instructions": "これは2019年の本番の問題です。上に問題用紙のページ画像を表示しています（画像をクリックすると拡大）。\n選択問題は A〜D をクリック、記述は英語で入力、作図は作図ツールを使ってください。「解答用紙」と書かれた問題は、解答用紙の形式（表や枠）を見て答えてください。\n提出すると選択・マッチングは自動採点され、公式の Detailed Solutions（詳しい解答）が表示されます。\n※ Basic Technology には公式の Detailed Solutions がありません。選択問題の正解は Claude が問題から判断したものです。",
+ "sections": [
+  {
+   "title": "SECTION A MULTIPLE-CHOICE QUESTIONS [30 marks]",
+   "short": "A MCQ",
+   "note": "",
+   "questions": [
+    {
+     "id": "s1q1",
+     "type": "mcq",
+     "label": "Question 1",
+     "navLabel": "1",
+     "text": "",
+     "marks": 1,
+     "pages": [
+      "past/bt/qp-02.jpg"
+     ],
+     "options": [
+      "",
+      "",
+      "",
+      ""
+     ],
+     "answer": "D"
+    },
+    {
+     "id": "s1q2",
+     "type": "mcq",
+     "label": "Question 2",
+     "navLabel": "2",
+     "text": "",
+     "marks": 1,
+     "pages": [
+      "past/bt/qp-02.jpg"
+     ],
+     "options": [
+      "",
+      "",
+      "",
+      ""
+     ],
+     "answer": "B"
+    },
+    {
+     "id": "s1q3",
+     "type": "mcq",
+     "label": "Question 3",
+     "navLabel": "3",
+     "text": "",
+     "marks": 1,
+     "pages": [
+      "past/bt/qp-02.jpg"
+     ],
+     "options": [
+      "",
+      "",
+      "",
+      ""
+     ],
+     "answer": "D"
+    },
+    {
+     "id": "s1q4",
+     "type": "mcq",
+     "label": "Question 4",
+     "navLabel": "4",
+     "text": "",
+     "marks": 1,
+     "pages": [
+      "past/bt/qp-02.jpg"
+     ],
+     "options": [
+      "",
+      "",
+      "",
+      ""
+     ],
+     "answer": "B"
+    },
+    {
+     "id": "s1q5",
+     "type": "mcq",
+     "label": "Question 5",
+     "navLabel": "5",
+     "text": "",
+     "marks": 1,
+     "pages": [
+      "past/bt/qp-02.jpg"
+     ],
+     "options": [
+      "",
+      "",
+      "",
+      ""
+     ],
+     "answer": "D"
+    },
+    {
+     "id": "s1q6",
+     "type": "mcq",
+     "label": "Question 6",
+     "navLabel": "6",
+     "text": "",
+     "marks": 1,
+     "pages": [
+      "past/bt/qp-02.jpg"
+     ],
+     "options": [
+      "",
+      "",
+      "",
+      ""
+     ],
+     "answer": "C"
+    },
+    {
+     "id": "s1q7",
+     "type": "mcq",
+     "label": "Question 7",
+     "navLabel": "7",
+     "text": "",
+     "marks": 1,
+     "pages": [
+      "past/bt/qp-02.jpg"
+     ],
+     "options": [
+      "",
+      "",
+      "",
+      ""
+     ],
+     "answer": "C"
+    },
+    {
+     "id": "s1q8",
+     "type": "mcq",
+     "label": "Question 8",
+     "navLabel": "8",
+     "text": "",
+     "marks": 1,
+     "pages": [
+      "past/bt/qp-02.jpg"
+     ],
+     "options": [
+      "",
+      "",
+      "",
+      ""
+     ],
+     "answer": "D"
+    },
+    {
+     "id": "s1q9",
+     "type": "mcq",
+     "label": "Question 9",
+     "navLabel": "9",
+     "text": "",
+     "marks": 1,
+     "pages": [
+      "past/bt/qp-03.jpg"
+     ],
+     "options": [
+      "",
+      "",
+      "",
+      ""
+     ],
+     "answer": "A"
+    },
+    {
+     "id": "s1q10",
+     "type": "mcq",
+     "label": "Question 10",
+     "navLabel": "10",
+     "text": "",
+     "marks": 1,
+     "pages": [
+      "past/bt/qp-03.jpg"
+     ],
+     "options": [
+      "",
+      "",
+      "",
+      ""
+     ],
+     "answer": "C"
+    },
+    {
+     "id": "s1q11",
+     "type": "mcq",
+     "label": "Question 11",
+     "navLabel": "11",
+     "text": "",
+     "marks": 1,
+     "pages": [
+      "past/bt/qp-03.jpg"
+     ],
+     "options": [
+      "",
+      "",
+      "",
+      ""
+     ],
+     "answer": "B"
+    },
+    {
+     "id": "s1q12",
+     "type": "mcq",
+     "label": "Question 12",
+     "navLabel": "12",
+     "text": "",
+     "marks": 1,
+     "pages": [
+      "past/bt/qp-03.jpg"
+     ],
+     "options": [
+      "",
+      "",
+      "",
+      ""
+     ],
+     "answer": "C"
+    },
+    {
+     "id": "s1q13",
+     "type": "mcq",
+     "label": "Question 13",
+     "navLabel": "13",
+     "text": "",
+     "marks": 1,
+     "pages": [
+      "past/bt/qp-03.jpg"
+     ],
+     "options": [
+      "",
+      "",
+      "",
+      ""
+     ],
+     "answer": "A"
+    },
+    {
+     "id": "s1q14",
+     "type": "mcq",
+     "label": "Question 14",
+     "navLabel": "14",
+     "text": "",
+     "marks": 1,
+     "pages": [
+      "past/bt/qp-03.jpg"
+     ],
+     "options": [
+      "",
+      "",
+      "",
+      ""
+     ],
+     "answer": "D"
+    },
+    {
+     "id": "s1q15",
+     "type": "mcq",
+     "label": "Question 15",
+     "navLabel": "15",
+     "text": "",
+     "marks": 1,
+     "pages": [
+      "past/bt/qp-03.jpg"
+     ],
+     "options": [
+      "",
+      "",
+      "",
+      ""
+     ],
+     "answer": "A"
+    },
+    {
+     "id": "s1q16",
+     "type": "mcq",
+     "label": "Question 16",
+     "navLabel": "16",
+     "text": "",
+     "marks": 1,
+     "pages": [
+      "past/bt/qp-03.jpg"
+     ],
+     "options": [
+      "",
+      "",
+      "",
+      ""
+     ],
+     "answer": "D"
+    },
+    {
+     "id": "s1q17",
+     "type": "mcq",
+     "label": "Question 17",
+     "navLabel": "17",
+     "text": "",
+     "marks": 1,
+     "pages": [
+      "past/bt/qp-03.jpg"
+     ],
+     "options": [
+      "",
+      "",
+      "",
+      ""
+     ],
+     "answer": "A"
+    },
+    {
+     "id": "s1q18",
+     "type": "mcq",
+     "label": "Question 18",
+     "navLabel": "18",
+     "text": "",
+     "marks": 1,
+     "pages": [
+      "past/bt/qp-03.jpg"
+     ],
+     "options": [
+      "",
+      "",
+      "",
+      ""
+     ],
+     "answer": "C"
+    },
+    {
+     "id": "s1q19",
+     "type": "mcq",
+     "label": "Question 19",
+     "navLabel": "19",
+     "text": "",
+     "marks": 1,
+     "pages": [
+      "past/bt/qp-03.jpg"
+     ],
+     "options": [
+      "",
+      "",
+      "",
+      ""
+     ],
+     "answer": "B"
+    },
+    {
+     "id": "s1q20",
+     "type": "mcq",
+     "label": "Question 20",
+     "navLabel": "20",
+     "text": "",
+     "marks": 1,
+     "pages": [
+      "past/bt/qp-03.jpg"
+     ],
+     "options": [
+      "",
+      "",
+      "",
+      ""
+     ],
+     "answer": "B"
+    },
+    {
+     "id": "s1q21",
+     "type": "mcq",
+     "label": "Question 21",
+     "navLabel": "21",
+     "text": "",
+     "marks": 1,
+     "pages": [
+      "past/bt/qp-04.jpg"
+     ],
+     "options": [
+      "",
+      "",
+      "",
+      ""
+     ],
+     "answer": "C"
+    },
+    {
+     "id": "s1q22",
+     "type": "mcq",
+     "label": "Question 22",
+     "navLabel": "22",
+     "text": "",
+     "marks": 1,
+     "pages": [
+      "past/bt/qp-04.jpg"
+     ],
+     "options": [
+      "",
+      "",
+      "",
+      ""
+     ],
+     "answer": "C"
+    },
+    {
+     "id": "s1q23",
+     "type": "mcq",
+     "label": "Question 23",
+     "navLabel": "23",
+     "text": "",
+     "marks": 1,
+     "pages": [
+      "past/bt/qp-04.jpg"
+     ],
+     "options": [
+      "",
+      "",
+      "",
+      ""
+     ],
+     "answer": "B"
+    },
+    {
+     "id": "s1q24",
+     "type": "mcq",
+     "label": "Question 24",
+     "navLabel": "24",
+     "text": "",
+     "marks": 1,
+     "pages": [
+      "past/bt/qp-04.jpg"
+     ],
+     "options": [
+      "",
+      "",
+      "",
+      ""
+     ],
+     "answer": "C"
+    },
+    {
+     "id": "s1q25",
+     "type": "mcq",
+     "label": "Question 25",
+     "navLabel": "25",
+     "text": "",
+     "marks": 1,
+     "pages": [
+      "past/bt/qp-04.jpg"
+     ],
+     "options": [
+      "",
+      "",
+      "",
+      ""
+     ],
+     "answer": "A"
+    },
+    {
+     "id": "s1q26",
+     "type": "mcq",
+     "label": "Question 26",
+     "navLabel": "26",
+     "text": "",
+     "marks": 1,
+     "pages": [
+      "past/bt/qp-04.jpg"
+     ],
+     "options": [
+      "",
+      "",
+      "",
+      ""
+     ],
+     "answer": "C"
+    },
+    {
+     "id": "s1q27",
+     "type": "mcq",
+     "label": "Question 27",
+     "navLabel": "27",
+     "text": "",
+     "marks": 1,
+     "pages": [
+      "past/bt/qp-04.jpg"
+     ],
+     "options": [
+      "",
+      "",
+      "",
+      ""
+     ],
+     "answer": "A"
+    },
+    {
+     "id": "s1q28",
+     "type": "mcq",
+     "label": "Question 28",
+     "navLabel": "28",
+     "text": "",
+     "marks": 1,
+     "pages": [
+      "past/bt/qp-04.jpg"
+     ],
+     "options": [
+      "",
+      "",
+      "",
+      ""
+     ],
+     "answer": "A"
+    },
+    {
+     "id": "s1q29",
+     "type": "mcq",
+     "label": "Question 29",
+     "navLabel": "29",
+     "text": "",
+     "marks": 1,
+     "pages": [
+      "past/bt/qp-04.jpg"
+     ],
+     "options": [
+      "",
+      "",
+      "",
+      ""
+     ],
+     "answer": "D"
+    },
+    {
+     "id": "s1q30",
+     "type": "mcq",
+     "label": "Question 30",
+     "navLabel": "30",
+     "text": "",
+     "marks": 1,
+     "pages": [
+      "past/bt/qp-04.jpg"
+     ],
+     "options": [
+      "",
+      "",
+      "",
+      ""
+     ],
+     "answer": "C"
+    }
+   ]
+  },
+  {
+   "title": "SECTION B SHORT ANSWER QUESTIONS [50 marks]",
+   "short": "B Short answer",
+   "note": "",
+   "questions": [
+    {
+     "id": "s2q1",
+     "type": "match",
+     "label": "Q1 Part A Matching",
+     "navLabel": "1A",
+     "text": "List A の記号を選んでください（例の A は使用済み）。",
+     "marks": 5,
+     "pages": [
+      "past/bt/qp-06.jpg"
+     ],
+     "items": [
+      "1. Creates relationship between elements.",
+      "2. Is a part of a saw.",
+      "3. Is used for hanging wooden gates.",
+      "4. Is made from wood fibres.",
+      "5. Is made from tree bark."
+     ],
+     "options": [
+      "(A) OHS",
+      "(B) Heel",
+      "(C) Masi",
+      "(D) Particle board",
+      "(E) Proximity",
+      "(F) Cabin hook",
+      "(G) Hardboard",
+      "(H) Tee hinge"
+     ],
+     "answer": [
+      "E",
+      "B",
+      "H",
+      "G",
+      "C"
+     ]
+    },
+    {
+     "id": "s2q2",
+     "type": "short",
+     "label": "Q1 Part B",
+     "navLabel": "1B",
+     "text": "Figure 2 の5つの丸に入る記号（A〜F）を、どの丸か分かるように書いてください。",
+     "marks": 5,
+     "pages": [
+      "past/bt/qp-06.jpg"
+     ],
+     "model": "Figure 1 の面の記号と Figure 2 の各面の対応で採点（1つ1点）。"
+    },
+    {
+     "id": "s2q3",
+     "type": "short",
+     "label": "Q2 Part A (a)(b)",
+     "navLabel": "2A",
+     "text": "",
+     "marks": 2,
+     "pages": [
+      "past/bt/qp-07.jpg"
+     ],
+     "model": "公式の Detailed Solutions を参照して採点。"
+    },
+    {
+     "id": "s2q4",
+     "type": "draw",
+     "label": "Q2 Part B",
+     "navLabel": "2B",
+     "text": "中心線を使って、右の図（円の中の模様）を描き写してください。",
+     "marks": 4,
+     "pages": [
+      "past/bt/qp-07.jpg"
+     ],
+     "draw": {
+      "mode": "tech",
+      "board": {
+       "w": 297,
+       "h": 210
+      }
+     },
+     "model": "Correct shape 2, correct line work 1, accuracy 1（問題用紙の BQ2B 採点表）。"
+    },
+    {
+     "id": "s2q5",
+     "type": "short",
+     "label": "Q2 Part C",
+     "navLabel": "2C",
+     "text": "",
+     "marks": 1,
+     "pages": [
+      "past/bt/qp-07.jpg"
+     ],
+     "model": "公式の Detailed Solutions を参照して採点。"
+    },
+    {
+     "id": "s2q6",
+     "type": "draw",
+     "label": "Q2 Part D",
+     "navLabel": "2D",
+     "text": "180°分度器を 1:1 で、角 A から描いてください（寸法は問題用紙の図を参照）。",
+     "marks": 3,
+     "pages": [
+      "past/bt/qp-07.jpg"
+     ],
+     "draw": {
+      "mode": "tech",
+      "board": {
+       "w": 297,
+       "h": 210
+      }
+     },
+     "model": "Correct shape 1, correct line work 1, accuracy 1（BQ2D 採点表）。"
+    },
+    {
+     "id": "s2q7",
+     "type": "short",
+     "label": "Q3 Part A (i)–(iv)",
+     "navLabel": "3A",
+     "text": "",
+     "marks": 5,
+     "pages": [
+      "past/bt/qp-08.jpg"
+     ],
+     "model": "公式の Detailed Solutions を参照して採点。"
+    },
+    {
+     "id": "s2q8",
+     "type": "short",
+     "label": "Q3 Part B",
+     "navLabel": "3B",
+     "text": "",
+     "marks": 2,
+     "pages": [
+      "past/bt/qp-08.jpg"
+     ],
+     "model": "公式の Detailed Solutions を参照して採点。"
+    },
+    {
+     "id": "s2q9",
+     "type": "draw",
+     "label": "Q3 Part C",
+     "navLabel": "3C",
+     "text": "パーラメントヒンジ（Parliament Hinge）をきれいにスケッチしてください。",
+     "marks": 3,
+     "pages": [
+      "past/bt/qp-08.jpg"
+     ],
+     "draw": {
+      "mode": "tech",
+      "board": {
+       "w": 297,
+       "h": 210
+      }
+     },
+     "model": "Correct proportion ½, correct rendering ½, correct sketch 2（BQ3C 採点表）。"
+    },
+    {
+     "id": "s2q10",
+     "type": "draw",
+     "label": "Q4 Orthographic Projection",
+     "navLabel": "4",
+     "text": "(i) Shaped Block の平面図と立面図を第一角法・1:1 で描く（8点）。(ii) 立面図に正しい書体で名前を書く（2点）。",
+     "marks": 10,
+     "pages": [
+      "past/bt/qp-09.jpg"
+     ],
+     "draw": {
+      "mode": "tech",
+      "board": {
+       "w": 297,
+       "h": 210
+      }
+     },
+     "model": "BQ4 採点表: starting points ½, position of views 1, line work 1, accuracy (L, W & H) 3, shape 2, neatness ½, view labelled 1, printing 1。"
+    },
+    {
+     "id": "s2q11",
+     "type": "draw",
+     "label": "Q5 Solid Geometry",
+     "navLabel": "5",
+     "text": "(i) 切断した六角錐の展開図（5点）、(ii) 切断した円柱の平面図を完成（2点）、(iii) 切断した円柱の実形（3点）。問題用紙の図を写してから作図してください。",
+     "marks": 10,
+     "pages": [
+      "past/bt/qp-10.jpg"
+     ],
+     "draw": {
+      "mode": "tech",
+      "board": {
+       "w": 297,
+       "h": 210
+      }
+     },
+     "model": "BQ5 採点表: (i) starting point ½, shape 3, line work 1, flap ½ / (ii) shape 1, line work 1 / (iii) shape 2, line work 1。"
+    }
+   ]
+  },
+  {
+   "title": "SECTION C LONG ANSWER QUESTIONS [20 marks]",
+   "short": "C Design & Enterprise",
+   "note": "",
+   "questions": [
+    {
+     "id": "s3q1",
+     "type": "draw",
+     "label": "Q1 Design (i)",
+     "navLabel": "C1i",
+     "text": "バングルラックの完成案を、陰影（レンダリング）とラベル付きで立体的にスケッチしてください。",
+     "marks": 4,
+     "pages": [
+      "past/bt/qp-11.jpg"
+     ],
+     "draw": {
+      "mode": "tech",
+      "board": {
+       "w": 297,
+       "h": 210
+      }
+     },
+     "model": "CQ1(i): proportion 1, accuracy 1, rendering 1, labels 1。"
+    },
+    {
+     "id": "s3q2",
+     "type": "draw",
+     "label": "Q1 Design (ii)",
+     "navLabel": "C1ii",
+     "text": "バングルが落ちずにきれいに収まる様子を詳しくスケッチしてください。",
+     "marks": 4,
+     "pages": [
+      "past/bt/qp-11.jpg"
+     ],
+     "draw": {
+      "mode": "tech",
+      "board": {
+       "w": 297,
+       "h": 210
+      }
+     },
+     "model": "CQ1(ii): proportion 1, evidence of being kept neatly without falling 2, rendering 1。"
+    },
+    {
+     "id": "s3q3",
+     "type": "short",
+     "label": "Q1 Design (iii) Materials",
+     "navLabel": "C1iii",
+     "text": "",
+     "marks": 2,
+     "pages": [
+      "past/bt/qp-11.jpg"
+     ],
+     "model": "公式の Detailed Solutions を参照して採点。"
+    },
+    {
+     "id": "s3q4",
+     "type": "short",
+     "label": "Q2 Enterprising (i) Material list",
+     "navLabel": "C2i",
+     "text": "",
+     "marks": 3,
+     "pages": [
+      "past/bt/qp-12.jpg"
+     ],
+     "model": "Sides: 700×250×20 = 3 500 000 mm³ × 2 = 7 000 000 × $0.0000015 = $10.50; Shelves: 800×250×20 = 4 000 000 mm³ × 2 = 8 000 000 × $0.0000021 = $16.80; Total $27.30（数量は図から2枚と判断）"
+    },
+    {
+     "id": "s3q5",
+     "type": "short",
+     "label": "Q2 Enterprising (ii) Cash book",
+     "navLabel": "C2ii",
+     "text": "",
+     "marks": 5,
+     "pages": [
+      "past/bt/qp-12.jpg"
+     ],
+     "model": "Capital 50.00 → Sale +35.00 = 85.00 → Material −27.30 = 57.70 → Labour 15% × 27.30 = 4.10 → 53.60 → Overhead 5% × (27.30 + 4.10) = 1.57 → 52.03"
+    },
+    {
+     "id": "s3q6",
+     "type": "short",
+     "label": "Q2 Enterprising (iii) Profit",
+     "navLabel": "C2iii",
+     "text": "",
+     "marks": 2,
+     "pages": [
+      "past/bt/qp-12.jpg"
+     ],
+     "model": "Profit = 35.00 − (27.30 + 4.10 + 1.57) = $2.03（= 52.03 − 50.00）"
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,931 @@
+{
+ "id": "p19_ot",
+ "kind": "past",
+ "subject": "Office Technology",
+ "title": "Fiji Year 10 Examination 2019 — Office Technology（過去問）",
+ "minutes": 120,
+ "readingMinutes": 10,
+ "totalMarks": 100,
+ "instructions": "これは2019年の本番の問題です。上に問題用紙のページ画像を表示しています（画像をクリックすると拡大）。\n選択問題は A〜D をクリック、記述は英語で入力、作図は作図ツールを使ってください。「解答用紙」と書かれた問題は、解答用紙の形式（表や枠）を見て答えてください。\n提出すると選択・マッチングは自動採点され、公式の Detailed Solutions（詳しい解答）が表示されます。",
+ "sections": [
+  {
+   "title": "SECTION A MULTIPLE-CHOICE QUESTIONS [30 marks]",
+   "short": "A MCQ",
+   "note": "",
+   "questions": [
+    {
+     "id": "s1q1",
+     "type": "mcq",
+     "label": "Question 1",
+     "navLabel": "1",
+     "text": "",
+     "marks": 1,
+     "pages": [
+      "past/ot/qp-02.jpg"
+     ],
+     "options": [
+      "",
+      "",
+      "",
+      ""
+     ],
+     "answer": "C"
+    },
+    {
+     "id": "s1q2",
+     "type": "mcq",
+     "label": "Question 2",
+     "navLabel": "2",
+     "text": "",
+     "marks": 1,
+     "pages": [
+      "past/ot/qp-02.jpg"
+     ],
+     "options": [
+      "",
+      "",
+      "",
+      ""
+     ],
+     "answer": "B"
+    },
+    {
+     "id": "s1q3",
+     "type": "mcq",
+     "label": "Question 3",
+     "navLabel": "3",
+     "text": "",
+     "marks": 1,
+     "pages": [
+      "past/ot/qp-02.jpg"
+     ],
+     "options": [
+      "",
+      "",
+      "",
+      ""
+     ],
+     "answer": "D"
+    },
+    {
+     "id": "s1q4",
+     "type": "mcq",
+     "label": "Question 4",
+     "navLabel": "4",
+     "text": "",
+     "marks": 1,
+     "pages": [
+      "past/ot/qp-03.jpg"
+     ],
+     "options": [
+      "",
+      "",
+      "",
+      ""
+     ],
+     "answer": "B"
+    },
+    {
+     "id": "s1q5",
+     "type": "mcq",
+     "label": "Question 5",
+     "navLabel": "5",
+     "text": "",
+     "marks": 1,
+     "pages": [
+      "past/ot/qp-03.jpg"
+     ],
+     "options": [
+      "",
+      "",
+      "",
+      ""
+     ],
+     "answer": "C"
+    },
+    {
+     "id": "s1q6",
+     "type": "mcq",
+     "label": "Question 6",
+     "navLabel": "6",
+     "text": "",
+     "marks": 1,
+     "pages": [
+      "past/ot/qp-03.jpg"
+     ],
+     "options": [
+      "",
+      "",
+      "",
+      ""
+     ],
+     "answer": "D"
+    },
+    {
+     "id": "s1q7",
+     "type": "mcq",
+     "label": "Question 7",
+     "navLabel": "7",
+     "text": "",
+     "marks": 1,
+     "pages": [
+      "past/ot/qp-03.jpg"
+     ],
+     "options": [
+      "",
+      "",
+      "",
+      ""
+     ],
+     "answer": "A"
+    },
+    {
+     "id": "s1q8",
+     "type": "mcq",
+     "label": "Question 8",
+     "navLabel": "8",
+     "text": "",
+     "marks": 1,
+     "pages": [
+      "past/ot/qp-03.jpg"
+     ],
+     "options": [
+      "",
+      "",
+      "",
+      ""
+     ],
+     "answer": "A"
+    },
+    {
+     "id": "s1q9",
+     "type": "mcq",
+     "label": "Question 9",
+     "navLabel": "9",
+     "text": "",
+     "marks": 1,
+     "pages": [
+      "past/ot/qp-04.jpg"
+     ],
+     "options": [
+      "",
+      "",
+      "",
+      ""
+     ],
+     "answer": "B"
+    },
+    {
+     "id": "s1q10",
+     "type": "mcq",
+     "label": "Question 10",
+     "navLabel": "10",
+     "text": "",
+     "marks": 1,
+     "pages": [
+      "past/ot/qp-04.jpg"
+     ],
+     "options": [
+      "",
+      "",
+      "",
+      ""
+     ],
+     "answer": "C"
+    },
+    {
+     "id": "s1q11",
+     "type": "mcq",
+     "label": "Question 11",
+     "navLabel": "11",
+     "text": "",
+     "marks": 1,
+     "pages": [
+      "past/ot/qp-04.jpg"
+     ],
+     "options": [
+      "",
+      "",
+      "",
+      ""
+     ],
+     "answer": "D"
+    },
+    {
+     "id": "s1q12",
+     "type": "mcq",
+     "label": "Question 12",
+     "navLabel": "12",
+     "text": "",
+     "marks": 1,
+     "pages": [
+      "past/ot/qp-04.jpg"
+     ],
+     "options": [
+      "",
+      "",
+      "",
+      ""
+     ],
+     "answer": "C"
+    },
+    {
+     "id": "s1q13",
+     "type": "mcq",
+     "label": "Question 13",
+     "navLabel": "13",
+     "text": "",
+     "marks": 1,
+     "pages": [
+      "past/ot/qp-04.jpg"
+     ],
+     "options": [
+      "",
+      "",
+      "",
+      ""
+     ],
+     "answer": "D"
+    },
+    {
+     "id": "s1q14",
+     "type": "mcq",
+     "label": "Question 14",
+     "navLabel": "14",
+     "text": "",
+     "marks": 1,
+     "pages": [
+      "past/ot/qp-05.jpg"
+     ],
+     "options": [
+      "",
+      "",
+      "",
+      ""
+     ],
+     "answer": "A"
+    },
+    {
+     "id": "s1q15",
+     "type": "mcq",
+     "label": "Question 15",
+     "navLabel": "15",
+     "text": "",
+     "marks": 1,
+     "pages": [
+      "past/ot/qp-05.jpg"
+     ],
+     "options": [
+      "",
+      "",
+      "",
+      ""
+     ],
+     "answer": "B"
+    },
+    {
+     "id": "s1q16",
+     "type": "mcq",
+     "label": "Question 16",
+     "navLabel": "16",
+     "text": "",
+     "marks": 1,
+     "pages": [
+      "past/ot/qp-05.jpg"
+     ],
+     "options": [
+      "",
+      "",
+      "",
+      ""
+     ],
+     "answer": "A"
+    },
+    {
+     "id": "s1q17",
+     "type": "mcq",
+     "label": "Question 17",
+     "navLabel": "17",
+     "text": "",
+     "marks": 1,
+     "pages": [
+      "past/ot/qp-06.jpg"
+     ],
+     "options": [
+      "",
+      "",
+      "",
+      ""
+     ],
+     "answer": "C"
+    },
+    {
+     "id": "s1q18",
+     "type": "mcq",
+     "label": "Question 18",
+     "navLabel": "18",
+     "text": "",
+     "marks": 1,
+     "pages": [
+      "past/ot/qp-06.jpg"
+     ],
+     "options": [
+      "",
+      "",
+      "",
+      ""
+     ],
+     "answer": "D"
+    },
+    {
+     "id": "s1q19",
+     "type": "mcq",
+     "label": "Question 19",
+     "navLabel": "19",
+     "text": "",
+     "marks": 1,
+     "pages": [
+      "past/ot/qp-06.jpg"
+     ],
+     "options": [
+      "",
+      "",
+      "",
+      ""
+     ],
+     "answer": "B"
+    },
+    {
+     "id": "s1q20",
+     "type": "mcq",
+     "label": "Question 20",
+     "navLabel": "20",
+     "text": "",
+     "marks": 1,
+     "pages": [
+      "past/ot/qp-06.jpg"
+     ],
+     "options": [
+      "",
+      "",
+      "",
+      ""
+     ],
+     "answer": "A"
+    },
+    {
+     "id": "s1q21",
+     "type": "mcq",
+     "label": "Question 21",
+     "navLabel": "21",
+     "text": "",
+     "marks": 1,
+     "pages": [
+      "past/ot/qp-06.jpg"
+     ],
+     "options": [
+      "",
+      "",
+      "",
+      ""
+     ],
+     "answer": "D"
+    },
+    {
+     "id": "s1q22",
+     "type": "mcq",
+     "label": "Question 22",
+     "navLabel": "22",
+     "text": "",
+     "marks": 1,
+     "pages": [
+      "past/ot/qp-06.jpg"
+     ],
+     "options": [
+      "",
+      "",
+      "",
+      ""
+     ],
+     "answer": "B"
+    },
+    {
+     "id": "s1q23",
+     "type": "mcq",
+     "label": "Question 23",
+     "navLabel": "23",
+     "text": "",
+     "marks": 1,
+     "pages": [
+      "past/ot/qp-06.jpg"
+     ],
+     "options": [
+      "",
+      "",
+      "",
+      ""
+     ],
+     "answer": "A"
+    },
+    {
+     "id": "s1q24",
+     "type": "mcq",
+     "label": "Question 24",
+     "navLabel": "24",
+     "text": "",
+     "marks": 1,
+     "pages": [
+      "past/ot/qp-06.jpg"
+     ],
+     "options": [
+      "",
+      "",
+      "",
+      ""
+     ],
+     "answer": "D"
+    },
+    {
+     "id": "s1q25",
+     "type": "mcq",
+     "label": "Question 25",
+     "navLabel": "25",
+     "text": "",
+     "marks": 1,
+     "pages": [
+      "past/ot/qp-07.jpg"
+     ],
+     "options": [
+      "",
+      "",
+      "",
+      ""
+     ],
+     "answer": "B"
+    },
+    {
+     "id": "s1q26",
+     "type": "mcq",
+     "label": "Question 26",
+     "navLabel": "26",
+     "text": "",
+     "marks": 1,
+     "pages": [
+      "past/ot/qp-07.jpg"
+     ],
+     "options": [
+      "",
+      "",
+      "",
+      ""
+     ],
+     "answer": "C"
+    },
+    {
+     "id": "s1q27",
+     "type": "mcq",
+     "label": "Question 27",
+     "navLabel": "27",
+     "text": "",
+     "marks": 1,
+     "pages": [
+      "past/ot/qp-07.jpg"
+     ],
+     "options": [
+      "",
+      "",
+      "",
+      ""
+     ],
+     "answer": "A"
+    },
+    {
+     "id": "s1q28",
+     "type": "mcq",
+     "label": "Question 28",
+     "navLabel": "28",
+     "text": "",
+     "marks": 1,
+     "pages": [
+      "past/ot/qp-07.jpg"
+     ],
+     "options": [
+      "",
+      "",
+      "",
+      ""
+     ],
+     "answer": "A"
+    },
+    {
+     "id": "s1q29",
+     "type": "mcq",
+     "label": "Question 29",
+     "navLabel": "29",
+     "text": "",
+     "marks": 1,
+     "pages": [
+      "past/ot/qp-07.jpg"
+     ],
+     "options": [
+      "",
+      "",
+      "",
+      ""
+     ],
+     "answer": "C"
+    },
+    {
+     "id": "s1q30",
+     "type": "mcq",
+     "label": "Question 30",
+     "navLabel": "30",
+     "text": "",
+     "marks": 1,
+     "pages": [
+      "past/ot/qp-07.jpg"
+     ],
+     "options": [
+      "",
+      "",
+      "",
+      ""
+     ],
+     "answer": "B"
+    }
+   ]
+  },
+  {
+   "title": "SECTION B SHORT ANSWER QUESTIONS [50 marks]",
+   "short": "B Short answer",
+   "note": "",
+   "questions": [
+    {
+     "id": "s2q1",
+     "type": "match",
+     "label": "Question 1 Matching",
+     "navLabel": "1",
+     "text": "",
+     "marks": 10,
+     "pages": [
+      "past/ot/qp-08.jpg"
+     ],
+     "items": [
+      "Photocopier",
+      "Shredder machine",
+      "Spreadsheet window",
+      "Formula",
+      "Spamming",
+      "Behind text style",
+      "Prioritisation",
+      "Internal Business Environment",
+      "Robotism",
+      "Bottom Up"
+     ],
+     "options": [
+      "Sending inappropriate messages on the internet to a large number of recipients.",
+      "Information flow from workers to top level management.",
+      "Attending to urgent tasks.",
+      "The graphic floats on its own layer behind the text.",
+      "Comprises the owner, structure, how it is run, its workers, equipment, building, etc.",
+      "A negative attitude that deals with customers with the same actions and comments, showing no feeling or individuality.",
+      "Use light process in making immediate copies of documents or pictures.",
+      "A positive attitude that put you in other person's position and understand their point of view.",
+      "Destroys documents and files which contain confidential matters.",
+      "The graphic moves as you add or delete text.",
+      "Has all the features including menu bar, tool bar and working area.",
+      "Used in spreadsheet to perform calculations."
+     ],
+     "answer": [
+      "G",
+      "I",
+      "K",
+      "L",
+      "A",
+      "D",
+      "C",
+      "E",
+      "F",
+      "B"
+     ]
+    },
+    {
+     "id": "s2q2",
+     "type": "short",
+     "label": "Q2 (a)",
+     "navLabel": "(a)",
+     "text": "",
+     "marks": 2,
+     "pages": [
+      "past/ot/qp-09.jpg"
+     ],
+     "model": "公式の Detailed Solutions を参照して採点。"
+    },
+    {
+     "id": "s2q3",
+     "type": "short",
+     "label": "Q2 (b)",
+     "navLabel": "(b)",
+     "text": "",
+     "marks": 2,
+     "pages": [
+      "past/ot/qp-09.jpg"
+     ],
+     "model": "公式の Detailed Solutions を参照して採点。"
+    },
+    {
+     "id": "s2q4",
+     "type": "short",
+     "label": "Q2 (c)",
+     "navLabel": "(c)",
+     "text": "解答用紙の手順の続きを書いてください。",
+     "marks": 3,
+     "pages": [
+      "past/ot/qp-09.jpg"
+     ],
+     "ab": [
+      "past/ot/ab-03.jpg",
+      "past/ot/ab-04.jpg"
+     ],
+     "model": "公式の Detailed Solutions を参照して採点。"
+    },
+    {
+     "id": "s2q5",
+     "type": "short",
+     "label": "Q2 (d)",
+     "navLabel": "(d)",
+     "text": "",
+     "marks": 1,
+     "pages": [
+      "past/ot/qp-09.jpg"
+     ],
+     "model": "公式の Detailed Solutions を参照して採点。"
+    },
+    {
+     "id": "s2q6",
+     "type": "short",
+     "label": "Q2 (e)",
+     "navLabel": "(e)",
+     "text": "",
+     "marks": 2,
+     "pages": [
+      "past/ot/qp-09.jpg"
+     ],
+     "model": "公式の Detailed Solutions を参照して採点。"
+    },
+    {
+     "id": "s2q7",
+     "type": "short",
+     "label": "Q3 (a)",
+     "navLabel": "(a)",
+     "text": "",
+     "marks": 2,
+     "pages": [
+      "past/ot/qp-10.jpg"
+     ],
+     "model": "公式の Detailed Solutions を参照して採点。"
+    },
+    {
+     "id": "s2q8",
+     "type": "short",
+     "label": "Q3 (b)",
+     "navLabel": "(b)",
+     "text": "",
+     "marks": 2,
+     "pages": [
+      "past/ot/qp-10.jpg"
+     ],
+     "model": "公式の Detailed Solutions を参照して採点。"
+    },
+    {
+     "id": "s2q9",
+     "type": "short",
+     "label": "Q3 (c)",
+     "navLabel": "(c)",
+     "text": "",
+     "marks": 2,
+     "pages": [
+      "past/ot/qp-10.jpg"
+     ],
+     "model": "公式の Detailed Solutions を参照して採点。"
+    },
+    {
+     "id": "s2q10",
+     "type": "short",
+     "label": "Q3 (d)",
+     "navLabel": "(d)",
+     "text": "",
+     "marks": 2,
+     "pages": [
+      "past/ot/qp-10.jpg"
+     ],
+     "model": "公式の Detailed Solutions を参照して採点。"
+    },
+    {
+     "id": "s2q11",
+     "type": "short",
+     "label": "Q3 (e)",
+     "navLabel": "(e)",
+     "text": "",
+     "marks": 2,
+     "pages": [
+      "past/ot/qp-10.jpg"
+     ],
+     "model": "公式の Detailed Solutions を参照して採点。"
+    },
+    {
+     "id": "s2q12",
+     "type": "short",
+     "label": "Q4 (a)",
+     "navLabel": "(a)",
+     "text": "",
+     "marks": 2,
+     "pages": [
+      "past/ot/qp-10.jpg"
+     ],
+     "model": "公式の Detailed Solutions を参照して採点。"
+    },
+    {
+     "id": "s2q13",
+     "type": "short",
+     "label": "Q4 (b)",
+     "navLabel": "(b)",
+     "text": "3つの手順を書いてください（手順 4・5 は解答用紙にあります）。",
+     "marks": 3,
+     "pages": [
+      "past/ot/qp-10.jpg"
+     ],
+     "ab": [
+      "past/ot/ab-05.jpg",
+      "past/ot/ab-06.jpg"
+     ],
+     "model": "公式の Detailed Solutions を参照して採点。"
+    },
+    {
+     "id": "s2q14",
+     "type": "short",
+     "label": "Q4 (c)",
+     "navLabel": "(c)",
+     "text": "",
+     "marks": 2,
+     "pages": [
+      "past/ot/qp-10.jpg"
+     ],
+     "model": "公式の Detailed Solutions を参照して採点。"
+    },
+    {
+     "id": "s2q15",
+     "type": "short",
+     "label": "Q4 (d)",
+     "navLabel": "(d)",
+     "text": "",
+     "marks": 3,
+     "pages": [
+      "past/ot/qp-10.jpg"
+     ],
+     "model": "公式の Detailed Solutions を参照して採点。"
+    },
+    {
+     "id": "s2q16",
+     "type": "short",
+     "label": "Q5 (a)",
+     "navLabel": "(a)",
+     "text": "",
+     "marks": 2,
+     "pages": [
+      "past/ot/qp-11.jpg"
+     ],
+     "model": "公式の Detailed Solutions を参照して採点。"
+    },
+    {
+     "id": "s2q17",
+     "type": "short",
+     "label": "Q5 (b)",
+     "navLabel": "(b)",
+     "text": "",
+     "marks": 2,
+     "pages": [
+      "past/ot/qp-11.jpg"
+     ],
+     "model": "公式の Detailed Solutions を参照して採点。"
+    },
+    {
+     "id": "s2q18",
+     "type": "short",
+     "label": "Q5 (c)",
+     "navLabel": "(c)",
+     "text": "",
+     "marks": 2,
+     "pages": [
+      "past/ot/qp-11.jpg"
+     ],
+     "model": "公式の Detailed Solutions を参照して採点。"
+    },
+    {
+     "id": "s2q19",
+     "type": "short",
+     "label": "Q5 (d)",
+     "navLabel": "(d)",
+     "text": "",
+     "marks": 2,
+     "pages": [
+      "past/ot/qp-11.jpg"
+     ],
+     "model": "公式の Detailed Solutions を参照して採点。"
+    },
+    {
+     "id": "s2q20",
+     "type": "short",
+     "label": "Q5 (e)",
+     "navLabel": "(e)",
+     "text": "",
+     "marks": 2,
+     "pages": [
+      "past/ot/qp-11.jpg"
+     ],
+     "model": "公式の Detailed Solutions を参照して採点。"
+    }
+   ]
+  },
+  {
+   "title": "SECTION C PARAGRAPH WRITING [20 marks]",
+   "short": "C Paragraphs",
+   "note": "",
+   "questions": [
+    {
+     "id": "s3q1",
+     "type": "paragraph",
+     "label": "Question 1",
+     "navLabel": "C1",
+     "text": "Write a paragraph in English.",
+     "marks": 5,
+     "pages": [
+      "past/ot/qp-12.jpg"
+     ],
+     "model": "公式の Detailed Solutions を参照して採点。",
+     "minWords": 75,
+     "maxWords": 130
+    },
+    {
+     "id": "s3q2",
+     "type": "paragraph",
+     "label": "Question 2",
+     "navLabel": "C2",
+     "text": "Write a paragraph in English.",
+     "marks": 5,
+     "pages": [
+      "past/ot/qp-12.jpg"
+     ],
+     "model": "公式の Detailed Solutions を参照して採点。",
+     "minWords": 75,
+     "maxWords": 130
+    },
+    {
+     "id": "s3q3",
+     "type": "paragraph",
+     "label": "Question 3",
+     "navLabel": "C3",
+     "text": "Write a paragraph in English.",
+     "marks": 5,
+     "pages": [
+      "past/ot/qp-12.jpg"
+     ],
+     "model": "公式の Detailed Solutions を参照して採点。",
+     "minWords": 75,
+     "maxWords": 130
+    },
+    {
+     "id": "s3q4",
+     "type": "paragraph",
+     "label": "Question 4",
+     "navLabel": "C4",
+     "text": "Write a paragraph in English.",
+     "marks": 5,
+     "pages": [
+      "past/ot/qp-12.jpg"
+     ],
+     "model": "公式の Detailed Solutions を参照して採点。",
+     "minWords": 75,
+     "maxWords": 130
+    }
+   ]
+  }
+ ],
+ "solutions": [
+  "past/ot/ds-01.jpg",
+  "past/ot/ds-02.jpg",
+  "past/ot/ds-03.jpg",
+  "past/ot/ds-04.jpg",
+  "past/ot/ds-05.jpg",
+  "past/ot/ds-06.jpg",
+  "past/ot/ds-07.jpg",
+  "past/ot/ds-08.jpg",
+  "past/ot/ds-09.jpg",
+  "past/ot/ds-10.jpg",
+  "past/ot/ds-11.jpg",
+  "past/ot/ds-12.jpg",
+  "past/ot/ds-13.jpg",
+  "past/ot/ds-14.jpg",
+  "past/ot/ds-15.jpg"
+ ]
+}

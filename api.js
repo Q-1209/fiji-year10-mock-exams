@@ -20,7 +20,7 @@
   const stamp = (d = new Date()) => `${d.getFullYear()}${z(d.getMonth() + 1)}${z(d.getDate())}-${z(d.getHours())}${z(d.getMinutes())}${z(d.getSeconds())}`;
   const json = (obj, status = 200) => new Response(JSON.stringify(obj), { status, headers: { "Content-Type": "application/json" } });
   const orig = window.fetch.bind(window);
-  const exam = id => /^[A-Za-z0-9_-]+$/.test(id || "") ? orig(`exams/${id}.json`).then(r => r.ok ? r.json() : null) : Promise.resolve(null);
+  const exam = id => /^[A-Za-z0-9_-]+$/.test(id || "") ? orig(`exams/${id}.json`, { cache: "no-cache" }).then(r => r.ok ? r.json() : null) : Promise.resolve(null);
   const b64 = s => { const b = new TextEncoder().encode(s); let bin = ""; for (let i = 0; i < b.length; i += 8192) bin += String.fromCharCode(...b.subarray(i, i + 8192)); return btoa(bin); };
 
   /* ---------- GitHub への保存 ---------- */
@@ -230,7 +230,7 @@
     if (!body) {
       await ready; // 別の端末の記録を読み込んでから答える
       if (path === "/api/exams") {
-        const list = await (await orig("exams/index.json")).json();
+        const list = await (await orig("exams/index.json", { cache: "no-cache" })).json();
         return json(list.map(e => ({ ...e, hasDraft: !!draft(e.id) })));
       }
       if (path === "/api/exam") { const e = await exam(q.get("id")); return e ? json(e) : json({ error: "not found" }, 404); }

@@ -1,0 +1,822 @@
+{
+ "id": "m3_commercial",
+ "subject": "Commercial Studies",
+ "kind": "mock3",
+ "title": "Fiji Year 10 Mock Examination 3 — Commercial Studies",
+ "minutes": 120,
+ "readingMinutes": 10,
+ "totalMarks": 100,
+ "instructions": "Answer ALL questions. Time allowed: 2 hours (an extra 10 minutes is allowed for reading).\nMultiple-choice: click the letter of the best answer (click again to clear).\nShort answers and paragraphs: type your answer in English in the box. Show working for calculations.\nYour answers are saved automatically. The paper is submitted automatically when time runs out.\n",
+ "sections": [
+  {
+   "title": "SECTION A  PERSONAL FINANCE II [30 marks]",
+   "short": "A Personal Finance",
+   "note": "There are three questions in this section. Answer all the questions. Question 1: multiple choice (10 marks).",
+   "questions": [
+    {
+     "id": "a1",
+     "type": "mcq",
+     "text": "The amount a worker takes home after all deductions is called",
+     "options": [
+      "gross pay",
+      "net pay",
+      "overtime",
+      "an allowance"
+     ],
+     "answer": "B",
+     "marks": 1
+    },
+    {
+     "id": "a2",
+     "type": "mcq",
+     "text": "FNPF contributions are mainly used to provide",
+     "options": [
+      "income during retirement",
+      "free medical care",
+      "school fees for all children",
+      "car loans"
+     ],
+     "answer": "A",
+     "marks": 1
+    },
+    {
+     "id": "a3",
+     "type": "mcq",
+     "text": "Which of these is a FIXED expense for a household?",
+     "options": [
+      "Entertainment",
+      "Clothing",
+      "Rent",
+      "Gifts"
+     ],
+     "answer": "C",
+     "marks": 1,
+     "explain": "A fixed expense is the same amount every period."
+    },
+    {
+     "id": "a4",
+     "type": "mcq",
+     "text": "Spending money on things you want but do not need is called",
+     "options": [
+      "essential spending",
+      "saving",
+      "investing",
+      "discretionary spending"
+     ],
+     "answer": "D",
+     "marks": 1
+    },
+    {
+     "id": "a5",
+     "type": "mcq",
+     "text": "An organisation owned by its members that accepts their savings and gives them loans is a",
+     "options": [
+      "credit union",
+      "commercial bank",
+      "insurance company",
+      "stock exchange"
+     ],
+     "answer": "A",
+     "marks": 1
+    },
+    {
+     "id": "a6",
+     "type": "mcq",
+     "text": "The next best alternative given up when a choice is made is the",
+     "options": [
+      "interest",
+      "opportunity cost",
+      "premium",
+      "budget"
+     ],
+     "answer": "B",
+     "marks": 1
+    },
+    {
+     "id": "a7",
+     "type": "mcq",
+     "text": "Which insurance principle says the insured is put back in the same financial position as before the loss, and must not make a profit?",
+     "options": [
+      "Utmost good faith",
+      "Insurable interest",
+      "Indemnity",
+      "Contribution"
+     ],
+     "answer": "C",
+     "marks": 1
+    },
+    {
+     "id": "a8",
+     "type": "mcq",
+     "text": "Buying shares in a company is an example of",
+     "options": [
+      "borrowing",
+      "investment",
+      "insurance",
+      "taxation"
+     ],
+     "answer": "B",
+     "marks": 1
+    },
+    {
+     "id": "a9",
+     "type": "mcq",
+     "text": "The interest rate a bank charges on loans is usually",
+     "options": [
+      "lower than the rate it pays on savings",
+      "always zero",
+      "fixed by the borrower",
+      "higher than the rate it pays on savings"
+     ],
+     "answer": "D",
+     "marks": 1,
+     "explain": "The difference is how the bank makes a profit."
+    },
+    {
+     "id": "a10",
+     "type": "mcq",
+     "text": "A document from the bank that lists all the deposits and withdrawals in an account for a month is a",
+     "options": [
+      "bank statement",
+      "deposit slip",
+      "cheque",
+      "receipt"
+     ],
+     "answer": "A",
+     "marks": 1
+    },
+    {
+     "id": "a2q1",
+     "type": "short",
+     "text": "QUESTION 2 Problem Solving Questions (15 marks)\nA. Personal Financial Management (4 marks)\nJosefa's weekly budget is shown in the table.\n1. Calculate his total weekly income. (1 mark)\n2. Calculate his total weekly expenses. (1 mark)\n3. Does he have a surplus or a deficit? How much? (1 mark)\n4. Suggest one wise way to use this amount. (1 mark)",
+     "marks": 4,
+     "model": "1. 320 + 60 = $380 (1)\n2. 35 + 140 + 90 + 15 + 20 + 40 = $340 (1)\n3. 380 − 340 = $40 surplus (1)\n4. Any one (1): put it into a savings account/term deposit; keep it as an emergency fund; save for a goal such as school fees; pay off a debt.",
+     "table": [
+      [
+       "Josefa's weekly budget",
+       "$"
+      ],
+      [
+       "INCOME: Wages",
+       "320"
+      ],
+      [
+       "INCOME: Part-time job",
+       "60"
+      ],
+      [
+       "EXPENSE: Bus fare",
+       "35"
+      ],
+      [
+       "EXPENSE: Food",
+       "140"
+      ],
+      [
+       "EXPENSE: Rent",
+       "90"
+      ],
+      [
+       "EXPENSE: Phone top-up",
+       "15"
+      ],
+      [
+       "EXPENSE: Church offering",
+       "20"
+      ],
+      [
+       "EXPENSE: Entertainment",
+       "40"
+      ]
+     ]
+    },
+    {
+     "id": "a2q2",
+     "type": "short",
+     "text": "B. Managing Credit (4 marks)\nSalote wants a laptop. The cash price is $1 200. On hire purchase she pays a $200 deposit and 12 monthly payments of $95.\n1. Calculate the total hire purchase price. (1 mark)\n2. How much more does she pay on hire purchase than in cash? (1 mark)\n3. State one advantage and one disadvantage of hire purchase. (2 marks)",
+     "marks": 4,
+     "model": "1. 200 + 12 × 95 = 200 + 1 140 = $1 340 (1)\n2. 1 340 − 1 200 = $140 (1)\n3. Advantage (1): she can use the laptop before paying the full price; payments are spread over time.\nDisadvantage (1): the total cost is higher (interest); the goods can be repossessed if she misses payments; she is in debt for a long time."
+    },
+    {
+     "id": "a2q3",
+     "type": "short",
+     "text": "C. Managing Risk and Financial Planning (3 marks)\n1. Differentiate between the insurer and the insured. (2 marks)\n2. Name one type of insurance a taxi driver should have. (1 mark)",
+     "marks": 3,
+     "model": "1. The insurer is the insurance company that gives the cover and pays claims (1); the insured is the person who buys the policy and pays the premium (1).\n2. Motor vehicle insurance — comprehensive or third party (1) (also accept: personal accident, life or medical insurance)."
+    },
+    {
+     "id": "a2q4",
+     "type": "short",
+     "text": "D. Investment in Financial Institutions (4 marks)\nMere puts $1 500 into a term deposit that pays 4% per annum simple interest for 3 years.\n1. Calculate the interest she will earn. (1 mark)\n2. Calculate the total she will receive at the end. (1 mark)\n3. State one difference between a savings account and a term deposit. (1 mark)\n4. State one risk of investing in shares. (1 mark)",
+     "marks": 4,
+     "model": "1. 1500 × 0.04 × 3 = $180 (1)\n2. 1500 + 180 = $1 680 (1)\n3. A savings account lets you withdraw at any time but pays lower interest; a term deposit is locked for a fixed time and pays higher interest (1).\n4. Any one (1): the share price can fall, so you may lose money; the company may pay no dividend; the company may close down."
+    },
+    {
+     "id": "a3p",
+     "type": "paragraph",
+     "text": "QUESTION 3 Paragraph Writing (5 marks)\nChoose ONE question from the three questions given below and write a paragraph on it. The length of the paragraph should be between 75 and 100 words.",
+     "marks": 5,
+     "minWords": 75,
+     "maxWords": 100,
+     "model": "Option 1: Budget defined – a plan of expected income and expenditure for a period (1); two benefits (1 each): controls spending, helps to save, avoids debt, shows where money goes, helps reach goals; two steps (1 each): list all income, list expenses (needs first), compare and find surplus/deficit, adjust and follow it.\nOption 2: Credit defined – buying now and paying later / borrowing money that must be repaid with interest (1); two sources in Fiji (1 each): commercial banks (BSP, Westpac, ANZ), Fiji Development Bank, credit unions, hire purchase companies, credit cards; two dangers (1 each): high interest, repossession, stress, less money for needs, bad credit record.\nOption 3: Entrepreneur defined – a person who starts and runs a business and takes the risk to make a profit (1); two qualities (1 each): hard-working, creative, risk-taker, good with people, organised; two ways a student can earn income (1 each): selling food at school, mowing lawns, handicrafts, selling vegetables, babysitting.",
+     "choices": [
+      {
+       "text": "\"A budget is the key to financial success.\" With reference to the statement:\n• Define budget.\n• Explain two benefits of having a budget.\n• Discuss two steps in preparing a budget."
+      },
+      {
+       "text": "\"Borrow wisely.\" With reference to the statement:\n• Define credit.\n• Describe two sources of credit in Fiji.\n• Explain two dangers of having too much debt."
+      },
+      {
+       "text": "\"Being enterprising can create income.\" With reference to the statement:\n• Define entrepreneur.\n• Describe two qualities of a good entrepreneur.\n• Explain two ways a student can earn income."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "SECTION B  BUSINESS INFORMATION II [40 marks]",
+   "short": "B Business Info",
+   "note": "There are two questions in this section. Question 1: multiple choice (10 marks). Question 2: problem solving (30 marks).",
+   "questions": [
+    {
+     "id": "b1",
+     "type": "mcq",
+     "text": "Which of the following is NOT a source document?",
+     "options": [
+      "Tax invoice",
+      "Credit note",
+      "Receipt",
+      "Trial balance"
+     ],
+     "answer": "D",
+     "marks": 1,
+     "explain": "A trial balance is a list of ledger balances, not a document for one transaction."
+    },
+    {
+     "id": "b2",
+     "type": "mcq",
+     "text": "A credit note is sent by the",
+     "options": [
+      "seller to the buyer when goods are returned",
+      "buyer to the seller to order goods",
+      "bank to the business",
+      "owner to the business"
+     ],
+     "answer": "A",
+     "marks": 1
+    },
+    {
+     "id": "b3",
+     "type": "mcq",
+     "text": "Cash sales are recorded in the",
+     "options": [
+      "Sales Journal",
+      "Cash Receipts Journal",
+      "General Journal",
+      "Purchases Journal"
+     ],
+     "answer": "B",
+     "marks": 1,
+     "explain": "Money came in → Cash Receipts Journal. The Sales Journal is only for CREDIT sales."
+    },
+    {
+     "id": "b4",
+     "type": "mcq",
+     "text": "Goods returned TO a supplier are recorded in the",
+     "options": [
+      "Sales Returns Journal",
+      "Purchases Journal",
+      "Purchases Returns Journal",
+      "Cash Payments Journal"
+     ],
+     "answer": "C",
+     "marks": 1
+    },
+    {
+     "id": "b5",
+     "type": "mcq",
+     "text": "Discount allowed (given to a debtor for paying early) is",
+     "options": [
+      "an expense of the business",
+      "an income of the business",
+      "a liability",
+      "a current asset"
+     ],
+     "answer": "A",
+     "marks": 1
+    },
+    {
+     "id": "b6",
+     "type": "mcq",
+     "text": "In a ledger account, the left-hand side is the",
+     "options": [
+      "credit side",
+      "debit side",
+      "balance side",
+      "total side"
+     ],
+     "answer": "B",
+     "marks": 1
+    },
+    {
+     "id": "b7",
+     "type": "mcq",
+     "text": "Which account normally has a CREDIT balance?",
+     "options": [
+      "Cash at bank",
+      "Purchases",
+      "Capital",
+      "Wages"
+     ],
+     "answer": "C",
+     "marks": 1,
+     "explain": "Assets, expenses and drawings → debit; liabilities, capital and income → credit."
+    },
+    {
+     "id": "b8",
+     "type": "mcq",
+     "text": "Gross profit is calculated as",
+     "options": [
+      "Net sales − Cost of goods sold",
+      "Sales − Expenses",
+      "Assets − Liabilities",
+      "Sales + Purchases"
+     ],
+     "answer": "A",
+     "marks": 1
+    },
+    {
+     "id": "b9",
+     "type": "mcq",
+     "text": "Which item appears in the Profit and Loss Account?",
+     "options": [
+      "Opening stock",
+      "Purchases",
+      "Motor vehicle",
+      "Rent expense"
+     ],
+     "answer": "D",
+     "marks": 1,
+     "explain": "Opening stock and purchases go in the Trading Account; a motor vehicle is an asset in the Balance Sheet."
+    },
+    {
+     "id": "b10",
+     "type": "mcq",
+     "text": "A bank loan that is repaid over 5 years is a",
+     "options": [
+      "current asset",
+      "non-current liability",
+      "capital",
+      "non-current asset"
+     ],
+     "answer": "B",
+     "marks": 1
+    },
+    {
+     "id": "b2q1",
+     "type": "match",
+     "text": "QUESTION 2 Problem Solving Questions (30 marks)\nA. Accounting Terms (4 marks)\nSelect the correct term for each description.",
+     "items": [
+      "Money owed to the business by its customers",
+      "Money or goods the owner takes out of the business for private use",
+      "Things of value owned by the business",
+      "Amounts the business owes to other people"
+     ],
+     "options": [
+      "Assets",
+      "Liabilities",
+      "Drawings",
+      "Debtors",
+      "Revenue"
+     ],
+     "answer": [
+      "D",
+      "C",
+      "A",
+      "B"
+     ],
+     "marks": 4
+    },
+    {
+     "id": "b2q2",
+     "type": "match",
+     "text": "B. Which journal? (5 marks)\nSelect the journal in which each transaction is first recorded.",
+     "items": [
+      "Sold goods for cash, $200",
+      "Bought goods on credit from Ravi Ltd, $450",
+      "The owner brought his own computer into the business, $900",
+      "Paid the electricity bill by cheque, $85",
+      "Customer Mele returned damaged goods she had bought on credit, $30"
+     ],
+     "options": [
+      "Cash Receipts Journal",
+      "Cash Payments Journal",
+      "Sales Journal",
+      "Sales Returns Journal",
+      "Purchases Journal",
+      "Purchases Returns Journal",
+      "General Journal"
+     ],
+     "answer": [
+      "A",
+      "E",
+      "G",
+      "B",
+      "D"
+     ],
+     "marks": 5
+    },
+    {
+     "id": "b2q3",
+     "type": "short",
+     "text": "C. The Accounting Process (8 marks)\nTui's Store had the transactions shown in the table during July 2026.\nRequired: Using the table, prepare\ni. the Sales Journal (show date, debtor, invoice number and amount, and the total). (3 marks)\nii. the Cash Receipts Journal with columns for Discount Allowed and Bank (show the totals). (5 marks)\nType each journal as rows, e.g. \"Jul 3 | Jone | Inv 101 | 350\". Not every transaction belongs in these two journals.",
+     "marks": 8,
+     "model": "i. Sales Journal: Jul 3 Jone Inv 101 350; Jul 9 Ema Inv 102 280; Jul 25 Jone Inv 103 190 (2); Total – Sales a/c Cr $820 (1).\nii. Cash Receipts Journal: Jul 1 Capital – Bank 5 000; Jul 6 Sales – Bank 420; Jul 15 Jone – Bank 300; Jul 20 Ema – Discount 14, Bank 266; Jul 28 Rent income – Bank 150 (4: about ½–1 each line, discount must be correct);\nTotals: Discount Allowed $14, Bank $6 136 (1).\nNOT in these journals: Jul 12 return by Jone → Sales Returns Journal; Jul 30 credit purchase → Purchases Journal.\nDiscount: 5% × 280 = $14, so Ema paid 280 − 14 = $266.",
+     "table": [
+      [
+       "Date",
+       "Transaction",
+       "$"
+      ],
+      [
+       "Jul 1",
+       "Owner deposited capital into the business bank account",
+       "5 000"
+      ],
+      [
+       "Jul 3",
+       "Sold goods on credit to Jone, Invoice 101",
+       "350"
+      ],
+      [
+       "Jul 6",
+       "Cash sales",
+       "420"
+      ],
+      [
+       "Jul 9",
+       "Sold goods on credit to Ema, Invoice 102",
+       "280"
+      ],
+      [
+       "Jul 12",
+       "Jone returned goods, Credit note 11",
+       "50"
+      ],
+      [
+       "Jul 15",
+       "Received cash from Jone in full payment of his account",
+       "300"
+      ],
+      [
+       "Jul 20",
+       "Received a cheque from Ema for her account less 5% discount",
+       ""
+      ],
+      [
+       "Jul 25",
+       "Sold goods on credit to Jone, Invoice 103",
+       "190"
+      ],
+      [
+       "Jul 28",
+       "Received rent from a tenant",
+       "150"
+      ],
+      [
+       "Jul 30",
+       "Bought goods on credit from Fiji Wholesalers",
+       "600"
+      ]
+     ]
+    },
+    {
+     "id": "b2q4",
+     "type": "short",
+     "text": "D. The Ledger (4 marks)\nUsing the transactions in C, prepare the account of the debtor Jone in the ledger of Tui's Store (T-account) for July 2026. Balance the account and bring down the balance on 1 August.\nType the debit side and the credit side, e.g. \"Dr: Jul 3 Sales 350 …  Cr: …\".",
+     "marks": 4,
+     "model": "Dr side: Jul 3 Sales 350; Jul 25 Sales 190 (1)\nCr side: Jul 12 Sales returns 50; Jul 15 Bank 300 (1)\nJul 31 Balance c/d 190 on the Cr side; totals 540 = 540 (1)\nAug 1 Balance b/d 190 on the Dr side — Jone still owes $190 (1)"
+    },
+    {
+     "id": "b2q5",
+     "type": "short",
+     "text": "E. The Trial Balance (3 marks)\nThe trial balance of Tui's Store is shown in the table, but the Capital figure is missing.\n1. Calculate the Capital. (2 marks)\n2. State one error that a trial balance will NOT show. (1 mark)",
+     "marks": 3,
+     "model": "1. Debit total = 4 200 + 900 + 1 500 + 6 000 + 3 100 + 800 = 16 500 (1); Credit without capital = 1 300 + 7 400 + 2 000 = 10 700 → Capital = 16 500 − 10 700 = $5 800 (1)\n2. Any one (1): error of omission (transaction left out completely); error of commission (wrong person's account); error of principle (wrong type of account); compensating errors; error of original entry (wrong amount in both accounts); complete reversal of entries.",
+     "table": [
+      [
+       "Account",
+       "Dr $",
+       "Cr $"
+      ],
+      [
+       "Cash at bank",
+       "4 200",
+       ""
+      ],
+      [
+       "Debtors",
+       "900",
+       ""
+      ],
+      [
+       "Stock (1 July)",
+       "1 500",
+       ""
+      ],
+      [
+       "Equipment",
+       "6 000",
+       ""
+      ],
+      [
+       "Purchases",
+       "3 100",
+       ""
+      ],
+      [
+       "Wages",
+       "800",
+       ""
+      ],
+      [
+       "Creditors",
+       "",
+       "1 300"
+      ],
+      [
+       "Sales",
+       "",
+       "7 400"
+      ],
+      [
+       "Bank loan",
+       "",
+       "2 000"
+      ],
+      [
+       "Capital",
+       "",
+       "?"
+      ]
+     ]
+    },
+    {
+     "id": "b2q6",
+     "type": "short",
+     "text": "F. Measuring Periodic Income (6 marks)\nLagi runs a hardware shop. She gave you this information for the year ended 31 December 2026:\nSales $18 000; Sales returns $400; Stock (1/1/2026) $2 500; Purchases $9 800; Purchases returns $300; Freight inwards $200; Stock (31/12/2026) $3 000; Wages $2 400; Rent $1 200; Electricity $600; Commission received $350\nRequired:\ni. Prepare the Trading Account and show the Gross Profit. (3 marks)\nii. Prepare the Profit and Loss Account and show the Net Profit. (3 marks)",
+     "marks": 6,
+     "model": "i. Net sales = 18 000 − 400 = 17 600 (½)\nOpening stock 2 500 + net purchases (9 800 − 300 = 9 500) + freight inwards 200 = 12 200 (1); less closing stock 3 000 → Cost of goods sold 9 200 (½)\nGross Profit = 17 600 − 9 200 = $8 400 (1)\nii. Gross profit 8 400 + commission received 350 = 8 750 (1); expenses: wages 2 400 + rent 1 200 + electricity 600 = 4 200 (1)\nNet Profit = 8 750 − 4 200 = $4 550 (1)"
+    }
+   ]
+  },
+  {
+   "title": "SECTION C  ECONOMICS II [30 marks]",
+   "short": "C Economics",
+   "note": "There are three questions in this section. Question 1: multiple choice (10 marks).",
+   "questions": [
+    {
+     "id": "c1",
+     "type": "mcq",
+     "text": "Choosing between alternatives because resources are limited is called",
+     "options": [
+      "choice",
+      "inflation",
+      "trade",
+      "demand"
+     ],
+     "answer": "A",
+     "marks": 1
+    },
+    {
+     "id": "c2",
+     "type": "mcq",
+     "text": "The four factors of production are land, labour, capital and",
+     "options": [
+      "money",
+      "entrepreneurship",
+      "government",
+      "markets"
+     ],
+     "answer": "B",
+     "marks": 1
+    },
+    {
+     "id": "c3",
+     "type": "mcq",
+     "text": "The reward for labour is",
+     "options": [
+      "rent",
+      "interest",
+      "wages",
+      "profit"
+     ],
+     "answer": "C",
+     "marks": 1,
+     "explain": "Land → rent, labour → wages, capital → interest, entrepreneurship → profit"
+    },
+    {
+     "id": "c4",
+     "type": "mcq",
+     "text": "If supply increases while demand stays the same, the price usually",
+     "options": [
+      "rises",
+      "stays the same",
+      "doubles",
+      "falls"
+     ],
+     "answer": "D",
+     "marks": 1
+    },
+    {
+     "id": "c5",
+     "type": "mcq",
+     "text": "An economy in which both the government and private businesses make decisions, like Fiji's, is a",
+     "options": [
+      "mixed economy",
+      "command economy",
+      "traditional economy",
+      "subsistence economy"
+     ],
+     "answer": "A",
+     "marks": 1
+    },
+    {
+     "id": "c6",
+     "type": "mcq",
+     "text": "A tax paid directly on a person's income is",
+     "options": [
+      "VAT",
+      "customs duty",
+      "income tax",
+      "excise duty"
+     ],
+     "answer": "C",
+     "marks": 1
+    },
+    {
+     "id": "c7",
+     "type": "mcq",
+     "text": "Which of these is an INVISIBLE export of Fiji?",
+     "options": [
+      "Gold",
+      "Tourists spending money in Fiji",
+      "Fish",
+      "Sugar"
+     ],
+     "answer": "B",
+     "marks": 1,
+     "explain": "Invisible = services. Gold, fish and sugar are goods (visible)."
+    },
+    {
+     "id": "c8",
+     "type": "mcq",
+     "text": "A tax on goods brought into the country is",
+     "options": [
+      "income tax",
+      "rates",
+      "company tax",
+      "customs duty"
+     ],
+     "answer": "D",
+     "marks": 1
+    },
+    {
+     "id": "c9",
+     "type": "mcq",
+     "text": "The total value of all goods and services produced in a country in one year is the",
+     "options": [
+      "GDP",
+      "inflation rate",
+      "balance of trade",
+      "budget"
+     ],
+     "answer": "A",
+     "marks": 1
+    },
+    {
+     "id": "c10",
+     "type": "mcq",
+     "text": "Which of these is an indicator of development?",
+     "options": [
+      "the number of cars imported",
+      "life expectancy",
+      "the number of shops",
+      "the price of sugar"
+     ],
+     "answer": "B",
+     "marks": 1
+    },
+    {
+     "id": "c2q1",
+     "type": "short",
+     "text": "QUESTION 2 Problem Solving Questions (15 marks)\nA. Introduction to Economics (3 marks)\ni. Define opportunity cost. (1 mark)\nii. Seru has $50. He can buy either a pair of shoes or a textbook. He buys the textbook. State his opportunity cost. (1 mark)\niii. A fisherman uses a boat. Name the factor of production the boat belongs to and its reward. (1 mark)",
+     "marks": 3,
+     "model": "i. The next best alternative given up when a choice is made (1)\nii. The pair of shoes (1)\niii. Capital; its reward is interest (1)"
+    },
+    {
+     "id": "c2q2",
+     "type": "short",
+     "text": "B. Microeconomics (4 marks)\nThe table shows the demand and supply schedule for pineapples at Suva Market.\ni. State the equilibrium price and the equilibrium quantity. (2 marks)\nii. At a price of $5, is there a surplus or a shortage? How many pineapples? (1 mark)\niii. State one factor, other than price, that affects the demand for pineapples. (1 mark)",
+     "marks": 4,
+     "model": "i. Price $3 (1); quantity 50 (1) — where quantity demanded = quantity supplied\nii. Surplus of 80 − 20 = 60 pineapples (1)\niii. Any one (1): income of buyers; price of other fruits (substitutes); tastes and preferences; population; season/festivals; advertising.",
+     "table": [
+      [
+       "Price ($)",
+       "Quantity demanded",
+       "Quantity supplied"
+      ],
+      [
+       "1",
+       "80",
+       "20"
+      ],
+      [
+       "2",
+       "60",
+       "40"
+      ],
+      [
+       "3",
+       "50",
+       "50"
+      ],
+      [
+       "4",
+       "30",
+       "70"
+      ],
+      [
+       "5",
+       "20",
+       "80"
+      ]
+     ]
+    },
+    {
+     "id": "c2q3",
+     "type": "short",
+     "text": "C. Macroeconomics (4 marks)\nThe table shows the revenue of the government of Economy Reef Land. Its total expenditure for the year is $3 900m.\ni. Calculate the total revenue. (1 mark)\nii. Is the budget in surplus or deficit? By how much? (1 mark)\niii. State two ways the government could reduce this deficit. (2 marks)",
+     "marks": 4,
+     "model": "i. 1 200 + 1 500 + 600 + 300 = $3 600m (1)\nii. 3 600 − 3 900 = −300 → deficit of $300m (1)\niii. Any two (1 each): raise taxes (e.g. VAT, income tax); cut government spending; sell government assets; encourage more businesses/exports so more tax is collected; reduce waste.",
+     "table": [
+      [
+       "Revenue of Economy Reef Land",
+       "$m"
+      ],
+      [
+       "Income tax",
+       "1 200"
+      ],
+      [
+       "VAT",
+       "1 500"
+      ],
+      [
+       "Customs duty",
+       "600"
+      ],
+      [
+       "Other revenue",
+       "300"
+      ]
+     ]
+    },
+    {
+     "id": "c2q4",
+     "type": "short",
+     "text": "D. International Trade (2 marks)\nIn one year Economy Reef Land exported goods worth $1 250m and imported goods worth $1 980m.\ni. Calculate the Balance of Trade and state whether it is a surplus or a deficit. (1 mark)\nii. State one way the country could improve its Balance of Trade. (1 mark)",
+     "marks": 2,
+     "model": "i. 1 250 − 1 980 = −$730m, a deficit (1)\nii. Any one (1): produce more goods for export; buy local products instead of imports; put higher customs duty on imports; find new export markets."
+    },
+    {
+     "id": "c2q5",
+     "type": "short",
+     "text": "E. Development Economics (2 marks)\nState two indicators that show a country is developed.",
+     "marks": 2,
+     "model": "Any two (1 each): high GDP per person; high life expectancy; high literacy rate; low infant mortality; good access to clean water, health care and education; high HDI."
+    },
+    {
+     "id": "c3p",
+     "type": "paragraph",
+     "text": "QUESTION 3 Paragraph Writing (5 marks)\nChoose ONE question from the three questions given below and write a paragraph on it. The length of the paragraph should be between 75 and 100 words.",
+     "marks": 5,
+     "minWords": 75,
+     "maxWords": 100,
+     "model": "Option 1: Tourism – people travelling to a place for leisure and spending money there; it is an invisible export (1); two benefits (1 each): jobs, foreign exchange, government revenue (tax), markets for local farmers and handicrafts, better infrastructure; two negative effects (1 each): damage to reefs/environment, loss of culture, rising prices, dependence on one industry, rubbish.\nOption 2: Inflation – a general rise in the prices of goods and services over time (1); two causes (1 each): higher costs of production (fuel, wages), too much demand, more expensive imports, higher taxes; two effects on families (1 each): money buys less, savings lose value, harder to pay for needs, people on fixed incomes suffer.\nOption 3: Unemployment – people who are able and willing to work but cannot find a job (1); two causes (1 each): not enough jobs, lack of skills/education, rural–urban drift, slow economic growth, natural disasters; two solutions (1 each): vocational training, help for small businesses, attract investment, encourage self-employment and agriculture.",
+     "choices": [
+      {
+       "text": "\"Tourism is important to Fiji's economy.\" With reference to the statement:\n• Define tourism.\n• Explain two benefits of tourism to Fiji.\n• Discuss two negative effects of tourism."
+      },
+      {
+       "text": "\"Inflation hurts everyone.\" With reference to the statement:\n• Define inflation.\n• Explain two causes of inflation.\n• Discuss two effects of inflation on families."
+      },
+      {
+       "text": "\"Unemployment is a problem for young people in Fiji.\" With reference to the statement:\n• Define unemployment.\n• Explain two causes of unemployment.\n• Discuss two ways to reduce unemployment."
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

@@ -78,6 +78,12 @@ window.Y10_ONLY = null;
         }));
         return { ok: true, users, paths: blobs.map(x => x.path).filter(p => !p.endsWith("/profile.json")) };
       }
+      if (req.op === "user") { // その人の記録（途中保存・判定・答案の一覧）と入退室の記録
+        if (!NAME_RE.test(name)) throw new Error("名前がおかしい");
+        const rd = async p => { const f = await gh("GET", "contents/" + enc(name + "/" + p)); return f.code === 200 ? JSON.parse(unb64(f.data.content)) : null; };
+        const [state, activity] = await Promise.all([rd("state.json"), rd("activity.json")]);
+        return { ok: true, state, activity };
+      }
       if (req.op === "read") {
         const f = await gh("GET", "contents/" + enc(String(req.path || "")));
         if (f.code !== 200) throw new Error("見つかりません");
@@ -160,6 +166,65 @@ window.Y10_ONLY = null;
   addEventListener("visibilitychange", () => { if (document.visibilityState === "hidden" && timer) save(); });
   const ready = Promise.race([pull().catch(() => {}), sleep(6000)]);
 
+  /* ---------- 入退室と操作の記録（<名前>/activity.json。漣さんの管理画面で見る） ----------
+     1回の訪問 = ページを使っている間。30分あいたら別の訪問にする。「出た時刻」は最後に操作した時刻（30秒ごとに更新）。
+     ev: [時刻(ms), 種類, …]  open=ページを開いた / exam=模試を開始・再開 / submit=提出 / discard=最初から /
+         q=用語クイズ1問（id, 1正解・0まちがい） / t=英文和訳1問（英文, 0〜2） / p=練習を1回終えた（kind, 点） */
+  const GAP = 30 * 60e3;
+  const PAGE = (location.pathname.split("/").pop() || "index.html").replace(/\.html$/, "") + (/[?&]set=en/.test(location.search) ? "?en" : "");
+  const tracking = () => !!user() && PAGE !== "admin";
+  const dev = () => { const u = navigator.userAgent;
+    return /iPhone/.test(u) ? "iPhone" : /iPad/.test(u) ? "iPad" : /Android/.test(u) ? (/Mobile/.test(u) ? "Android" : "Android タブレット")
+      : /Windows/.test(u) ? "Windows" : /Macintosh/.test(u) ? ("ontouchend" in document ? "iPad" : "Mac") : "その他"; };
+  function visit() {
+    const vs = get("visits", []), t = Date.now(); let v = vs[0], fresh = false;
+    if (!v || t - v.last > GAP) { v = { id: t.toString(36) + Math.random().toString(36).slice(2, 6), start: t, last: t, dev: dev(), ev: [] }; vs.unshift(v); fresh = true; }
+    return [vs, v, fresh];
+  }
+  function logEv(...e) {
+    if (!tracking()) return;
+    const [vs, v, fresh] = visit(), t = Date.now();
+    if (fresh && e[0] !== "open") v.ev.push([t, "open", PAGE]);
+    v.last = t; if (v.ev.length < 800) v.ev.push([t, ...e]);
+    put("visits", vs.slice(0, 60)); scheduleAct(e[0] === "submit" || e[0] === "p" ? 3000 : 60000);
+  }
+  function touch() {
+    if (!tracking()) return;
+    const [vs, v, fresh] = visit(); if (fresh) return logEv("open", PAGE);
+    v.last = Date.now(); put("visits", vs.slice(0, 60)); scheduleAct(120000);
+  }
+  async function pushAct() {
+    const name = user(); if (!name || !token()) return;
+    await retry(async () => {
+      const f = await gh("GET", "contents/" + enc(name + "/activity.json"));
+      const m = new Map(((f.code === 200 ? JSON.parse(unb64(f.data.content)) : {}).visits || []).map(v => [v.id, v]));
+      for (const v of get("visits", [])) { const o = m.get(v.id); if (!o || v.last >= o.last) m.set(v.id, v); }
+      const visits = [...m.values()].sort((a, b) => b.start - a.start).slice(0, 500)
+        .map((v, i) => { // 古い訪問は数だけ残して、操作の一覧は消す（ファイルが大きくならないように）
+          if (i < 80 || !v.ev) return v;
+          const c = {}; for (const e of v.ev) c[e[1]] = (c[e[1]] || 0) + 1;
+          c.qok = v.ev.filter(e => e[1] === "q" && e[3]).length; const { ev, ...rest } = v; return { ...rest, c };
+        });
+      return gh("PUT", "contents/" + enc(name + "/activity.json"),
+        { message: name + ": 入退室の記録", content: b64(JSON.stringify({ visits })), ...(f.code === 200 ? { sha: f.data.sha } : {}) });
+    });
+  }
+  let actTimer = null, actDue = 0, actPushing = Promise.resolve();
+  const saveAct = () => { clearTimeout(actTimer); actTimer = null; return actPushing = actPushing.then(pushAct).catch(() => {}); };
+  function scheduleAct(ms) {
+    const at = Date.now() + ms;
+    if (actTimer && actDue <= at) return;
+    clearTimeout(actTimer); actDue = at; actTimer = setTimeout(saveAct, ms);
+  }
+  let lastInput = Date.now();
+  for (const t of ["pointerdown", "keydown", "scroll", "touchstart", "input"]) addEventListener(t, () => { lastInput = Date.now(); }, { capture: true, passive: true });
+  setInterval(() => { if (document.visibilityState === "visible" && Date.now() - lastInput < 120e3) touch(); }, 30000);
+  addEventListener("visibilitychange", () => {
+    if (document.visibilityState === "hidden") { if (Date.now() - lastInput < 120e3) touch(); if (actTimer) saveAct(); }
+    else touch();
+  });
+  logEv("open", PAGE);
+
   window.Y10 = { user, post, flush, save, pending: () => outbox().length };
   if (outbox().length) setTimeout(flush, 1500);
 
@@ -234,7 +299,7 @@ window.Y10_ONLY = null;
         const list = await (await orig("exams/index.json", { cache: "no-cache" })).json();
         return json(list.map(e => ({ ...e, hasDraft: !!draft(e.id) })));
       }
-      if (path === "/api/exam") { const e = await exam(q.get("id")); return e ? json(e) : json({ error: "not found" }, 404); }
+      if (path === "/api/exam") { const e = await exam(q.get("id")); if (e) logEv("exam", e.id); return e ? json(e) : json({ error: "not found" }, 404); }
       if (path === "/api/draft") return json(draft(q.get("id")) || {});
       if (path === "/api/history") return json(get("history", []));
       if (path === "/api/tstatus") return json(get("tstatus", {}));
@@ -257,24 +322,25 @@ window.Y10_ONLY = null;
     if (path === "/api/tstatus") {
       const st = get("tstatus", {}), old = st[data.en] || {};
       st[data.en] = { g: data.grade, n: (old.n || 0) + 1, t: now(), _t: Date.now() };
-      put("tstatus", st); schedule(10000); return json({ ok: true });
+      put("tstatus", st); schedule(10000); logEv("t", String(data.en).slice(0, 120), data.grade); return json({ ok: true });
     }
     if (path === "/api/qstatus") {
       const st = get("qstatus", {}), old = st[data.id] || {};
       st[data.id] = { g: data.ok ? 1 : 0, n: (old.n || 0) + 1, t: now(), _t: Date.now() };
-      put("qstatus", st); schedule(10000); return json({ ok: true });
+      put("qstatus", st); schedule(10000); logEv("q", String(data.id).slice(0, 160), data.ok ? 1 : 0); return json({ ok: true });
     }
     if (path === "/api/practice") {
       const kind = /^[A-Za-z0-9_-]+$/.test(data.kind || "") ? data.kind : "practice";
       const rec = { ...data, name: user(), savedAt: now() };
       const list = get("practice", []); list.unshift(rec); put("practice", list.slice(0, 50));
+      const c = data.counts; logEv("p", kind, c ? `できた${c.good}・だいたい${c.ok}・できなかった${c.bad}` : data.total != null ? `${data.score}/${data.total}` : "");
       const sent = await send([{ path: `practice/${kind}_${stamp()}.json`, b64: b64(JSON.stringify(rec, null, 1)) }]);
       return json({ ok: true, sent });
     }
     const e = await exam(data.examId);
     if (!e) return json({ error: "unknown exam" }, 400);
-    if (path === "/api/draft") return json({ ok: setDraft(e.id, data) });
-    if (path === "/api/discard") { dropDraft(e.id); return json({ ok: true }); }
+    if (path === "/api/draft") { touch(); return json({ ok: setDraft(e.id, data) }); }
+    if (path === "/api/discard") { dropDraft(e.id); logEv("discard", e.id); return json({ ok: true }); }
     if (path === "/api/submit") {
       const d = new Date(), [auto, manual] = grade(e, data.responses || {}), stem = `${e.id}_${stamp(d)}`;
       const files = [], images = {};
@@ -291,6 +357,7 @@ window.Y10_ONLY = null;
       const hist = get("history", []);
       hist.unshift({ title: e.title, submittedAt: rec.submittedAt, auto, manualMax: manual });
       put("history", hist.slice(0, 100)); dropDraft(e.id);
+      logEv("submit", e.id, `${auto.score}/${auto.max}`, Math.round((data.elapsedSec || 0) / 60));
       return json({ ok: true, file: stem + ".md", auto, manualMax: manual, sent });
     }
     return json({ error: "not found" }, 404);

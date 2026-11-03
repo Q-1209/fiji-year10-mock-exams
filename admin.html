@@ -6,28 +6,41 @@
 <meta name="robots" content="noindex">
 <title>管理画面 — Year 10 模試</title>
 <style>
-  :root { --bg: #f6f5f1; --card: #fff; --ink: #1f2328; --muted: #6a707a; --line: #dcdad3; --accent: #1d5fa8; --bad: #b3261e; --ok: #1f7a3f; }
+  :root { --bg: #f6f5f1; --card: #fff; --ink: #1f2328; --muted: #6a707a; --line: #dcdad3; --accent: #1d5fa8; --soft: #e5eef9; --bad: #b3261e; --ok: #1f7a3f; --warn: #b26a00; }
   @media (prefers-color-scheme: dark) {
-    :root { --bg: #16181c; --card: #1f2227; --ink: #e6e6e6; --muted: #9aa0a8; --line: #33373e; --accent: #6aa5ec; --bad: #ef7d74; --ok: #6cc28a; }
+    :root { --bg: #16181c; --card: #1f2227; --ink: #e6e6e6; --muted: #9aa0a8; --line: #33373e; --accent: #6aa5ec; --soft: #1d2b3c; --bad: #ef7d74; --ok: #6cc28a; --warn: #f0b04a; }
   }
+  * { box-sizing: border-box; } [hidden] { display: none !important; }
   body { margin: 0; background: var(--bg); color: var(--ink); font: 15px/1.6 system-ui, "Segoe UI", "Yu Gothic UI", sans-serif; }
-  .wrap { max-width: 900px; margin: 0 auto; padding: 20px 16px 60px; }
-  h1 { font-size: 22px; margin: 0 0 4px; } .muted { color: var(--muted); font-size: 13px; }
+  .wrap { max-width: 1100px; margin: 0 auto; padding: 20px 16px 60px; }
+  h1 { font-size: 22px; margin: 0 0 4px; } h2 { font-size: 18px; margin: 0 0 8px; } h3 { font-size: 16px; margin: 14px 0 6px; }
+  .muted { color: var(--muted); font-size: 13px; }
   .card { background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: 14px; margin: 12px 0; }
   input, button { font: inherit; border-radius: 8px; border: 1px solid var(--line); padding: 8px 12px; background: var(--card); color: var(--ink); }
   button { cursor: pointer; } button.primary { background: var(--accent); border-color: var(--accent); color: #fff; }
-  button.danger { color: var(--bad); border-color: var(--bad); }
-  table { width: 100%; border-collapse: collapse; font-size: 14px; } td, th { padding: 6px 4px; border-bottom: 1px solid var(--line); text-align: left; vertical-align: top; }
-  .files { margin: 4px 0 0; padding-left: 18px; font-size: 13px; } .files a { color: var(--accent); cursor: pointer; }
-  .ok { color: var(--ok); } .wait { color: var(--bad); }
+  button.danger { color: var(--bad); border-color: var(--bad); } button.small { padding: 3px 10px; font-size: 13px; }
+  .tbl { overflow-x: auto; }
+  table { width: 100%; border-collapse: collapse; font-size: 14px; } td, th { padding: 6px 6px; border-bottom: 1px solid var(--line); text-align: left; vertical-align: top; }
+  th { font-weight: 600; color: var(--muted); font-size: 12px; white-space: nowrap; }
+  tr.click { cursor: pointer; } tr.click:hover td { background: var(--soft); } tr.sel td { background: var(--soft); }
+  .num { text-align: right; white-space: nowrap; font-variant-numeric: tabular-nums; }
+  .files { margin: 4px 0 0; padding-left: 18px; font-size: 13px; } .files a, a.link { color: var(--accent); cursor: pointer; }
+  .ok { color: var(--ok); } .wait, .bad { color: var(--bad); } .warn { color: var(--warn); }
   pre { white-space: pre-wrap; word-break: break-word; font-size: 13px; background: var(--bg); padding: 10px; border-radius: 8px; max-height: 70vh; overflow: auto; }
   .row { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; }
+  .stats { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 8px; }
+  .stat { background: var(--bg); border-radius: 8px; padding: 8px 10px; } .stat b { display: block; font-size: 20px; } .stat span { font-size: 12px; color: var(--muted); }
+  .tl { margin: 4px 0 8px 0; padding: 0; list-style: none; font-size: 13px; } .tl li { padding: 2px 0; border-bottom: 1px dashed var(--line); }
+  .tl time { display: inline-block; min-width: 44px; color: var(--muted); font-variant-numeric: tabular-nums; }
+  .chip { display: inline-block; font-size: 12px; padding: 0 8px; border-radius: 99px; background: var(--soft); color: var(--accent); margin: 1px 2px; white-space: nowrap; }
+  details summary { cursor: pointer; color: var(--accent); }
+  .bar { height: 8px; background: var(--line); border-radius: 99px; overflow: hidden; min-width: 60px; } .bar i { display: block; height: 100%; background: var(--ok); }
 </style>
 </head>
 <body>
 <div class="wrap">
   <h1>管理画面</h1>
-  <p class="muted">漣さん専用。友達の名前と、送られてきた答案（GitHub の非公開リポジトリ <code>fiji-year10-answers</code>）を管理します。</p>
+  <p class="muted">漣さん専用。登録した人ごとに、入退室（いつ来て、いつ帰ったか）・練習で解いた数・模試・答案を見られます。データは GitHub の非公開リポジトリ <code>fiji-year10-answers</code>。</p>
   <div class="card row" id="login">
     <input id="pass" type="password" placeholder="合言葉" autocomplete="current-password">
     <button id="eye" type="button" title="入力した合言葉を見る／かくす">👁 見る</button>
@@ -35,51 +48,223 @@
   </div>
   <div id="app"></div>
 </div>
-<script src="api.js?v=202611032023"></script>
+<script src="api.js?v=202611040017"></script>
 <script>
 const $ = s => document.querySelector(s);
 const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
-let PASS = "";
+let PASS = "", D = null, SEL = null;
 try { PASS = sessionStorage.getItem("y10admin") || ""; } catch {}
 const admin = body => Y10.post({ action: "admin", pass: PASS, ...body });
+
+/* ---------- 名前・表示のための小道具 ---------- */
+const SUBJ = { math: "Math", commercial: "Commercial", ot: "OT", science: "Science", social: "Social", bt: "BT",
+  mathematics: "Math", commercial_studies: "Commercial", office_technology: "OT", basic_science: "Science", social_science: "Social", basic_technology: "BT" };
+const KIND = { m3: "第3回", m26: "第2回", p19: "過去問2019" };
+function examName(id) {
+  let m = /^(m3|m26|p19)_([a-z]+)$/.exec(id || ""); if (m) return `${KIND[m[1]]} ${SUBJ[m[2]] || m[2]}`;
+  m = /^\d\d_(.+)$/.exec(id || ""); if (m) return `第1回 ${SUBJ[m[1]] || m[1]}`;
+  return id || "";
+}
+const PAGES = { index: "トップ", quiz: "用語クイズ", "quiz?en": "英語で説明", translate: "英文和訳", translate_list: "英文和訳の答え一覧", journal: "どの仕訳帳？" };
+const QTYPE = { ej: "英→日", je: "日→英", de: "説明→用語", ed: "用語→説明", x: "確認問題" };
+function quizKey(k) { // "w|ot|je|Organisation chart" → {mode, subj, type, term}
+  const p = k.split("|"); const w = p[0] === "w"; if (w) p.shift();
+  return { mode: w ? "書く" : "選ぶ", subj: SUBJ[p[0]] || p[0], type: QTYPE[p[1]] || p[1], term: p.slice(2).join("|") };
+}
+const TG = ["できなかった", "だいたい", "できた"];
+const z = n => String(n).padStart(2, "0");
+const dt = ms => { const d = new Date(ms); return `${d.getMonth() + 1}/${d.getDate()}`; };
+const hm = ms => { const d = new Date(ms); return `${z(d.getHours())}:${z(d.getMinutes())}`; };
+const ymd = ms => { const d = new Date(ms); return `${d.getFullYear()}-${z(d.getMonth() + 1)}-${z(d.getDate())}`; };
+const WD = "日月火水木金土";
+const day = s => { const d = new Date(s.replace(" ", "T")); return isNaN(d) ? s : `${d.getMonth() + 1}/${d.getDate()}（${WD[d.getDay()]}）`; };
+const mins = m => m < 1 ? "1分未満" : m < 60 ? `${Math.round(m)}分` : `${Math.floor(m / 60)}時間${Math.round(m % 60)}分`;
+const toMs = s => s ? new Date(String(s).replace(" ", "T")).getTime() || 0 : 0;
+const pct = (a, b) => b ? Math.round(a / b * 100) : 0;
+const bar = (a, b) => `<div class="bar" title="${a}/${b}"><i style="width:${pct(a, b)}%"></i></div>`;
+
+/* ---------- 1人分のまとめ ---------- */
+function summarize(n) {
+  const u = D.users[n] || {}, st = u.state || {}, act = u.activity || {}, files = D.files[n] || [];
+  const visits = (act.visits || []).slice().sort((a, b) => b.start - a.start);
+  const q = Object.entries(st.qstatus || {}), t = Object.entries(st.tstatus || {});
+  const answers = files.filter(x => /^[^/]+\.md$/.test(x) && !x.endsWith("_採点.md"));
+  const graded = answers.filter(a => files.includes(a.replace(/\.md$/, "_採点.md")));
+  const drafts = Object.entries(st.drafts || {}).filter(([, v]) => !v.gone);
+  const last = Math.max(0, ...visits.map(v => v.last), ...q.map(([, v]) => v._t || toMs(v.t)), ...t.map(([, v]) => v._t || toMs(v.t)),
+    ...(st.history || []).map(h => toMs(h.submittedAt)), ...drafts.map(([, v]) => v._t || 0));
+  const evs = visits.flatMap(v => v.ev || []);
+  const cnt = k => evs.filter(e => e[1] === k).length + visits.filter(v => !v.ev && v.c).reduce((s, v) => s + (v.c[k] || 0), 0);
+  return {
+    since: u.profile?.since || "", last, visits, totalMin: visits.reduce((s, v) => s + Math.max(0.5, (v.last - v.start) / 60000), 0),
+    q, qOk: q.filter(([, v]) => v.g === 1).length, qTries: q.reduce((s, [, v]) => s + (v.n || 1), 0),
+    t, tGood: t.filter(([, v]) => v.g === 2).length, tTries: t.reduce((s, [, v]) => s + (v.n || 1), 0),
+    answers, graded, drafts, history: st.history || [], practiceFiles: files.filter(x => x.startsWith("practice/")),
+    evQ: cnt("q"), evT: cnt("t"), logged: visits.length > 0,
+  };
+}
 
 async function load() {
   $("#msg").textContent = "読み込み中…";
   let d;
   try { d = await admin({ op: "list" }); } catch (e) { $("#msg").textContent = e.message; $("#app").innerHTML = ""; return; }
   try { sessionStorage.setItem("y10admin", PASS); } catch {}
-  $("#msg").textContent = "";
-  const by = {};
-  for (const n of Object.keys(d.users)) by[n] = [];
-  for (const p of d.paths) { const i = p.indexOf("/"); if (i > 0) (by[p.slice(0, i)] ||= []).push(p.slice(i + 1)); }
-  const names = Object.keys(by).sort((a, b) => a.localeCompare(b));
+  const files = {};
+  for (const n of Object.keys(d.users)) files[n] = [];
+  for (const p of d.paths) { const i = p.indexOf("/"); if (i > 0) (files[p.slice(0, i)] ||= []).push(p.slice(i + 1)); }
+  const names = Object.keys(files);
+  $("#msg").textContent = `${names.length} 人分の記録を読み込み中…`;
+  const users = {};
+  await Promise.all(names.map(async n => {
+    let r = {}; try { r = await admin({ op: "user", name: n }); } catch {}
+    users[n] = { profile: d.users[n], state: r.state, activity: r.activity };
+  }));
+  D = { users, files };
+  D.sum = Object.fromEntries(names.map(n => [n, summarize(n)]));
+  $("#login").hidden = true; $("#msg").textContent = "";
+  drawList();
+  if (SEL && D.sum[SEL]) drawUser(SEL);
+}
+
+function drawList() {
+  const names = Object.keys(D.sum).sort((a, b) => D.sum[b].last - D.sum[a].last);
   $("#app").innerHTML = `<div class="card">
-    <div class="row" style="justify-content:space-between"><b>${names.length} 人</b><button id="reload">更新</button></div>
-    <table><tr class="muted"><th>名前</th><th>登録</th><th>答案</th><th></th></tr>
-    ${names.map(n => {
-      const f = by[n], answers = f.filter(x => /^[^/]+\.md$/.test(x) && !x.endsWith("_採点.md"));
-      const graded = answers.filter(a => f.includes(a.replace(/\.md$/, "_採点.md"))).length;
-      const practice = f.filter(x => x.startsWith("practice/")).length;
-      return `<tr><td><b>${esc(n)}</b></td><td class="muted">${esc(d.users[n]?.since || "（未登録）")}</td>
-        <td>模試 ${answers.length}（<span class="${graded < answers.length ? "wait" : "ok"}">採点済み ${graded}</span>）・練習 ${practice}
-          <ul class="files">${f.filter(x => x.endsWith(".md")).sort().reverse().map(x => `<li><a data-read="${esc(n + "/" + x)}">${esc(x)}</a></li>`).join("")}</ul></td>
-        <td><button class="danger" data-del="${esc(n)}">削除</button></td></tr>`;
-    }).join("")}</table></div>
-    <div class="card" id="viewer" hidden><div class="row" style="justify-content:space-between"><b id="vname"></b><button id="vclose">閉じる</button></div><pre id="vtext"></pre></div>`;
+    <div class="row" style="justify-content:space-between"><h2 style="margin:0">${names.length} 人</h2>
+      <span class="row"><span class="muted">最後に使った順。名前を押すとくわしく見られます。</span><button id="reload">更新</button></span></div>
+    <div class="tbl"><table>
+      <tr><th>名前</th><th>最後に使った</th><th>来た回数</th><th>使った時間</th><th>模試（採点済み）</th><th>途中の模試</th><th>用語クイズ（正解）</th><th>英文和訳（できた）</th><th>登録</th></tr>
+      ${names.map(n => { const s = D.sum[n];
+        return `<tr class="click${SEL === n ? " sel" : ""}" data-user="${esc(n)}"><td><b>${esc(n)}</b></td>
+          <td class="num">${s.last ? `${dt(s.last)} ${hm(s.last)}` : "—"}</td>
+          <td class="num">${s.logged ? s.visits.length + " 回" : "<span class=muted>記録なし</span>"}</td>
+          <td class="num">${s.logged ? mins(s.totalMin) : "—"}</td>
+          <td class="num">${s.answers.length}（<span class="${s.graded.length < s.answers.length ? "wait" : "ok"}">${s.graded.length}</span>）</td>
+          <td class="num">${s.drafts.length || "—"}</td>
+          <td class="num">${s.q.length ? `${s.q.length} 問（${s.qOk}）` : "—"}</td>
+          <td class="num">${s.t.length ? `${s.t.length} 問（${s.tGood}）` : "—"}</td>
+          <td class="muted">${esc(s.since)}</td></tr>`; }).join("")}
+    </table></div>
+    <p class="muted" style="margin:8px 0 0">入退室の記録は 2026-11-04 から（それより前の人は「記録なし」。練習の数は前からの記録で数えています）。「使った時間」は、ページを開いてから最後に操作したときまで。</p>
+  </div><div id="user"></div>
+  <div class="card" id="viewer" hidden><div class="row" style="justify-content:space-between"><b id="vname"></b><button id="vclose">閉じる</button></div><pre id="vtext"></pre></div>`;
   $("#reload").onclick = load;
   $("#vclose").onclick = () => $("#viewer").hidden = true;
+  document.querySelectorAll("[data-user]").forEach(tr => tr.onclick = () => { SEL = tr.dataset.user; drawList(); drawUser(SEL); $("#user").scrollIntoView({ behavior: "smooth" }); });
+}
+
+function evText(e) {
+  const [, k, a, b, c] = e;
+  if (k === "open") return `「${PAGES[a] || a}」を開いた`;
+  if (k === "exam") return `模試を開始・再開: <b>${esc(examName(a))}</b>`;
+  if (k === "submit") return `<b>模試を提出: ${esc(examName(a))}</b>（自動採点 ${esc(b)}・${c ?? "?"}分）`;
+  if (k === "discard") return `途中の答案を消して最初から: ${esc(examName(a))}`;
+  if (k === "q") { const x = quizKey(a); return `用語クイズ <span class="${b ? "ok" : "bad"}">${b ? "○" : "×"}</span> ${esc(x.subj)}・${esc(x.type)}（${x.mode}）: ${esc(x.term)}`; }
+  if (k === "t") return `英文和訳 <span class="${b === 2 ? "ok" : b === 1 ? "warn" : "bad"}">${TG[b] ?? b}</span>: ${esc(a)}`;
+  if (k === "p") return `<b>練習を1回終えた</b>（${esc(a)}）${esc(b || "")}`;
+  return esc(k);
+}
+function visitSummary(v) {
+  const ev = v.ev || [], c = v.c || {};
+  const n = k => ev.length ? ev.filter(e => e[1] === k).length : c[k] || 0;
+  const qok = ev.length ? ev.filter(e => e[1] === "q" && e[3]).length : c.qok || 0;
+  const pages = [...new Set(ev.filter(e => e[1] === "open").map(e => PAGES[e[2]] || e[2]))];
+  const parts = [];
+  if (n("q")) parts.push(`用語クイズ ${n("q")}問（○${qok}）`);
+  if (n("t")) parts.push(`英文和訳 ${n("t")}問`);
+  if (n("p")) parts.push(`練習を終えた ${n("p")}回`);
+  for (const e of ev.filter(e => e[1] === "exam")) parts.push(`模試 ${examName(e[2])}`);
+  if (n("submit")) parts.push(`<b>提出 ${n("submit")}</b>`);
+  return { pages, text: parts.join("・") || "<span class=muted>見ただけ</span>" };
+}
+
+function drawUser(n) {
+  const s = D.sum[n], st = D.users[n].state || {};
+  // 日ごと（入退室の記録がある日はそれを使い、ない日は練習の判定の時刻から数える）
+  const days = {};
+  const dd = k => days[k] ||= { min: 0, visits: 0, q: 0, qok: 0, t: 0, sub: 0, est: false };
+  for (const v of s.visits) { const x = dd(ymd(v.start)); x.visits++; x.min += Math.max(0.5, (v.last - v.start) / 60000);
+    const sm = v.ev || []; x.q += sm.filter(e => e[1] === "q").length; x.qok += sm.filter(e => e[1] === "q" && e[3]).length;
+    x.t += sm.filter(e => e[1] === "t").length; x.sub += sm.filter(e => e[1] === "submit").length;
+    if (!v.ev && v.c) { x.q += v.c.q || 0; x.qok += v.c.qok || 0; x.t += v.c.t || 0; x.sub += v.c.submit || 0; } }
+  const loggedDays = new Set(Object.keys(days));
+  for (const [, v] of s.q) { const k = String(v.t || "").slice(0, 10); if (!k || loggedDays.has(k)) continue; const x = dd(k); x.est = true; x.q++; if (v.g === 1) x.qok++; }
+  for (const [, v] of s.t) { const k = String(v.t || "").slice(0, 10); if (!k || loggedDays.has(k)) continue; const x = dd(k); x.est = true; x.t++; }
+  for (const h of s.history) { const k = String(h.submittedAt).slice(0, 10); if (!loggedDays.has(k)) dd(k).sub++; }
+  // 用語クイズを教科・答え方ごとに
+  const qs = {};
+  for (const [k, v] of s.q) { const x = quizKey(k), g = qs[x.subj + "｜" + x.mode] ||= { n: 0, ok: 0, tries: 0, wrong: [] };
+    g.n++; g.tries += v.n || 1; if (v.g === 1) g.ok++; else g.wrong.push(`${x.type}: ${x.term}（${v.t}）`); }
+  const tg = [0, 0, 0]; for (const [, v] of s.t) tg[v.g] = (tg[v.g] || 0) + 1;
+
+  $("#user").innerHTML = `<div class="card">
+    <div class="row" style="justify-content:space-between"><h2 style="margin:0">${esc(n)}</h2>
+      <span class="row"><span class="muted">登録 ${esc(s.since || "—")}</span><button class="danger small" data-del="${esc(n)}">この人を削除</button></span></div>
+    <div class="stats" style="margin-top:10px">
+      <div class="stat"><b>${s.last ? `${dt(s.last)} ${hm(s.last)}` : "—"}</b><span>最後に使った</span></div>
+      <div class="stat"><b>${s.logged ? s.visits.length + " 回" : "—"}</b><span>来た回数（11/4から）</span></div>
+      <div class="stat"><b>${s.logged ? mins(s.totalMin) : "—"}</b><span>使った時間の合計</span></div>
+      <div class="stat"><b>${s.answers.length}</b><span>提出した模試（採点済み ${s.graded.length}）</span></div>
+      <div class="stat"><b>${s.q.length}</b><span>用語クイズで解いた問題（のべ ${s.qTries} 回・正解 ${s.qOk}）</span></div>
+      <div class="stat"><b>${s.t.length}</b><span>英文和訳で解いた文（のべ ${s.tTries} 回）</span></div>
+    </div>
+
+    <h3>入退室の記録</h3>
+    ${s.logged ? `<div class="tbl"><table><tr><th>日付</th><th>入った</th><th>出た</th><th>時間</th><th>端末</th><th>開いたページ</th><th>したこと</th></tr>
+      ${s.visits.map((v, i) => { const sm = visitSummary(v);
+        return `<tr class="click" data-visit="${i}"><td class="num">${dt(v.start)}（${WD[new Date(v.start).getDay()]}）</td><td class="num">${hm(v.start)}</td><td class="num">${hm(v.last)}</td>
+          <td class="num">${mins((v.last - v.start) / 60000)}</td><td>${esc(v.dev || "")}</td><td>${sm.pages.map(p => `<span class="chip">${esc(p)}</span>`).join("")}</td><td>${sm.text}</td></tr>
+          <tr hidden id="tl_${i}"><td colspan="7">${v.ev ? `<ul class="tl">${v.ev.map(e => `<li><time>${hm(e[0])}</time> ${evText(e)}</li>`).join("")}</ul>` : `<span class="muted">古い訪問なので、操作の一覧は数だけ残しています。</span>`}</td></tr>`; }).join("")}
+      </table></div><p class="muted">行を押すと、その時間の操作を1つずつ（時刻つきで）見られます。「出た」は最後に操作した時刻です。</p>`
+      : `<p class="muted">まだ記録がありません（入退室の記録は 2026-11-04 から。次にこの人がページを開くと記録が始まります）。</p>`}
+
+    <h3>日ごとのまとめ</h3>
+    <div class="tbl"><table><tr><th>日</th><th>来た回数</th><th>使った時間</th><th>用語クイズ</th><th>正解</th><th>英文和訳</th><th>模試の提出</th></tr>
+      ${Object.entries(days).sort((a, b) => b[0].localeCompare(a[0])).map(([k, x]) => `<tr><td class="num">${day(k)}</td>
+        <td class="num">${x.visits || "—"}</td><td class="num">${x.visits ? mins(x.min) : "—"}</td>
+        <td class="num">${x.q ? x.q + "問" : "—"}${x.est && x.q ? "<span class=muted>※</span>" : ""}</td><td class="num">${x.q ? `${x.qok}（${pct(x.qok, x.q)}%）` : "—"}</td>
+        <td class="num">${x.t ? x.t + "文" : "—"}</td><td class="num">${x.sub || "—"}</td></tr>`).join("") || `<tr><td colspan="7" class="muted">まだありません</td></tr>`}
+    </table></div>
+    <p class="muted">※ 11/3 までの日は入退室の記録がないので、「その日に最後に解いた問題」の数です（同じ問題を何回解いても1問）。</p>
+
+    <h3>用語クイズ（教科・答え方ごと）</h3>
+    ${Object.keys(qs).length ? `<div class="tbl"><table><tr><th>教科｜答え方</th><th>解いた問題</th><th>のべ回数</th><th>正解（最後の結果）</th><th></th><th>まちがえたままの問題</th></tr>
+      ${Object.entries(qs).sort().map(([k, g]) => `<tr><td>${esc(k)}</td><td class="num">${g.n}</td><td class="num">${g.tries}</td><td class="num">${g.ok}（${pct(g.ok, g.n)}%）</td><td>${bar(g.ok, g.n)}</td>
+        <td>${g.wrong.length ? `<details><summary>${g.wrong.length} 問</summary><ul class="files">${g.wrong.map(w => `<li>${esc(w)}</li>`).join("")}</ul></details>` : "—"}</td></tr>`).join("")}
+    </table></div>` : `<p class="muted">まだ解いていません。</p>`}
+
+    <h3>英文和訳</h3>
+    ${s.t.length ? `<p>できた ${tg[2] || 0}・だいたい ${tg[1] || 0}・<span class="bad">できなかった ${tg[0] || 0}</span>（のべ ${s.tTries} 回）</p>
+      ${tg[0] ? `<details><summary>できなかった文</summary><ul class="files">${s.t.filter(([, v]) => v.g === 0).map(([k, v]) => `<li>${esc(k)}（${esc(v.t)}）</li>`).join("")}</ul></details>` : ""}`
+      : `<p class="muted">まだ解いていません。</p>`}
+
+    <h3>模試</h3>
+    ${s.drafts.length ? `<p><b>途中の模試</b>: ${s.drafts.map(([id, v]) => `<span class="chip">${esc(examName(id))}・${Object.values(v.responses || {}).filter(Boolean).length}問答えた・${Math.round((v.elapsedSec || 0) / 60)}分${v._t ? `・最後 ${dt(v._t)} ${hm(v._t)}` : ""}</span>`).join(" ")}</p>` : ""}
+    ${s.answers.length ? `<div class="tbl"><table><tr><th>提出</th><th>模試</th><th>自動採点</th><th>Claude の採点</th><th>ファイル</th></tr>
+      ${s.answers.slice().sort((a, b) => (b.match(/\d{8}-\d{6}/) || [""])[0].localeCompare((a.match(/\d{8}-\d{6}/) || [""])[0])).map(a => { const m = /^(.+)_(\d{8})-(\d{4})\d\d\.md$/.exec(a), id = m ? m[1] : a;
+        const h = s.history.find(h => m && h.submittedAt.replace(/\D/g, "").startsWith(m[2] + m[3]));
+        const g = a.replace(/\.md$/, "_採点.md"), done = s.graded.includes(a);
+        return `<tr><td class="num">${m ? `${+m[2].slice(4, 6)}/${+m[2].slice(6)} ${m[3].slice(0, 2)}:${m[3].slice(2)}` : ""}</td><td>${esc(examName(id))}</td>
+          <td class="num">${h ? `${h.auto.score} / ${h.auto.max}` : "—"}</td><td>${done ? `<a class="link" data-read="${esc(n + "/" + g)}">採点結果</a>` : `<span class="wait">まだ</span>`}</td>
+          <td><a class="link" data-read="${esc(n + "/" + a)}">答案</a></td></tr>`; }).join("")}
+    </table></div>` : `<p class="muted">提出した模試はありません。</p>`}
+
+    <h3>練習の結果ファイル</h3>
+    ${s.practiceFiles.length ? `<ul class="files">${s.practiceFiles.slice().sort().reverse().map(f => `<li><a data-read="${esc(n + "/" + f)}">${esc(f.replace("practice/", ""))}</a></li>`).join("")}</ul>` : `<p class="muted">ありません。</p>`}
+  </div>`;
+  document.querySelectorAll("[data-visit]").forEach(tr => tr.onclick = () => { const x = $("#tl_" + tr.dataset.visit); x.hidden = !x.hidden; });
   document.querySelectorAll("[data-read]").forEach(a => a.onclick = async () => {
     $("#viewer").hidden = false; $("#vname").textContent = a.dataset.read; $("#vtext").textContent = "読み込み中…";
     try { $("#vtext").textContent = (await admin({ op: "read", path: a.dataset.read })).text; } catch (e) { $("#vtext").textContent = e.message; }
     $("#viewer").scrollIntoView({ behavior: "smooth" });
   });
   document.querySelectorAll("[data-del]").forEach(b => b.onclick = async () => {
-    if (!confirm(`「${b.dataset.del}」と、その人の答案・採点結果をすべて削除しますか？（元に戻せません）`)) return;
+    if (!confirm(`「${b.dataset.del}」と、その人の答案・採点結果・記録をすべて削除しますか？（元に戻せません）`)) return;
     b.disabled = true; b.textContent = "削除中…";
     try { await admin({ op: "delete", name: b.dataset.del }); } catch (e) { alert(e.message); }
-    load();
+    SEL = null; load();
   });
 }
+
 $("#go").onclick = () => { PASS = $("#pass").value.trim(); load(); }; // 前後の空白は無視
 $("#pass").onkeydown = e => { if (e.key === "Enter") $("#go").click(); };
 $("#eye").onclick = () => { // 入力中の合言葉を確かめられるようにする

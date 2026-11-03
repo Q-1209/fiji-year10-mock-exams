@@ -27,7 +27,7 @@
     bg.className = "y10u-bg";
     bg.innerHTML = `<div class="y10u-box">
       <h2>${first ? "名前を登録" : "名前の切り替え"}</h2>
-      <p>名前を入れるだけで使えます（パスワードはいりません）。答案はこの名前で漣さんに送られ、Claude が採点します。
+      <p>名前を入れるだけで使えます（パスワードはいりません）。答案と、使った時間（来た・帰った時刻）・練習の記録はこの名前で漣さんに送られ、Claude が採点します。
       別の端末でも同じ名前を入れれば続きとして送れます。</p>
       ${used.length ? `<div class="y10u-names">${used.map(n => `<button data-n="${esc(n)}">${esc(n)}</button>`).join("")}</div>` : ""}
       <input id="y10uName" maxlength="20" placeholder="例: Ana Tuilagi" autocomplete="off">

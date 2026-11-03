@@ -1,0 +1,610 @@
+{
+ "id": "m3_ot",
+ "subject": "Office Technology",
+ "kind": "mock3",
+ "title": "Fiji Year 10 Mock Examination 3 — Office Technology",
+ "minutes": 120,
+ "readingMinutes": 10,
+ "totalMarks": 100,
+ "instructions": "Answer ALL questions. Time allowed: 2 hours (an extra 10 minutes is allowed for reading).\nMultiple-choice: click the letter of the best answer (click again to clear).\nShort answers and paragraphs: type your answer in English in the box. Show working for calculations.\nYour answers are saved automatically. The paper is submitted automatically when time runs out.\n",
+ "sections": [
+  {
+   "title": "SECTION A  MULTIPLE-CHOICE QUESTIONS [30 marks]",
+   "short": "A MCQ",
+   "note": "There are thirty multiple-choice questions. All are compulsory. Each question is worth 1 mark.",
+   "questions": [
+    {
+     "id": "a1",
+     "type": "mcq",
+     "text": "Designing office furniture and equipment to fit the human body and reduce strain is called",
+     "options": [
+      "economics",
+      "prioritisation",
+      "ergonomics",
+      "workflow"
+     ],
+     "answer": "C",
+     "marks": 1
+    },
+    {
+     "id": "a2",
+     "type": "mcq",
+     "text": "A loose power cable lying across a walkway in the office is an example of a",
+     "options": [
+      "workflow",
+      "hazard",
+      "resource",
+      "procedure"
+     ],
+     "answer": "B",
+     "marks": 1
+    },
+    {
+     "id": "a3",
+     "type": "mcq",
+     "text": "Tiredness, headaches and losing your temper easily because of too much pressure at work are signs of",
+     "options": [
+      "empathy",
+      "stress",
+      "robotism",
+      "feedback"
+     ],
+     "answer": "B",
+     "marks": 1
+    },
+    {
+     "id": "a4",
+     "type": "mcq",
+     "text": "Using the back of printed paper again for rough notes is an example of",
+     "options": [
+      "shredding",
+      "filing",
+      "reuse",
+      "encoding"
+     ],
+     "answer": "C",
+     "marks": 1
+    },
+    {
+     "id": "a5",
+     "type": "mcq",
+     "text": "Which device changes a paper document into a digital image on the computer?",
+     "options": [
+      "Shredder",
+      "Laminator",
+      "Scanner",
+      "Photocopier"
+     ],
+     "answer": "C",
+     "marks": 1
+    },
+    {
+     "id": "a6",
+     "type": "mcq",
+     "text": "In a spreadsheet, the bar that shows the content or formula of the active cell is the",
+     "options": [
+      "status bar",
+      "formula bar",
+      "title bar",
+      "sheet tab"
+     ],
+     "answer": "B",
+     "marks": 1
+    },
+    {
+     "id": "a7",
+     "type": "mcq",
+     "text": "The spreadsheet function that counts how many cells in a range contain numbers is",
+     "options": [
+      "=SUM()",
+      "=COUNT()",
+      "=MAX()",
+      "=AVERAGE()"
+     ],
+     "answer": "B",
+     "marks": 1
+    },
+    {
+     "id": "a8",
+     "type": "mcq",
+     "text": "In a spreadsheet, the symbol * (asterisk) is used to",
+     "options": [
+      "divide",
+      "add",
+      "multiply",
+      "subtract"
+     ],
+     "answer": "C",
+     "marks": 1
+    },
+    {
+     "id": "a9",
+     "type": "mcq",
+     "text": "A page that is wider than it is tall is in ____ orientation.",
+     "options": [
+      "portrait",
+      "margin",
+      "landscape",
+      "justified"
+     ],
+     "answer": "C",
+     "marks": 1
+    },
+    {
+     "id": "a10",
+     "type": "mcq",
+     "text": "A whole spreadsheet file, which can contain several sheets, is called a",
+     "options": [
+      "workbook",
+      "worksheet",
+      "range",
+      "template"
+     ],
+     "answer": "A",
+     "marks": 1
+    },
+    {
+     "id": "a11",
+     "type": "mcq",
+     "text": "A fake email that tries to trick you into giving your password or bank details is called",
+     "options": [
+      "spamming",
+      "phishing",
+      "forwarding",
+      "netiquette"
+     ],
+     "answer": "B",
+     "marks": 1
+    },
+    {
+     "id": "a12",
+     "type": "mcq",
+     "text": "Which software protects a computer from harmful programs that damage files?",
+     "options": [
+      "Antivirus software",
+      "A web browser",
+      "A search engine",
+      "A spreadsheet"
+     ],
+     "answer": "A",
+     "marks": 1
+    },
+    {
+     "id": "a13",
+     "type": "mcq",
+     "text": "Polite and responsible behaviour on the internet is called",
+     "options": [
+      "phishing",
+      "etiquette board",
+      "hacking",
+      "netiquette"
+     ],
+     "answer": "D",
+     "marks": 1
+    },
+    {
+     "id": "a14",
+     "type": "mcq",
+     "text": "A file that is sent together with an email message is called an",
+     "options": [
+      "inbox",
+      "attachment",
+      "address",
+      "outbox"
+     ],
+     "answer": "B",
+     "marks": 1
+    },
+    {
+     "id": "a15",
+     "type": "mcq",
+     "text": "In the Inbox, unread emails are usually shown in",
+     "options": [
+      "italics",
+      "red",
+      "grey",
+      "bold"
+     ],
+     "answer": "D",
+     "marks": 1
+    },
+    {
+     "id": "a16",
+     "type": "mcq",
+     "text": "An image made of pixels that becomes blurred when it is enlarged is a",
+     "options": [
+      "vector graphic",
+      "bitmap graphic",
+      "clip art",
+      "text box"
+     ],
+     "answer": "B",
+     "marks": 1
+    },
+    {
+     "id": "a17",
+     "type": "mcq",
+     "text": "The text wrapping option that lets the picture sit on the line and move like a word is",
+     "options": [
+      "In line with text",
+      "Behind text",
+      "Square",
+      "In front of text"
+     ],
+     "answer": "A",
+     "marks": 1
+    },
+    {
+     "id": "a18",
+     "type": "mcq",
+     "text": "To keep the original file and make a new copy with a different name, you use",
+     "options": [
+      "Save",
+      "Undo",
+      "Print",
+      "Save As"
+     ],
+     "answer": "D",
+     "marks": 1
+    },
+    {
+     "id": "a19",
+     "type": "mcq",
+     "text": "A ready-made document design that can be used again and again is a",
+     "options": [
+      "template",
+      "margin",
+      "header",
+      "logo"
+     ],
+     "answer": "A",
+     "marks": 1
+    },
+    {
+     "id": "a20",
+     "type": "mcq",
+     "text": "The blank space between the edge of the page and the text is the",
+     "options": [
+      "margin",
+      "border",
+      "gutter line",
+      "footer"
+     ],
+     "answer": "A",
+     "marks": 1
+    },
+    {
+     "id": "a21",
+     "type": "mcq",
+     "text": "A statement of what an organisation wants to become in the future is its",
+     "options": [
+      "mission",
+      "objective",
+      "vision",
+      "budget"
+     ],
+     "answer": "C",
+     "marks": 1
+    },
+    {
+     "id": "a22",
+     "type": "mcq",
+     "text": "Owners, workers, equipment and finance of a business belong to its",
+     "options": [
+      "internal environment",
+      "external environment",
+      "political environment",
+      "social environment"
+     ],
+     "answer": "A",
+     "marks": 1
+    },
+    {
+     "id": "a23",
+     "type": "mcq",
+     "text": "Doing the most urgent and important tasks first is called",
+     "options": [
+      "prioritisation",
+      "delegation",
+      "supervision",
+      "competition"
+     ],
+     "answer": "A",
+     "marks": 1
+    },
+    {
+     "id": "a24",
+     "type": "mcq",
+     "text": "The order of authority from top management down to lower management is the",
+     "options": [
+      "grapevine",
+      "workflow",
+      "feedback loop",
+      "chain of command"
+     ],
+     "answer": "D",
+     "marks": 1
+    },
+    {
+     "id": "a25",
+     "type": "mcq",
+     "text": "Other staff and departments inside the same organisation are called",
+     "options": [
+      "external customers",
+      "suppliers",
+      "competitors",
+      "internal customers"
+     ],
+     "answer": "D",
+     "marks": 1
+    },
+    {
+     "id": "a26",
+     "type": "mcq",
+     "text": "Which of these is an OPEN question?",
+     "options": [
+      "\"Do you have an appointment?\"",
+      "\"Is your name Mr Lal?\"",
+      "\"Are you here before 9 o'clock?\"",
+      "\"How may I help you today?\""
+     ],
+     "answer": "D",
+     "marks": 1
+    },
+    {
+     "id": "a27",
+     "type": "mcq",
+     "text": "How the public sees an organisation is its",
+     "options": [
+      "corporate image",
+      "mission",
+      "chain of command",
+      "logo"
+     ],
+     "answer": "A",
+     "marks": 1
+    },
+    {
+     "id": "a28",
+     "type": "mcq",
+     "text": "A receiver cannot concentrate on a message because of a bad headache. This is",
+     "options": [
+      "physical noise",
+      "physiological noise",
+      "semantic noise",
+      "feedback"
+     ],
+     "answer": "B",
+     "marks": 1
+    },
+    {
+     "id": "a29",
+     "type": "mcq",
+     "text": "A letter layout in which every line starts at the left margin is",
+     "options": [
+      "indented style",
+      "open punctuation",
+      "fully blocked style",
+      "semi-blocked style"
+     ],
+     "answer": "C",
+     "marks": 1
+    },
+    {
+     "id": "a30",
+     "type": "mcq",
+     "text": "A short written message used to pass information INSIDE an organisation is a",
+     "options": [
+      "business letter",
+      "invoice",
+      "receipt",
+      "memorandum (memo)"
+     ],
+     "answer": "D",
+     "marks": 1
+    }
+   ]
+  },
+  {
+   "title": "SECTION B  SHORT ANSWER QUESTIONS [50 marks]",
+   "short": "B Short answer",
+   "note": "There are five questions in this section. All the questions are worth 10 marks.",
+   "questions": [
+    {
+     "id": "b1",
+     "type": "match",
+     "text": "QUESTION 1 MATCHING (10 marks)\nMatch the terms in List A with the descriptions in List B. Two descriptions are not used.",
+     "items": [
+      "Ergonomics",
+      "Range",
+      "Bcc",
+      "Vector graphic",
+      "Mission",
+      "Empathy",
+      "Physical noise",
+      "Visitors' book",
+      "Decoding",
+      "Recycle"
+     ],
+     "options": [
+      "A statement of the purpose of an organisation and what it does.",
+      "An image made of lines and shapes that stays sharp when it is resized.",
+      "A program used to view web pages on the internet.",
+      "The receiver interpreting the words or signs to understand the message.",
+      "Processing waste such as used paper into new material.",
+      "The selected cell, shown with a thick border.",
+      "Putting yourself in the customer's position and understanding their feelings.",
+      "A hidden copy of an email; the other receivers cannot see this address.",
+      "Sounds in the surroundings, such as building work, that make a message hard to hear.",
+      "A group of cells, for example B2:B9.",
+      "A record of the names, times and purpose of visit of people who come to the office.",
+      "Designing furniture and equipment to fit the human body and reduce strain."
+     ],
+     "answer": [
+      "L",
+      "J",
+      "H",
+      "B",
+      "A",
+      "G",
+      "I",
+      "K",
+      "D",
+      "E"
+     ],
+     "marks": 10
+    },
+    {
+     "id": "b2",
+     "type": "short",
+     "marks": 10,
+     "text": "QUESTION 2 (10 marks)\na. Define the term ergonomics. (1 mark)\nb. State two features of an ergonomic office chair or desk. (2 marks)\nc. Use the scenario below to answer the questions that follow.\nScenario: Losana works at the front desk of a busy shipping company in Lautoka. Her monitor is too low, so she bends her neck all day. Filing cabinet drawers are often left open, the boxes of printer paper are stacked in front of the fire exit, and she often works through her lunch break to finish urgent orders. Every afternoon she has headaches and feels tired. The office throws away about two boxes of printed paper every week.\ni. Identify two hazards in Losana's office. (2 marks)\nii. Losana shows signs of stress. State two ways she or her employer can reduce her stress. (2 marks)\niii. What does OHS stand for? (1 mark)\niv. Suggest two ways the office can reduce its paper waste. (2 marks)",
+     "model": "a. Ergonomics is designing furniture, equipment and the workplace to fit the human body so that work is comfortable and strain/injury is reduced (1).\nb. Any two (1 each): adjustable seat height; back rest that supports the lower back; arm rests; wheels/swivel base; adjustable desk height; monitor at eye level; feet flat on the floor/footrest.\nc i. Any two (1 each): monitor too low → neck strain; open filing cabinet drawers → people can walk into them/cabinet can tip; boxes blocking the fire exit → people cannot escape in a fire; (working without breaks → stress).\nc ii. Any two (1 each): take regular breaks/proper lunch break; plan and prioritise work; share the workload/employ extra staff; raise the monitor to eye level; exercise, rest and talk to a supervisor.\nc iii. Occupational Health and Safety (1).\nc iv. Any two (1 each): print on both sides; reuse the back of paper for notes; recycle used paper; send documents by email/store them electronically; proof-read on screen before printing; print only what is needed."
+    },
+    {
+     "id": "b3",
+     "type": "short",
+     "marks": 10,
+     "text": "QUESTION 3 (10 marks)\n(a) The spreadsheet below shows the canteen sales of Nadi Sangam School for one week. Answer questions (i) to (vi).\n(i) Name the cell that contains the label Friday. (1 mark)\n(ii) Write the formula for D3 to calculate the total sales on Monday (pies + drinks). (1 mark)\n(iii) Write the function for B8 to calculate the total pie sales for the week. (1 mark)\n(iv) Write the function for D9 to find the average daily total sales. (1 mark)\n(v) Write the function for D10 to find the highest daily total. (1 mark)\n(vi) Write the function that counts how many days have a value in column B (B3:B7). (1 mark)\n(b) The canteen manager wants to show what share (part) of the week's drink sales came from each day. Name the most suitable type of chart and give one reason. (2 marks)\n(c) Differentiate between a formula and a function. (2 marks)",
+     "table": [
+      [
+       "",
+       "A",
+       "B",
+       "C",
+       "D"
+      ],
+      [
+       "1",
+       "CANTEEN SALES ($) – WEEK 6",
+       "",
+       "",
+       ""
+      ],
+      [
+       "2",
+       "DAY",
+       "PIES",
+       "DRINKS",
+       "TOTAL"
+      ],
+      [
+       "3",
+       "Monday",
+       "84.50",
+       "61.00",
+       "(total)"
+      ],
+      [
+       "4",
+       "Tuesday",
+       "72.00",
+       "55.50",
+       ""
+      ],
+      [
+       "5",
+       "Wednesday",
+       "90.25",
+       "70.00",
+       ""
+      ],
+      [
+       "6",
+       "Thursday",
+       "66.75",
+       "48.25",
+       ""
+      ],
+      [
+       "7",
+       "Friday",
+       "105.00",
+       "82.50",
+       ""
+      ],
+      [
+       "8",
+       "TOTAL",
+       "(total pies)",
+       "",
+       ""
+      ],
+      [
+       "9",
+       "AVERAGE",
+       "",
+       "",
+       "(average)"
+      ],
+      [
+       "10",
+       "HIGHEST",
+       "",
+       "",
+       "(highest)"
+      ]
+     ],
+     "model": "(a)(i) A7 (1)\n(ii) =B3+C3 (1) (=SUM(B3:C3) also accepted)\n(iii) =SUM(B3:B7) (1)\n(iv) =AVERAGE(D3:D7) (1)\n(v) =MAX(D3:D7) (1)\n(vi) =COUNT(B3:B7) (1)\n(b) Pie chart (1) – it shows each day as a slice (part) of the whole week's drink sales (1).\n(c) A formula is a calculation the user writes, starting with =, using cell addresses and operators, e.g. =B3+C3 (1); a function is a ready-made (built-in) formula with a name, e.g. =SUM(B3:B7) (1)."
+    },
+    {
+     "id": "b4",
+     "type": "short",
+     "marks": 10,
+     "text": "QUESTION 4 (10 marks)\na. Use the scenario below to answer the questions that follow.\nScenario: Mr Prasad, the office manager, wants to send the new staff roster by email to Ana (the main receiver). His supervisor should get a copy that everyone can see, and the company director should get a copy without the others knowing.\ni. In which box (To, Cc or Bcc) should he type each of the three addresses? (3 marks)\nii. The roster is a spreadsheet file. How can he send the file with the email? (1 mark)\nb. The next morning Ana receives an email from \"BSP Bank Security\" asking her to click a link and type her bank password to \"stop her account from closing\".\ni. What is this kind of email called? (1 mark)\nii. State two things Ana should do. (2 marks)\nc. Differentiate between a bitmap graphic and a vector graphic. (2 marks)\nd. Ana inserts the company logo into a letter, and wants the text to flow closely around the outline of the logo. Which text wrapping option should she choose? (1 mark)",
+     "model": "a i. To: Ana (1); Cc: the supervisor (1); Bcc: the director (1).\na ii. Attach the file (use the Attach/paper clip button) (1).\nb i. Phishing (1).\nb ii. Any two (1 each): do not click the link; never give her password; delete the email/mark it as spam/junk; report it to the IT staff or the bank; check by phoning the bank directly; keep antivirus software up to date.\nc. A bitmap graphic is made of tiny dots (pixels) and becomes blurred/jagged when enlarged (1); a vector graphic is made of lines and shapes and stays sharp at any size (1).\nd. Tight (1)."
+    },
+    {
+     "id": "b5",
+     "type": "short",
+     "marks": 10,
+     "text": "QUESTION 5 (10 marks)\na. Use the scenario below to answer the questions that follow.\nScenario: Vanua Water Ltd sells bottled water. Its statement says: \"To become the most trusted water company in the Pacific.\" Another statement says: \"We bottle clean Fijian spring water and deliver it to homes, shops and hotels.\"\ni. Which statement is the vision and which is the mission? (2 marks)\nii. A hotel buys 200 cartons of water from Vanua Water every week. Is the hotel an internal or an external customer? Give a reason. (2 marks)\nb. A visitor arrives at the reception desk of Vanua Water.\ni. Write one closed question the receptionist can ask. (1 mark)\nii. Write one open question the receptionist can ask. (1 mark)\nc. Vanua Water writes a business letter to a supermarket.\ni. State two differences between a memo and a business letter. (2 marks)\nii. The letter uses open punctuation. Explain what this means. (1 mark)\niii. Name the letter style in which every line starts at the left margin. (1 mark)",
+     "model": "a i. Vision: \"To become the most trusted water company in the Pacific.\" (1); Mission: \"We bottle clean Fijian spring water and deliver it …\" (1).\na ii. External customer (1) – the hotel is outside the organisation and buys its goods (1).\nb i. Any closed (yes/no or short fact) question, e.g. \"Do you have an appointment?\" (1)\nb ii. Any open question, e.g. \"How may I help you?\" / \"What would you like to know about our products?\" (1)\nc i. Any two (1 each): a memo is used inside the organisation, a letter is sent outside; a memo has headings To/From/Date/Subject, a letter has addresses, salutation and complimentary close; a memo is shorter and less formal; a memo usually has no signature block/letterhead address of the receiver.\nc ii. No punctuation marks are used in the address, date, salutation and complimentary close (1).\nc iii. Fully blocked style (1)."
+    }
+   ]
+  },
+  {
+   "title": "SECTION C  PARAGRAPH WRITING [20 marks]",
+   "short": "C Paragraphs",
+   "note": "The four questions in this section are all compulsory. Each question is worth five marks. Write a paragraph of about 80 words to answer each question.",
+   "questions": [
+    {
+     "id": "c1",
+     "type": "paragraph",
+     "marks": 5,
+     "minWords": 70,
+     "maxWords": 100,
+     "text": "QUESTION 1 MODERN OFFICE (5 marks)\nIn a paragraph of about 80 words, define Occupational Health and Safety (OHS) and discuss four ways an office can keep its workers safe and healthy.",
+     "model": "Definition (1): OHS is the rules and practices that protect workers from injury and illness at work.\nAny four (1 each, stated and briefly explained): ergonomic furniture – adjustable chairs, monitor at eye level; keep walkways and fire exits clear; tidy cables and close drawers; good lighting and ventilation; first-aid kit and fire extinguishers, fire drills; regular breaks to reduce stress and eye strain; report and repair faulty equipment; train staff in safe use of machines."
+    },
+    {
+     "id": "c2",
+     "type": "paragraph",
+     "marks": 5,
+     "minWords": 70,
+     "maxWords": 100,
+     "text": "QUESTION 2 USE OF INTERNET (5 marks)\nIn a paragraph of about 80 words, discuss five ways office workers can use the internet and email safely and responsibly.",
+     "model": "Any five, 1 mark each (stated and explained): do not open emails/attachments from unknown senders; never give passwords or bank details (phishing); install and update antivirus software; use strong passwords and keep them secret; follow netiquette – be polite, no capital letters for shouting; do not send spam or chain messages; check that information comes from reliable websites; log out of shared computers; use Bcc to protect other people's email addresses."
+    },
+    {
+     "id": "c3",
+     "type": "paragraph",
+     "marks": 5,
+     "minWords": 70,
+     "maxWords": 100,
+     "text": "QUESTION 3 BUSINESS ENVIRONMENT (5 marks)\nIn a paragraph of about 80 words, define the external environment of a business and discuss four factors of the external environment, giving a Fijian example for each.",
+     "model": "Definition (1): factors outside the business that affect it but which it cannot control (macro environment).\nAny four, 1 mark each with an example: economic – interest rates, inflation, VAT, unemployment; social – customs, beliefs, lifestyles, population (e.g. Christmas/Diwali sales); political/legal – government laws such as minimum wage or OHS laws; technological – new technology such as mobile money (M-PAiSA) and online shopping; competition – other businesses selling similar goods; natural/physical – cyclones and floods."
+    },
+    {
+     "id": "c4",
+     "type": "paragraph",
+     "marks": 5,
+     "minWords": 70,
+     "maxWords": 100,
+     "text": "QUESTION 4 INTERPERSONAL COMMUNICATION (5 marks)\nIn a paragraph of about 80 words, explain the meaning of noise in communication and describe the three types of noise, giving an example of each.",
+     "model": "Meaning (1–2): noise is anything that interferes with sending, receiving or understanding a message.\nPhysical noise (1) – sounds or things in the surroundings, e.g. building work, a loud machine, poor phone line.\nSemantic noise (1) – confusion from words/jargon or unclear sentences, e.g. not knowing what \"ASAP\" or a technical term means.\nPhysiological noise (1) – the body's condition, e.g. headache, hunger, tiredness, poor hearing or eyesight.\n(5th mark: a clear example or a way to reduce noise, e.g. move to a quiet room, use simple words, ask for feedback.)"
+    }
+   ]
+  }
+ ]
+}

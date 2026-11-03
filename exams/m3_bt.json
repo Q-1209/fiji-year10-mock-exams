@@ -1,0 +1,3323 @@
+{
+ "id": "m3_bt",
+ "subject": "Basic Technology",
+ "kind": "mock3",
+ "title": "Fiji Year 10 Mock Examination 3 — Basic Technology",
+ "minutes": 120,
+ "readingMinutes": 10,
+ "totalMarks": 100,
+ "instructions": "Answer ALL questions. Time allowed: 2 hours (an extra 10 minutes is allowed for reading).\nMultiple-choice: click the letter of the best answer (click again to clear).\nShort answers and paragraphs: type your answer in English in the box. Show working for calculations.\nYour answers are saved automatically. The paper is submitted automatically when time runs out.\nThere are three sections. All are compulsory. All measurements are in millimetres unless stated otherwise.\nDrawing questions use the drafting board (A4 landscape, 1 square = 5 mm). Tools: T-square, 45° and 30°/60° set squares, protractor, compass, pencil, ruler, eraser, text. Use THICK lines for outlines and THIN lines for construction. Press ⛶ to draw on a bigger screen.",
+ "sections": [
+  {
+   "title": "SECTION A  MULTIPLE-CHOICE QUESTIONS [30 marks]",
+   "short": "A MCQ",
+   "note": "All thirty questions are compulsory. Each is worth 1 mark.",
+   "questions": [
+    {
+     "id": "a1",
+     "type": "mcq",
+     "text": "Which of the following is an item of PPE (personal protective equipment)?",
+     "options": [
+      "A first-aid kit",
+      "Ear muffs",
+      "A fire extinguisher",
+      "A safety sign"
+     ],
+     "answer": "B",
+     "marks": 1
+    },
+    {
+     "id": "a2",
+     "type": "mcq",
+     "text": "Which type of fire extinguisher should be used on an electrical fire?",
+     "options": [
+      "Water",
+      "Carbon dioxide (CO₂)",
+      "A bucket of sand mixed with water",
+      "Foam made with water"
+     ],
+     "answer": "B",
+     "marks": 1
+    },
+    {
+     "id": "a3",
+     "type": "mcq",
+     "text": "The immediate help given to an injured person before medical help arrives is",
+     "options": [
+      "OHS",
+      "PPE",
+      "a hazard report",
+      "first aid"
+     ],
+     "answer": "D",
+     "marks": 1
+    },
+    {
+     "id": "a4",
+     "type": "mcq",
+     "text": "Which saw is designed to cut ALONG the grain of timber?",
+     "options": [
+      "Cross-cut saw",
+      "Rip saw",
+      "Coping saw",
+      "Hacksaw"
+     ],
+     "answer": "B",
+     "marks": 1
+    },
+    {
+     "id": "a5",
+     "type": "mcq",
+     "text": "The end of a saw blade nearest the handle is called the",
+     "options": [
+      "toe",
+      "back",
+      "set",
+      "heel"
+     ],
+     "answer": "D",
+     "marks": 1
+    },
+    {
+     "id": "a6",
+     "type": "mcq",
+     "text": "A try square is used to",
+     "options": [
+      "mark and check lines at 90° to an edge",
+      "mark lines parallel to an edge",
+      "cut joints accurately",
+      "measure angles of 30°"
+     ],
+     "answer": "A",
+     "marks": 1
+    },
+    {
+     "id": "a7",
+     "type": "mcq",
+     "text": "Which chisel is used to cut the rectangular hole for a mortise and tenon joint?",
+     "options": [
+      "Bevel-edge chisel",
+      "Mortise chisel",
+      "Cold chisel",
+      "Paring chisel"
+     ],
+     "answer": "B",
+     "marks": 1
+    },
+    {
+     "id": "a8",
+     "type": "mcq",
+     "text": "Which tool is used to drive in nails and also pull them out?",
+     "options": [
+      "Claw hammer",
+      "Mallet",
+      "Ball-pein hammer",
+      "Pincers"
+     ],
+     "answer": "A",
+     "marks": 1
+    },
+    {
+     "id": "a9",
+     "type": "mcq",
+     "text": "The ability of a metal to be hammered or rolled into thin sheets is called",
+     "options": [
+      "ductility",
+      "malleability",
+      "brittleness",
+      "hardness"
+     ],
+     "answer": "B",
+     "marks": 1
+    },
+    {
+     "id": "a10",
+     "type": "mcq",
+     "text": "The ability of a metal to be drawn out into thin wire without breaking is called",
+     "options": [
+      "ductility",
+      "toughness",
+      "malleability",
+      "conductivity"
+     ],
+     "answer": "A",
+     "marks": 1
+    },
+    {
+     "id": "a11",
+     "type": "mcq",
+     "text": "Brass is an alloy of",
+     "options": [
+      "iron and carbon",
+      "copper and tin",
+      "aluminium and lead",
+      "copper and zinc"
+     ],
+     "answer": "D",
+     "marks": 1
+    },
+    {
+     "id": "a12",
+     "type": "mcq",
+     "text": "Which of the following is a NON-ferrous metal?",
+     "options": [
+      "Mild steel",
+      "Cast iron",
+      "Aluminium",
+      "Tool steel"
+     ],
+     "answer": "C",
+     "marks": 1
+    },
+    {
+     "id": "a13",
+     "type": "mcq",
+     "text": "Copper is used for electrical wires mainly because it is",
+     "options": [
+      "hard and brittle",
+      "cheap and magnetic",
+      "ductile and a good conductor of electricity",
+      "light and a poor conductor"
+     ],
+     "answer": "C",
+     "marks": 1
+    },
+    {
+     "id": "a14",
+     "type": "mcq",
+     "text": "A plastic that softens when heated and can be reshaped many times is a",
+     "options": [
+      "thermosetting plastic",
+      "ceramic",
+      "thermoplastic",
+      "composite"
+     ],
+     "answer": "C",
+     "marks": 1
+    },
+    {
+     "id": "a15",
+     "type": "mcq",
+     "text": "Timber from cone-bearing trees such as pine is called",
+     "options": [
+      "hardwood",
+      "manufactured board",
+      "veneer",
+      "softwood"
+     ],
+     "answer": "D",
+     "marks": 1
+    },
+    {
+     "id": "a16",
+     "type": "mcq",
+     "text": "Galvanising protects steel from rusting by coating it with",
+     "options": [
+      "zinc",
+      "copper",
+      "tin",
+      "lead"
+     ],
+     "answer": "A",
+     "marks": 1
+    },
+    {
+     "id": "a17",
+     "type": "mcq",
+     "text": "A finish that changes the colour of timber but still lets the grain show is",
+     "options": [
+      "paint",
+      "putty",
+      "sealant tape",
+      "stain"
+     ],
+     "answer": "D",
+     "marks": 1
+    },
+    {
+     "id": "a18",
+     "type": "mcq",
+     "text": "The honing (final sharpening) angle of a plane iron is about",
+     "options": [
+      "10°",
+      "45°",
+      "30°",
+      "60°"
+     ],
+     "answer": "C",
+     "marks": 1
+    },
+    {
+     "id": "a19",
+     "type": "mcq",
+     "text": "The thin rough edge left on a blade after grinding is called the",
+     "options": [
+      "burr",
+      "bevel",
+      "heel",
+      "set"
+     ],
+     "answer": "A",
+     "marks": 1
+    },
+    {
+     "id": "a20",
+     "type": "mcq",
+     "text": "Which plumbing fitting joins THREE pipes together?",
+     "options": [
+      "Elbow",
+      "Tee",
+      "Coupling",
+      "Cross"
+     ],
+     "answer": "B",
+     "marks": 1
+    },
+    {
+     "id": "a21",
+     "type": "mcq",
+     "text": "A permanent fastener used to join thin metal sheets is a",
+     "options": [
+      "bolt",
+      "wood screw",
+      "rivet",
+      "hinge"
+     ],
+     "answer": "C",
+     "marks": 1
+    },
+    {
+     "id": "a22",
+     "type": "mcq",
+     "text": "Dimension lines on a technical drawing are drawn as",
+     "options": [
+      "thick continuous lines",
+      "short dashes",
+      "chain lines with thick ends",
+      "thin lines with arrowheads at both ends"
+     ],
+     "answer": "D",
+     "marks": 1
+    },
+    {
+     "id": "a23",
+     "type": "mcq",
+     "text": "A drawing made to a scale of 1:2 is",
+     "options": [
+      "twice the real size",
+      "full size",
+      "four times smaller",
+      "half the real size"
+     ],
+     "answer": "D",
+     "marks": 1
+    },
+    {
+     "id": "a24",
+     "type": "mcq",
+     "text": "In FIRST angle projection, the view seen from the left is drawn",
+     "options": [
+      "on the left of the front elevation",
+      "on the right of the front elevation",
+      "above the front elevation",
+      "below the plan"
+     ],
+     "answer": "B",
+     "marks": 1
+    },
+    {
+     "id": "a25",
+     "type": "mcq",
+     "text": "The length of the development of a cylinder with a diameter of 40 mm is about",
+     "options": [
+      "40 mm",
+      "80 mm",
+      "125.7 mm",
+      "251.3 mm"
+     ],
+     "answer": "C",
+     "marks": 1
+    },
+    {
+     "id": "a26",
+     "type": "mcq",
+     "text": "The true shape of a cut (sectioned) surface is seen when it is viewed",
+     "options": [
+      "from directly above",
+      "at 90° to the cutting plane",
+      "at 45° to the cutting plane",
+      "from the end"
+     ],
+     "answer": "B",
+     "marks": 1
+    },
+    {
+     "id": "a27",
+     "type": "mcq",
+     "text": "In a perspective drawing, the receding lines meet at",
+     "options": [
+      "vanishing points",
+      "the XY line",
+      "the centre line",
+      "the ground line only at 30°"
+     ],
+     "answer": "A",
+     "marks": 1
+    },
+    {
+     "id": "a28",
+     "type": "mcq",
+     "text": "When constructing a regular hexagon in a circle, the side of the hexagon is equal to the circle's",
+     "options": [
+      "radius",
+      "diameter",
+      "circumference",
+      "half radius"
+     ],
+     "answer": "A",
+     "marks": 1
+    },
+    {
+     "id": "a29",
+     "type": "mcq",
+     "text": "The list of requirements that a design must meet (e.g. strong, safe, cheap) is called the",
+     "options": [
+      "specifications",
+      "evaluation",
+      "brief",
+      "rendering"
+     ],
+     "answer": "A",
+     "marks": 1
+    },
+    {
+     "id": "a30",
+     "type": "mcq",
+     "text": "In an enterprise, the profit on each product is",
+     "options": [
+      "material cost + labour cost",
+      "selling price + overhead",
+      "selling price − total cost",
+      "labour cost − material cost"
+     ],
+     "answer": "C",
+     "marks": 1
+    }
+   ]
+  },
+  {
+   "title": "SECTION B  SHORT ANSWER QUESTIONS [50 marks]",
+   "short": "B Short answer",
+   "note": "There are five questions in this section. All are compulsory. Use the drafting tools for the drawing parts (T-square, set squares, protractor, compass, pencil, eraser, text).",
+   "questions": [
+    {
+     "id": "b1a",
+     "type": "match",
+     "text": "QUESTION 1 GENERAL KNOWLEDGE (10 marks)\nPART A MATCHING (5 marks)\nMatch each term in List A with the correct description in List B. Two descriptions are not used.",
+     "items": [
+      "Marking gauge",
+      "Galvanising",
+      "Thermoplastic",
+      "Hasp and staple",
+      "Housing joint"
+     ],
+     "options": [
+      "Coating steel with zinc to stop it from rusting.",
+      "A tool used to mark a line parallel to the edge of the timber.",
+      "A plastic that softens when heated and can be reshaped many times.",
+      "A plastic that sets hard permanently and cannot be reshaped.",
+      "A tool used to check that an edge is at 90° to the face.",
+      "A groove cut across one piece to hold the end of another, e.g. a shelf.",
+      "A fitting used with a padlock to lock a door or a box."
+     ],
+     "answer": [
+      "B",
+      "A",
+      "C",
+      "G",
+      "F"
+     ],
+     "marks": 5,
+     "navLabel": "1A"
+    },
+    {
+     "id": "b1b",
+     "type": "draw",
+     "withText": true,
+     "marks": 5,
+     "navLabel": "1B",
+     "text": "PART B (5 marks)\nThe drawing shows the front elevation and plan of a block with a drilled hole. Five different types of line are numbered 1 to 5.\nName each type of line, e.g. 1 = ? (Write your answers in the box. You may also label the drawing with the Text tool.)",
+     "model": "1 = visible outline (thick continuous line) (1)\n2 = hidden detail line (short dashes) – the hole (1)\n3 = centre line (thin chain line, long and short dashes) (1)\n4 = dimension line (thin line with arrowheads) (1)\n5 = projection line / projector (thin line carrying sizes between views) (1)",
+     "draw": {
+      "mode": "tech",
+      "board": {
+       "w": 297,
+       "h": 210
+      },
+      "given": [
+       {
+        "t": "seg",
+        "a": [
+         60,
+         80
+        ],
+        "b": [
+         180,
+         80
+        ],
+        "st": "thick"
+       },
+       {
+        "t": "seg",
+        "a": [
+         180,
+         80
+        ],
+        "b": [
+         180,
+         130
+        ],
+        "st": "thick"
+       },
+       {
+        "t": "seg",
+        "a": [
+         180,
+         130
+        ],
+        "b": [
+         60,
+         130
+        ],
+        "st": "thick"
+       },
+       {
+        "t": "seg",
+        "a": [
+         60,
+         130
+        ],
+        "b": [
+         60,
+         80
+        ],
+        "st": "thick"
+       },
+       {
+        "t": "seg",
+        "a": [
+         110,
+         80
+        ],
+        "b": [
+         110,
+         130
+        ],
+        "st": "hidden"
+       },
+       {
+        "t": "seg",
+        "a": [
+         130,
+         80
+        ],
+        "b": [
+         130,
+         130
+        ],
+        "st": "hidden"
+       },
+       {
+        "t": "seg",
+        "a": [
+         120,
+         75
+        ],
+        "b": [
+         120,
+         136
+        ],
+        "st": "centre"
+       },
+       {
+        "t": "seg",
+        "a": [
+         60,
+         77
+        ],
+        "b": [
+         60,
+         62
+        ],
+        "st": "thin"
+       },
+       {
+        "t": "seg",
+        "a": [
+         180,
+         77
+        ],
+        "b": [
+         180,
+         62
+        ],
+        "st": "thin"
+       },
+       {
+        "t": "seg",
+        "a": [
+         120,
+         66
+        ],
+        "b": [
+         60,
+         66
+        ],
+        "st": "thin"
+       },
+       {
+        "t": "seg",
+        "a": [
+         60,
+         66
+        ],
+        "b": [
+         62.72,
+         67.27
+        ],
+        "st": "thin"
+       },
+       {
+        "t": "seg",
+        "a": [
+         60,
+         66
+        ],
+        "b": [
+         62.72,
+         64.73
+        ],
+        "st": "thin"
+       },
+       {
+        "t": "seg",
+        "a": [
+         120,
+         66
+        ],
+        "b": [
+         180,
+         66
+        ],
+        "st": "thin"
+       },
+       {
+        "t": "seg",
+        "a": [
+         180,
+         66
+        ],
+        "b": [
+         177.28,
+         64.73
+        ],
+        "st": "thin"
+       },
+       {
+        "t": "seg",
+        "a": [
+         180,
+         66
+        ],
+        "b": [
+         177.28,
+         67.27
+        ],
+        "st": "thin"
+       },
+       {
+        "t": "text",
+        "p": [
+         114,
+         63.5
+        ],
+        "s": "120",
+        "size": 3.5
+       },
+       {
+        "t": "seg",
+        "a": [
+         110,
+         132
+        ],
+        "b": [
+         110,
+         158
+        ],
+        "st": "thin"
+       },
+       {
+        "t": "seg",
+        "a": [
+         130,
+         132
+        ],
+        "b": [
+         130,
+         158
+        ],
+        "st": "thin"
+       },
+       {
+        "t": "seg",
+        "a": [
+         60,
+         160
+        ],
+        "b": [
+         180,
+         160
+        ],
+        "st": "thick"
+       },
+       {
+        "t": "seg",
+        "a": [
+         180,
+         160
+        ],
+        "b": [
+         180,
+         200
+        ],
+        "st": "thick"
+       },
+       {
+        "t": "seg",
+        "a": [
+         180,
+         200
+        ],
+        "b": [
+         60,
+         200
+        ],
+        "st": "thick"
+       },
+       {
+        "t": "seg",
+        "a": [
+         60,
+         200
+        ],
+        "b": [
+         60,
+         160
+        ],
+        "st": "thick"
+       },
+       {
+        "t": "arc",
+        "c": [
+         120,
+         180
+        ],
+        "r": 10,
+        "a0": 0,
+        "sw": 6.2832,
+        "st": "thick"
+       },
+       {
+        "t": "seg",
+        "a": [
+         104,
+         180
+        ],
+        "b": [
+         136,
+         180
+        ],
+        "st": "centre"
+       },
+       {
+        "t": "seg",
+        "a": [
+         120,
+         164
+        ],
+        "b": [
+         120,
+         196
+        ],
+        "st": "centre"
+       },
+       {
+        "t": "text",
+        "p": [
+         24,
+         106
+        ],
+        "s": "1",
+        "size": 5
+       },
+       {
+        "t": "seg",
+        "a": [
+         28,
+         104.5
+        ],
+        "b": [
+         60,
+         105
+        ],
+        "st": "thin"
+       },
+       {
+        "t": "text",
+        "p": [
+         204,
+         98
+        ],
+        "s": "2",
+        "size": 5
+       },
+       {
+        "t": "seg",
+        "a": [
+         202,
+         96.5
+        ],
+        "b": [
+         130,
+         97
+        ],
+        "st": "thin"
+       },
+       {
+        "t": "text",
+        "p": [
+         146,
+         78
+        ],
+        "s": "3",
+        "size": 5
+       },
+       {
+        "t": "seg",
+        "a": [
+         144,
+         76.5
+        ],
+        "b": [
+         121,
+         76
+        ],
+        "st": "thin"
+       },
+       {
+        "t": "text",
+        "p": [
+         204,
+         64
+        ],
+        "s": "4",
+        "size": 5
+       },
+       {
+        "t": "seg",
+        "a": [
+         202,
+         62.5
+        ],
+        "b": [
+         172,
+         66
+        ],
+        "st": "thin"
+       },
+       {
+        "t": "text",
+        "p": [
+         204,
+         147
+        ],
+        "s": "5",
+        "size": 5
+       },
+       {
+        "t": "seg",
+        "a": [
+         202,
+         145.5
+        ],
+        "b": [
+         130,
+         146
+        ],
+        "st": "thin"
+       },
+       {
+        "t": "text",
+        "p": [
+         20,
+         22
+        ],
+        "s": "Front elevation and plan of a block with a drilled hole (first angle).",
+        "size": 4
+       }
+      ]
+     }
+    },
+    {
+     "id": "b2a",
+     "type": "short",
+     "marks": 3,
+     "navLabel": "2A",
+     "text": "QUESTION 2 TOOLS AND GEOMETRICAL CONSTRUCTIONS (10 marks)\nPART A (3 marks)\n(i) Name the saw that has a stiff steel back and is used for accurate cuts when making joints. (1 mark)\n(ii) Name the two ends of a saw blade. (1 mark)\n(iii) State one safety rule when using a chisel. (1 mark)",
+     "model": "(i) Tenon saw (back saw) (1)\n(ii) Heel (near the handle) and toe (the far end) (1 – both needed)\n(iii) Any one (1): always cut away from your body; keep both hands behind the cutting edge; hold the work in a vice or clamp; keep the chisel sharp; carry it with the blade pointing down/put it down with the edge away from you."
+    },
+    {
+     "id": "b2b",
+     "type": "draw",
+     "marks": 4,
+     "navLabel": "2B",
+     "text": "PART B (4 marks)\nGiven: The centre O and the horizontal centre line of a regular hexagon.\nRequired: Construct a regular hexagon with sides of 35 mm, with two of its corners on the horizontal centre line. Use the circle method (radius = side) and show all construction arcs.",
+     "model": "Circle of radius 35 mm drawn from O (1); radius stepped off 6 times round the circle with the compass, starting on the centre line (1); six corners joined with thick lines (1); accurate (sides 35 mm, corners on the centre line) and construction arcs left thin (1).",
+     "draw": {
+      "mode": "tech",
+      "board": {
+       "w": 297,
+       "h": 210
+      },
+      "given": [
+       {
+        "t": "seg",
+        "a": [
+         40,
+         105
+        ],
+        "b": [
+         160,
+         105
+        ],
+        "st": "centre"
+       },
+       {
+        "t": "seg",
+        "a": [
+         100,
+         60
+        ],
+        "b": [
+         100,
+         150
+        ],
+        "st": "centre"
+       },
+       {
+        "t": "pt",
+        "p": [
+         100,
+         105
+        ],
+        "label": "O"
+       },
+       {
+        "t": "text",
+        "p": [
+         185,
+         30
+        ],
+        "s": "Side of hexagon = 35 mm",
+        "size": 4
+       },
+       {
+        "t": "text",
+        "p": [
+         185,
+         36.5
+        ],
+        "s": "Two corners on the",
+        "size": 4
+       },
+       {
+        "t": "text",
+        "p": [
+         185,
+         43
+        ],
+        "s": "horizontal centre line.",
+        "size": 4
+       }
+      ]
+     },
+     "modelShapes": [
+      {
+       "t": "arc",
+       "c": [
+        100,
+        105
+       ],
+       "r": 35,
+       "a0": 0,
+       "sw": 6.2832,
+       "st": "thin"
+      },
+      {
+       "t": "arc",
+       "c": [
+        135.0,
+        105.0
+       ],
+       "r": 35,
+       "a0": -2.2944,
+       "sw": 0.4,
+       "st": "thin"
+      },
+      {
+       "t": "arc",
+       "c": [
+        117.5,
+        74.69
+       ],
+       "r": 35,
+       "a0": -3.3416,
+       "sw": 0.4,
+       "st": "thin"
+      },
+      {
+       "t": "arc",
+       "c": [
+        82.5,
+        74.69
+       ],
+       "r": 35,
+       "a0": 1.8944,
+       "sw": 0.4,
+       "st": "thin"
+      },
+      {
+       "t": "arc",
+       "c": [
+        65.0,
+        105.0
+       ],
+       "r": 35,
+       "a0": 0.8472,
+       "sw": 0.4,
+       "st": "thin"
+      },
+      {
+       "t": "arc",
+       "c": [
+        82.5,
+        135.31
+       ],
+       "r": 35,
+       "a0": -0.2,
+       "sw": 0.4,
+       "st": "thin"
+      },
+      {
+       "t": "arc",
+       "c": [
+        117.5,
+        135.31
+       ],
+       "r": 35,
+       "a0": -1.2472,
+       "sw": 0.4,
+       "st": "thin"
+      },
+      {
+       "t": "seg",
+       "a": [
+        135.0,
+        105.0
+       ],
+       "b": [
+        117.5,
+        74.69
+       ],
+       "st": "thick"
+      },
+      {
+       "t": "seg",
+       "a": [
+        117.5,
+        74.69
+       ],
+       "b": [
+        82.5,
+        74.69
+       ],
+       "st": "thick"
+      },
+      {
+       "t": "seg",
+       "a": [
+        82.5,
+        74.69
+       ],
+       "b": [
+        65.0,
+        105.0
+       ],
+       "st": "thick"
+      },
+      {
+       "t": "seg",
+       "a": [
+        65.0,
+        105.0
+       ],
+       "b": [
+        82.5,
+        135.31
+       ],
+       "st": "thick"
+      },
+      {
+       "t": "seg",
+       "a": [
+        82.5,
+        135.31
+       ],
+       "b": [
+        117.5,
+        135.31
+       ],
+       "st": "thick"
+      },
+      {
+       "t": "seg",
+       "a": [
+        117.5,
+        135.31
+       ],
+       "b": [
+        135.0,
+        105.0
+       ],
+       "st": "thick"
+      }
+     ]
+    },
+    {
+     "id": "b2d",
+     "type": "draw",
+     "marks": 3,
+     "navLabel": "2D",
+     "text": "PART D (3 marks)\nGiven: The straight line PQ, 90 mm long.\nRequired:\n(i) Bisect PQ with a perpendicular bisector, using compass arcs only. (2 marks)\n(ii) At P, construct an angle of 60° to PQ using the compass (no protractor). (1 mark)",
+     "model": "(i) Arcs of the same radius (more than half of PQ, e.g. 60 mm) drawn from P and Q, crossing above and below the line (1); straight line through the two crossing points – it meets PQ at 45 mm and at 90° (1).\n(ii) Arc from P cutting PQ, the same radius from that point cutting the first arc; line from P through the crossing point = 60° (1).",
+     "draw": {
+      "mode": "tech",
+      "board": {
+       "w": 297,
+       "h": 210
+      },
+      "given": [
+       {
+        "t": "seg",
+        "a": [
+         60,
+         120
+        ],
+        "b": [
+         150,
+         120
+        ],
+        "st": "thick"
+       },
+       {
+        "t": "pt",
+        "p": [
+         60,
+         120
+        ],
+        "label": "P"
+       },
+       {
+        "t": "pt",
+        "p": [
+         150,
+         120
+        ],
+        "label": "Q"
+       },
+       {
+        "t": "text",
+        "p": [
+         185,
+         30
+        ],
+        "s": "PQ = 90 mm",
+        "size": 4
+       }
+      ]
+     },
+     "modelShapes": [
+      {
+       "t": "arc",
+       "c": [
+        60,
+        120
+       ],
+       "r": 60,
+       "a0": -0.9,
+       "sw": 0.35,
+       "st": "thin"
+      },
+      {
+       "t": "arc",
+       "c": [
+        60,
+        120
+       ],
+       "r": 60,
+       "a0": 0.55,
+       "sw": 0.35,
+       "st": "thin"
+      },
+      {
+       "t": "arc",
+       "c": [
+        150,
+        120
+       ],
+       "r": 60,
+       "a0": -2.59,
+       "sw": 0.35,
+       "st": "thin"
+      },
+      {
+       "t": "arc",
+       "c": [
+        150,
+        120
+       ],
+       "r": 60,
+       "a0": 2.245,
+       "sw": 0.35,
+       "st": "thin"
+      },
+      {
+       "t": "seg",
+       "a": [
+        105,
+        70
+       ],
+       "b": [
+        105,
+        170
+       ],
+       "st": "thick"
+      },
+      {
+       "t": "text",
+       "p": [
+        107,
+        117
+       ],
+       "s": "90°",
+       "size": 3.5
+      },
+      {
+       "t": "arc",
+       "c": [
+        60,
+        120
+       ],
+       "r": 40,
+       "a0": -1.25,
+       "sw": 1.35,
+       "st": "thin"
+      },
+      {
+       "t": "arc",
+       "c": [
+        100,
+        120
+       ],
+       "r": 40,
+       "a0": -2.3,
+       "sw": 0.4,
+       "st": "thin"
+      },
+      {
+       "t": "seg",
+       "a": [
+        60,
+        120
+       ],
+       "b": [
+        95.0,
+        59.38
+       ],
+       "st": "thick"
+      },
+      {
+       "t": "text",
+       "p": [
+        70,
+        114
+       ],
+       "s": "60°",
+       "size": 3.5
+      }
+     ]
+    },
+    {
+     "id": "b3a",
+     "type": "draw",
+     "withText": true,
+     "marks": 6,
+     "navLabel": "3A",
+     "text": "QUESTION 3 JOINTS, MATERIALS AND HARDWARE (10 marks)\nPART A (6 marks)\nA bookshelf has two sides made of 150 mm × 20 mm pine. Each shelf fits into a groove cut across the inside face of the side, so the shelf can carry heavy books.\n(i) Name the joint. (1 mark – write it in the box)\n(ii) Draw a neat freehand pictorial (exploded) sketch of the joint, with the shelf pulled out of the groove. Show the grain of the timber. (3 marks)\n(iii) State the first two steps in making this joint. (2 marks – write them in the box)",
+     "model": "(i) Housing joint (through housing) (1)\n(ii) Pictorial sketch (isometric/oblique) of the side with a groove across the grain and the shelf end drawn apart (1); groove width = shelf thickness, depth about ⅓ of the side thickness (1); grain lines and pencil rendering, neat (1).\n(iii) Step 1: mark the width of the groove with a try square and marking knife, using the shelf itself for the width, and gauge the depth with a marking gauge (1). Step 2: saw down both lines to the depth with a tenon saw on the waste side (1). (Then remove the waste with a chisel/router and test the fit.)",
+     "draw": {
+      "mode": "tech",
+      "board": {
+       "w": 297,
+       "h": 210
+      },
+      "given": [
+       {
+        "t": "text",
+        "p": [
+         20,
+         20
+        ],
+        "s": "Sketch area – exploded pictorial sketch of the joint.",
+        "size": 4
+       }
+      ]
+     }
+    },
+    {
+     "id": "b3b",
+     "type": "short",
+     "marks": 2,
+     "navLabel": "3B",
+     "text": "PART B (2 marks)\nDifferentiate between a thermoplastic and a thermosetting plastic. Give one example of each.",
+     "model": "A thermoplastic softens when heated and can be reshaped many times, e.g. PVC, acrylic, polythene (1); a thermosetting plastic sets hard permanently and cannot be reshaped by heating, e.g. melamine, epoxy resin, Bakelite (1)."
+    },
+    {
+     "id": "b3c",
+     "type": "draw",
+     "marks": 2,
+     "navLabel": "3C",
+     "text": "PART C (2 marks)\nDraw a neat sketch of a HASP AND STAPLE. Show the hasp, the staple, the screw holes and where the padlock goes.",
+     "model": "Hinged hasp plate with a slot, fixed with screws to the door (1); staple (loop) on its own plate that passes through the slot, with the padlock through the staple; correct proportions (1).",
+     "draw": {
+      "mode": "tech",
+      "board": {
+       "w": 297,
+       "h": 210
+      },
+      "given": [
+       {
+        "t": "text",
+        "p": [
+         20,
+         20
+        ],
+        "s": "Sketch area – hasp and staple.",
+        "size": 4
+       }
+      ]
+     }
+    },
+    {
+     "id": "b4",
+     "type": "draw",
+     "marks": 10,
+     "navLabel": "4",
+     "text": "QUESTION 4 ORTHOGRAPHIC PROJECTION (10 marks)\nGiven: An isometric view of a block (left side of the sheet). The sizes are listed under the drawing. Arrow F shows the front.\nRequired: Draw, full size (1:1), in FIRST ANGLE orthographic projection:\n(i) the front elevation in the direction of arrow F, starting with its bottom-left corner at point S (3 marks)\n(ii) the plan (3 marks)\n(iii) the end elevation viewed from the LEFT (3 marks)\nShow hidden edges with hidden detail lines. Write FRONT ELEVATION, PLAN and END ELEVATION under the views with the Text tool. (1 mark)",
+     "model": "(i) Front elevation (top left, from S): the L-shaped outline 80 × 50 with the low step 35 × 15, the slope from (35, 15) to (60, 30), the top block 20 wide and the groove 15 × 10 cut in the bottom 40 from the left (3; 1 off per missing feature).\n(ii) Plan BELOW the front elevation (first angle): rectangle 80 × 40, visible lines at 35 and 60 from the left, the groove as two hidden lines at 40 and 55 (3).\n(iii) End elevation on the RIGHT of the front elevation (first angle, view from the left): rectangle 40 × 50 with visible lines at 15 and 30 high and a hidden line at 10 high for the groove (3).\nCorrect first-angle layout, views lined up with projectors, labels and line work (1).",
+     "draw": {
+      "mode": "tech",
+      "board": {
+       "w": 297,
+       "h": 210
+      },
+      "given": [
+       {
+        "t": "seg",
+        "a": [
+         45.0,
+         175.0
+        ],
+        "b": [
+         79.64,
+         155.0
+        ],
+        "st": "thick"
+       },
+       {
+        "t": "seg",
+        "a": [
+         79.64,
+         155.0
+        ],
+        "b": [
+         79.64,
+         145.0
+        ],
+        "st": "thick"
+       },
+       {
+        "t": "seg",
+        "a": [
+         79.64,
+         145.0
+        ],
+        "b": [
+         92.63,
+         137.5
+        ],
+        "st": "thick"
+       },
+       {
+        "t": "seg",
+        "a": [
+         92.63,
+         137.5
+        ],
+        "b": [
+         92.63,
+         147.5
+        ],
+        "st": "thick"
+       },
+       {
+        "t": "seg",
+        "a": [
+         92.63,
+         147.5
+        ],
+        "b": [
+         114.28,
+         135.0
+        ],
+        "st": "thick"
+       },
+       {
+        "t": "seg",
+        "a": [
+         114.28,
+         135.0
+        ],
+        "b": [
+         114.28,
+         85.0
+        ],
+        "st": "thick"
+       },
+       {
+        "t": "seg",
+        "a": [
+         114.28,
+         85.0
+        ],
+        "b": [
+         96.96,
+         95.0
+        ],
+        "st": "thick"
+       },
+       {
+        "t": "seg",
+        "a": [
+         96.96,
+         95.0
+        ],
+        "b": [
+         96.96,
+         115.0
+        ],
+        "st": "thick"
+       },
+       {
+        "t": "seg",
+        "a": [
+         96.96,
+         115.0
+        ],
+        "b": [
+         75.31,
+         142.5
+        ],
+        "st": "thick"
+       },
+       {
+        "t": "seg",
+        "a": [
+         75.31,
+         142.5
+        ],
+        "b": [
+         45.0,
+         160.0
+        ],
+        "st": "thick"
+       },
+       {
+        "t": "seg",
+        "a": [
+         45.0,
+         160.0
+        ],
+        "b": [
+         45.0,
+         175.0
+        ],
+        "st": "thick"
+       },
+       {
+        "t": "seg",
+        "a": [
+         45.0,
+         175.0
+        ],
+        "b": [
+         10.36,
+         155.0
+        ],
+        "st": "thick"
+       },
+       {
+        "t": "seg",
+        "a": [
+         45.0,
+         160.0
+        ],
+        "b": [
+         10.36,
+         140.0
+        ],
+        "st": "thick"
+       },
+       {
+        "t": "seg",
+        "a": [
+         75.31,
+         142.5
+        ],
+        "b": [
+         40.67,
+         122.5
+        ],
+        "st": "thick"
+       },
+       {
+        "t": "seg",
+        "a": [
+         96.96,
+         115.0
+        ],
+        "b": [
+         62.32,
+         95.0
+        ],
+        "st": "thick"
+       },
+       {
+        "t": "seg",
+        "a": [
+         96.96,
+         95.0
+        ],
+        "b": [
+         62.32,
+         75.0
+        ],
+        "st": "thick"
+       },
+       {
+        "t": "seg",
+        "a": [
+         114.28,
+         85.0
+        ],
+        "b": [
+         79.64,
+         65.0
+        ],
+        "st": "thick"
+       },
+       {
+        "t": "seg",
+        "a": [
+         92.63,
+         147.5
+        ],
+        "b": [
+         83.97,
+         142.5
+        ],
+        "st": "thick"
+       },
+       {
+        "t": "seg",
+        "a": [
+         10.36,
+         155.0
+        ],
+        "b": [
+         10.36,
+         140.0
+        ],
+        "st": "thick"
+       },
+       {
+        "t": "seg",
+        "a": [
+         10.36,
+         140.0
+        ],
+        "b": [
+         40.67,
+         122.5
+        ],
+        "st": "thick"
+       },
+       {
+        "t": "seg",
+        "a": [
+         40.67,
+         122.5
+        ],
+        "b": [
+         62.32,
+         95.0
+        ],
+        "st": "thick"
+       },
+       {
+        "t": "seg",
+        "a": [
+         62.32,
+         95.0
+        ],
+        "b": [
+         62.32,
+         75.0
+        ],
+        "st": "thick"
+       },
+       {
+        "t": "seg",
+        "a": [
+         62.32,
+         75.0
+        ],
+        "b": [
+         79.64,
+         65.0
+        ],
+        "st": "thick"
+       },
+       {
+        "t": "pt",
+        "p": [
+         45.0,
+         175.0
+        ],
+        "label": "A"
+       },
+       {
+        "t": "seg",
+        "a": [
+         128,
+         117
+        ],
+        "b": [
+         106,
+         104.5
+        ],
+        "st": "thick"
+       },
+       {
+        "t": "seg",
+        "a": [
+         106,
+         104.5
+        ],
+        "b": [
+         108.32,
+         107.76
+        ],
+        "st": "thick"
+       },
+       {
+        "t": "seg",
+        "a": [
+         106,
+         104.5
+        ],
+        "b": [
+         109.99,
+         104.82
+        ],
+        "st": "thick"
+       },
+       {
+        "t": "text",
+        "p": [
+         129,
+         124
+        ],
+        "s": "F",
+        "size": 5
+       },
+       {
+        "t": "text",
+        "p": [
+         8,
+         181
+        ],
+        "s": "Length 80, depth 40, height 50 (mm). Arrow F = front.",
+        "size": 3.5
+       },
+       {
+        "t": "text",
+        "p": [
+         8,
+         186
+        ],
+        "s": "Low step: 35 long, 15 high.",
+        "size": 3.5
+       },
+       {
+        "t": "text",
+        "p": [
+         8,
+         191
+        ],
+        "s": "Slope: rises from 15 high (at 35) to 30 high (at 60).",
+        "size": 3.5
+       },
+       {
+        "t": "text",
+        "p": [
+         8,
+         196
+        ],
+        "s": "Top block: from 60 to 80, 50 high.",
+        "size": 3.5
+       },
+       {
+        "t": "text",
+        "p": [
+         8,
+         201
+        ],
+        "s": "Groove underneath: 15 wide, 10 high, starts 40 from",
+        "size": 3.5
+       },
+       {
+        "t": "text",
+        "p": [
+         8,
+         206
+        ],
+        "s": "the left end, runs right through the depth.",
+        "size": 3.5
+       },
+       {
+        "t": "text",
+        "p": [
+         10,
+         22
+        ],
+        "s": "Isometric view of a block",
+        "size": 4
+       },
+       {
+        "t": "pt",
+        "p": [
+         150,
+         90
+        ],
+        "label": "S"
+       }
+      ]
+     },
+     "modelShapes": [
+      {
+       "t": "seg",
+       "a": [
+        150,
+        90
+       ],
+       "b": [
+        190,
+        90
+       ],
+       "st": "thick"
+      },
+      {
+       "t": "seg",
+       "a": [
+        190,
+        90
+       ],
+       "b": [
+        190,
+        80
+       ],
+       "st": "thick"
+      },
+      {
+       "t": "seg",
+       "a": [
+        190,
+        80
+       ],
+       "b": [
+        205,
+        80
+       ],
+       "st": "thick"
+      },
+      {
+       "t": "seg",
+       "a": [
+        205,
+        80
+       ],
+       "b": [
+        205,
+        90
+       ],
+       "st": "thick"
+      },
+      {
+       "t": "seg",
+       "a": [
+        205,
+        90
+       ],
+       "b": [
+        230,
+        90
+       ],
+       "st": "thick"
+      },
+      {
+       "t": "seg",
+       "a": [
+        230,
+        90
+       ],
+       "b": [
+        230,
+        40
+       ],
+       "st": "thick"
+      },
+      {
+       "t": "seg",
+       "a": [
+        230,
+        40
+       ],
+       "b": [
+        210,
+        40
+       ],
+       "st": "thick"
+      },
+      {
+       "t": "seg",
+       "a": [
+        210,
+        40
+       ],
+       "b": [
+        210,
+        60
+       ],
+       "st": "thick"
+      },
+      {
+       "t": "seg",
+       "a": [
+        210,
+        60
+       ],
+       "b": [
+        185,
+        75
+       ],
+       "st": "thick"
+      },
+      {
+       "t": "seg",
+       "a": [
+        185,
+        75
+       ],
+       "b": [
+        150,
+        75
+       ],
+       "st": "thick"
+      },
+      {
+       "t": "seg",
+       "a": [
+        150,
+        75
+       ],
+       "b": [
+        150,
+        90
+       ],
+       "st": "thick"
+      },
+      {
+       "t": "seg",
+       "a": [
+        150,
+        145
+       ],
+       "b": [
+        230,
+        145
+       ],
+       "st": "thick"
+      },
+      {
+       "t": "seg",
+       "a": [
+        230,
+        145
+       ],
+       "b": [
+        230,
+        105
+       ],
+       "st": "thick"
+      },
+      {
+       "t": "seg",
+       "a": [
+        230,
+        105
+       ],
+       "b": [
+        150,
+        105
+       ],
+       "st": "thick"
+      },
+      {
+       "t": "seg",
+       "a": [
+        150,
+        105
+       ],
+       "b": [
+        150,
+        145
+       ],
+       "st": "thick"
+      },
+      {
+       "t": "seg",
+       "a": [
+        185,
+        145
+       ],
+       "b": [
+        185,
+        105
+       ],
+       "st": "thick"
+      },
+      {
+       "t": "seg",
+       "a": [
+        210,
+        145
+       ],
+       "b": [
+        210,
+        105
+       ],
+       "st": "thick"
+      },
+      {
+       "t": "seg",
+       "a": [
+        190,
+        145
+       ],
+       "b": [
+        190,
+        105
+       ],
+       "st": "hidden"
+      },
+      {
+       "t": "seg",
+       "a": [
+        205,
+        145
+       ],
+       "b": [
+        205,
+        105
+       ],
+       "st": "hidden"
+      },
+      {
+       "t": "seg",
+       "a": [
+        285,
+        90
+       ],
+       "b": [
+        245,
+        90
+       ],
+       "st": "thick"
+      },
+      {
+       "t": "seg",
+       "a": [
+        245,
+        90
+       ],
+       "b": [
+        245,
+        40
+       ],
+       "st": "thick"
+      },
+      {
+       "t": "seg",
+       "a": [
+        245,
+        40
+       ],
+       "b": [
+        285,
+        40
+       ],
+       "st": "thick"
+      },
+      {
+       "t": "seg",
+       "a": [
+        285,
+        40
+       ],
+       "b": [
+        285,
+        90
+       ],
+       "st": "thick"
+      },
+      {
+       "t": "seg",
+       "a": [
+        285,
+        75
+       ],
+       "b": [
+        245,
+        75
+       ],
+       "st": "thick"
+      },
+      {
+       "t": "seg",
+       "a": [
+        285,
+        60
+       ],
+       "b": [
+        245,
+        60
+       ],
+       "st": "thick"
+      },
+      {
+       "t": "seg",
+       "a": [
+        285,
+        80
+       ],
+       "b": [
+        245,
+        80
+       ],
+       "st": "hidden"
+      },
+      {
+       "t": "text",
+       "p": [
+        165,
+        99
+       ],
+       "s": "FRONT ELEVATION",
+       "size": 3.5
+      },
+      {
+       "t": "text",
+       "p": [
+        200,
+        152
+       ],
+       "s": "PLAN",
+       "size": 3.5
+      },
+      {
+       "t": "text",
+       "p": [
+        243,
+        99
+       ],
+       "s": "END ELEV.",
+       "size": 3.5
+      }
+     ]
+    },
+    {
+     "id": "b5",
+     "type": "draw",
+     "withText": true,
+     "marks": 10,
+     "navLabel": "5",
+     "text": "QUESTION 5 SOLID GEOMETRY (10 marks)\nGiven: The elevation and plan of a cylinder (diameter 50 mm, height 70 mm) in first angle projection. The top part is cut off by an inclined cutting plane; the part removed is shown with thin lines. Point O is given for the development.\nRequired:\n(i) Divide the plan into 12 equal parts and project the 12 lines (generators) up to the cutting plane in the elevation. (2 marks)\n(ii) Project the true shape of the cut surface. (3 marks)\n(iii) Develop the curved (lateral) surface of the cut cylinder, starting at O with the shortest line. (Exclude the top and the base.) (4 marks)\n(iv) Name the method of development used. (1 mark – write it in the box)",
+     "model": "(i) Plan divided into 12 × 30° with the 30°/60° set square (1); generators projected up to the cutting line (1).\n(ii) Projectors drawn at 90° to the cutting plane, centre line of the true shape parallel to the cut (1); widths taken from the plan (the distance of each point from the plan's centre line) (1); smooth ellipse – major axis about 55.9 mm, minor axis 50 mm (1).\n(iii) Base line π × 50 = 157.1 mm long, divided into 12 equal parts of 13.1 mm (1); heights of the 12 generators transferred across from the elevation – 30 mm at the start and end, 55 mm in the middle (1); smooth curve through the points (1); neat thick outline, construction lines thin (1).\n(iv) Parallel line development (1).",
+     "draw": {
+      "mode": "tech",
+      "board": {
+       "w": 297,
+       "h": 210
+      },
+      "given": [
+       {
+        "t": "seg",
+        "a": [
+         10,
+         120
+        ],
+        "b": [
+         110,
+         120
+        ],
+        "st": "thin"
+       },
+       {
+        "t": "text",
+        "p": [
+         11,
+         118
+        ],
+        "s": "X",
+        "size": 4
+       },
+       {
+        "t": "text",
+        "p": [
+         104,
+         118
+        ],
+        "s": "Y",
+        "size": 4
+       },
+       {
+        "t": "seg",
+        "a": [
+         35,
+         120
+        ],
+        "b": [
+         85,
+         120
+        ],
+        "st": "thick"
+       },
+       {
+        "t": "seg",
+        "a": [
+         35,
+         120
+        ],
+        "b": [
+         35,
+         65
+        ],
+        "st": "thick"
+       },
+       {
+        "t": "seg",
+        "a": [
+         85,
+         120
+        ],
+        "b": [
+         85,
+         90
+        ],
+        "st": "thick"
+       },
+       {
+        "t": "seg",
+        "a": [
+         35,
+         65
+        ],
+        "b": [
+         85,
+         90
+        ],
+        "st": "thick"
+       },
+       {
+        "t": "seg",
+        "a": [
+         60,
+         66
+        ],
+        "b": [
+         60,
+         125
+        ],
+        "st": "centre"
+       },
+       {
+        "t": "arc",
+        "c": [
+         60,
+         160
+        ],
+        "r": 25,
+        "a0": 0,
+        "sw": 6.2832,
+        "st": "thick"
+       },
+       {
+        "t": "seg",
+        "a": [
+         30,
+         160
+        ],
+        "b": [
+         90,
+         160
+        ],
+        "st": "centre"
+       },
+       {
+        "t": "seg",
+        "a": [
+         60,
+         130
+        ],
+        "b": [
+         60,
+         190
+        ],
+        "st": "centre"
+       },
+       {
+        "t": "pt",
+        "p": [
+         110,
+         200
+        ],
+        "label": "O"
+       },
+       {
+        "t": "text",
+        "p": [
+         150,
+         26
+        ],
+        "s": "Cylinder: diameter 50 (70 high before cutting).",
+        "size": 3.5
+       },
+       {
+        "t": "text",
+        "p": [
+         150,
+         31
+        ],
+        "s": "Cutting plane: 55 high on the left,",
+        "size": 3.5
+       },
+       {
+        "t": "text",
+        "p": [
+         150,
+         36
+        ],
+        "s": "30 high on the right.",
+        "size": 3.5
+       },
+       {
+        "t": "text",
+        "p": [
+         150,
+         41
+        ],
+        "s": "First angle projection.",
+        "size": 3.5
+       }
+      ]
+     },
+     "modelShapes": [
+      {
+       "t": "seg",
+       "a": [
+        60,
+        160
+       ],
+       "b": [
+        85.0,
+        160.0
+       ],
+       "st": "thin"
+      },
+      {
+       "t": "seg",
+       "a": [
+        60,
+        160
+       ],
+       "b": [
+        81.65,
+        172.5
+       ],
+       "st": "thin"
+      },
+      {
+       "t": "seg",
+       "a": [
+        60,
+        160
+       ],
+       "b": [
+        72.5,
+        181.65
+       ],
+       "st": "thin"
+      },
+      {
+       "t": "seg",
+       "a": [
+        60,
+        160
+       ],
+       "b": [
+        60.0,
+        185.0
+       ],
+       "st": "thin"
+      },
+      {
+       "t": "seg",
+       "a": [
+        60,
+        160
+       ],
+       "b": [
+        47.5,
+        181.65
+       ],
+       "st": "thin"
+      },
+      {
+       "t": "seg",
+       "a": [
+        60,
+        160
+       ],
+       "b": [
+        38.35,
+        172.5
+       ],
+       "st": "thin"
+      },
+      {
+       "t": "seg",
+       "a": [
+        60,
+        160
+       ],
+       "b": [
+        35.0,
+        160.0
+       ],
+       "st": "thin"
+      },
+      {
+       "t": "seg",
+       "a": [
+        60,
+        160
+       ],
+       "b": [
+        38.35,
+        147.5
+       ],
+       "st": "thin"
+      },
+      {
+       "t": "seg",
+       "a": [
+        60,
+        160
+       ],
+       "b": [
+        47.5,
+        138.35
+       ],
+       "st": "thin"
+      },
+      {
+       "t": "seg",
+       "a": [
+        60,
+        160
+       ],
+       "b": [
+        60.0,
+        135.0
+       ],
+       "st": "thin"
+      },
+      {
+       "t": "seg",
+       "a": [
+        60,
+        160
+       ],
+       "b": [
+        72.5,
+        138.35
+       ],
+       "st": "thin"
+      },
+      {
+       "t": "seg",
+       "a": [
+        60,
+        160
+       ],
+       "b": [
+        81.65,
+        147.5
+       ],
+       "st": "thin"
+      },
+      {
+       "t": "seg",
+       "a": [
+        85.0,
+        120
+       ],
+       "b": [
+        85.0,
+        90.0
+       ],
+       "st": "thin"
+      },
+      {
+       "t": "seg",
+       "a": [
+        81.65,
+        120
+       ],
+       "b": [
+        81.65,
+        88.33
+       ],
+       "st": "thin"
+      },
+      {
+       "t": "seg",
+       "a": [
+        72.5,
+        120
+       ],
+       "b": [
+        72.5,
+        83.75
+       ],
+       "st": "thin"
+      },
+      {
+       "t": "seg",
+       "a": [
+        60.0,
+        120
+       ],
+       "b": [
+        60.0,
+        77.5
+       ],
+       "st": "thin"
+      },
+      {
+       "t": "seg",
+       "a": [
+        47.5,
+        120
+       ],
+       "b": [
+        47.5,
+        71.25
+       ],
+       "st": "thin"
+      },
+      {
+       "t": "seg",
+       "a": [
+        38.35,
+        120
+       ],
+       "b": [
+        38.35,
+        66.67
+       ],
+       "st": "thin"
+      },
+      {
+       "t": "seg",
+       "a": [
+        35.0,
+        120
+       ],
+       "b": [
+        35.0,
+        65.0
+       ],
+       "st": "thin"
+      },
+      {
+       "t": "seg",
+       "a": [
+        38.35,
+        120
+       ],
+       "b": [
+        38.35,
+        66.67
+       ],
+       "st": "thin"
+      },
+      {
+       "t": "seg",
+       "a": [
+        47.5,
+        120
+       ],
+       "b": [
+        47.5,
+        71.25
+       ],
+       "st": "thin"
+      },
+      {
+       "t": "seg",
+       "a": [
+        60.0,
+        120
+       ],
+       "b": [
+        60.0,
+        77.5
+       ],
+       "st": "thin"
+      },
+      {
+       "t": "seg",
+       "a": [
+        72.5,
+        120
+       ],
+       "b": [
+        72.5,
+        83.75
+       ],
+       "st": "thin"
+      },
+      {
+       "t": "seg",
+       "a": [
+        81.65,
+        120
+       ],
+       "b": [
+        81.65,
+        88.33
+       ],
+       "st": "thin"
+      },
+      {
+       "t": "path",
+       "pts": [
+        [
+         107.36,
+         45.28
+        ],
+        [
+         108.61,
+         42.25
+        ],
+        [
+         109.4,
+         39.07
+        ],
+        [
+         109.74,
+         35.77
+        ],
+        [
+         109.6,
+         32.43
+        ],
+        [
+         109.0,
+         29.09
+        ],
+        [
+         107.94,
+         25.81
+        ],
+        [
+         106.45,
+         22.65
+        ],
+        [
+         104.54,
+         19.67
+        ],
+        [
+         102.26,
+         16.91
+        ],
+        [
+         99.63,
+         14.42
+        ],
+        [
+         96.71,
+         12.24
+        ],
+        [
+         93.54,
+         10.42
+        ],
+        [
+         90.18,
+         8.98
+        ],
+        [
+         86.69,
+         7.95
+        ],
+        [
+         83.12,
+         7.34
+        ],
+        [
+         79.54,
+         7.17
+        ],
+        [
+         76.01,
+         7.43
+        ],
+        [
+         72.59,
+         8.13
+        ],
+        [
+         69.33,
+         9.25
+        ],
+        [
+         66.3,
+         10.77
+        ],
+        [
+         63.54,
+         12.67
+        ],
+        [
+         61.11,
+         14.92
+        ],
+        [
+         59.03,
+         17.47
+        ],
+        [
+         57.36,
+         20.28
+        ],
+        [
+         56.11,
+         23.31
+        ],
+        [
+         55.32,
+         26.49
+        ],
+        [
+         54.98,
+         29.79
+        ],
+        [
+         55.12,
+         33.13
+        ],
+        [
+         55.72,
+         36.47
+        ],
+        [
+         56.78,
+         39.75
+        ],
+        [
+         58.27,
+         42.91
+        ],
+        [
+         60.18,
+         45.89
+        ],
+        [
+         62.46,
+         48.65
+        ],
+        [
+         65.09,
+         51.14
+        ],
+        [
+         68.01,
+         53.32
+        ],
+        [
+         71.18,
+         55.14
+        ],
+        [
+         74.54,
+         56.58
+        ],
+        [
+         78.03,
+         57.61
+        ],
+        [
+         81.6,
+         58.22
+        ],
+        [
+         85.18,
+         58.39
+        ],
+        [
+         88.71,
+         58.13
+        ],
+        [
+         92.13,
+         57.43
+        ],
+        [
+         95.39,
+         56.31
+        ],
+        [
+         98.42,
+         54.79
+        ],
+        [
+         101.18,
+         52.89
+        ],
+        [
+         103.61,
+         50.64
+        ],
+        [
+         105.69,
+         48.09
+        ],
+        [
+         107.36,
+         45.28
+        ]
+       ],
+       "smooth": true,
+       "st": "thick"
+      },
+      {
+       "t": "seg",
+       "a": [
+        107.36,
+        45.28
+       ],
+       "b": [
+        57.36,
+        20.28
+       ],
+       "st": "centre"
+      },
+      {
+       "t": "seg",
+       "a": [
+        85.0,
+        90.0
+       ],
+       "b": [
+        107.36,
+        45.28
+       ],
+       "st": "thin"
+      },
+      {
+       "t": "seg",
+       "a": [
+        35.0,
+        65.0
+       ],
+       "b": [
+        57.36,
+        20.28
+       ],
+       "st": "thin"
+      },
+      {
+       "t": "text",
+       "p": [
+        116,
+        14
+       ],
+       "s": "TRUE SHAPE",
+       "size": 3.5
+      },
+      {
+       "t": "seg",
+       "a": [
+        110,
+        200
+       ],
+       "b": [
+        267.08,
+        200
+       ],
+       "st": "thick"
+      },
+      {
+       "t": "seg",
+       "a": [
+        110,
+        200
+       ],
+       "b": [
+        110,
+        170.0
+       ],
+       "st": "thick"
+      },
+      {
+       "t": "seg",
+       "a": [
+        267.08,
+        200
+       ],
+       "b": [
+        267.08,
+        170.0
+       ],
+       "st": "thick"
+      },
+      {
+       "t": "path",
+       "pts": [
+        [
+         110.0,
+         170.0
+        ],
+        [
+         113.27,
+         169.89
+        ],
+        [
+         116.54,
+         169.57
+        ],
+        [
+         119.82,
+         169.05
+        ],
+        [
+         123.09,
+         168.33
+        ],
+        [
+         126.36,
+         167.42
+        ],
+        [
+         129.63,
+         166.34
+        ],
+        [
+         132.91,
+         165.11
+        ],
+        [
+         136.18,
+         163.75
+        ],
+        [
+         139.45,
+         162.28
+        ],
+        [
+         142.72,
+         160.74
+        ],
+        [
+         146.0,
+         159.13
+        ],
+        [
+         149.27,
+         157.5
+        ],
+        [
+         152.54,
+         155.87
+        ],
+        [
+         155.81,
+         154.26
+        ],
+        [
+         159.09,
+         152.72
+        ],
+        [
+         162.36,
+         151.25
+        ],
+        [
+         165.63,
+         149.89
+        ],
+        [
+         168.9,
+         148.66
+        ],
+        [
+         172.18,
+         147.58
+        ],
+        [
+         175.45,
+         146.67
+        ],
+        [
+         178.72,
+         145.95
+        ],
+        [
+         181.99,
+         145.43
+        ],
+        [
+         185.27,
+         145.11
+        ],
+        [
+         188.54,
+         145.0
+        ],
+        [
+         191.81,
+         145.11
+        ],
+        [
+         195.08,
+         145.43
+        ],
+        [
+         198.36,
+         145.95
+        ],
+        [
+         201.63,
+         146.67
+        ],
+        [
+         204.9,
+         147.58
+        ],
+        [
+         208.17,
+         148.66
+        ],
+        [
+         211.45,
+         149.89
+        ],
+        [
+         214.72,
+         151.25
+        ],
+        [
+         217.99,
+         152.72
+        ],
+        [
+         221.26,
+         154.26
+        ],
+        [
+         224.54,
+         155.87
+        ],
+        [
+         227.81,
+         157.5
+        ],
+        [
+         231.08,
+         159.13
+        ],
+        [
+         234.35,
+         160.74
+        ],
+        [
+         237.63,
+         162.28
+        ],
+        [
+         240.9,
+         163.75
+        ],
+        [
+         244.17,
+         165.11
+        ],
+        [
+         247.44,
+         166.34
+        ],
+        [
+         250.72,
+         167.42
+        ],
+        [
+         253.99,
+         168.33
+        ],
+        [
+         257.26,
+         169.05
+        ],
+        [
+         260.53,
+         169.57
+        ],
+        [
+         263.81,
+         169.89
+        ],
+        [
+         267.08,
+         170.0
+        ]
+       ],
+       "smooth": true,
+       "st": "thick"
+      },
+      {
+       "t": "seg",
+       "a": [
+        123.09,
+        200
+       ],
+       "b": [
+        123.09,
+        168.33
+       ],
+       "st": "thin"
+      },
+      {
+       "t": "seg",
+       "a": [
+        136.18,
+        200
+       ],
+       "b": [
+        136.18,
+        163.75
+       ],
+       "st": "thin"
+      },
+      {
+       "t": "seg",
+       "a": [
+        149.27,
+        200
+       ],
+       "b": [
+        149.27,
+        157.5
+       ],
+       "st": "thin"
+      },
+      {
+       "t": "seg",
+       "a": [
+        162.36,
+        200
+       ],
+       "b": [
+        162.36,
+        151.25
+       ],
+       "st": "thin"
+      },
+      {
+       "t": "seg",
+       "a": [
+        175.45,
+        200
+       ],
+       "b": [
+        175.45,
+        146.67
+       ],
+       "st": "thin"
+      },
+      {
+       "t": "seg",
+       "a": [
+        188.54,
+        200
+       ],
+       "b": [
+        188.54,
+        145.0
+       ],
+       "st": "thin"
+      },
+      {
+       "t": "seg",
+       "a": [
+        201.63,
+        200
+       ],
+       "b": [
+        201.63,
+        146.67
+       ],
+       "st": "thin"
+      },
+      {
+       "t": "seg",
+       "a": [
+        214.72,
+        200
+       ],
+       "b": [
+        214.72,
+        151.25
+       ],
+       "st": "thin"
+      },
+      {
+       "t": "seg",
+       "a": [
+        227.81,
+        200
+       ],
+       "b": [
+        227.81,
+        157.5
+       ],
+       "st": "thin"
+      },
+      {
+       "t": "seg",
+       "a": [
+        240.9,
+        200
+       ],
+       "b": [
+        240.9,
+        163.75
+       ],
+       "st": "thin"
+      },
+      {
+       "t": "seg",
+       "a": [
+        253.99,
+        200
+       ],
+       "b": [
+        253.99,
+        168.33
+       ],
+       "st": "thin"
+      },
+      {
+       "t": "text",
+       "p": [
+        170,
+        207
+       ],
+       "s": "DEVELOPMENT (157 mm)",
+       "size": 3.5
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "SECTION C  LONG ANSWER QUESTIONS [20 marks]",
+   "short": "C Design & Enterprise",
+   "note": "There are two questions in this section. Both are compulsory.",
+   "questions": [
+    {
+     "id": "c1a",
+     "type": "draw",
+     "marks": 4,
+     "navLabel": "C1i",
+     "text": "SECTION C LONG ANSWER QUESTIONS (20 marks)\nQUESTION 1 DESIGN (10 marks)\nProblem: Many students study at home on a small table. Textbooks, pens and the mobile phone get mixed up, books fall over and the phone is often knocked off while it is charging.\nBrief: Design a desk organiser that keeps a student's study things tidy.\nSpecifications:\n• It must be made from a combination of timber and metal that are readily available.\n• It must hold at least 5 textbooks standing upright, a set of pens and a phone while it is charging (with a gap for the cable).\n• It must be stable and must not tip over.\n• It must be easy to construct and should cost less than $40.\nRequirements\n(i) In the space provided, sketch a pictorial pencil/colour rendered final solution of the desk organiser. (4 marks)",
+     "model": "Correct proportion (½); correct line work (1); accuracy – meets the specifications: book space for 5 books with a back/end support, pen box, phone rest with a cable gap, timber and metal parts (1); rendering shown (1); neatness (½).",
+     "draw": {
+      "mode": "tech",
+      "board": {
+       "w": 297,
+       "h": 210
+      },
+      "given": [
+       {
+        "t": "text",
+        "p": [
+         20,
+         20
+        ],
+        "s": "Final solution – pictorial rendered sketch.",
+        "size": 4
+       }
+      ]
+     }
+    },
+    {
+     "id": "c1b",
+     "type": "draw",
+     "withText": true,
+     "marks": 4,
+     "navLabel": "C1ii",
+     "text": "(ii) Draw a detailed sketch to show how the back (or the book end) is joined to the base so that it stays strong and does not tip. In the box, name the finishing material you would use and give one reason why it suits Fiji's humid climate. (4 marks)",
+     "model": "Detailed sketch of the joint/fixing, e.g. housing joint, dowel joint, screwed butt joint with a metal angle bracket (correct proportion ½, line work ½, evidence of strength/stability shown 1, neatness ½).\nFinishing material: clear varnish / polyurethane / paint; for metal: paint or galvanised (1).\nReason: seals the timber against moisture so it does not swell, rot or grow mould; stops metal rusting (½).",
+     "draw": {
+      "mode": "tech",
+      "board": {
+       "w": 297,
+       "h": 210
+      },
+      "given": [
+       {
+        "t": "text",
+        "p": [
+         20,
+         20
+        ],
+        "s": "Detailed sketch of the joint/fixing.",
+        "size": 4
+       }
+      ]
+     }
+    },
+    {
+     "id": "c1c",
+     "type": "short",
+     "marks": 2,
+     "navLabel": "C1iii",
+     "text": "(iii) Evaluate your final solution according to the following headings. (2 marks)\nHEADING – FINAL SOLUTION\n• Function (does it do its job?): ...\n• Ergonomics: ...",
+     "model": "Function: explains how it holds 5 books upright, the pens and the charging phone, and why it is stable (wide base/low centre of gravity) (1).\nErgonomics: suitable size and height for a desk, phone at a good viewing angle, books easy to take out, smooth rounded edges with no sharp corners (1)."
+    },
+    {
+     "id": "c2",
+     "type": "short",
+     "marks": 10,
+     "navLabel": "C2",
+     "text": "QUESTION 2 ENTERPRISE AND COSTING (10 marks)\nYour class decides to make and sell the desk organiser. The cutting list for the timber parts of ONE organiser is shown below (all sizes in mm).\n(i) Calculate the volume of each part and the total volume of timber in mm³. Show your working. (3 marks)\n(ii) Pine costs $0.000005 per mm³. Calculate the cost of the timber. (1 mark)\n(iii) Screws cost $2.50 and varnish $3.50 for one organiser. Calculate the total material cost. (1 mark)\n(iv) Labour is 50% of the material cost and the overhead cost is $3.00. Calculate the total cost of one organiser. (2 marks)\n(v) The class adds 20% profit to the total cost. Calculate the selling price. (1 mark)\n(vi) How much profit will the class make if it sells 15 organisers? (1 mark)\n(vii) State one way the class could reduce the cost of making the organiser. (1 mark)",
+     "table": [
+      [
+       "Part",
+       "Length",
+       "Width",
+       "Thickness",
+       "Quantity",
+       "Volume (mm³)"
+      ],
+      [
+       "Base",
+       "300",
+       "150",
+       "20",
+       "1",
+       ""
+      ],
+      [
+       "Back",
+       "300",
+       "200",
+       "15",
+       "1",
+       ""
+      ],
+      [
+       "Sides",
+       "150",
+       "120",
+       "15",
+       "2",
+       ""
+      ],
+      [
+       "Pen box front",
+       "100",
+       "60",
+       "10",
+       "1",
+       ""
+      ],
+      [
+       "",
+       "",
+       "",
+       "",
+       "TOTAL",
+       ""
+      ]
+     ],
+     "model": "(i) Base 300 × 150 × 20 = 900 000; Back 300 × 200 × 15 = 900 000; Sides 150 × 120 × 15 × 2 = 540 000; Pen box front 100 × 60 × 10 = 60 000 (2: ½ each) → total 2 400 000 mm³ (1)\n(ii) 2 400 000 × 0.000005 = $12.00 (1)\n(iii) 12.00 + 2.50 + 3.50 = $18.00 (1)\n(iv) Labour 50% × 18.00 = $9.00 (1); total cost 18.00 + 9.00 + 3.00 = $30.00 (1)\n(v) 30.00 × 1.20 = $36.00 (1)\n(vi) Profit per organiser 36.00 − 30.00 = $6.00; 15 × 6.00 = $90.00 (1)\n(vii) Any one (1): use off-cuts/recycled timber; plan the cutting list to reduce waste; buy materials in bulk; use a cheaper finish; make them in a batch to save time."
+    }
+   ]
+  }
+ ]
+}

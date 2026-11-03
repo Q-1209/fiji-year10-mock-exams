@@ -18,7 +18,8 @@
   .y10u-box input{width:100%;box-sizing:border-box;font-size:17px;padding:10px;border:1px solid #dcdad3;border-radius:8px}
   .y10u-box button{font:inherit;border-radius:8px;padding:8px 14px;border:1px solid #dcdad3;background:#fff;cursor:pointer}
   .y10u-box .go{background:#1d5fa8;color:#fff;border-color:#1d5fa8;width:100%;margin-top:10px;padding:10px}
-  .y10u-names{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 12px}.y10u-err{color:#b3261e;font-size:13px;min-height:1.2em;margin-top:6px}`;
+  .y10u-names{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 12px}.y10u-err{color:#b3261e;font-size:13px;min-height:1.2em;margin-top:6px}
+  @media (max-width:800px){.y10u-pill{position:absolute;top:8px;bottom:auto;right:8px;padding:5px 10px;font-size:12px}.y10u-pill small{display:none}}`;
 
   function ask(first) {
     const used = names();
@@ -51,6 +52,9 @@
     bg.querySelectorAll("[data-n]").forEach(b => b.onclick = () => choose(b.dataset.n));
     bg.querySelector("#y10uCancel")?.addEventListener("click", () => bg.remove());
   }
+
+  // トップ画面（index.html）は上の見出しに名前を出す
+  window.Y10U = { me: ls.get("user"), ask: () => ask(false) };
 
   addEventListener("DOMContentLoaded", () => {
     const st = document.createElement("style"); st.textContent = css; document.head.appendChild(st);

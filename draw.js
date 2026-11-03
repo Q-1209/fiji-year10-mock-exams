@@ -132,6 +132,9 @@
             <span class="dp-sp"></span>
             <button type="button" data-a="undo" title="元に戻す">↶</button><button type="button" data-a="redo" title="やり直す">↷</button>
             <button type="button" data-a="clear" title="自分の描いた線をすべて消す">全消去</button>
+            <span class="dp-zoom"><button type="button" data-a="zout" title="小さく">－</button><button type="button" data-a="zin" title="大きく">＋</button>
+            <button type="button" data-a="pan" title="指で図を動かす（描かない）">✋ 動かす</button></span>
+            <span class="dp-hint">横向きにすると大きく描けます</span>
             <button type="button" data-a="full" title="大きな画面で描く">⛶ 拡大</button>
           </div>`;
         this.wrap.appendChild(bar); this.bar = bar;
@@ -144,7 +147,10 @@
         bar.querySelector('[data-a="undo"]').onclick = () => this.doUndo();
         bar.querySelector('[data-a="redo"]').onclick = () => this.doRedo();
         bar.querySelector('[data-a="clear"]').onclick = () => { if (this.shapes.length && confirm("自分の描いた線をすべて消しますか？")) { this.push(); this.shapes = []; this.changed(); } };
-        bar.querySelector('[data-a="full"]').onclick = e => { this.host.classList.toggle("dp-full"); e.target.textContent = this.host.classList.contains("dp-full") ? "✕ 閉じる" : "⛶ 拡大"; setTimeout(() => this.resize(), 30); };
+        bar.querySelector('[data-a="full"]').onclick = () => this.setFull(!this.isFull());
+        bar.querySelector('[data-a="zin"]').onclick = () => { this.zoom = Math.min(3, (this.zoom || 1) * 1.25); this.resize(); };
+        bar.querySelector('[data-a="zout"]').onclick = () => { this.zoom = Math.max(1, (this.zoom || 1) / 1.25); this.resize(); };
+        bar.querySelector('[data-a="pan"]').onclick = e => { this.panning = !this.panning; e.target.classList.toggle("on", this.panning); this.cv.style.touchAction = this.panning ? "auto" : ""; };
       }
       this.cv = document.createElement("canvas"); this.cv.className = "dp-cv";
       this.info = document.createElement("div"); this.info.className = "dp-info";
@@ -155,14 +161,27 @@
         this.cv.addEventListener("pointermove", e => this.move(e));
         this.cv.addEventListener("pointerup", e => this.up(e));
         this.cv.addEventListener("dblclick", e => this.dbl(e));
+        this.cv.addEventListener("click", () => { if (this.compact() && !this.isFull()) this.setFull(true); }); // スマホ: 図をタップすると全画面で描く
         this.cv.addEventListener("pointerleave", () => { this.cursor = null; this.draw(); });
         this.keyh = e => { if (!this.host.isConnected) return document.removeEventListener("keydown", this.keyh);
           if (e.key === "Escape") { this.tmp = null; this.draw(); }
           if (e.key === "Enter" && this.tmp && this.tmp.pts) this.finishPoly(); };
         document.addEventListener("keydown", this.keyh);
         this.setTool(this.tool);
+        this.setFull(false, true);
       }
     }
+    // スマホ（狭い画面・横向きの電話）では、ふだんの図は見るだけ。描くときは全画面にする
+    compact() { return matchMedia("(max-width: 800px), (pointer: coarse) and (max-height: 500px)").matches; }
+    isFull() { return this.host.classList.contains("dp-full"); }
+    setFull(on, init) {
+      this.host.classList.toggle("dp-full", on); document.body.classList.toggle("dp-open", on);
+      const b = this.bar && this.bar.querySelector('[data-a="full"]');
+      if (b) b.textContent = on ? "✕ 閉じる" : this.compact() ? "✏️ 拡大して描く" : "⛶ 拡大";
+      if (!on) { this.zoom = 1; this.panning = false; this.cv.style.touchAction = ""; this.bar?.querySelector('[data-a="pan"]')?.classList.remove("on"); }
+      if (!init) setTimeout(() => this.resize(), 30);
+    }
+    locked() { return (this.compact() && !this.isFull()) || this.panning; }
     setTool(t) {
       this.tool = t; this.tmp = null; this.measure = null;
       this.bar && this.bar.querySelectorAll("[data-tool]").forEach(b => b.classList.toggle("on", b.dataset.tool === t));
@@ -191,11 +210,11 @@
       if (this.mode === "tech") {
         const bw = this.cfg.board?.w || 297, bh = this.cfg.board?.h || 210;
         let w = W;
-        if (full) { const avail = window.innerHeight - (this.bar ? this.bar.offsetHeight : 0) - 50; if (w * bh / bw > avail) w = avail * bw / bh; }
+        if (full) { const avail = window.innerHeight - (this.bar ? this.bar.offsetHeight : 0) - 50; if (w * bh / bw > avail) w = Math.max(avail * bw / bh, Math.min(W, 300)); w *= this.zoom || 1; }
         this.s = w / bw; H = bh * this.s; this.cw = w;
       } else {
         const g = this.cfg.graph, xr = g.xmax - g.xmin, yr = g.ymax - g.ymin, p = 34;
-        let w = full ? Math.min(W, (window.innerHeight - (this.bar ? this.bar.offsetHeight : 0) - 50) * 1.25) : Math.min(W, 640);
+        let w = full ? Math.min(W, (window.innerHeight - (this.bar ? this.bar.offsetHeight : 0) - 50) * 1.25) * (this.zoom || 1) : Math.min(W, 640);
         this.pad = p; this.sx = (w - 2 * p) / xr;
         this.sy = g.equal === false ? this.sx * (g.yscale || 1) : this.sx;
         if (g.equal === false && !g.yscale) this.sy = (w * 0.72 - 2 * p) / yr;
@@ -274,6 +293,7 @@
     /* ---------- pointer ---------- */
     pos(e) { const r = this.cv.getBoundingClientRect(); return this.S2W([e.clientX - r.left, e.clientY - r.top]); }
     down(e) {
+      if (this.locked()) return;
       e.preventDefault(); this.cv.setPointerCapture(e.pointerId);
       const raw = this.pos(e), t = this.tool; this.downAt = [e.clientX, e.clientY]; this.dragging = true;
       if (t === "eraser") { this.push(); this.erasedAny = false; this.eraseAt(raw); return; }
@@ -293,16 +313,20 @@
           if (this.opt("full")) { this.add({ t: "arc", c: this.tmp.c, r: this.tmp.r, a0: 0, sw: TAU, st: this.style }); this.tmp = null; } }
         else if (this.tmp.stage === 2) { this.tmp.a0 = Math.atan2(p[1] - this.tmp.c[1], p[0] - this.tmp.c[0]); this.tmp.sw = 0; this.tmp.last = this.tmp.a0; this.tmp.stage = 3;
           if (this.opt("full")) { this.add({ t: "arc", c: this.tmp.c, r: this.tmp.r, a0: 0, sw: TAU, st: this.style }); this.tmp = null; } }
+        else if (this.tmp.stage === 3 && e.pointerType !== "mouse" && Math.abs(this.tmp.sw) <= 0.01) { this.tmp.last = Math.atan2(p[1] - this.tmp.c[1], p[0] - this.tmp.c[0]); this.dragging = true; return; }
         else if (this.tmp.stage === 3) { if (Math.abs(this.tmp.sw) > 0.01) this.add({ t: "arc", c: this.tmp.c, r: this.tmp.r, a0: this.tmp.a0, sw: this.tmp.sw, st: this.style }); this.tmp = null; }
         this.dragging = false; this.draw(); return;
       }
       // two-point tools: ruler/tsquare/set45/set30/protractor/measure/seg/xline
       const p = this.snap(raw);
       if (!this.tmp) { this.tmp = { t, a: p, b: p }; this.measure = null; }
-      else { this.finishTwo(this.tmp.b); }
+      else { // 2点目はタップした位置で決める（指は動かさずにタップするので move が来ない）
+        let q = p; if (this.mode === "tech" && this.tmp.t !== "measure") q = this.constrain(this.tmp.a, p, e);
+        this.tmp.b = q; this.finishTwo(q); }
       this.draw();
     }
     move(e) {
+      if (this.locked()) return;
       const raw = this.pos(e); this.cursor = raw; const t = this.tool;
       if (t === "eraser") { if (this.dragging) this.eraseAt(raw); this.draw(); return; }
       if (t === "pencil" && this.tmp && this.dragging) { const L = this.tmp.pts[this.tmp.pts.length - 1]; if (d2(L, raw) * this.scale() > 1.5) this.tmp.pts.push(raw); this.draw(); return; }
@@ -316,7 +340,10 @@
       this.cursorSnap = p; this.draw();
     }
     up(e) {
+      if (this.locked()) return;
       this.dragging = false;
+      if (e.pointerType !== "mouse" && this.tmp && this.tmp.t === "compass" && this.tmp.stage === 3 && Math.abs(this.tmp.sw) > 0.01) { // 指: なぞり終わったら弧にする
+        this.add({ t: "arc", c: this.tmp.c, r: this.tmp.r, a0: this.tmp.a0, sw: this.tmp.sw, st: this.style }); this.tmp = null; this.draw(); return; }
       if (this.tool === "eraser") { if (!this.erasedAny) this.undo.pop(); else this.changed(); return; }
       if (this.tool === "pencil" && this.tmp) { if (this.tmp.pts.length > 1) this.add(this.tmp); this.tmp = null; return; }
       if (this.tmp && this.tmp.a && this.downAt && Math.hypot(e.clientX - this.downAt[0], e.clientY - this.downAt[1]) > 6) this.finishTwo(this.tmp.b);

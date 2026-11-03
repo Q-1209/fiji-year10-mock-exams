@@ -30,6 +30,7 @@
   <p class="muted">漣さん専用。友達の名前と、送られてきた答案（GitHub の非公開リポジトリ <code>fiji-year10-answers</code>）を管理します。</p>
   <div class="card row" id="login">
     <input id="pass" type="password" placeholder="合言葉" autocomplete="current-password">
+    <button id="eye" type="button" title="入力した合言葉を見る／かくす">👁 見る</button>
     <button class="primary" id="go">開く</button><span class="muted" id="msg"></span>
   </div>
   <div id="app"></div>
@@ -81,6 +82,10 @@ async function load() {
 }
 $("#go").onclick = () => { PASS = $("#pass").value; load(); };
 $("#pass").onkeydown = e => { if (e.key === "Enter") $("#go").click(); };
+$("#eye").onclick = () => { // 入力中の合言葉を確かめられるようにする
+  const p = $("#pass"), show = p.type === "password";
+  p.type = show ? "text" : "password"; $("#eye").textContent = show ? "🙈 かくす" : "👁 見る"; p.focus();
+};
 if (PASS) load();
 </script>
 </body>

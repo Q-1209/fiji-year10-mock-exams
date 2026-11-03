@@ -1,0 +1,493 @@
+{
+ "id": "m26_social",
+ "subject": "Social Science",
+ "kind": "mock26",
+ "title": "Fiji Year 10 Mock Examination 2 (2026 school format) — Social Science",
+ "minutes": 120,
+ "readingMinutes": 10,
+ "totalMarks": 100,
+ "instructions": "Answer ALL questions. Time allowed: 2 hours (an extra 10 minutes is allowed for reading).\nMultiple-choice: click the letter of the best answer (click again to clear).\nShort answers and paragraphs: type your answer in English in the box. Show working for calculations.\nYour answers are saved automatically. The paper is submitted automatically when time runs out.\n",
+ "sections": [
+  {
+   "title": "QUESTION 1  SOCIAL ORGANISATION AND PROCESSES [32 marks]",
+   "short": "1 Social Org.",
+   "note": "Section A multiple choice (10 marks). Answer all the questions in the other sections.",
+   "questions": [
+    {
+     "id": "q1a1",
+     "type": "mcq",
+     "text": "A system of government in which one leader has total power and is not elected by the people is a",
+     "options": [
+      "democracy",
+      "constitutional monarchy",
+      "dictatorship",
+      "federation"
+     ],
+     "answer": "C",
+     "marks": 1
+    },
+    {
+     "id": "q1a2",
+     "type": "mcq",
+     "text": "An example of a country with a communist government is",
+     "options": [
+      "Cuba",
+      "New Zealand",
+      "Fiji",
+      "Japan"
+     ],
+     "answer": "A",
+     "marks": 1
+    },
+    {
+     "id": "q1a3",
+     "type": "mcq",
+     "text": "The Head of State of Fiji is the",
+     "options": [
+      "Prime Minister",
+      "President",
+      "Speaker",
+      "Chief Justice"
+     ],
+     "answer": "B",
+     "marks": 1
+    },
+    {
+     "id": "q1a4",
+     "type": "mcq",
+     "text": "The person who controls the debates in Parliament is the",
+     "options": [
+      "Speaker",
+      "Prime Minister",
+      "Leader of the Opposition",
+      "Attorney-General"
+     ],
+     "answer": "A",
+     "marks": 1
+    },
+    {
+     "id": "q1a5",
+     "type": "mcq",
+     "text": "The arm of government that MAKES laws is the",
+     "options": [
+      "executive",
+      "legislature",
+      "judiciary",
+      "police"
+     ],
+     "answer": "B",
+     "marks": 1
+    },
+    {
+     "id": "q1a6",
+     "type": "mcq",
+     "text": "The arm of government that INTERPRETS laws in the courts is the",
+     "options": [
+      "legislature",
+      "executive",
+      "cabinet",
+      "judiciary"
+     ],
+     "answer": "D",
+     "marks": 1
+    },
+    {
+     "id": "q1a7",
+     "type": "mcq",
+     "text": "The United Nations was formed in",
+     "options": [
+      "1919",
+      "1945",
+      "1970",
+      "1874"
+     ],
+     "answer": "B",
+     "marks": 1
+    },
+    {
+     "id": "q1a8",
+     "type": "mcq",
+     "text": "Which United Nations agency works for the rights and welfare of children?",
+     "options": [
+      "WHO",
+      "UNESCO",
+      "UNICEF",
+      "FAO"
+     ],
+     "answer": "C",
+     "marks": 1
+    },
+    {
+     "id": "q1a9",
+     "type": "mcq",
+     "text": "Which United Nations agency deals with world health?",
+     "options": [
+      "WHO",
+      "UNICEF",
+      "UNDP",
+      "ILO"
+     ],
+     "answer": "A",
+     "marks": 1
+    },
+    {
+     "id": "q1a10",
+     "type": "mcq",
+     "text": "The office in Fiji that is responsible for running general elections is the",
+     "options": [
+      "Fijian Elections Office",
+      "Reserve Bank of Fiji",
+      "Fiji Revenue and Customs Service",
+      "Fiji Police Force"
+     ],
+     "answer": "A",
+     "marks": 1
+    },
+    {
+     "id": "q1b",
+     "type": "short",
+     "text": "SECTION B SHORT ANSWER QUESTIONS (8 marks)\n(i) State two principles of democracy. (2 marks)\n(ii) Describe one role of the Opposition in Parliament. (2 marks)\n(iii) Explain one difference between direct democracy and representative democracy. (2 marks)\n(iv) Describe one feature of a dictatorship. (2 marks)",
+     "marks": 8,
+     "model": "(i) Any two (1 each): free and fair elections; rule of law; equality; freedom of speech/expression; majority rule with minority rights; accountability/transparency; separation of powers.\n(ii) Checks and questions the government's decisions and spending / offers alternative policies / acts as the government-in-waiting (2: state 1 + describe 1).\n(iii) In direct democracy citizens vote on decisions themselves (e.g. referendum) (1); in representative democracy citizens elect representatives (MPs) to make decisions for them (1).\n(iv) Any one, described (2): power held by one person/small group; no free elections; media controlled/censorship; opposition not allowed; human rights abused; rule by force/military."
+    },
+    {
+     "id": "q1c",
+     "type": "short",
+     "text": "SECTION C RESOURCE INTERPRETATION (9 marks)\nResource: \"After a strong tropical cyclone, a United Nations agency delivered 'school-in-a-box' kits, clean water containers and vaccines for children to remote villages in Fiji. The agency also trains teachers and health workers.\"\n(i) Identify the United Nations agency described in the resource. (1 mark)\n(ii) State two aims of the United Nations. (2 marks)\n(iii) Explain one way the agency in the resource helps Fiji. (2 marks)\n(iv) Describe one challenge faced by the United Nations. (2 marks)\n(v) Describe one way Fiji contributes to the work of the United Nations. (2 marks)",
+     "marks": 9,
+     "model": "(i) UNICEF – United Nations Children's Fund (1)\n(ii) Any two (1 each): keep world peace and security; develop friendly relations between nations; protect human rights; help solve economic, social and humanitarian problems; promote international cooperation.\n(iii) e.g. provides education/school supplies, vaccines, clean water and sanitation for children, especially after disasters (2)\n(iv) e.g. lack of funds; member countries ignore decisions/veto power of permanent members; wars and conflicts continue; large refugee numbers (2)\n(v) e.g. Fiji soldiers serve in UN peacekeeping missions (Lebanon, Sinai, Golan Heights); speaking for small island states on climate change (2)"
+    },
+    {
+     "id": "q1d",
+     "type": "paragraph",
+     "text": "SECTION D PARAGRAPH WRITING (5 marks)\nIn a paragraph of 80 to 100 words, explain why voting is important in a democracy and discuss two responsibilities of citizens of Fiji.",
+     "marks": 5,
+     "model": "Importance of voting (2): citizens choose their leaders/representatives; gives the government legitimacy; citizens can change a government peacefully; voice in decisions.\nTwo responsibilities (1½ each, named + explained): obey the law; vote in elections; pay taxes; respect the rights of others; protect the environment; take part in community activities. Clear paragraph structure required for full marks."
+    }
+   ]
+  },
+  {
+   "title": "QUESTION 2  TIME, CONTINUITY AND CHANGE [32 marks]",
+   "short": "2 Time & Change",
+   "note": "Section A multiple choice (10 marks). Answer all the questions in the other sections.",
+   "questions": [
+    {
+     "id": "q2a1",
+     "type": "mcq",
+     "text": "The Deed of Cession that made Fiji a British colony was signed at Levuka in",
+     "options": [
+      "1871",
+      "1874",
+      "1879",
+      "1970"
+     ],
+     "answer": "B",
+     "marks": 1
+    },
+    {
+     "id": "q2a2",
+     "type": "mcq",
+     "text": "The first substantive Governor of Fiji, who arrived in 1875, was",
+     "options": [
+      "Sir Hercules Robinson",
+      "Ratu Seru Cakobau",
+      "Sir Arthur Gordon",
+      "Ratu Sir Lala Sukuna"
+     ],
+     "answer": "C",
+     "marks": 1
+    },
+    {
+     "id": "q2a3",
+     "type": "mcq",
+     "text": "The first ship to bring indentured labourers to Fiji in 1879 was the",
+     "options": [
+      "Syria",
+      "Ganges",
+      "Leonidas",
+      "Tui Fiji"
+     ],
+     "answer": "C",
+     "marks": 1
+    },
+    {
+     "id": "q2a4",
+     "type": "mcq",
+     "text": "On the plantations, indentured labourers lived in barracks known as",
+     "options": [
+      "lines",
+      "bures",
+      "tents",
+      "palaces"
+     ],
+     "answer": "A",
+     "marks": 1
+    },
+    {
+     "id": "q2a5",
+     "type": "mcq",
+     "text": "The recruitment of indentured labourers from India stopped in",
+     "options": [
+      "1879",
+      "1916",
+      "1945",
+      "1970"
+     ],
+     "answer": "B",
+     "marks": 1
+    },
+    {
+     "id": "q2a6",
+     "type": "mcq",
+     "text": "Fiji became an independent nation on 10 October",
+     "options": [
+      "1874",
+      "1966",
+      "1970",
+      "1987"
+     ],
+     "answer": "C",
+     "marks": 1
+    },
+    {
+     "id": "q2a7",
+     "type": "mcq",
+     "text": "The government formed by Ratu Seru Cakobau and European settlers in 1871 was the",
+     "options": [
+      "Cakobau Government",
+      "Colonial Government",
+      "Interim Government",
+      "Native Administration"
+     ],
+     "answer": "A",
+     "marks": 1
+    },
+    {
+     "id": "q2a8",
+     "type": "mcq",
+     "text": "Fiji's first Prime Minister after independence was",
+     "options": [
+      "Ratu Sir Lala Sukuna",
+      "A. D. Patel",
+      "S. M. Koya",
+      "Ratu Sir Kamisese Mara"
+     ],
+     "answer": "D",
+     "marks": 1
+    },
+    {
+     "id": "q2a9",
+     "type": "mcq",
+     "text": "The Lands Claims Commission set up in 1875 checked",
+     "options": [
+      "whether Europeans had bought land fairly",
+      "the number of labourers on each plantation",
+      "how much tax each province paid",
+      "the results of elections"
+     ],
+     "answer": "A",
+     "marks": 1
+    },
+    {
+     "id": "q2a10",
+     "type": "mcq",
+     "text": "Fiji experienced two military coups in",
+     "options": [
+      "1970",
+      "1987",
+      "1945",
+      "1874"
+     ],
+     "answer": "B",
+     "marks": 1
+    },
+    {
+     "id": "q2b",
+     "type": "short",
+     "text": "SECTION B SHORT ANSWER QUESTIONS (8 marks)\n(i) State two reasons why Fiji was ceded to Great Britain in 1874. (2 marks)\n(ii) Describe one hardship faced by indentured labourers on the plantations. (2 marks)\n(iii) Explain one policy of Sir Arthur Gordon that protected the indigenous Fijians. (2 marks)\n(iv) Describe one change in Fiji after independence in 1970. (2 marks)",
+     "marks": 8,
+     "model": "(i) Any two (1 each): the Cakobau Government was weak and in debt; fighting/lawlessness between chiefs and settlers; disputes over land; threat from other powers/US debt claims; need for stable government and protection.\n(ii) Any one, described (2): long working hours with tasks; low wages; harsh punishments/fines; overcrowded lines with no privacy; disease and poor health care; few women, social problems.\n(iii) Any one, explained (2): stopped the sale of Fijian land (land kept for Fijians); set up the Native/Fijian Administration ruling through chiefs; Great Council of Chiefs; tax paid in produce (tax-in-kind) so Fijians could stay in villages; brought indentured labourers so Fijians did not have to work on plantations.\n(iv) Any one, described (2): Fijians governed themselves/own Parliament and Prime Minister; Fiji joined the United Nations; own constitution; new flag/anthem; localisation of the civil service."
+    },
+    {
+     "id": "q2c",
+     "type": "short",
+     "text": "SECTION C RESOURCE INTERPRETATION (9 marks)\nResource: \"On 14 May 1879 the ship Leonidas anchored at Levuka. On board were labourers from India who had signed agreements (girmit) to work on the sugar-cane plantations of Fiji for five years. Many were promised good wages and a better life.\"\n(i) Identify the labour system described in the resource. (1 mark)\n(ii) State the crop that most of these labourers worked on. (1 mark)\n(iii) State two reasons why people in India signed the agreements. (2 marks)\n(iv) Explain the meaning of the term girmit. (2 marks)\n(v) Discuss one contribution of the descendants of the girmitiyas to Fiji today. (2 marks)\n(vi) State one reason why the indenture system came to an end. (1 mark)",
+     "marks": 9,
+     "model": "(i) Indenture system (indentured labour) (1)\n(ii) Sugar cane (1)\n(iii) Any two (1 each): poverty/famine in India; unemployment; promises of good wages and land; to escape debt or caste problems; tricked by recruiters (arkatis).\n(iv) Girmit comes from the word 'agreement' – the contract the labourers signed to work for five years for a fixed wage (2).\n(v) e.g. farming sugar cane – the backbone of the economy; business and trade; education and professions (doctors, teachers); culture, festivals and food (2).\n(vi) Protests in India and by people such as C. F. Andrews against harsh conditions; the Indian government stopped recruitment (1916) and contracts were cancelled (1920) (1)."
+    },
+    {
+     "id": "q2d",
+     "type": "paragraph",
+     "text": "SECTION D PARAGRAPH WRITING (5 marks)\nIn a paragraph of 80 to 100 words, discuss the native policy of Sir Arthur Gordon and explain how it affected the indigenous Fijians.",
+     "marks": 5,
+     "model": "Native policy explained – Gordon ruled Fijians through their own chiefs and customs (indirect rule) (1). Features (1 each, any three): Native/Fijian Administration and Great Council of Chiefs; land could not be sold – kept under Fijian ownership; tax-in-kind; Fijians kept in villages, labour brought from India. Effect (1): protected land and culture, but kept Fijians in villages away from the cash economy/education for many years."
+    }
+   ]
+  },
+  {
+   "title": "QUESTION 3  PLACE AND ENVIRONMENT [36 marks]",
+   "short": "3 Place & Env.",
+   "note": "Section A multiple choice (10 marks). Answer all the questions in the other sections.",
+   "questions": [
+    {
+     "id": "q3a1",
+     "type": "mcq",
+     "text": "Rain that forms when moist air is forced to rise over mountains is called",
+     "options": [
+      "convectional rainfall",
+      "cyclonic rainfall",
+      "orographic (relief) rainfall",
+      "frontal rainfall"
+     ],
+     "answer": "C",
+     "marks": 1
+    },
+    {
+     "id": "q3a2",
+     "type": "mcq",
+     "text": "The windward side of Viti Levu, which receives the most rain, is the",
+     "options": [
+      "western side",
+      "south-eastern side",
+      "northern side",
+      "centre of the island"
+     ],
+     "answer": "B",
+     "marks": 1
+    },
+    {
+     "id": "q3a3",
+     "type": "mcq",
+     "text": "Which of the following is an example of precipitation?",
+     "options": [
+      "Hail",
+      "Evaporation",
+      "Transpiration",
+      "Condensation"
+     ],
+     "answer": "A",
+     "marks": 1
+    },
+    {
+     "id": "q3a4",
+     "type": "mcq",
+     "text": "A ring-shaped coral reef surrounding a lagoon, with no central island, is",
+     "options": [
+      "a fringing reef",
+      "a barrier reef",
+      "an atoll",
+      "a delta"
+     ],
+     "answer": "C",
+     "marks": 1
+    },
+    {
+     "id": "q3a5",
+     "type": "mcq",
+     "text": "The movement of people from villages to towns and cities is called",
+     "options": [
+      "emigration",
+      "rural–urban migration",
+      "immigration",
+      "tourism"
+     ],
+     "answer": "B",
+     "marks": 1
+    },
+    {
+     "id": "q3a6",
+     "type": "mcq",
+     "text": "The official counting of the population of a country is called a",
+     "options": [
+      "census",
+      "demography",
+      "cartography",
+      "survey map"
+     ],
+     "answer": "A",
+     "marks": 1
+    },
+    {
+     "id": "q3a7",
+     "type": "mcq",
+     "text": "The landform built from sediments deposited at the mouth of a river is a",
+     "options": [
+      "tributary",
+      "source",
+      "delta",
+      "waterfall"
+     ],
+     "answer": "C",
+     "marks": 1
+    },
+    {
+     "id": "q3a8",
+     "type": "mcq",
+     "text": "A species that is found naturally in only one place in the world is called",
+     "options": [
+      "exotic",
+      "introduced",
+      "extinct",
+      "endemic"
+     ],
+     "answer": "D",
+     "marks": 1
+    },
+    {
+     "id": "q3a9",
+     "type": "mcq",
+     "text": "Which disease is spread by mosquitoes in Fiji?",
+     "options": [
+      "Diabetes",
+      "Dengue fever",
+      "Typhoid",
+      "Leptospirosis"
+     ],
+     "answer": "B",
+     "marks": 1
+    },
+    {
+     "id": "q3a10",
+     "type": "mcq",
+     "text": "Farming in which crops are grown mainly for sale is",
+     "options": [
+      "subsistence farming",
+      "shifting cultivation",
+      "commercial farming",
+      "traditional farming"
+     ],
+     "answer": "C",
+     "marks": 1
+    },
+    {
+     "id": "q3b",
+     "type": "short",
+     "text": "SECTION B SHORT ANSWER QUESTIONS (8 marks)\n(i) Explain why the western side of Viti Levu is drier than the eastern side. (2 marks)\n(ii) Describe one sustainable fishing practice. (2 marks)\n(iii) State two reasons for protecting mangrove forests. (2 marks)\n(iv) Describe one problem caused by rapid urbanisation in Suva. (2 marks)",
+     "marks": 8,
+     "model": "(i) The south-east trade winds bring moist air that rises over the central mountains and drops its rain on the eastern (windward) side (1); the air that descends on the western (leeward) side is dry – a rain shadow (1).\n(ii) Any one, described (2): using nets with large mesh so young fish escape; seasonal bans/tabu areas (marine protected areas); no poisoning or dynamite fishing; catch limits.\n(iii) Any two (1 each): breeding ground for fish and crabs; protect the coast from erosion and storm surges; filter pollution; source of food/firewood/medicine; home for birds; absorb carbon.\n(iv) Any one, described (2): squatter settlements; unemployment; traffic congestion; pollution and rubbish; pressure on water, housing and services; crime."
+    },
+    {
+     "id": "q3c",
+     "type": "short",
+     "text": "SECTION C RESOURCE INTERPRETATION (8 marks)\nResource: \"On a hot afternoon, the sun heats the ground strongly. Warm moist air rises quickly, cools and condenses into tall dark clouds. Heavy rain and thunder follow later in the day.\"\n(i) Identify the type of rainfall described. (1 mark)\n(ii) Explain how this type of rainfall is formed. (2 marks)\n(iii) In which months of the year do tropical cyclones usually affect Fiji? (1 mark)\n(iv) State two effects of tropical cyclones on communities. (2 marks)\n(v) State two ways families can prepare for a cyclone. (2 marks)",
+     "marks": 8,
+     "model": "(i) Convectional rainfall (1)\n(ii) The sun heats the ground and the air above it; warm moist air rises (1), cools and condenses to form clouds, then falls as heavy rain (1).\n(iii) The wet/cyclone season, November to April (1)\n(iv) Any two (1 each): houses and buildings destroyed; crops ruined/food shortage; flooding and landslides; loss of life/injuries; power and water cut; schools closed.\n(v) Any two (1 each): store food, water and torch/batteries; strengthen the house/tie down the roof; listen to weather warnings; know the nearest evacuation centre; keep documents safe; cut branches near the house."
+    },
+    {
+     "id": "q3d",
+     "type": "paragraph",
+     "text": "SECTION D PARAGRAPH WRITING (5 marks)\nIn a paragraph of 80 to 100 words, discuss two causes and one effect of soil erosion in Fiji, and explain two ways farmers can reduce it.",
+     "marks": 5,
+     "model": "Two causes (1 each): deforestation/logging; burning; overgrazing; farming on steep slopes; heavy rain/cyclones. One effect (1): loss of fertile topsoil and lower crop yields; rivers silted causing floods; mud damaging coral reefs. Two ways (1 each): contour ploughing/terracing; planting trees and vetiver grass; crop rotation and cover crops; avoid burning; mulching."
+    },
+    {
+     "id": "q3e",
+     "type": "short",
+     "text": "SECTION E MAPPING (5 marks)\nUse your knowledge of the map of Fiji to name the following.\n(i) The largest island of Fiji. (1 mark)\n(ii) The second largest island of Fiji. (1 mark)\n(iii) The capital city of Fiji. (1 mark)\n(iv) The group of islands in the far east of Fiji. (1 mark)\n(v) The town in western Viti Levu where Fiji's main international airport is located. (1 mark)",
+     "marks": 5,
+     "model": "(i) Viti Levu (1) (ii) Vanua Levu (1) (iii) Suva (1) (iv) Lau Group (1) (v) Nadi (1)"
+    }
+   ]
+  }
+ ]
+}

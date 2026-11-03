@@ -1,4 +1,4 @@
-window.Y10_ONLY = ["ot", "bt"];
+window.Y10_ONLY = null;
 /* ウェブ版用: server.py の /api/* をブラウザの中（localStorage）で代わりにする。
    make_web.py が各ページの最初にこのファイル（api.js）を読み込ませ、{"k": "cDRlV2kyQXJYQUZQNEFDUDVlZGU1RndjVjBwejBKaXlZSDdMMEFPOE54WnQ4UjZCSDkxVjk5RXB4ellfNURxVzRGRmZBVndaMFFIWExXVEIxMV90YXBfYnVodGln", "h": "376fd4c1c038c33bbe1b21ea48a52d2148a0ddb82642fc5f69c303d83eb02b3c"} を
    {k: 鍵を逆順にして base64 にしたもの, h: 管理画面の合言葉の SHA-256} にする。

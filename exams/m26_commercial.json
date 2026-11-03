@@ -1,0 +1,657 @@
+{
+ "id": "m26_commercial",
+ "subject": "Commercial Studies",
+ "kind": "mock26",
+ "title": "Fiji Year 10 Mock Examination 2 (2026 school format) — Commercial Studies",
+ "minutes": 120,
+ "readingMinutes": 10,
+ "totalMarks": 100,
+ "instructions": "Answer ALL questions. Time allowed: 2 hours (an extra 10 minutes is allowed for reading).\nMultiple-choice: click the letter of the best answer (click again to clear).\nShort answers and paragraphs: type your answer in English in the box. Show working for calculations.\nYour answers are saved automatically. The paper is submitted automatically when time runs out.\n",
+ "sections": [
+  {
+   "title": "SECTION A  PERSONAL FINANCE II [30 marks]",
+   "short": "A Personal Finance",
+   "note": "There are three questions in this section. Answer all the questions. Question 1: multiple choice (10 marks).",
+   "questions": [
+    {
+     "id": "a1",
+     "type": "mcq",
+     "text": "Which of the following is a social factor that affects personal savings?",
+     "options": [
+      "Interest rates",
+      "Inflation",
+      "Peer pressure from friends",
+      "Hire purchase commitment"
+     ],
+     "answer": "C",
+     "marks": 1
+    },
+    {
+     "id": "a2",
+     "type": "mcq",
+     "text": "An example of an enterprising skill would be",
+     "options": [
+      "watching videos online",
+      "baking cakes to sell at school functions",
+      "paying a bus fare",
+      "borrowing money from a friend"
+     ],
+     "answer": "B",
+     "marks": 1
+    },
+    {
+     "id": "a3",
+     "type": "mcq",
+     "text": "Money that a person receives regularly, such as wages, is called",
+     "options": [
+      "income",
+      "expenditure",
+      "a loan",
+      "a dividend"
+     ],
+     "answer": "A",
+     "marks": 1
+    },
+    {
+     "id": "a4",
+     "type": "mcq",
+     "text": "A plan that shows expected income and expenditure for a period is a",
+     "options": [
+      "receipt",
+      "budget",
+      "bank statement",
+      "tax invoice"
+     ],
+     "answer": "B",
+     "marks": 1
+    },
+    {
+     "id": "a5",
+     "type": "mcq",
+     "text": "Which of the following is a NEED rather than a WANT?",
+     "options": [
+      "A new smartphone",
+      "Designer shoes",
+      "Food and clean water",
+      "A holiday overseas"
+     ],
+     "answer": "C",
+     "marks": 1
+    },
+    {
+     "id": "a6",
+     "type": "mcq",
+     "text": "The amount paid regularly to an insurance company for cover is the",
+     "options": [
+      "claim",
+      "premium",
+      "policy",
+      "excess"
+     ],
+     "answer": "B",
+     "marks": 1
+    },
+    {
+     "id": "a7",
+     "type": "mcq",
+     "text": "The insurance principle which says the insured must give true and full information is",
+     "options": [
+      "indemnity",
+      "insurable interest",
+      "proximate cause",
+      "utmost good faith"
+     ],
+     "answer": "D",
+     "marks": 1
+    },
+    {
+     "id": "a8",
+     "type": "mcq",
+     "text": "Which is a disadvantage of buying with a credit card?",
+     "options": [
+      "It is convenient",
+      "No cash needs to be carried",
+      "High interest is charged if not paid on time",
+      "It can be used overseas"
+     ],
+     "answer": "C",
+     "marks": 1
+    },
+    {
+     "id": "a9",
+     "type": "mcq",
+     "text": "A part of a company's profit paid to its shareholders is known as",
+     "options": [
+      "a dividend",
+      "interest",
+      "a bond",
+      "a wage"
+     ],
+     "answer": "A",
+     "marks": 1
+    },
+    {
+     "id": "a10",
+     "type": "mcq",
+     "text": "A bank deposit that is locked away for a fixed time to earn a higher interest rate is a",
+     "options": [
+      "savings account",
+      "cheque account",
+      "term deposit",
+      "credit card"
+     ],
+     "answer": "C",
+     "marks": 1
+    },
+    {
+     "id": "a2q1",
+     "type": "short",
+     "text": "QUESTION 2 Problem Solving Questions (15 marks)\nA. Personal Financial Management\n1. State one economic challenge and one social challenge faced by a young worker in managing personal finance. (2 marks)\n2. Describe one way in which the challenges stated in (1) could be overcome. (1 mark)",
+     "marks": 3,
+     "model": "1. Economic (1): rising prices/inflation; low wages; unemployment; high interest on loans. Social (1): family/cultural obligations (church, funerals, functions); peer pressure to spend; habits such as gambling or drinking.\n2. Any one, described (1): prepare and follow a budget; save a fixed amount every pay; set priorities – needs before wants; avoid unnecessary borrowing; find extra income through an enterprise."
+    },
+    {
+     "id": "a2q2",
+     "type": "short",
+     "text": "B. Managing Credit\n1. Identify one formal (institutional) source of borrowing. (1 mark)\n2. Give one disadvantage of using credit. (1 mark)\nC. Managing Risk and Financial Planning\n3. Differentiate between a premium and a claim. (2 marks)",
+     "marks": 4,
+     "model": "1. Any one (1): commercial bank (BSP, ANZ, Westpac, BRED, HFC); Fiji Development Bank; credit union/cooperative; finance company; FNPF (housing/education withdrawal).\n2. Any one (1): interest makes goods cost more; debt can build up; goods can be repossessed; bad credit record if payments are missed.\n3. A premium is the amount the insured pays regularly to the insurer for insurance cover (1); a claim is the request made by the insured to the insurer for payment after a loss (1)."
+    },
+    {
+     "id": "a2q3",
+     "type": "short",
+     "text": "D. Investment in Financial Institutions\nAn advertisement from the Fiji National Provident Fund (FNPF) says: \"Plan for your retirement – join today.\"\n1. State a situation in which members of FNPF can withdraw their funds. (1 mark)\n2. State two benefits you receive as an FNPF member. (2 marks)\n3. The employee contribution rate is 8% of salary. Calculate how much you would contribute as an employee per year if your salary was $28 500 per annum. (2 marks)",
+     "marks": 5,
+     "model": "1. Any one (1): retirement at 55; death (paid to nominees); permanent incapacity/medical; housing (first home/deposit); education; migration.\n2. Any two (1 each): savings for retirement; interest earned on savings; housing assistance; education assistance; death/funeral benefit; medical assistance.\n3. 28 500 × 8% = 28 500 × 0.08 (1) = $2 280 per year (1)"
+    },
+    {
+     "id": "a2q4",
+     "type": "short",
+     "text": "E. Financial Planning for the Future: Investment in Action\n1. Identify one factor that influences an individual's investment decision. (1 mark)\n2. Name two financial institutions in Fiji where students can save or invest. (2 marks)",
+     "marks": 3,
+     "model": "1. Any one (1): level of risk; expected return/interest rate; amount of money available; length of time (liquidity); age and goals of the investor; advice received.\n2. Any two (1 each): BSP, ANZ, Westpac, BRED Bank, HFC Bank, Fiji Development Bank, Unit Trust of Fiji, FNPF (voluntary), credit unions, Home Finance."
+    },
+    {
+     "id": "a3p",
+     "type": "paragraph",
+     "text": "QUESTION 3 Paragraph Writing (5 marks)\nChoose ONE question from the three questions given below and write a paragraph on it. The length of the paragraph should be between 75 and 100 words.",
+     "marks": 5,
+     "model": "Option 1: Saving defined – part of income not spent and kept for future use (1); two reasons (1 each): emergencies, future goals (education, house), retirement, interest earned; two ways (1 each): budget, pay yourself first, open savings/term deposit account, cut wants.\nOption 2: Two sources of income (1 each, max 2): wages/salary, allowance, business/enterprise profits, interest, rent; one impact of overspending (1); two ways to control spending (1 each): budget, shopping list, compare prices, avoid credit.\nOption 3: Insurance defined – protection against financial loss, where the insured pays a premium and the insurer pays for covered losses (1); two types of insurance (1 each): life, medical, motor vehicle, house/fire, travel; two reasons why families need it (1 each).",
+     "choices": [
+      {
+       "text": "\"Saving a little every week builds a secure future.\" With reference to the statement:\n• Define saving.\n• Explain two reasons why young people should save.\n• Discuss two ways to save regularly."
+      },
+      {
+       "text": "\"Spend less than you earn.\" With reference to the statement:\n• State two sources of income for a young person.\n• Discuss one impact of spending more than you earn.\n• Explain two ways to control spending."
+      },
+      {
+       "text": "\"Insurance protects your family when the unexpected happens.\" With reference to the statement:\n• Define insurance.\n• Describe two types of insurance offered in Fiji.\n• Explain two reasons why families should have insurance."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "SECTION B  BUSINESS INFORMATION II [40 marks]",
+   "short": "B Business Info",
+   "note": "There are two questions in this section. Question 1: multiple choice (10 marks). Question 2: problem solving (30 marks).",
+   "questions": [
+    {
+     "id": "b1",
+     "type": "mcq",
+     "text": "Which accounting concept states that a business is separate from its owner?",
+     "options": [
+      "Going concern",
+      "Business entity",
+      "Matching",
+      "Accounting period"
+     ],
+     "answer": "B",
+     "marks": 1
+    },
+    {
+     "id": "b2",
+     "type": "mcq",
+     "text": "The source document a seller sends to a buyer when goods are sold on credit is a",
+     "options": [
+      "credit note",
+      "receipt",
+      "tax invoice",
+      "cheque butt"
+     ],
+     "answer": "C",
+     "marks": 1
+    },
+    {
+     "id": "b3",
+     "type": "mcq",
+     "text": "Goods returned BY a customer are recorded in the",
+     "options": [
+      "Sales Returns Journal",
+      "Purchases Returns Journal",
+      "Sales Journal",
+      "Cash Receipts Journal"
+     ],
+     "answer": "A",
+     "marks": 1
+    },
+    {
+     "id": "b4",
+     "type": "mcq",
+     "text": "Paying wages in cash is recorded in the",
+     "options": [
+      "General Journal",
+      "Cash Receipts Journal",
+      "Purchases Journal",
+      "Cash Payments Journal"
+     ],
+     "answer": "D",
+     "marks": 1
+    },
+    {
+     "id": "b5",
+     "type": "mcq",
+     "text": "The purchase of a delivery van on credit is recorded in the",
+     "options": [
+      "Purchases Journal",
+      "General Journal",
+      "Cash Payments Journal",
+      "Sales Journal"
+     ],
+     "answer": "B",
+     "marks": 1
+    },
+    {
+     "id": "b6",
+     "type": "mcq",
+     "text": "Which of the following is a current asset?",
+     "options": [
+      "Building",
+      "Motor vehicle",
+      "Debtors",
+      "Capital"
+     ],
+     "answer": "C",
+     "marks": 1
+    },
+    {
+     "id": "b7",
+     "type": "mcq",
+     "text": "Money owed by the business to suppliers is shown as",
+     "options": [
+      "creditors",
+      "debtors",
+      "drawings",
+      "sales"
+     ],
+     "answer": "A",
+     "marks": 1
+    },
+    {
+     "id": "b8",
+     "type": "mcq",
+     "text": "The accounting equation is",
+     "options": [
+      "Assets = Liabilities − Capital",
+      "Assets = Capital − Liabilities",
+      "Capital = Assets + Liabilities",
+      "Assets = Liabilities + Capital"
+     ],
+     "answer": "D",
+     "marks": 1
+    },
+    {
+     "id": "b9",
+     "type": "mcq",
+     "text": "A business owned by one person who has unlimited liability is a",
+     "options": [
+      "partnership",
+      "sole trader",
+      "company",
+      "cooperative"
+     ],
+     "answer": "B",
+     "marks": 1
+    },
+    {
+     "id": "b10",
+     "type": "mcq",
+     "text": "After recording transactions in the ledger accounts, the next step is to prepare a",
+     "options": [
+      "trial balance",
+      "source document",
+      "journal",
+      "budget"
+     ],
+     "answer": "A",
+     "marks": 1
+    },
+    {
+     "id": "b2q1",
+     "type": "match",
+     "text": "QUESTION 2 Problem Solving Questions (30 marks)\nA. Business and the Accounting System (4 marks)\nSelect the most appropriate accounting concept for each piece of accounting information.",
+     "items": [
+      "Expenses are recorded in the same period as the income they helped to earn.",
+      "The owner's private car is not recorded in the business accounts.",
+      "Accounts are prepared for a period such as one year.",
+      "The business is expected to keep operating in the foreseeable future."
+     ],
+     "options": [
+      "Going concern",
+      "Business entity",
+      "Matching concept",
+      "Accounting period concept",
+      "Cash basis"
+     ],
+     "answer": [
+      "C",
+      "B",
+      "D",
+      "A"
+     ],
+     "marks": 4
+    },
+    {
+     "id": "b2q2",
+     "type": "short",
+     "text": "B. Financial Accounting (3 marks)\n1. State one role of the Fiji Institute of Accountants. (1 mark)\n2. State one advantage of a partnership compared to a sole trader. (1 mark)\n3. Explain what is meant by limited liability. (1 mark)",
+     "marks": 3,
+     "model": "1. Any one (1): registers and regulates accountants in Fiji; sets professional and ethical standards; trains/develops accountants; adopts accounting standards.\n2. Any one (1): more capital; shared workload and decision making; shared skills; losses shared.\n3. The owners (shareholders) can lose only the money they invested; their private assets cannot be taken to pay business debts (1)."
+    },
+    {
+     "id": "b2q3",
+     "type": "short",
+     "text": "C. The Accounting Process\n1. Study the source document below and answer the questions.\nTAX INVOICE – SUVA HARDWARE LTD, Tax Invoice No: 2215, Account No: S108\nCustomer: Litia Naivalu, Lautoka\n4 bags cement @ $18.50 = $74.00; 2 tins paint @ $32.00 = $64.00; 1 hammer @ $22.00 = $22.00\nTotal VAT Exclusive Price: $160.00\ni. Name the source document. (1 mark)\nii. Identify (a) the buyer and (b) the seller. (2 marks)\niii. Calculate the VAT that Litia will pay if the VAT rate is 15%. (1 mark)",
+     "marks": 4,
+     "model": "i. Tax invoice (1)\nii. (a) Buyer: Litia Naivalu (1) (b) Seller: Suva Hardware Ltd (1)\niii. 160 × 15% = $24.00 (1)"
+    },
+    {
+     "id": "b2q4",
+     "type": "short",
+     "text": "2. During June 2026, Vani's Store had the transactions shown in the table.\nRequired: Using the table, prepare\ni. the Purchases Journal (show date, creditor and amount, and the total). (3 marks)\nii. the Cash Payments Journal with columns for Discount Received and Bank (show the totals). (4 marks)\nType each journal as rows, e.g. \"Jun 2 | Ravi Traders | 480\".",
+     "marks": 7,
+     "model": "i. Purchases Journal: Jun 2 Ravi Traders 480; Jun 11 Sefa Ltd 260; Jun 28 Kalo Hardware 150 (2); Total – Purchases a/c Dr $890 (1). (Sales on Jun 18 → Sales Journal; credit note Jun 20 → Purchases Returns Journal — not entered here.)\nii. Cash Payments Journal: Jun 4 Purchases – Bank 350; Jun 8 Wages – Bank 120; Jun 14 Drawings – Bank 90; Jun 24 Ravi Traders – Discount 24, Bank 456 (3: ½ each line + correct discount); Totals: Discount Received $24, Bank $1 016 (1).",
+     "table": [
+      [
+       "Date",
+       "Transaction",
+       "$"
+      ],
+      [
+       "Jun 2",
+       "Received a tax invoice from Ravi Traders",
+       "480"
+      ],
+      [
+       "Jun 4",
+       "Cash purchases",
+       "350"
+      ],
+      [
+       "Jun 8",
+       "Paid wages",
+       "120"
+      ],
+      [
+       "Jun 11",
+       "Bought goods on credit from Sefa Ltd",
+       "260"
+      ],
+      [
+       "Jun 14",
+       "Owner took cash for own use",
+       "90"
+      ],
+      [
+       "Jun 18",
+       "Sold goods on credit to Ana",
+       "300"
+      ],
+      [
+       "Jun 20",
+       "Received a credit note from Sefa Ltd",
+       "40"
+      ],
+      [
+       "Jun 24",
+       "Paid Ravi Traders $480 less 5% discount",
+       ""
+      ],
+      [
+       "Jun 28",
+       "Received a tax invoice from Kalo Hardware",
+       "150"
+      ]
+     ]
+    },
+    {
+     "id": "b2q5",
+     "type": "short",
+     "text": "3. The following information relates to the debtor Mele in the books of Vani's Store for June 2026:\nJun 1 Opening balance owed by Mele $400\nJun 5 Credit sales to Mele $250 (Sales Journal)\nJun 9 Mele returned goods $30 (Sales Returns Journal)\nJun 20 Received cash from Mele $300 (Cash Receipts Journal)\nRequired: Prepare Mele's account in the debtors (sales) ledger and balance it on 30 June. Type the debit side and the credit side.",
+     "marks": 5,
+     "model": "Mele's Account – Dr side: Jun 1 Balance b/d 400; Jun 5 Sales 250 (total 650) (2). Cr side: Jun 9 Sales Returns 30; Jun 20 Cash/Bank 300; Jun 30 Balance c/d 320 (total 650) (2). Jul 1 Balance b/d 320 on the debit side (1)."
+    },
+    {
+     "id": "b2q6",
+     "type": "short",
+     "text": "D. Measuring Periodic Income (7 marks)\nSiosaia runs a canteen. He gave you this information for the year ended 31 December 2026:\nStock (1/1/2026) $3 200; Cash at bank $5 000; Purchases $6 500; Wages $900; Customs duty $180; Purchases returns $250; Sales $14 800; Sales returns $300; Freight inwards $120; Freight outwards $210; Stock (31/12/2026) $2 750\nRequired: Prepare the Trading Account of Siosaia for the year ended 31 December 2026 and show the Gross Profit.",
+     "marks": 7,
+     "model": "Sales 14 800 less Sales returns 300 = Net sales 14 500 (1)\nOpening stock 3 200 (½); Purchases 6 500 less Purchases returns 250 = 6 250 (1); add Customs duty 180 and Freight inwards 120 (1) → Cost of goods available 9 750 (½); less Closing stock 2 750 (1) → Cost of goods sold 7 000 (1)\nGross Profit = 14 500 − 7 000 = $7 500 (1) (heading/format ½ taken off if missing).\nWages, freight outwards and cash at bank do NOT go in the Trading Account."
+    }
+   ]
+  },
+  {
+   "title": "SECTION C  ECONOMICS II [30 marks]",
+   "short": "C Economics",
+   "note": "There are three questions in this section. Question 1: multiple choice (10 marks).",
+   "questions": [
+    {
+     "id": "c1",
+     "type": "mcq",
+     "text": "The basic economic problem that every country faces is",
+     "options": [
+      "unlimited resources",
+      "scarcity",
+      "too much money",
+      "low prices"
+     ],
+     "answer": "B",
+     "marks": 1
+    },
+    {
+     "id": "c2",
+     "type": "mcq",
+     "text": "An economy where the government makes all the main economic decisions is a",
+     "options": [
+      "command economy",
+      "market economy",
+      "traditional economy",
+      "mixed economy"
+     ],
+     "answer": "A",
+     "marks": 1
+    },
+    {
+     "id": "c3",
+     "type": "mcq",
+     "text": "When the price of a good rises, the quantity demanded usually",
+     "options": [
+      "rises",
+      "stays the same",
+      "doubles",
+      "falls"
+     ],
+     "answer": "D",
+     "marks": 1
+    },
+    {
+     "id": "c4",
+     "type": "mcq",
+     "text": "The main source of income for a town or city council is",
+     "options": [
+      "company tax",
+      "VAT",
+      "rates",
+      "customs duty"
+     ],
+     "answer": "C",
+     "marks": 1
+    },
+    {
+     "id": "c5",
+     "type": "mcq",
+     "text": "Value Added Tax (VAT) is an example of",
+     "options": [
+      "a direct tax",
+      "an indirect tax",
+      "income tax",
+      "a rate"
+     ],
+     "answer": "B",
+     "marks": 1
+    },
+    {
+     "id": "c6",
+     "type": "mcq",
+     "text": "Which of the following is an expense of the central government?",
+     "options": [
+      "Collecting rubbish in towns",
+      "Paying salaries of teachers and nurses",
+      "Building market stalls",
+      "Maintaining town parks"
+     ],
+     "answer": "B",
+     "marks": 1
+    },
+    {
+     "id": "c7",
+     "type": "mcq",
+     "text": "Which of the following is a visible export of Fiji?",
+     "options": [
+      "Tourism",
+      "Shipping services",
+      "Sugar",
+      "Insurance services"
+     ],
+     "answer": "C",
+     "marks": 1
+    },
+    {
+     "id": "c8",
+     "type": "mcq",
+     "text": "A surplus on the Balance of Trade means that",
+     "options": [
+      "visible exports are greater than visible imports",
+      "visible imports are greater than visible exports",
+      "imports equal exports",
+      "invisible imports are greater than invisible exports"
+     ],
+     "answer": "A",
+     "marks": 1
+    },
+    {
+     "id": "c9",
+     "type": "mcq",
+     "text": "Which organisation is Fiji's central bank?",
+     "options": [
+      "Fiji Development Bank",
+      "Bank of the South Pacific",
+      "Reserve Bank of Fiji",
+      "Westpac"
+     ],
+     "answer": "C",
+     "marks": 1
+    },
+    {
+     "id": "c10",
+     "type": "mcq",
+     "text": "A general rise in the prices of goods and services over time is called",
+     "options": [
+      "deflation",
+      "unemployment",
+      "recession",
+      "inflation"
+     ],
+     "answer": "D",
+     "marks": 1
+    },
+    {
+     "id": "c2q1",
+     "type": "short",
+     "text": "QUESTION 2 Problem Solving Questions (15 marks)\nA. Introduction to Economics\nState one difference between a market economy and a traditional economy. (2 marks)\nB. Microeconomics\ni. State two factors that would cause a change in demand. (2 marks)\nii. Discuss one function of the Fiji Competition and Consumer Commission (FCCC). (1 mark)",
+     "marks": 5,
+     "model": "A. Market economy – decisions on what/how/for whom to produce are made by buyers and sellers through prices and the profit motive (1); traditional economy – decisions are based on customs, traditions and culture, often subsistence (1).\nB i. Any two (1 each): income; price of related goods (substitutes/complements); tastes and fashion; population size; advertising; expectations of future prices; season/weather.\nB ii. Any one (1): controls prices of essential items (price control); protects consumers from unfair trading; checks that businesses compete fairly; investigates complaints."
+    },
+    {
+     "id": "c2q2",
+     "type": "short",
+     "text": "C. Macroeconomics\ni. Identify one source of revenue for local government. (1 mark)\nii. Identify one problem faced by local government. (1 mark)",
+     "marks": 2,
+     "model": "i. Any one (1): rates; licence fees (business/market); parking fees; rent of market stalls; government grants.\nii. Any one (1): ratepayers not paying rates; limited funds; rubbish/waste disposal; squatter settlements; traffic congestion; flooding/poor drainage."
+    },
+    {
+     "id": "c2q3",
+     "type": "short",
+     "text": "D. International Trade\nUse the information for Economy Coral Land shown in the table.\nCalculate:\ni. the Balance of Trade (1 mark)\nii. the Balance of the Current Account (2 marks)\niii. the Balance of the Capital Account (1 mark)\nState whether each is a surplus or a deficit.",
+     "marks": 4,
+     "model": "i. 720 − 910 = −$190m, a deficit (1)\nii. (720 + 380) − (910 + 140) (1) = 1 100 − 1 050 = $50m surplus (1)\niii. 500 − 260 = $240m surplus (1)",
+     "table": [
+      [
+       "Economy Coral Land",
+       "$m"
+      ],
+      [
+       "Export of goods",
+       "720"
+      ],
+      [
+       "Import of goods",
+       "910"
+      ],
+      [
+       "Invisible export",
+       "380"
+      ],
+      [
+       "Invisible import",
+       "140"
+      ],
+      [
+       "Capital inflow",
+       "500"
+      ],
+      [
+       "Capital outflow",
+       "260"
+      ]
+     ]
+    },
+    {
+     "id": "c2q4",
+     "type": "short",
+     "text": "E. Development Economics\nA photograph shows young children collecting cans and bottles from a rubbish dump to sell for money.\n(i) Identify the economic issue shown in the photograph. (1 mark)\n(ii) State two possible causes of this problem. (2 marks)\n(iii) State one effect of the problem. (1 mark)",
+     "marks": 4,
+     "model": "(i) Poverty (1)\n(ii) Any two (1 each): unemployment of parents; low wages; large families; lack of education/skills; rural–urban migration; rising cost of living; family breakdown.\n(iii) Any one (1): children miss school; poor health and nutrition; crime; squatter settlements; child labour."
+    },
+    {
+     "id": "c3p",
+     "type": "paragraph",
+     "text": "QUESTION 3 Paragraph Writing (5 marks)\nChoose ONE question from the three questions given below and write a paragraph on it. The length of the paragraph should be between 75 and 100 words.",
+     "marks": 5,
+     "model": "Option 1: Market economy defined (1); two features (1 each): private ownership, prices set by demand and supply, profit motive, competition, consumer sovereignty; one advantage (1) and one disadvantage (1) (e.g. efficiency/choice vs. inequality, essential services not provided).\nOption 2: Unemployment defined – people able and willing to work cannot find a job (1); two causes (1 each); two effects (1 each).\nOption 3: Tourism as an invisible export defined (1); two benefits (1 each): foreign exchange, jobs, market for local farmers/handicrafts, infrastructure; two problems (1 each): pollution, loss of culture, money leaving the country (leakage), dependence on overseas visitors.",
+     "choices": [
+      {
+       "text": "\"Prices guide what is produced.\" With reference to the statement:\n• Define a market economy.\n• Explain two features of this economic system.\n• Discuss one advantage and one disadvantage of a market economy."
+      },
+      {
+       "text": "\"Unemployment is a growing concern for young people in Fiji.\" With reference to the statement:\n• Define unemployment.\n• Explain two causes of unemployment.\n• Discuss two effects of unemployment on families."
+      },
+      {
+       "text": "\"Tourism is Fiji's largest earner of foreign exchange.\" With reference to the statement:\n• Explain why tourism is an invisible export.\n• Discuss two benefits of tourism to Fiji.\n• Discuss two problems caused by tourism."
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

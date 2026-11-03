@@ -1,8 +1,8 @@
 <!doctype html>
 <html lang="ja">
 <head>
-<script src="api.js?v=202611031935"></script>
-<script src="user.js?v=202611031935"></script>
+<script src="api.js?v=202611032004"></script>
+<script src="user.js?v=202611032004"></script>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Year 10 Mock Exams</title>
@@ -78,6 +78,11 @@
   .choice { display: flex; gap: 8px; align-items: flex-start; margin: 6px 0; padding: 8px 10px; border: 1px solid var(--line); border-radius: 8px; white-space: pre-wrap; }
   .choice.sel { border-color: var(--accent); background: var(--accent-soft); }
   .model { margin-top: 10px; padding: 10px 12px; border-left: 4px solid var(--ok); background: var(--ok-soft); white-space: pre-wrap; font-size: 14px; }
+  .fb { margin-top: 10px; border: 1px solid var(--line); border-radius: 10px; padding: 10px 12px; font-size: 14px; background: var(--bg); }
+  .fb-head { font-size: 15px; margin-bottom: 6px; } .fb-head b { color: var(--accent); font-size: 17px; } .fb-head .muted { font-size: 12px; margin-left: 6px; }
+  .fb ul { margin: 4px 0 8px; padding-left: 1.3em; } .fb li { margin: 3px 0; }
+  .fb-ok b { color: var(--ok); } .fb-how b { color: var(--warn); } .fb-how ul.opts-list { margin: 2px 0 4px; color: var(--muted); }
+  .fb-tips { margin: 4px 0 6px; color: var(--muted); } .fb-model summary { cursor: pointer; color: var(--accent); }
   .explain { margin-top: 8px; font-size: 14px; color: var(--muted); white-space: pre-wrap; }
   .locked .opts, .locked textarea, .locked select { pointer-events: none; opacity: .55; }
   .overlay { position: fixed; inset: 0; background: rgba(0,0,0,.45); display: grid; place-items: center; z-index: 20; padding: 16px; }
@@ -180,6 +185,30 @@
   .how dd { margin: 0; color: var(--muted); }
   .tips { margin: 0; padding-left: 1.2em; font-size: 15px; } .tips li { margin: 6px 0; }
   body.home-mode .y10u-pill, body.exam-mode .y10u-pill { display: none; }
+
+  /* 採点結果のお知らせと表示 */
+  .notice { border: 2px solid var(--accent); background: var(--accent-soft); padding: 12px 16px 4px; }
+  .notice > b { font-size: 17px; }
+  .notice .erow, .notice-old .erow { border-top-color: var(--line); }
+  .notice details { margin: 4px 0 10px; font-size: 14px; }
+  .notice summary, .notice-old summary { cursor: pointer; color: var(--accent); }
+  .notice-old { padding: 10px 16px; }
+  .notice .ebtn, .notice-old .ebtn { align-items: center; }
+  .badge.new { background: var(--bad); color: #fff; font-weight: 700; }
+  .gview { position: fixed; inset: 0; z-index: 40; background: var(--bg); overflow: auto; -webkit-overflow-scrolling: touch; }
+  .gview .ghead { position: sticky; top: 0; z-index: 1; background: var(--card); border-bottom: 1px solid var(--line); }
+  .gview .ghead .in { max-width: 920px; margin: 0 auto; padding: 10px 16px; display: flex; gap: 10px; align-items: center; }
+  .gview .ghead b { flex: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  body.gv-open { overflow: hidden; }
+  .md h2 { font-size: 21px; margin: 4px 0 12px; } .md h3 { font-size: 18px; margin: 22px 0 8px; } .md h4 { font-size: 16px; margin: 18px 0 6px; }
+  .md p { margin: 8px 0; } .md ul, .md ol { margin: 6px 0; padding-left: 1.4em; } .md li { margin: 4px 0; }
+  .md .tbl { margin: 8px 0 12px; }
+  .md table { border-collapse: collapse; font-size: 14px; min-width: 60%; }
+  .md td, .md th { border: 1px solid var(--line); padding: 5px 10px; text-align: left; vertical-align: top; }
+  .md th { background: var(--accent-soft); }
+  .md blockquote { margin: 8px 0; padding: 6px 12px; border-left: 4px solid var(--line); color: var(--muted); white-space: pre-wrap; }
+  .md code { font-size: 13px; background: var(--accent-soft); padding: 0 4px; border-radius: 4px; }
+  .md hr { border: 0; border-top: 1px solid var(--line); margin: 16px 0; }
 
   /* exam: 問題一覧・上のバー */
   .navbtn, .t-short, .nav-head, .nav-acts { display: none; }
@@ -291,12 +320,86 @@ async function home() {
         <div class="muted">${H.subs.map(esc).join("・")}</div></div>
       ${me ? `<button class="who" id="whoBtn">👤 ${esc(me)}<small>切り替え</small>${window.Y10?.pending() ? `<span class="badge">未送信 ${window.Y10.pending()}</span>` : ""}</button>` : ""}
     </header>
+    <div id="notice"></div>
     <nav class="tabs" id="tabs">${TABS.map(([k, n, ic]) => `<button data-tab="${k}"><span class="ic">${ic}</span><span>${n}</span></button>`).join("")}</nav>
     <div id="tabBody"></div>
   </div>`;
   $("#whoBtn")?.addEventListener("click", () => window.Y10U.ask());
   $("#tabs").querySelectorAll("[data-tab]").forEach(b => b.onclick = () => { H.tab = b.dataset.tab; store.set("tab", H.tab); drawTab(); window.scrollTo(0, 0); });
   drawTab();
+  api("/api/graded").then(list => { if (!H) return; H.graded = (Array.isArray(list) ? list : []).sort((a, b) => b.stamp.localeCompare(a.stamp)); drawNotice(); }).catch(() => {});
+}
+
+/* ---------- 採点結果のお知らせ（Claude の採点 <模試>_<日時>_採点.md が届いたら、トップの上に出す） ---------- */
+const KIND_NAME = { m3: "模試 第3回", m26: "模試 第2回", p19: "過去問 2019" };
+const CODE_SUBJ = Object.fromEntries(Object.entries(CODE).map(([s, c]) => [c, s]));
+const seenKey = () => "seenGraded:" + (window.Y10U?.me || "");
+const seenSet = () => { try { return new Set(JSON.parse(store.get(seenKey()) || "[]")); } catch { return new Set(); } };
+const stampDate = s => `${s.slice(0, 4)}-${s.slice(4, 6)}-${s.slice(6, 8)} ${s.slice(9, 11)}:${s.slice(11, 13)}`;
+function gradedName(g) {
+  const e = H.exams.find(x => x.id === g.examId);
+  if (e) return `${SHORT[e.subject] || e.subject}｜${(KINDS.find(k => k[0] === e.kind) || [, ""])[1]}`;
+  const [k, c] = g.examId.split("_"), s = CODE_SUBJ[c];
+  return s ? `${SHORT[s] || s}｜${KIND_NAME[k] || k}` : g.examId;
+}
+function drawNotice() {
+  const el = $("#notice"), list = H?.graded || [];
+  if (!el) return;
+  const seen = seenSet(), fresh = list.filter(g => !seen.has(g.file)), old = list.filter(g => seen.has(g.file));
+  const row = g => `<div class="erow"><div class="ename"><b>${esc(gradedName(g))}</b><span class="muted">${stampDate(g.stamp)} に提出</span></div>
+    <div class="ebtn">${seen.has(g.file) ? `<button class="btn" data-graded="${esc(g.file)}">見る</button>` : `<span class="badge new">NEW</span><button class="btn primary" data-graded="${esc(g.file)}">見る</button>`}</div></div>`;
+  el.innerHTML = !list.length ? "" : fresh.length
+    ? `<div class="card notice"><b>📬 採点結果が届いています（${fresh.length}件）</b>${fresh.map(row).join("")}
+        ${old.length ? `<details><summary>前に見た採点結果（${old.length}件）</summary>${old.map(row).join("")}</details>` : ""}</div>`
+    : `<details class="card notice-old"><summary>📬 採点結果（${list.length}件）</summary>${list.map(row).join("")}</details>`;
+  el.querySelectorAll("[data-graded]").forEach(b => b.onclick = () => showGraded(list.find(g => g.file === b.dataset.graded)));
+}
+async function showGraded(g) {
+  const seen = seenSet(); seen.add(g.file); store.set(seenKey(), JSON.stringify([...seen]));
+  const v = document.createElement("div");
+  v.className = "gview";
+  v.innerHTML = `<div class="ghead"><div class="in"><b>📬 ${esc(gradedName(g))}</b><button class="btn primary" id="gvClose">閉じる</button></div></div>
+    <div class="wrap"><div class="card md" id="gvBody"><p class="muted">読み込み中…</p></div></div>`;
+  document.body.append(v); document.body.classList.add("gv-open");
+  const close = () => { v.remove(); document.body.classList.remove("gv-open"); removeEventListener("keydown", onKey); drawNotice(); };
+  const onKey = e => { if (e.key === "Escape") close(); };
+  addEventListener("keydown", onKey);
+  $("#gvClose", v).onclick = close;
+  const r = await api("/api/graded?file=" + encodeURIComponent(g.file)).catch(() => ({}));
+  $("#gvBody", v).innerHTML = r.text ? md(r.text) : `<p>読み込めませんでした。電波のよいところで、もう一度開いてください。</p>`;
+}
+// 採点ファイル用の小さな Markdown（見出し・表・箇条書き・引用・太字・code）
+function md(text) {
+  const inl = s => esc(s).replace(/\*\*(.+?)\*\*/g, "<b>$1</b>").replace(/`([^`]+)`/g, "<code>$1</code>").replace(/\[([^\]]+)\]\([^)]*\)/g, "$1");
+  const cells = l => l.trim().replace(/^\||\|$/g, "").split("|").map(c => c.trim());
+  const out = [], lines = text.replace(/\r/g, "").split("\n");
+  for (let i = 0; i < lines.length;) {
+    const l = lines[i];
+    let m;
+    if (!l.trim()) { i++; continue; }
+    if ((m = /^(#{1,4})\s+(.*)$/.exec(l))) { const n = Math.min(m[1].length + 1, 4); out.push(`<h${n}>${inl(m[2])}</h${n}>`); i++; continue; }
+    if (/^\s*(-{3,}|\*{3,})\s*$/.test(l)) { out.push("<hr>"); i++; continue; }
+    if (l.trim().startsWith("|")) {
+      const rows = []; while (i < lines.length && lines[i].trim().startsWith("|")) rows.push(lines[i++]);
+      const body = rows.filter(r => !/^\s*\|?[\s:|-]+\|?\s*$/.test(r)).map(cells);
+      const head = rows.length > 1 && /^\s*\|?[\s:|-]+\|?\s*$/.test(rows[1]) ? body.shift() : null;
+      out.push(`<div class="tbl"><table>${head ? `<tr>${head.map(c => `<th>${inl(c)}</th>`).join("")}</tr>` : ""}${body.map(r => `<tr>${r.map(c => `<td>${inl(c)}</td>`).join("")}</tr>`).join("")}</table></div>`);
+      continue;
+    }
+    if (/^\s*>/.test(l)) {
+      const q = []; while (i < lines.length && /^\s*>/.test(lines[i])) q.push(lines[i++].replace(/^\s*>\s?/, ""));
+      out.push(`<blockquote>${q.map(inl).join("\n")}</blockquote>`); continue;
+    }
+    if ((m = /^\s*([-*]|\d+\.)\s+/.exec(l))) {
+      const ol = /\d/.test(m[1]), items = [];
+      while (i < lines.length && /^\s*([-*]|\d+\.)\s+/.test(lines[i])) items.push(lines[i++].replace(/^\s*([-*]|\d+\.)\s+/, ""));
+      out.push(`<${ol ? "ol" : "ul"}>${items.map(t => `<li>${inl(t)}</li>`).join("")}</${ol ? "ol" : "ul"}>`); continue;
+    }
+    const p = []; while (i < lines.length && lines[i].trim() && !/^(#{1,4}\s|\s*\||\s*>|\s*([-*]|\d+\.)\s)/.test(lines[i])) p.push(lines[i++]);
+    if (!p.length) p.push(lines[i++]);
+    out.push(`<p>${p.map(inl).join("<br>")}</p>`);
+  }
+  return out.join("");
 }
 
 function drawTab() {
@@ -358,7 +461,7 @@ function historyTab() {
   return `<div class="card list">${hist.map(h => `
     <div class="hrow"><div><b>${esc(h.title.replace(/^Fiji Year 10 /, ""))}</b><div class="muted tiny">${esc(h.submittedAt)}</div></div>
       <div class="hscore"><b>${h.auto.score} / ${h.auto.max}</b><div class="muted tiny">自動採点</div>${h.manualMax ? `<div class="muted tiny">＋${h.manualMax}点分は Claude が採点</div>` : ""}</div></div>`).join("")}</div>
-    <p class="muted small-note">${WEB ? "提出した答案は漣さんに送られています。記述・作図の採点結果は漣さんから受け取ってください。"
+    <p class="muted small-note">${WEB ? "提出した答案は漣さんに送られています。記述・作図の採点が終わると、画面の上に「📬 採点結果が届いています」と出ます。"
                                      : "答案ファイルは <code>mock-exam-app/answers/</code> にあります。Claude に「模試の答案を採点して」と頼んでください。"}</p>`;
 }
 
@@ -378,6 +481,7 @@ function guideTab() {
       ${step(4, "答えは自動で保存", "途中でやめても大丈夫。トップの「続きから」で再開できます（時間も止まります）。")}
       ${step(5, "「提出する」で終わり", "時間切れのときは自動で提出されます。")}
       ${step(6, "すぐに答え合わせ", `選択とマッチングはすぐ点数が出て、全部の問題の正解・模範解答が見られます。記述・パラグラフ・作図は${WEB ? "漣さんに送られ、" : ""} Claude が採点します。`)}
+      ${step(7, "採点結果が届く", "採点が終わると、トップの上に「📬 採点結果が届いています」と出ます。「見る」で点数と講評が読めます。")}
     </div>
     <div class="card"><h2>答え方</h2>
       <dl class="how">
@@ -452,6 +556,129 @@ function answered(q) {
   return typeof a === "string" ? a.trim().length > 0 : !!(a && a.text && a.text.trim());
 }
 
+/* ---------- 提出後の自動チェック（記述・パラグラフ、甘め） ----------
+   模範解答（q.model）をポイントに分け、ポイントの大事な語・数字が答案に入っていれば「書けている」とする。
+   - 行ごとに1ポイント。「(1)」「(2)」の印で分け、その数を配点にする
+   - 「Any two (1 each): A; B; C」は A・B・C から2つ書けていればよい
+   - 計算は、最後の「=」のあとの数（答え）が答案にあれば書けている */
+const STOP = new Set(("the and for are was were with that this from into each any mark marks also etc which when will they their them can has have its " +
+  "not but use used uses more such than then there these those what who how why one two three four five six all may must should would other some only " +
+  "very about being been does did give gives state explain name example examples shows show list point points option both same like made make makes help " +
+  "helps per e.g i.e eg ie way ways answer correct accept allow award marks named briefly explained statement").split(" "));
+const NUMW = { one: 1, two: 2, three: 3, four: 4, five: 5, six: 6, seven: 7, eight: 8 };
+const numNorm = t => t.replace(/[$,\s]/g, "").replace(/(\.\d*?)0+$/, "$1").replace(/\.$/, "");
+const stem = w => w.length >= 5 ? w.slice(0, 4) : w; // 語の形のちがい（noise/noisy, supervise/supervision）は気にしない
+function toks(t, allNums) { // 語（先頭5文字）と数字（allNums: 1けたの数も入れる＝答案用）
+  const out = new Set();
+  for (const m of String(t || "").toLowerCase().replace(/(\d)[ ,](?=\d{3}\b)/g, "$1").matchAll(/\$?\d+(?:\.\d+)?|[a-z][a-z'-]*/g)) {
+    const w = m[0].replace(/'s$/, "");
+    if (/\d/.test(w)) { const n = numNorm(w); if (allNums || n.length >= 2 || n.includes(".")) out.add("#" + n); continue; }
+    if (w.length < 3 || STOP.has(w)) continue;
+    out.add(stem(w));
+  }
+  return out;
+}
+const finalNum = t => { const m = String(t).split("=").pop().match(/\$?\d[\d ,]*(?:\.\d+)?/); return m && t.includes("=") ? "#" + numNorm(m[0]) : null; };
+const clean = t => t.replace(/\((?:\d+(?:\.\d+)?|½)\)/g, "").replace(/^\s*(?:\(?[a-z]{1,3}\)|[a-z]\.|[ivx]+\.|[a-z] [ivx]+\.)\s*/i, "").replace(/\s+/g, " ").trim().replace(/^[;,.→–—-]\s*/, "").replace(/^(?:\(?[a-z]{1,3}\)|[a-z]\.|[ivx]+\.|[a-z] [ivx]+\.)\s*/i, "");
+const compact = t => String(t || "").replace(/[₀-₉]/g, d => "₀₁₂₃₄₅₆₇₈₉".indexOf(d)).replace(/->|=>/g, "→").toLowerCase().replace(/[−–]/g, "-").replace(/÷/g, "/").replace(/×/g, "*").replace(/[’‘]/g, "'").replace(/[\s$]/g, "").replace(/\.$/, "");
+
+function parseModel(q, choice) {
+  let model = String(q.model || "");
+  if (!/\(\d|each|Any /i.test(model) || /Detailed Solutions/.test(model)) return null; // 過去問など、ポイントが書いていないもの
+  const chunks = model.split(/(?=Option \d+\s*:)/);
+  if (chunks.length > 1) model = (chunks.find(c => c.startsWith(`Option ${choice}`)) || chunks[1] || chunks[0]);
+  const items = []; // {text, marks, opts?, k?}
+  for (let line of model.split("\n")) {
+    line = line.trim(); if (!line) continue;
+    line = line.replace(/^([A-Za-z][A-Za-z ]{1,30}) \((\d+(?:\.\d+)?|½)\):\s*(.+)$/, "$1: $3 ($2)"); // 「Definition (1): …」→「Definition: … (1)」
+    const any = line.match(/any (\w+)/i), each = line.match(/(\d+(?:\.\d+)?|½) (?:marks? )?each/i);
+    const colon = line.indexOf(":");
+    if ((any || each) && colon > 0 && line.slice(colon + 1).includes(";")) { // 選んで書くポイントの一覧
+      const per = each ? (each[1] === "½" ? 0.5 : +each[1]) : 1;
+      const opts = line.slice(colon + 1).split(/;\s*/).map(o => clean(o.replace(/\.$/, ""))).filter(o => o.length > 1);
+      const k = any ? (NUMW[any[1].toLowerCase()] || +any[1] || 1) : opts.length;
+      items.push({ text: clean(line.slice(0, colon)), opts, k: Math.min(k, opts.length), per, marks: Math.min(k, opts.length) * per });
+      continue;
+    }
+    const parts = line.split(/(\((?:\d+(?:\.\d+)?|½)\))/);
+    if (parts.length === 1) { items.push({ text: clean(line), marks: null }); continue; }
+    for (let i = 0; i + 1 < parts.length; i += 2) {
+      const v = parts[i + 1].slice(1, -1), t = clean(parts[i]);
+      if (t.length > 1) items.push({ text: t, marks: v === "½" ? 0.5 : +v });
+      else if (items.length) items[items.length - 1].marks = (items[items.length - 1].marks || 0) + (v === "½" ? 0.5 : +v);
+    }
+    const tail = clean(parts[parts.length - 1]); // 「(also: …)」などは前のポイントの別の言い方として使う
+    if (tail.length > 3 && items.length) items[items.length - 1].alt = tail;
+  }
+  if (!items.length) return null;
+  const known = items.reduce((s, it) => s + (it.marks || 0), 0), unk = items.filter(it => it.marks == null);
+  unk.forEach(it => it.marks = Math.max(0.5, (q.marks - known) / unk.length) || 1);
+  return items;
+}
+
+function gradeText(q, text, choice) {
+  const items = parseModel(q, choice); if (!items) return null;
+  const ans = toks(text, true), qWords = toks(q.text), ansC = compact(text);
+  const hit = (t, others = []) => { // ポイントの語のうち、問題文やほかの選択肢にもある語は数えない
+    let ks = [...toks(t)].filter(k => !qWords.has(k) && !others.some(o => o.has(k)));
+    if (!ks.length) ks = [...toks(t)];
+    const fin = finalNum(t); if (fin && ans.has(fin)) return true;
+    const ct = compact(t), fe = compact(t.split(/=|→/).pop()); // 式・セル番地など（空白は無視して、そのまま入っていれば可）
+    if (ct && ct.length <= 30 && ansC.includes(ct)) return true;
+    if (fe.length >= 2 && fe.length <= 30 && /[\d(]|^[a-z]+\d/.test(fe) && ansC.includes(fe)) return true;
+    const n = ks.filter(k => ans.has(k)).length, need = ks.length <= 2 ? 1 : ks.length <= 6 ? 2 : 3;
+    return ks.length > 0 && n >= Math.min(need, ks.length);
+  };
+  let got = 0, total = 0;
+  for (const it of items) {
+    if (it.opts) {
+      const sets = it.opts.map(toks);
+      it.done = it.opts.map((o, i) => text && hit(o, it.opts.length >= 3 ? sets.filter((_, j) => j !== i) : []));
+      it.n = Math.min(it.k, it.done.filter(Boolean).length); it.score = it.n * it.per;
+    } else { it.ok = !!text && (hit(it.text) || (it.alt && hit(it.alt))); it.score = it.ok ? it.marks : 0; }
+    got += it.score; total += it.marks;
+  }
+  const score = total ? Math.min(q.marks, Math.round(got / total * q.marks * 2) / 2) : 0;
+  return { items, score };
+}
+
+function feedbackHTML(q, text, choice) {
+  const g = gradeText(q, text, choice), n = words(text);
+  const full = `<details class="fb-model"><summary>模範解答・採点基準（全文）</summary><div class="model">${esc(q.model)}</div></details>`;
+  if (!g) return `<div class="model"><b>模範解答・採点基準</b>\n${esc(q.model)}</div>`;
+  const pt = v => `${v}点`, ok = [], ng = [], how = [];
+  for (const it of g.items) {
+    if (it.opts) {
+      it.opts.forEach((o, i) => { if (it.done[i]) ok.push(`${esc(o)}`); });
+      if (it.n < it.k) how.push(`${it.text ? `<b>${esc(it.text)}</b>: ` : ""}次の中から<b>あと ${it.k - it.n} つ</b>書く（1つ ${pt(it.per)}）<ul class="opts-list">${it.opts.filter((_, i) => !it.done[i]).map(o => `<li>${esc(o)}</li>`).join("")}</ul>`);
+    } else if (it.ok) ok.push(esc(it.text));
+    else { ng.push(esc(it.text)); how.push(`${esc(it.text)}<span class="muted">（+${pt(it.marks)}）</span>`); }
+  }
+  const tips = [];
+  if (!text.trim()) tips.push("空欄でした。わかるところだけでも書くと部分点がもらえます。");
+  if (q.type === "paragraph" && text.trim()) {
+    if (q.minWords && n < q.minWords) tips.push(`語数が ${n} 語です。${q.minWords} 語以上を目安に、ポイントごとに1〜2文で説明を足しましょう。`);
+    tips.push("パラグラフは「1文目に定義 → ポイントを1つずつ（First, … Second, …）→ まとめの1文」の順にすると点を取りやすいです。");
+  }
+  return `<div class="fb">
+    <div class="fb-head">自動チェックの目安 <b>${g.score} / ${q.marks}</b> 点<span class="muted">（甘めの判定。最終の点は Claude が採点します）</span></div>
+    ${ok.length ? `<div class="fb-ok"><b>✓ 書けているポイント</b><ul>${ok.map(t => `<li>${t}</li>`).join("")}</ul></div>` : ""}
+    ${how.length ? `<div class="fb-how"><b>満点にするには</b>（これを英語で書く）<ul>${how.map(t => `<li>${t}</li>`).join("")}</ul></div>`
+                 : `<div class="fb-ok"><b>満点のポイントがそろっています。</b></div>`}
+    ${tips.length ? `<div class="fb-tips">${tips.map(t => `<div>💡 ${t}</div>`).join("")}</div>` : ""}
+    ${full}</div>`;
+}
+const answerText = q => { const a = S.responses[q.id]; return typeof a === "string" ? a : (a || {}).text || ""; };
+function writtenEstimate() { // 結果の上に出す、記述・パラグラフの目安の合計
+  let got = 0, max = 0;
+  for (const s of S.exam.sections) for (const q of s.questions) {
+    if (q.type !== "short" && q.type !== "paragraph") continue;
+    const g = gradeText(q, answerText(q), (S.responses[q.id] || {}).choice); if (!g) continue;
+    got += g.score; max += q.marks;
+  }
+  return max ? { got, max } : null;
+}
+
 function qHTML(q, n) {
   const a = S.responses[q.id], done = S.submitted;
   let body = "";
@@ -482,7 +709,7 @@ function qHTML(q, n) {
     const text = typeof a === "string" ? a : (a || {}).text || "";
     body += `<textarea class="${isP ? "long" : ""}" data-text="${q.id}" placeholder="${isP ? "Write your paragraph in English." : "Answer here."}">${esc(text)}</textarea>`;
     if (isP && q.minWords) body += `<div class="wc" id="wc_${q.id}"></div>`;
-    if (done && q.model) body += `<div class="model"><b>模範解答・採点基準</b>\n${esc(q.model)}</div>`;
+    if (done && q.model) body += feedbackHTML(q, text, (a || {}).choice);
   }
   const ab = q.ab ? `<details class="ab"><summary>解答用紙のページを見る</summary>${q.ab.map(p => `<a class="paper" href="${p}" target="_blank"><img src="${p}" loading="lazy" alt="answer booklet"></a>`).join("")}</details>` : "";
   return `<div class="card q" id="q_${q.id}"><div class="qhead"><span>${esc(q.label || n)}</span><span class="muted">(${q.marks} mark${q.marks === 1 ? "" : "s"})</span></div>
@@ -521,8 +748,9 @@ function resultHTML() {
   const r = S.result;
   return `<div class="card" style="border-color:var(--ok)"><b>提出しました</b>
     <p style="margin:6px 0">自動採点（選択・マッチング）: <b>${r.auto.score} / ${r.auto.max}</b> 点<br>
-    記述・パラグラフ: <b>${r.manualMax}</b> 点分は${!WEB ? "Claude の採点待ちです" : r.sent ? "漣さんに送りました。Claude が採点します" : "まだ送れていません（次にページを開いたとき自動で送ります）"}。</p>
-    <p class="muted" style="margin:0">${WEB ? "" : `答案ファイル: mock-exam-app/answers/${esc(r.file)}<br>`}下に正解と模範解答を表示しています。</p></div>`;
+    ${(w => w ? `記述・パラグラフの自動チェック（目安・甘め）: <b>${w.got} / ${w.max}</b> 点<br>` : "")(writtenEstimate())}
+    記述・パラグラフ・作図: <b>${r.manualMax}</b> 点分は${!WEB ? "Claude の採点待ちです" : r.sent ? "漣さんに送りました。Claude が採点します" : "まだ送れていません（次にページを開いたとき自動で送ります）"}。</p>
+    <p class="muted" style="margin:0">${WEB ? "" : `答案ファイル: mock-exam-app/answers/${esc(r.file)}<br>`}下の各問題に、正解・模範解答と、記述の「書けているポイント」「満点にするには」を出しています。</p></div>`;
 }
 
 function drawNav() {

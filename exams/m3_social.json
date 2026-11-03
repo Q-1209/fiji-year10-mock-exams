@@ -1,0 +1,527 @@
+{
+ "id": "m3_social",
+ "subject": "Social Science",
+ "kind": "mock3",
+ "title": "Fiji Year 10 Mock Examination 3 — Social Science",
+ "minutes": 120,
+ "readingMinutes": 10,
+ "totalMarks": 100,
+ "instructions": "Answer ALL questions. Time allowed: 2 hours (an extra 10 minutes is allowed for reading).\nMultiple-choice: click the letter of the best answer (click again to clear).\nShort answers and paragraphs: type your answer in English in the box. Show working for calculations.\nYour answers are saved automatically. The paper is submitted automatically when time runs out.\n",
+ "sections": [
+  {
+   "title": "QUESTION 1  SOCIAL ORGANISATION AND PROCESSES [32 marks]",
+   "short": "1 Social Org.",
+   "note": "Section A multiple choice (10 marks). Answer all the questions in the other sections.",
+   "questions": [
+    {
+     "id": "q1a1",
+     "type": "mcq",
+     "text": "A system of government in which a king or queen is the head of state is a",
+     "options": [
+      "republic",
+      "monarchy",
+      "dictatorship",
+      "communist state"
+     ],
+     "answer": "B",
+     "marks": 1
+    },
+    {
+     "id": "q1a2",
+     "type": "mcq",
+     "text": "A parliament with only one house (chamber), like Fiji's Parliament, is",
+     "options": [
+      "unicameral",
+      "bicameral",
+      "bilateral",
+      "federal"
+     ],
+     "answer": "A",
+     "marks": 1
+    },
+    {
+     "id": "q1a3",
+     "type": "mcq",
+     "text": "The highest law of Fiji, which all other laws must follow, is the",
+     "options": [
+      "Standing Orders",
+      "Electoral Act",
+      "Constitution",
+      "Bill of Rights only"
+     ],
+     "answer": "C",
+     "marks": 1
+    },
+    {
+     "id": "q1a4",
+     "type": "mcq",
+     "text": "A proposed law that is still being discussed in Parliament is called a",
+     "options": [
+      "Act",
+      "manifesto",
+      "veto",
+      "Bill"
+     ],
+     "answer": "D",
+     "marks": 1
+    },
+    {
+     "id": "q1a5",
+     "type": "mcq",
+     "text": "The document in which a political party tells voters what it will do if it is elected is its",
+     "options": [
+      "manifesto",
+      "constitution",
+      "charter",
+      "census"
+     ],
+     "answer": "A",
+     "marks": 1
+    },
+    {
+     "id": "q1a6",
+     "type": "mcq",
+     "text": "The Prime Minister and the ministers who run the government departments together form the",
+     "options": [
+      "Senate",
+      "Opposition",
+      "Cabinet",
+      "Judiciary"
+     ],
+     "answer": "C",
+     "marks": 1
+    },
+    {
+     "id": "q1a7",
+     "type": "mcq",
+     "text": "A permanent member of the UN Security Council can stop a decision by using its",
+     "options": [
+      "vote",
+      "veto",
+      "charter",
+      "mandate"
+     ],
+     "answer": "B",
+     "marks": 1
+    },
+    {
+     "id": "q1a8",
+     "type": "mcq",
+     "text": "The head of the United Nations Secretariat is the",
+     "options": [
+      "President of the General Assembly",
+      "Chief Justice",
+      "Speaker",
+      "Secretary-General"
+     ],
+     "answer": "D",
+     "marks": 1
+    },
+    {
+     "id": "q1a9",
+     "type": "mcq",
+     "text": "Which United Nations agency looks after refugees?",
+     "options": [
+      "UNICEF",
+      "UNFPA",
+      "UNHCR",
+      "WHO"
+     ],
+     "answer": "C",
+     "marks": 1
+    },
+    {
+     "id": "q1a10",
+     "type": "mcq",
+     "text": "A person who is a citizen of two countries at the same time has",
+     "options": [
+      "dual citizenship",
+      "refugee status",
+      "a work permit",
+      "a visa"
+     ],
+     "answer": "A",
+     "marks": 1
+    },
+    {
+     "id": "q1b",
+     "type": "short",
+     "text": "SECTION B SHORT ANSWER QUESTIONS (8 marks)\n(i) State two features of a dictatorship. (2 marks)\n(ii) Describe the role of the judiciary. (2 marks)\n(iii) Explain one difference between the Government and the Opposition in Parliament. (2 marks)\n(iv) State two rights of citizens in Fiji's Bill of Rights. (2 marks)",
+     "marks": 8,
+     "model": "(i) Any two (1 each): one person or a small group holds all the power; the leaders are not elected by the people; no free elections; people cannot criticise the government – no freedom of speech; rule by force (military or police).\n(ii) The judiciary (the courts and judges) interprets the laws (1) and decides whether people have broken the law, punishes them and settles disputes (1).\n(iii) The Government is the party (or parties) with the most seats, which runs the country and makes the decisions (1); the Opposition has fewer seats and checks and questions the Government (1).\n(iv) Any two (1 each): right to vote; freedom of speech and expression; freedom of religion; right to education; right to a fair trial; freedom of movement; equality – no discrimination."
+    },
+    {
+     "id": "q1c",
+     "type": "short",
+     "text": "SECTION C RESOURCE INTERPRETATION (9 marks)\nResource: \"In the 2022 general election, Fijians aged 18 and over voted for the 55 Members of Parliament. Each voter chose ONE candidate. The seats were then shared among the parties according to the total number of votes each party received. No party won a majority on its own, so three parties joined together to form the government.\"\n(i) At what age can Fijians vote? (1 mark)\n(ii) How many Members of Parliament are there? (1 mark)\n(iii) Name the voting system in which seats are shared according to the votes each party receives. (1 mark)\n(iv) What is a government formed by two or more parties called? (1 mark)\n(v) State two qualities of a good candidate. (2 marks)\n(vi) Explain why elections must be free and fair. (3 marks)",
+     "marks": 9,
+     "model": "(i) 18 years (1)\n(ii) 55 (1)\n(iii) Proportional representation (open list system) (1)\n(iv) A coalition government (1)\n(v) Any two (1 each): honest; hard-working; educated and knowledgeable; a good communicator; cares for the people; good leadership skills.\n(vi) So that people can choose the leaders they really want (1); every vote counts equally and there is no cheating or vote-buying (1); everyone accepts the result, so the government is legitimate and there is peace (1)."
+    },
+    {
+     "id": "q1d",
+     "type": "paragraph",
+     "marks": 5,
+     "minWords": 80,
+     "maxWords": 100,
+     "text": "SECTION D PARAGRAPH WRITING (5 marks)\nIn a paragraph of 80 to 100 words, describe the three arms of government in Fiji and explain why the separation of powers is important.",
+     "model": "Legislature (1): Parliament makes the laws.\nExecutive (1): the Prime Minister and Cabinet carry out the laws and run the country.\nJudiciary (1): the courts interpret the laws and punish people who break them.\nImportance (2): no single person or group has all the power; each arm checks the others (checks and balances); it protects people's rights and stops the abuse of power."
+    }
+   ]
+  },
+  {
+   "title": "QUESTION 2  TIME, CONTINUITY AND CHANGE [32 marks]",
+   "short": "2 Time & Change",
+   "note": "Section A multiple choice (10 marks). Answer all the questions in the other sections.",
+   "questions": [
+    {
+     "id": "q2a1",
+     "type": "mcq",
+     "text": "The kidnapping of Pacific Islanders to work on plantations in Queensland and Fiji was called",
+     "options": [
+      "indenture",
+      "blackbirding",
+      "girmit",
+      "cession"
+     ],
+     "answer": "B",
+     "marks": 1
+    },
+    {
+     "id": "q2a2",
+     "type": "mcq",
+     "text": "In 1874 Fiji was ceded to",
+     "options": [
+      "Great Britain",
+      "France",
+      "Australia",
+      "the United States"
+     ],
+     "answer": "A",
+     "marks": 1
+    },
+    {
+     "id": "q2a3",
+     "type": "mcq",
+     "text": "Land owned by the indigenous Fijian clans (mataqali) is called",
+     "options": [
+      "Crown land",
+      "freehold land",
+      "native land",
+      "state land"
+     ],
+     "answer": "C",
+     "marks": 1
+    },
+    {
+     "id": "q2a4",
+     "type": "mcq",
+     "text": "The overseer who supervised the indentured labourers in the fields was the",
+     "options": [
+      "Roko",
+      "Buli",
+      "Turaga-ni-Koro",
+      "sardar"
+     ],
+     "answer": "D",
+     "marks": 1
+    },
+    {
+     "id": "q2a5",
+     "type": "mcq",
+     "text": "The company that controlled the sugar industry in Fiji during the colonial period was the",
+     "options": [
+      "CSR",
+      "FNPF",
+      "ANZ",
+      "Air Pacific"
+     ],
+     "answer": "A",
+     "marks": 1
+    },
+    {
+     "id": "q2a6",
+     "type": "mcq",
+     "text": "Ratu Sir Lala Sukuna is remembered mainly for",
+     "options": [
+      "signing the Deed of Cession",
+      "bringing the first girmitiyas",
+      "building the Fijian Administration and protecting native land",
+      "leading the first coup"
+     ],
+     "answer": "C",
+     "marks": 1
+    },
+    {
+     "id": "q2a7",
+     "type": "mcq",
+     "text": "In the colonial Legislative Council, the system in which people voted only for candidates of their own race was the",
+     "options": [
+      "common roll",
+      "cross-voting",
+      "member system",
+      "communal roll"
+     ],
+     "answer": "D",
+     "marks": 1
+    },
+    {
+     "id": "q2a8",
+     "type": "mcq",
+     "text": "All indenture contracts in Fiji were cancelled (indenture abolished) in",
+     "options": [
+      "1879",
+      "1920",
+      "1874",
+      "1945"
+     ],
+     "answer": "B",
+     "marks": 1
+    },
+    {
+     "id": "q2a9",
+     "type": "mcq",
+     "text": "Fiji became a republic, no longer having the British Queen as head of state, in",
+     "options": [
+      "1970",
+      "1987",
+      "2000",
+      "2013"
+     ],
+     "answer": "B",
+     "marks": 1
+    },
+    {
+     "id": "q2a10",
+     "type": "mcq",
+     "text": "The association of countries that were once part of the British Empire, to which Fiji belongs, is the",
+     "options": [
+      "Commonwealth",
+      "European Union",
+      "ASEAN",
+      "Arab League"
+     ],
+     "answer": "A",
+     "marks": 1
+    },
+    {
+     "id": "q2b",
+     "type": "short",
+     "text": "SECTION B SHORT ANSWER QUESTIONS (8 marks)\n(i) Define indirect rule. (2 marks)\n(ii) State two contributions of the girmitiyas and their descendants to Fiji. (2 marks)\n(iii) Explain why the Native Land Trust Board was set up in 1940. (2 marks)\n(iv) State two changes that took place in Fiji after independence in 1970. (2 marks)",
+     "marks": 8,
+     "model": "(i) Indirect rule means the British governed the Fijians through their own chiefs (1) and traditional customs (the Fijian Administration) instead of ruling them directly (1).\n(ii) Any two (1 each): worked on the sugar-cane farms and built the sugar industry; became farmers and business people; brought Indian culture, religions, food and festivals such as Diwali; built schools and temples; their descendants became doctors, teachers and leaders.\n(iii) To protect native land so that it could not be sold and stays with the landowners (1), while allowing it to be leased to farmers with the rent paid to the landowners (1).\n(iv) Any two (1 each): Fiji had its own Prime Minister and government (Ratu Sir Kamisese Mara); its own Constitution; joined the United Nations; its own flag and national anthem; local people replaced British officials in top jobs."
+    },
+    {
+     "id": "q2c",
+     "type": "short",
+     "text": "SECTION C RESOURCE INTERPRETATION (9 marks)\nResource: \"On 10 October 1874, at Levuka on the island of Ovalau, Ratu Seru Cakobau and other high chiefs signed the Deed of Cession, giving Fiji to Queen Victoria of Great Britain. Cakobau sent his war club to the Queen as a sign of respect. Sir Hercules Robinson signed for Britain, and Fiji became a British Crown Colony.\"\n(i) On what date was the Deed of Cession signed? (1 mark)\n(ii) Where was it signed? (1 mark)\n(iii) Who signed for Britain? (1 mark)\n(iv) What is a Crown Colony? (2 marks)\n(v) Why did Cakobau send his war club to the Queen? (1 mark)\n(vi) Explain three ways cession changed life in Fiji. (3 marks)",
+     "marks": 9,
+     "model": "(i) 10 October 1874 (1)\n(ii) Levuka, Ovalau (1)\n(iii) Sir Hercules Robinson (1)\n(iv) A colony ruled directly by the British government (the Crown) (1) through a Governor sent from Britain (1).\n(v) As a sign of respect and loyalty to the Queen, showing that the chiefs accepted British rule and gave up fighting (1).\n(vi) Any three (1 each): a Governor and British laws ruled Fiji; fighting between chiefs ended and there was peace; land sales were checked and most land stayed with the Fijians; indentured labourers were brought from India; the Fijian Administration was set up through the chiefs; schools, churches and new systems spread."
+    },
+    {
+     "id": "q2d",
+     "type": "paragraph",
+     "marks": 5,
+     "minWords": 80,
+     "maxWords": 100,
+     "text": "SECTION D PARAGRAPH WRITING (5 marks)\nIn a paragraph of 80 to 100 words, describe the life of the indentured labourers (girmitiyas) on the plantations and explain why the indenture system ended.",
+     "model": "Life on the plantations (1 each, any three): lived in crowded lines (barracks) with no privacy; long hours of hard work under the task system; low wages and pay cut as fines; harsh treatment and punishment by sardars and overseers; disease and poor health; very few women, causing social problems.\nWhy it ended (2): people in India (Gandhi, C. F. Andrews) and in Fiji campaigned against its cruelty; recruitment stopped in 1916 and indenture was abolished in 1920."
+    }
+   ]
+  },
+  {
+   "title": "QUESTION 3  PLACE AND ENVIRONMENT [36 marks]",
+   "short": "3 Place & Env.",
+   "note": "Section A multiple choice (10 marks). Answer all the questions in the other sections.",
+   "questions": [
+    {
+     "id": "q3a1",
+     "type": "mcq",
+     "text": "Imaginary lines that run from the North Pole to the South Pole are lines of",
+     "options": [
+      "latitude",
+      "longitude",
+      "the equator",
+      "the tropics"
+     ],
+     "answer": "B",
+     "marks": 1
+    },
+    {
+     "id": "q3a2",
+     "type": "mcq",
+     "text": "A coral reef that grows close to the shore and is joined to it is a",
+     "options": [
+      "fringing reef",
+      "barrier reef",
+      "atoll",
+      "lagoon"
+     ],
+     "answer": "A",
+     "marks": 1
+    },
+    {
+     "id": "q3a3",
+     "type": "mcq",
+     "text": "The winds that blow over Fiji for most of the year are the",
+     "options": [
+      "north-west monsoon winds",
+      "westerlies",
+      "south-east trade winds",
+      "north-east trade winds"
+     ],
+     "answer": "C",
+     "marks": 1
+    },
+    {
+     "id": "q3a4",
+     "type": "mcq",
+     "text": "The dry grasslands found on the leeward side of Viti Levu and Vanua Levu are called",
+     "options": [
+      "mangroves",
+      "rainforest",
+      "delta",
+      "talasiga"
+     ],
+     "answer": "D",
+     "marks": 1
+    },
+    {
+     "id": "q3a5",
+     "type": "mcq",
+     "text": "Growing the same crop on the same land year after year is called",
+     "options": [
+      "crop rotation",
+      "monoculture",
+      "mixed farming",
+      "shifting cultivation"
+     ],
+     "answer": "B",
+     "marks": 1
+    },
+    {
+     "id": "q3a6",
+     "type": "mcq",
+     "text": "Tourism is an example of a",
+     "options": [
+      "primary industry",
+      "secondary industry",
+      "tertiary industry",
+      "subsistence activity"
+     ],
+     "answer": "C",
+     "marks": 1
+    },
+    {
+     "id": "q3a7",
+     "type": "mcq",
+     "text": "The number of people living in each square kilometre of land is the",
+     "options": [
+      "population density",
+      "census",
+      "birth rate",
+      "migration rate"
+     ],
+     "answer": "A",
+     "marks": 1
+    },
+    {
+     "id": "q3a8",
+     "type": "mcq",
+     "text": "Something that attracts people to move to a city, such as better jobs, is a",
+     "options": [
+      "push factor",
+      "natural increase",
+      "natural disaster",
+      "pull factor"
+     ],
+     "answer": "D",
+     "marks": 1
+    },
+    {
+     "id": "q3a9",
+     "type": "mcq",
+     "text": "Fiji's main gold mine is at",
+     "options": [
+      "Vatukoula",
+      "Monasavu",
+      "Nausori",
+      "Savusavu"
+     ],
+     "answer": "A",
+     "marks": 1
+    },
+    {
+     "id": "q3a10",
+     "type": "mcq",
+     "text": "The government office in Fiji that coordinates help and warnings during natural disasters is the",
+     "options": [
+      "Fijian Elections Office",
+      "National Disaster Management Office (NDMO)",
+      "Fiji Roads Authority",
+      "Fiji Bureau of Statistics"
+     ],
+     "answer": "B",
+     "marks": 1
+    },
+    {
+     "id": "q3b",
+     "type": "short",
+     "text": "SECTION B SHORT ANSWER QUESTIONS (8 marks)\n(i) Differentiate between a volcanic island and a coral island. (2 marks)\n(ii) State two reasons why people move from rural areas to towns in Fiji. (2 marks)\n(iii) Explain one problem caused by rapid urbanisation in Suva. (2 marks)\n(iv) State two benefits of the sugar industry to Fiji. (2 marks)",
+     "marks": 8,
+     "model": "(i) A volcanic island is made of volcanic rock and is usually large and high, with mountains and rivers, e.g. Viti Levu (1); a coral island (atoll) is made of coral and is small, low and flat with sandy soil, e.g. islands in the Lau Group (1).\n(ii) Any two (1 each): better jobs and higher wages; better schools and hospitals; services such as electricity, water and roads; shopping and entertainment; not enough land or jobs in the village; natural disasters in rural areas.\n(iii) Squatter settlements grow (1) because there are not enough houses for all the people moving in (1). (Also accept: traffic jams and pollution; unemployment and crime; pressure on water, sewerage and rubbish services – 1 for the problem, 1 for the explanation.)\n(iv) Any two (1 each): earns foreign exchange from exports; jobs for farmers, cane cutters and mill workers; rent income for landowners; supports businesses in towns such as Lautoka, Ba and Labasa; government revenue."
+    },
+    {
+     "id": "q3c",
+     "type": "short",
+     "text": "SECTION C RESOURCE INTERPRETATION (8 marks)\nResource: The table shows the average yearly rainfall of four towns on Viti Levu. Suva and Nausori are on the south-east (windward) side; Nadi and Lautoka are on the north-west (leeward) side.",
+     "marks": 8,
+     "model": "(i) Nausori (1)\n(ii) 3 000 − 1 900 = 1 100 mm (1)\n(iii) Relief (orographic) rainfall (1)\n(iv) Nadi is on the leeward side (1); the south-east trade winds lose their moisture as they rise over the central mountains, so the air that comes down on the west is dry – a rain shadow (1).\n(v) Any two (1 each): growing sugar cane; pine plantations; rice with irrigation; vegetables in the dry season; cattle grazing on the grasslands; tourism resorts.\n(vi) Flooding, soil erosion, or nutrients washed out of the soil (leaching) (1).",
+     "table": [
+      [
+       "Town",
+       "Side of Viti Levu",
+       "Average yearly rainfall (mm)"
+      ],
+      [
+       "Suva",
+       "windward (south-east)",
+       "3 000"
+      ],
+      [
+       "Nausori",
+       "windward (south-east)",
+       "3 100"
+      ],
+      [
+       "Nadi",
+       "leeward (north-west)",
+       "1 900"
+      ],
+      [
+       "Lautoka",
+       "leeward (north-west)",
+       "1 800"
+      ]
+     ],
+     "after": "(i) Which town receives the most rain? (1 mark)\n(ii) Calculate the difference in rainfall between Suva and Nadi. (1 mark)\n(iii) Name the type of rainfall that falls on the windward side of the mountains. (1 mark)\n(iv) Explain why Nadi receives less rain than Suva. (2 marks)\n(v) State two land uses suited to the drier west of Viti Levu. (2 marks)\n(vi) State one effect of very heavy rainfall on the east side. (1 mark)"
+    },
+    {
+     "id": "q3d",
+     "type": "paragraph",
+     "marks": 5,
+     "minWords": 80,
+     "maxWords": 100,
+     "text": "SECTION D PARAGRAPH WRITING (5 marks)\nIn a paragraph of 80 to 100 words, discuss three advantages and two disadvantages of tourism for Fiji.",
+     "model": "Advantages (1 each, any three): earns foreign exchange – Fiji's biggest earner; jobs in hotels, transport and tours; markets for local farmers and handicrafts; better roads, airports and services; promotes Fijian culture.\nDisadvantages (1 each, any two): damage to reefs and beaches and pollution; loss of culture and traditional values; profits go to overseas owners; jobs are seasonal and low-paid; disputes over land for hotels."
+    },
+    {
+     "id": "q3e",
+     "type": "short",
+     "text": "SECTION E MAPPING (5 marks)\nUse your knowledge of the map of Fiji to name the following.\n(i) The largest river in Fiji, which flows into the sea near Nausori. (1 mark)\n(ii) The highest mountain in Fiji. (1 mark)\n(iii) The island on which the old capital, Levuka, is found. (1 mark)\n(iv) The main town on Vanua Levu. (1 mark)\n(v) The long barrier reef north of Vanua Levu, one of the longest in the world. (1 mark)",
+     "marks": 5,
+     "model": "(i) Rewa River (1)\n(ii) Mount Tomanivi (Mount Victoria) (1)\n(iii) Ovalau (1)\n(iv) Labasa (1)\n(v) The Great Sea Reef (Cakaulevu) (1)"
+    }
+   ]
+  }
+ ]
+}

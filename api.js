@@ -239,6 +239,18 @@ window.Y10_ONLY = null;
       if (path === "/api/history") return json(get("history", []));
       if (path === "/api/tstatus") return json(get("tstatus", {}));
       if (path === "/api/qstatus") return json(get("qstatus", {}));
+      if (path === "/api/graded") { // Claude の採点結果（<名前>/<模試>_<日時>_採点.md）
+        const RE = /^([A-Za-z0-9_-]+)_(\d{8}-\d{6})_採点\.md$/, f = q.get("file");
+        if (!user() || !token()) return f ? json({ error: "not found" }, 404) : json([]);
+        try {
+          if (f) {
+            const r = RE.test(f) ? await gh("GET", "contents/" + enc(user() + "/" + f)) : { code: 404 };
+            return r.code === 200 ? json({ text: unb64(r.data.content) }) : json({ error: "not found" }, 404);
+          }
+          const r = await gh("GET", "contents/" + enc(user()));
+          return json(r.code === 200 ? r.data.map(x => RE.exec(x.name)).filter(Boolean).map(m => ({ file: m[0], examId: m[1], stamp: m[2] })) : []);
+        } catch { return f ? json({ error: "読み込めませんでした" }, 502) : json([]); }
+      }
       return json({ error: "not found" }, 404);
     }
     const data = JSON.parse(body || "{}");

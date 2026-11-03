@@ -1,0 +1,530 @@
+{
+ "id": "m3_science",
+ "subject": "Basic Science",
+ "kind": "mock3",
+ "title": "Fiji Year 10 Mock Examination 3 — Basic Science",
+ "minutes": 120,
+ "readingMinutes": 10,
+ "totalMarks": 100,
+ "instructions": "Answer ALL questions. Time allowed: 2 hours (an extra 10 minutes is allowed for reading).\nMultiple-choice: click the letter of the best answer (click again to clear).\nShort answers and paragraphs: type your answer in English in the box. Show working for calculations.\nYour answers are saved automatically. The paper is submitted automatically when time runs out.\nYou may use a calculator. Show all working for calculations.",
+ "sections": [
+  {
+   "title": "STRAND 1 LIVING THINGS AND THE ENVIRONMENT [40 marks]",
+   "short": "1 Living Things",
+   "note": "Multiple-choice: choose the best answer. Short answer: write your answers in the space provided. Essay: write only ONE essay on the option of your choice.",
+   "questions": [
+    {
+     "id": "s1q1",
+     "type": "mcq",
+     "text": "The process in which large food molecules are broken down into small soluble molecules is called",
+     "options": [
+      "absorption",
+      "digestion",
+      "excretion",
+      "respiration"
+     ],
+     "answer": "B",
+     "marks": 1
+    },
+    {
+     "id": "s1q2",
+     "type": "mcq",
+     "text": "Which part of the blood carries oxygen around the body?",
+     "options": [
+      "Plasma",
+      "Platelets",
+      "Red blood cells",
+      "White blood cells"
+     ],
+     "answer": "C",
+     "marks": 1
+    },
+    {
+     "id": "s1q3",
+     "type": "mcq",
+     "text": "The enzyme in saliva that starts the digestion of starch is",
+     "options": [
+      "amylase",
+      "pepsin",
+      "lipase",
+      "insulin"
+     ],
+     "answer": "A",
+     "marks": 1
+    },
+    {
+     "id": "s1q4",
+     "type": "mcq",
+     "text": "In the lungs, oxygen passes into the blood through the walls of the",
+     "options": [
+      "trachea",
+      "bronchi",
+      "diaphragm",
+      "alveoli"
+     ],
+     "answer": "D",
+     "marks": 1
+    },
+    {
+     "id": "s1q5",
+     "type": "mcq",
+     "text": "The female reproductive cell is the",
+     "options": [
+      "sperm",
+      "ovum (egg)",
+      "zygote",
+      "embryo"
+     ],
+     "answer": "B",
+     "marks": 1
+    },
+    {
+     "id": "s1q6",
+     "type": "mcq",
+     "text": "An organism that breaks down dead plants and animals and returns nutrients to the soil is a",
+     "options": [
+      "producer",
+      "herbivore",
+      "decomposer",
+      "carnivore"
+     ],
+     "answer": "C",
+     "marks": 1
+    },
+    {
+     "id": "s1q7",
+     "type": "mcq",
+     "text": "The hormone made by the pancreas that lowers the amount of sugar in the blood is",
+     "options": [
+      "adrenaline",
+      "thyroxine",
+      "oestrogen",
+      "insulin"
+     ],
+     "answer": "D",
+     "marks": 1
+    },
+    {
+     "id": "s1q8",
+     "type": "mcq",
+     "text": "The downward growth of a plant root in response to gravity is called",
+     "options": [
+      "geotropism",
+      "phototropism",
+      "hydrotropism",
+      "photosynthesis"
+     ],
+     "answer": "A",
+     "marks": 1
+    },
+    {
+     "id": "s1q9",
+     "type": "short",
+     "text": "State two functions of the human skeleton.",
+     "marks": 2,
+     "model": "Any two (1 each): supports the body and gives it shape; protects organs (the skull protects the brain, the ribs protect the heart and lungs); allows movement together with muscles; makes blood cells in the bone marrow; stores calcium."
+    },
+    {
+     "id": "s1q10",
+     "type": "short",
+     "text": "Food passes through the mouth → oesophagus → stomach → small intestine → large intestine.\ni. Name the organ where most digestion and absorption of food take place. (1 mark)\nii. State one function of the stomach. (1 mark)\niii. State one function of the large intestine. (1 mark)",
+     "marks": 3,
+     "model": "i. Small intestine (1)\nii. Churns/mixes the food and digests protein with acid and the enzyme pepsin; the acid also kills germs (1)\niii. Absorbs water from the undigested food and forms faeces (1)"
+    },
+    {
+     "id": "s1q11",
+     "type": "short",
+     "text": "Write the word equation for aerobic respiration.",
+     "marks": 2,
+     "model": "glucose + oxygen (1) → carbon dioxide + water + energy (1)"
+    },
+    {
+     "id": "s1q12",
+     "type": "short",
+     "text": "i. Define fertilisation. (1 mark)\nii. Where in the female reproductive system does fertilisation take place? (1 mark)\niii. Name the organ in which the baby develops. (1 mark)",
+     "marks": 3,
+     "model": "i. The joining (fusion) of a sperm with an ovum to form a zygote (1)\nii. In the oviduct (Fallopian tube) (1)\niii. Uterus (womb) (1)"
+    },
+    {
+     "id": "s1q13",
+     "type": "short",
+     "text": "Study the food web of a Fijian forest.\nLeaves are eaten by caterpillars and by iguanas. Caterpillars are eaten by bulbuls (birds). Bulbuls and iguanas are eaten by the mongoose.\ni. Name the producer. (1 mark)\nii. Name one herbivore. (1 mark)\niii. Name the top consumer. (1 mark)\niv. What will happen to the number of bulbuls if all the caterpillars die? Give a reason. (1 mark)",
+     "marks": 4,
+     "model": "i. Leaves (trees/plants) (1)\nii. Caterpillar or iguana (1)\niii. Mongoose (1)\niv. The bulbuls will decrease because they lose their food (1)"
+    },
+    {
+     "id": "s1q14",
+     "type": "short",
+     "text": "i. Name the two parts of the central nervous system. (2 marks)\nii. What is a reflex action? Give an example. (1 mark)",
+     "marks": 3,
+     "model": "i. Brain (1); spinal cord (1)\nii. A fast automatic response to a stimulus without thinking, e.g. pulling your hand away from a hot pot (1)"
+    },
+    {
+     "id": "s1q15",
+     "type": "short",
+     "text": "State two ways of conserving the forests of Fiji.",
+     "marks": 2,
+     "model": "Any two (1 each): replanting trees (reforestation); controlled/selective logging; stop burning the bush; set up forest reserves and protected areas; recycle paper; teach people about the value of forests."
+    },
+    {
+     "id": "s1q16",
+     "type": "short",
+     "text": "i. Name the organ that filters the blood and makes urine. (1 mark)\nii. Name two other waste products of the body and the organ that removes each one. (2 marks)",
+     "marks": 3,
+     "model": "i. Kidney (1)\nii. Any two (1 each): carbon dioxide – removed by the lungs; sweat (water and salts) – removed by the skin; urea – removed by the kidneys in urine."
+    },
+    {
+     "id": "s1q17",
+     "type": "paragraph",
+     "marks": 10,
+     "text": "ESSAY QUESTION (10 marks)\nChoose only ONE option and write your essay on it.",
+     "choices": [
+      {
+       "text": "Option 1: Our food must be digested before the body can use it.\ni. Define digestion. (2 marks)\nii. Describe what happens to food in the mouth, the stomach and the small intestine. (6 marks)\niii. State two ways to keep the digestive system healthy. (2 marks)"
+      },
+      {
+       "text": "Option 2: Human activities are polluting Fiji's environment.\ni. Define pollution. (2 marks)\nii. Explain three types of pollution in Fiji, giving one example of each. (6 marks)\niii. State two ways to reduce pollution. (2 marks)"
+      }
+     ],
+     "model": "Option 1: i. Digestion is the breaking down of large insoluble food (1) into small soluble molecules that can be absorbed into the blood (1).\nii. Mouth: the teeth chew the food into small pieces (1); saliva with amylase starts digesting starch (1). Stomach: muscles churn the food (1); acid and pepsin digest protein (1). Small intestine: enzymes finish digesting the food (1); villi absorb the digested food into the blood (1).\niii. Any two (1 each): eat a balanced diet with fibre (fruit and vegetables); drink plenty of water; wash hands and food before eating; chew food well; exercise regularly; eat less junk food.\nOption 2: i. Pollution is the release of harmful substances into the environment (1) that damage living things (1).\nii. Water pollution, e.g. rubbish or sewage in rivers and the sea (2). Air pollution, e.g. smoke from burning rubbish or vehicle exhaust (2). Land pollution, e.g. plastic litter and illegal dumping (2).\niii. Any two (1 each): reduce, reuse and recycle; put rubbish in bins and do not burn it; use less plastic; clean-up campaigns; laws and fines for polluters; awareness programmes."
+    }
+   ]
+  },
+  {
+   "title": "STRAND 2 MATTER [20 marks]",
+   "short": "2 Matter",
+   "note": "Multiple-choice: choose the best answer. Short answer: write your answers in the space provided.",
+   "questions": [
+    {
+     "id": "s2q1",
+     "type": "mcq",
+     "text": "The centre of an atom, which contains the protons and neutrons, is the",
+     "options": [
+      "nucleus",
+      "shell",
+      "electron",
+      "ion"
+     ],
+     "answer": "A",
+     "marks": 1
+    },
+    {
+     "id": "s2q2",
+     "type": "mcq",
+     "text": "Which of the following is a compound?",
+     "options": [
+      "Oxygen",
+      "Carbon dioxide",
+      "Iron",
+      "Copper"
+     ],
+     "answer": "B",
+     "marks": 1
+    },
+    {
+     "id": "s2q3",
+     "type": "mcq",
+     "text": "The number of protons in an atom is called its",
+     "options": [
+      "mass number",
+      "group number",
+      "atomic number",
+      "period number"
+     ],
+     "answer": "C",
+     "marks": 1
+    },
+    {
+     "id": "s2q4",
+     "type": "mcq",
+     "text": "A solution with a pH of 2 is a",
+     "options": [
+      "neutral solution",
+      "weak alkali",
+      "strong alkali",
+      "strong acid"
+     ],
+     "answer": "D",
+     "marks": 1
+    },
+    {
+     "id": "s2q5",
+     "type": "mcq",
+     "text": "Iron rusts when it is in contact with",
+     "options": [
+      "oxygen and water",
+      "carbon dioxide only",
+      "heat only",
+      "nitrogen only"
+     ],
+     "answer": "A",
+     "marks": 1
+    },
+    {
+     "id": "s2q6",
+     "type": "short",
+     "text": "Study the atom: ²⁴₁₂Mg (mass number 24, atomic number 12).\ni. How many protons does it have? (1 mark)\nii. Calculate the number of neutrons. (1 mark)\niii. Write its electron configuration. (1 mark)",
+     "marks": 3,
+     "model": "i. 12 (1)\nii. 24 − 12 = 12 neutrons (1)\niii. 2, 8, 2 (1)"
+    },
+    {
+     "id": "s2q7",
+     "type": "short",
+     "text": "Balance the chemical equation: Na + Cl₂ → NaCl",
+     "marks": 2,
+     "model": "2Na + Cl₂ → 2NaCl (2)"
+    },
+    {
+     "id": "s2q8",
+     "type": "short",
+     "text": "i. What colour does blue litmus paper turn in an acid? (1 mark)\nii. Name the reaction between an acid and a base. (1 mark)\niii. Give one everyday use of this reaction. (1 mark)",
+     "marks": 3,
+     "model": "i. Red (1)\nii. Neutralisation (1)\niii. Any one (1): toothpaste neutralises acid in the mouth; antacid/baking soda for indigestion; lime added to acidic soil; vinegar on a wasp sting."
+    },
+    {
+     "id": "s2q9",
+     "type": "short",
+     "text": "State three ways to make a chemical reaction go faster.",
+     "marks": 3,
+     "model": "Any three (1 each): increase the temperature; increase the concentration; break the solid into smaller pieces (larger surface area); add a catalyst; stir the mixture."
+    },
+    {
+     "id": "s2q10",
+     "type": "short",
+     "text": "Describe how you can get pure salt from salt water.",
+     "marks": 2,
+     "model": "Heat the salt water so that the water evaporates (1); the salt is left behind as crystals (crystallisation/evaporation) (1)."
+    },
+    {
+     "id": "s2q11",
+     "type": "short",
+     "text": "Differentiate between metals and non-metals. Give one property of each.",
+     "marks": 2,
+     "model": "Metals are good conductors of heat and electricity, shiny and malleable (1); non-metals are poor conductors (insulators), dull and brittle (1)."
+    }
+   ]
+  },
+  {
+   "title": "STRAND 3 ENERGY [25 marks]",
+   "short": "3 Energy",
+   "note": "Multiple-choice: choose the best answer. Short answer: write your answers in the space provided.",
+   "questions": [
+    {
+     "id": "s3q1",
+     "type": "mcq",
+     "text": "A stretched rubber band stores",
+     "options": [
+      "kinetic energy",
+      "elastic potential energy",
+      "chemical energy",
+      "sound energy"
+     ],
+     "answer": "B",
+     "marks": 1
+    },
+    {
+     "id": "s3q2",
+     "type": "mcq",
+     "text": "The SI unit of force is the",
+     "options": [
+      "joule",
+      "watt",
+      "newton",
+      "metre"
+     ],
+     "answer": "C",
+     "marks": 1
+    },
+    {
+     "id": "s3q3",
+     "type": "mcq",
+     "text": "The image of your face in a plane mirror is",
+     "options": [
+      "real and upside down",
+      "smaller than your face",
+      "magnified",
+      "virtual and laterally inverted"
+     ],
+     "answer": "D",
+     "marks": 1
+    },
+    {
+     "id": "s3q4",
+     "type": "mcq",
+     "text": "Which material is the best insulator of electricity?",
+     "options": [
+      "Plastic",
+      "Copper wire",
+      "Aluminium foil",
+      "Iron nail"
+     ],
+     "answer": "A",
+     "marks": 1
+    },
+    {
+     "id": "s3q5",
+     "type": "mcq",
+     "text": "Heat from the Sun reaches the Earth through empty space by",
+     "options": [
+      "conduction",
+      "convection",
+      "radiation",
+      "evaporation"
+     ],
+     "answer": "C",
+     "marks": 1
+    },
+    {
+     "id": "s3q6",
+     "type": "short",
+     "text": "A bus travels 120 km in 2 hours. Calculate its average speed.",
+     "marks": 2,
+     "model": "speed = distance ÷ time = 120 ÷ 2 (1) = 60 km/h (1)"
+    },
+    {
+     "id": "s3q7",
+     "type": "short",
+     "text": "i. A bulb has a resistance of 6 Ω and a current of 2 A flows through it. Calculate the voltage. (V = I × R) (2 marks)\nii. State the unit of electric current. (1 mark)",
+     "marks": 3,
+     "model": "i. V = 2 × 6 (1) = 12 V (1)\nii. Ampere (A) (1)"
+    },
+    {
+     "id": "s3q8",
+     "type": "short",
+     "text": "i. Name the way heat moves through the water in a pot that is being boiled. (1 mark)\nii. Explain why a metal spoon in hot tea gets hot quickly. (1 mark)\niii. Why are the handles of pots made of plastic or wood? (1 mark)",
+     "marks": 3,
+     "model": "i. Convection (1)\nii. Metals are good conductors of heat (1)\niii. Plastic and wood are poor conductors (insulators), so the handle stays cool and safe to hold (1)"
+    },
+    {
+     "id": "s3q9",
+     "type": "short",
+     "text": "State the energy change in each of the following.\ni. a torch (1 mark)\nii. a car engine burning petrol (1 mark)\niii. a hydroelectric power station (1 mark)",
+     "marks": 3,
+     "model": "i. Chemical → electrical → light (and heat) (1)\nii. Chemical → kinetic (movement), heat and sound (1)\niii. Kinetic energy of moving water → electrical (1)"
+    },
+    {
+     "id": "s3q10",
+     "type": "short",
+     "text": "i. State two advantages of connecting bulbs in parallel. (2 marks)\nii. Name the device that protects a circuit when too much current flows. (1 mark)",
+     "marks": 3,
+     "model": "i. Any two (1 each): if one bulb blows the others stay on; each bulb gets the full voltage and stays bright; each bulb can have its own switch.\nii. Fuse (or circuit breaker) (1)"
+    },
+    {
+     "id": "s3q11",
+     "type": "short",
+     "text": "i. Explain why sound cannot travel through space. (1 mark)\nii. What is an echo? (1 mark)",
+     "marks": 2,
+     "model": "i. Space is a vacuum with no particles to pass on the vibrations (1)\nii. A sound that is reflected back from a hard surface (1)"
+    },
+    {
+     "id": "s3q12",
+     "type": "short",
+     "text": "A girl lifts a bag with a force of 50 N up to a shelf 2 m high. Calculate the work done and give the unit. (W = F × d)",
+     "marks": 2,
+     "model": "W = 50 × 2 (1) = 100 J (1)"
+    },
+    {
+     "id": "s3q13",
+     "type": "short",
+     "text": "State two advantages of using solar energy in Fiji.",
+     "marks": 2,
+     "model": "Any two (1 each): renewable – sunlight will not run out; sunlight is free; no pollution or greenhouse gases; useful on remote islands without power lines; less fuel has to be imported."
+    }
+   ]
+  },
+  {
+   "title": "STRAND 4 EARTH AND BEYOND [15 marks]",
+   "short": "4 Earth & Beyond",
+   "note": "Multiple-choice: choose the best answer. Short answer: write your answers in the space provided.",
+   "questions": [
+    {
+     "id": "s4q1",
+     "type": "mcq",
+     "text": "The largest planet in the solar system is",
+     "options": [
+      "Earth",
+      "Jupiter",
+      "Saturn",
+      "Mars"
+     ],
+     "answer": "B",
+     "marks": 1
+    },
+    {
+     "id": "s4q2",
+     "type": "mcq",
+     "text": "One year is the time the Earth takes to",
+     "options": [
+      "spin once on its axis",
+      "go round the Moon",
+      "orbit the Sun once",
+      "cross the equator"
+     ],
+     "answer": "C",
+     "marks": 1
+    },
+    {
+     "id": "s4q3",
+     "type": "mcq",
+     "text": "The layer of the atmosphere closest to the Earth, where weather happens, is the",
+     "options": [
+      "stratosphere",
+      "mesosphere",
+      "thermosphere",
+      "troposphere"
+     ],
+     "answer": "D",
+     "marks": 1
+    },
+    {
+     "id": "s4q4",
+     "type": "mcq",
+     "text": "Which gas makes up most of the air?",
+     "options": [
+      "Nitrogen",
+      "Oxygen",
+      "Carbon dioxide",
+      "Argon"
+     ],
+     "answer": "A",
+     "marks": 1
+    },
+    {
+     "id": "s4q5",
+     "type": "short",
+     "text": "Explain why the Earth has seasons.",
+     "marks": 2,
+     "model": "The Earth's axis is tilted (1); as the Earth orbits the Sun, each hemisphere receives more direct sunlight (summer) or less (winter) at different times of the year (1)."
+    },
+    {
+     "id": "s4q6",
+     "type": "short",
+     "text": "State what causes the tides in the sea.",
+     "marks": 2,
+     "model": "The gravitational pull of the Moon (and the Sun) (1) pulls the ocean water so that it bulges, making high and low tides (1)."
+    },
+    {
+     "id": "s4q7",
+     "type": "short",
+     "text": "Fiji is often hit by tropical cyclones.\ni. In which months is the cyclone season in Fiji? (1 mark)\nii. State two ways a family can prepare for a cyclone. (2 marks)",
+     "marks": 3,
+     "model": "i. November to April (the wet season) (1)\nii. Any two (1 each): store food and drinking water; tie down the roof and board up windows; listen to weather warnings on the radio; prepare a first-aid kit and torch; know the nearest evacuation centre; cut tree branches near the house."
+    },
+    {
+     "id": "s4q8",
+     "type": "short",
+     "text": "Define global warming and state one of its causes.",
+     "marks": 2,
+     "model": "Global warming is the rise in the average temperature of the Earth (1); it is caused by more greenhouse gases, e.g. carbon dioxide from burning fossil fuels or cutting down forests (1)."
+    },
+    {
+     "id": "s4q9",
+     "type": "short",
+     "text": "Explain why the Moon seems to change its shape (phases) during a month.",
+     "marks": 2,
+     "model": "The Moon does not make its own light – it reflects sunlight (1); as it orbits the Earth we see different amounts of its lit half (1)."
+    }
+   ]
+  }
+ ]
+}

@@ -35,7 +35,7 @@
   </div>
   <div id="app"></div>
 </div>
-<script src="api.js"></script>
+<script src="api.js?v=202611032023"></script>
 <script>
 const $ = s => document.querySelector(s);
 const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
@@ -80,7 +80,7 @@ async function load() {
     load();
   });
 }
-$("#go").onclick = () => { PASS = $("#pass").value; load(); };
+$("#go").onclick = () => { PASS = $("#pass").value.trim(); load(); }; // 前後の空白は無視
 $("#pass").onkeydown = e => { if (e.key === "Enter") $("#go").click(); };
 $("#eye").onclick = () => { // 入力中の合言葉を確かめられるようにする
   const p = $("#pass"), show = p.type === "password";

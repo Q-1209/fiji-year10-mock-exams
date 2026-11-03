@@ -1,12 +1,12 @@
 window.Y10_ONLY = null;
 /* ウェブ版用: server.py の /api/* をブラウザの中（localStorage）で代わりにする。
-   make_web.py が各ページの最初にこのファイル（api.js）を読み込ませ、{"k": "cDRlV2kyQXJYQUZQNEFDUDVlZGU1RndjVjBwejBKaXlZSDdMMEFPOE54WnQ4UjZCSDkxVjk5RXB4ellfNURxVzRGRmZBVndaMFFIWExXVEIxMV90YXBfYnVodGln", "h": "376fd4c1c038c33bbe1b21ea48a52d2148a0ddb82642fc5f69c303d83eb02b3c"} を
+   make_web.py が各ページの最初にこのファイル（api.js）を読み込ませ、{"k": "cDRlV2kyQXJYQUZQNEFDUDVlZGU1RndjVjBwejBKaXlZSDdMMEFPOE54WnQ4UjZCSDkxVjk5RXB4ellfNURxVzRGRmZBVndaMFFIWExXVEIxMV90YXBfYnVodGln", "h": "29ab110e16c69032ddb1186fcfc124afe685b321282e1ef3c90f0a47f9f536a3"} を
    {k: 鍵を逆順にして base64 にしたもの, h: 管理画面の合言葉の SHA-256} にする。
    保存は名前ごとに分ける。提出した答案と練習の結果は GitHub の非公開リポジトリに直接送る
    （<名前>/profile.json が登録、<名前>/<模試>_<日時>.md・.json・_<問題>.png、<名前>/practice/*.json）。
    鍵はページから読めるので、fiji-year10-answers の Contents だけに絞った鍵を使う（漣さんの了承済み）。 */
 (() => {
-  const CFG = {"k": "cDRlV2kyQXJYQUZQNEFDUDVlZGU1RndjVjBwejBKaXlZSDdMMEFPOE54WnQ4UjZCSDkxVjk5RXB4ellfNURxVzRGRmZBVndaMFFIWExXVEIxMV90YXBfYnVodGln", "h": "376fd4c1c038c33bbe1b21ea48a52d2148a0ddb82642fc5f69c303d83eb02b3c"};
+  const CFG = {"k": "cDRlV2kyQXJYQUZQNEFDUDVlZGU1RndjVjBwejBKaXlZSDdMMEFPOE54WnQ4UjZCSDkxVjk5RXB4ellfNURxVzRGRmZBVndaMFFIWExXVEIxMV90YXBfYnVodGln", "h": "29ab110e16c69032ddb1186fcfc124afe685b321282e1ef3c90f0a47f9f536a3"};
   const REPO = "Q-1209/fiji-year10-answers";
   const NAME_RE = /^[^\\/:*?"<>|#%.\u0000-\u001f]{1,20}$/;
   const FILE_RE = /^(practice\/)?[A-Za-z0-9_.-]{1,80}$/;
